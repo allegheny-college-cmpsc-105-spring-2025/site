@@ -24,7 +24,7 @@ controls: true
 ## Materials
 
 ::: incremental
-- [Course website asdfg](https://github.com/allegheny-college-cmpsc-105-generic)
+- Course Website
   - syllabus
   - schedule for reading and assignment due dates
   - links to all course materials
@@ -33,8 +33,6 @@ controls: true
 - Google Forms for group activities
 - Discord for announcements and participation
 - Canvas for grades
-
-
 :::
 
 ## Setting up

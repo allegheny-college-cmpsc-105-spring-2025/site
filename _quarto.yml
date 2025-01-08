@@ -9,7 +9,7 @@ website:
       - href: index.qmd
         text: Syllabus
       - schedule.qmd
-      - slides.qmd
+      - materials.qmd
       - discord.qmd
       - grades.qmd
 
