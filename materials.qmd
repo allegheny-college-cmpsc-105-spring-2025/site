@@ -1,0 +1,30 @@
+---
+title: "Materials"
+format: live-html
+---
+
+## Quick Links
+
+- [Course Website](https://allegheny-college-cmpsc-105-spring-2025.github.io/site/)
+- [Course GitHub Organization](https://github.com/allegheny-college-cmpsc-105-spring-2025)
+- [Course GitHub Website Repo](https://github.com/allegheny-college-cmpsc-105-spring-2025/site)
+- [Python Notebooks Directory](https://github.com/allegheny-college-cmpsc-105-spring-2025/site/tree/main/code)
+
+<details>
+<summary>Week One: January 14, 16: Setup</summary>
+
+```{.markdown code-preview="slides/setup.qmd" width="780" height="500"}
+```
+
+```{pyodide}
+
+```
+
+setup notebook [in repo](https://github.com/allegheny-college-cmpsc-105-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb)
+
+</details>
+
+## Week 2 [20250121]
+
+```{.markdown code-preview="slides/data-display.qmd" width="780" height="500"}
+```
