@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "data-exploration"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Syllabus
+      - schedule.qmd
+      - slides.qmd
+      - discord.qmd
+      - grades.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+
+

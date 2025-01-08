@@ -1,0 +1,29 @@
+---
+title: Discord Channel
+format: html
+---
+
+First time only, use the invite link [here](https://discord.gg/fPWcctU4)
+
+Access the Data Exploration Discord Channel [here](https://discord.com/channels/877320365825749002/1326293822002561154)
+
+
+
+## Announcements
+
+<widgetbot
+  channel="1326309384808038501"
+  server="1274751612425863262"
+  width="800"
+  height="600"
+></widgetbot>
+<script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+
+<!-- <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+    new Crate({
+        server: '1274751612425863262', // Course Announcement
+        channel: '1326309384808038501' // #data-exploration-sp-2025
+    })
+</script> -->
+
+Made with [https://docs.widgetbot.io/](https://docs.widgetbot.io/)

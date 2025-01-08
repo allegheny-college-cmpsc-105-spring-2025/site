@@ -1,0 +1,46 @@
+---
+title: "Week 2: Data Display"
+subtitle: "Display Types & Anatomy of Charts"
+author: "Emily Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+---
+
+## Goals
+
+::: incremental
+- review graph types
+- review chart types
+- review anatomy of a chart
+:::
+
+## Critical Thinking in Groups
+
+::: incremental
+- Form pairs
+- Discuss a data visualization that you recently admired
+- Discuss what it made clear that was unclear before
+- In Discord, send in a link to your partner's vis and their name
+- Present your partner's visualization in 30 seconds
+:::
+
+## Summary
+
+::: incremental
+- What are important parts of a chart? 
+:::
+
+## notebook excerpt
+
+::: incremental
+{{< embed ../code/temp.ipynb#print-hello echo=true eval=false >}}
+:::
+
+## pyodide test grabbing markdown w live-html
+
+```{.markdown code-preview="../code/interactive.qmd" width="780" height="500"}
+```
+
+n.b. live-html format in the ipynb allows live execution, but cell must be raw...

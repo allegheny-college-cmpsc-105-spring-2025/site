@@ -1,0 +1,9 @@
+---
+title: "CMPSC 105 Data Exploration"
+format: html
+embed-resources: true
+---
+
+![](images/magnifying.png){width=10%}
+
+{{< include syll/syllabus.qmd >}}

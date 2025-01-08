@@ -1,0 +1,294 @@
+---
+title: "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025"
+author: "Emily Graber"
+---
+
+Class Sessions: TuTh 9:30 AM-10:45 AM, Alden 101  
+Laboratory Session: Th, 2:30 PM-4 PM, Alden 101  
+Instructor: Professor Emily Graber, [egraber@allegheny.edu]()  
+Office Location: Alden Hall 106  
+Office Hours: Visit
+[Google Calendar](https://calendar.app.google/MYV4AVsQG2fUM9Ja7)
+to reserve an appointment as needed.  
+
+## Course Description
+
+An introduction to the methods of collecting, exploring, transforming and visualizing data for storytelling. Often participating in team-based and hands-on activities, students learn how to use web platforms and dashboards to acquire, explore and investigate data to generate summarized key data insights using visual techniques. Students also apply open-source programming language to discover patterns in the data, test hypotheses, and check assumptions using graphical representations.  During a weekly laboratory session, students employ cutting-edge software tools to complete projects, reporting on their results through both written documents and oral presentations. Students are invited to use their own departmentally approved laptop in this course; a limited number of laptops are available for use during class and lab sessions.
+
+_Prerequisite:_ None
+
+_Distribution Requirements:_ QR, SP.
+
+DR tag rationale: This course will primarily focus on methods of data collection, foundational data analysis of numerical data, and visualizations of such data. Additionally, students will participate in the scientific process during the exploratory data analysis and apply scientific reasoning to analyze and synthesize data.
+
+### _Learning Outcomes_
+
+1. Develop hypotheses based on motivating problems and/or observations and identify appropriate data to address hypotheses.
+2. Identify and describe key elements in different types of data visualizations.
+3. Use web-based platforms to accurately present data sets through multiple visualizations.
+4. Use an open-source programming language to compute summary statistics and visualize key patterns in the data.
+5. Contribute to and present structured, web-based documentation that describes data exploration steps and visualization-based conclusions.
+
+<details>
+  <summary>**Scientific Process and Knowledge (SP)**</summary>
+
+  Courses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.
+
+  *Learning Outcome*: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry.
+</details>
+
+<details>
+  <summary>**Quantitative Reasoning (QR)**</summary>
+  
+  Quantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.
+  
+  *Learning Outcome*: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations.
+</details>
+
+---
+
+## Schedule at-a-glance
+
+**Welcome**
+
+- Week One: January 14, 16: Setup
+
+**Data Display**
+
+- Week Two: January 21, 23: Display Types and Anatomy of a Chart
+- Week Three: January 28, 30: Data Distortion
+- Week Four: February 4, 7: Data Display in Real Time
+- Week Five: February 11, 13: Interactive Display
+  
+**Data Gathering**
+
+- Week Six: February 18, 20: Turning Anything Into Data
+- Week Seven: February 25, 27: Web Data Analytics and Scraping
+- Spring Break: March 1-9
+- Week Eight: March 11, 13: Data Entry and Storage with Pandas
+
+**Data Processing**
+
+- Week Nine: March 18, 20: Statistics
+- Week Ten: March 25, 27: Data Transformations
+- Week Eleven: April 1, 3: Modeling and Overfitting
+- Week Twelve: April 8: Filtering
+
+**Data Storytelling**
+
+- Week Thirteen: April 15, 17: Hypothesis Driven Analysis
+- Week Fourteen: April 22, 24: Storytelling Challenge
+- Week Fifteen: April 29: Project Preparation
+
+**Final Presentations Code C**
+
+- Thursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks 
+
+[Complete Final Exam Schedule](https://sites.allegheny.edu/registrar/spring-2025-final-exam-schedule/)
+
+## Grading
+
+|Assignment type |Percentage|
+|-|--------|
+|Labs| 50% |
+|Participation| 30% |
+|Final Project | 20% |
+
+Grading policy may change as needed during the term; any changes will be announced to the class at the time of the change. Grades will be communicated via Canvas. Please note that attendance policies may additionally affect grades as adjustments to grades will be applied on top of the base grade according to [policy](#attendance-and-lateness)
+
+### _Labs_
+
+There are 8 labs during the semester. Due dates are hard deadlines. See [below](#tokens) for policy on late work.
+
+The deliverables for labs include documentation in a GitHub repo addressing specific questions
+or demonstrating requested calculations, analyses, visualizations, and code snippets. 
+
+Labs will be graded for having clean work with few careless errors, correct Markdown, code,
+data, correct images given the context of the lab, and correct explanations of concepts
+in writing
+
+### _Participation_
+
+Participation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate. 
+
+### _Final Project_
+
+The final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact will be a final, and more detailed blog post, approximately three times the work compared to a lab.
+
+## Policies
+
+### _Attendance_
+
+Students are expected to come to class **prepared, on time,
+and to stay engaged** for the duration of the class period. This includes both class
+and lab sessions. This behavior is core to our [shared departmental values](https://www.cis.allegheny.edu/teaching/policies/) and is in
+addition to the college’s attendance policy.
+
+#### _Preparedness_
+
+Coming to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:
+
+- arrive at class with a fully charged laptop
+- bring their laptop charger or a battery pack so as to ensure that their laptop
+  works throughout the entire class session
+- complete any pre-session work such as readings and preparatory assignments
+
+#### _Attendance and Lateness_
+
+One missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.
+
+Students can have six absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.
+
+#### _Engagement_
+
+The term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:
+
+- participation in class activities and discussions
+- defined contribution to class sessions in full-class or group discussions
+- note-taking (physical or digital)
+- participating in course session attendance requirements
+- not participating in non-course related activities
+- not completing non-course related projects
+
+### _Late Work Policy_
+
+The deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.
+
+All students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.
+
+#### _Tokens_
+
+Students in 105 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.
+
+A token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.
+
+Tokens grant an automatic extension of one week to anything except the final exam.
+
+[Token Form for Automatic Extension](https://forms.gle/DLhqFrVfNZpcm6xY8)
+
+### _Extenuating Circumstances_
+
+Extenuating circumstances are exceptional, unforeseen, outside of your control, and
+short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.
+
+The accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should **not** come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options.  If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.
+
+Professor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.
+
+These no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.
+
+If extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or  “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material.
+
+---
+
+## Resources
+
+- Fundamentals of Data Visualization
+    - [Full Text](https://clauswilke.com/dataviz/)
+- Making Sense of Data by Glenn J. Myatt and Wayne P. Johnson
+    - [I. Exploratory Data Analysis](https://ebookcentral.proquest.com/lib/allegheny-ebooks/detail.action?pq-origsite=summon&docID=1729064)
+    - [II. Data Visualization](https://ebookcentral.proquest.com/lib/allegheny-ebooks/detail.action?pq-origsite=summon&docID=427614)
+    - [III. Interactive Visualizations](https://ebookcentral.proquest.com/lib/allegheny-ebooks/detail.action?pq-origsite=summon&docID=697915)
+- Naked statistics: stripping the dread from the data by Charles J. Wheelan
+    - [Google Preview](https://books.google.com/books/about/Naked_Statistics_Stripping_the_Dread_fro.html?id=BgFJfC_CrTAC)
+- Natural Resources Biometrics by Diane Kiarnan
+    - [Full Text](https://milnepublishing.geneseo.edu/natural-resources-biometrics/chapter/chapter-1-descriptive-statistics-and-the-normal-distribution/)
+-  Python Data Science Handbook by Jake VanderPlas
+    - [Full Text](https://jakevdp.github.io/PythonDataScienceHandbook/index.html)
+- Python for Data Analysis, 3E by Wes McKinney
+    - [Full Text](https://wesmckinney.com/book/)
+
+---
+
+## Communications
+
+### _Using GitHub and Discord_
+
+This course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place
+in the Data Structures Channel in Discord.
+
+The Allegheny College Computer and Information Science Discord
+Server will also have useful announcements about departmental activities
+including TL office hours.
+
+### _Using Email_
+
+Although we will primarily use Discord for class communication, the course
+instructor will sometimes use email to send announcements about important
+matters such as changes in the schedule. It is your responsibility to check your
+email at least once a day and to ensure that you can reliably send and receive
+emails.
+
+---
+
+## Honor Code
+
+The Academic Honor Program that governs the entire academic program at
+Allegheny College is described in the Allegheny Academic Bulletin. The Honor
+Program applies to all work that is submitted for academic credit or to meet
+non-credit requirements for graduation at Allegheny College. This includes all
+work assigned for this class (e.g., examinations and course assignments). All
+students who have enrolled in the College will work under the Honor Program.
+Each student who has matriculated at the College has acknowledged the following
+Honor Code pledge:
+
+> I hereby recognize and pledge to fulfill my responsibilities, as
+> defined in the Honor Code, and to maintain the integrity of both
+> myself and the College community as a whole.
+
+### _Effective Collaboration_
+
+Computer science is an inherently collaborative discipline. The Department of
+Computer and Information Science at Allegheny College
+encourages students to engage in collaboration. However, in the context of
+individual coursework, through which each student must demonstrate their own
+knowledge, there are certain forms of collaboration that are and are not
+acceptable.
+
+- Acceptable forms of collaboration include:
+    - Discussing high-level concepts.
+    - Referring someone to a course text book, course slides, example programs,
+      or other resources that contain helpful information or instructions.
+    - Outlining the high-level steps to solving a problem, without mentioning specific
+    - lines of code that need to be written.
+
+- Unacceptable forms of collaboration include:
+    - Sharing details about specific lines of code, including showing your
+      source code to someone or looking at someone else's code.
+    - Copying someone else's source code, technical writing, program commands,
+      or program output, even with some slight modifications.
+    - Typing source code, technical writing, or commands on someone else’s
+      computer.
+
+### Plagiarism and Artificial Intelligence
+
+Students may not pass off or represent the work of another student, or their own prior work, as their own
+current work in any case. Plagiarism and AI-generatated code, text, or images are not permitted in any assignment
+type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other
+coursework, students are expected to adhere to the given instructions for the particular exam or item of
+coursework. It is the responsibility of the student to review the authorization specifications on every item
+and act appropriately, upholding the honor code. Suspected plagiarized or unauthorized use of AI to generate
+the work that is turned in will be reported to the Honor Code Committee. This policy does not preclude the
+use of AI to learn.
+
+---
+
+## Educational Accommodations
+
+The Americans with Disabilities Act (ADA) is a federal anti-discrimination
+statute that provides comprehensive civil rights protection for persons with
+disabilities. Among other things, this legislation requires all students with
+disabilities be guaranteed a learning environment that provides for reasonable
+accommodation of their disabilities. Students with disabilities who believe they
+may need accommodations in this class are encouraged to contact Student 
+Accessibility and Support Services (SASS) at 814-332-2898. Student Accessibility 
+and Support Services is part of the Learning Commons
+and is located in Pelletier Library. Please do this as soon as possible to
+ensure that approved accommodations are implemented in a timely fashion.
+
+---
+
+## Syllabus Changes
+
+The instructor may make updates or changes to this document at any time as needed
+until term grades are due. Changes will be announced to the class.

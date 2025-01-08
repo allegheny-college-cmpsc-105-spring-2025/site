@@ -1,0 +1,22 @@
+---
+title: "Slides"
+format: live-html
+---
+
+## Week 1 [20250114]
+
+```{.markdown code-preview="slides/setup.qmd" width="780" height="500"}
+```
+
+## executable codeblock pyodide
+
+```{pyodide}
+print("hello")
+```
+
+## Week 2 [20250121]
+
+```{.markdown code-preview="slides/data-display.qmd" width="780" height="500"}
+```
+
+[temp.ipynb](code/temp.ipynb)

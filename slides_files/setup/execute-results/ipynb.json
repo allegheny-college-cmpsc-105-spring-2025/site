@@ -1,0 +1,11 @@
+{
+  "hash": "7947d6e9d810004d5e491dec8c13d1ce",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\nformat: \n  html:\n    code-fold: true\nexecute: \n  enabled: true\njupyter: python3\n---\n\n[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://githubtocolab.com/allegheny-college-cmpsc-105-spring-2025/main/blob/slides/setup.ipynb)\n\n\nThis is a test notebook file\n\n\n::: {#print-hello .cell vscode='{\"languageId\":\"plaintext\"}' execution_count=3}\n``` {.python .cell-code}\nprint(\"hello\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nhello\n```\n:::\n:::\n\n\n::: {#cell-6 .cell vscode='{\"languageId\":\"plaintext\"}' execution_count=4}\n``` {.python .cell-code}\nprint(\"this is another print message\")\n```\n\n::: {.cell-output .cell-output-stdout}\n```\nthis is another print message\n```\n:::\n:::\n\n\n---\njupyter:\n  kernelspec:\n    display_name: Python 3 (ipykernel)\n    language: python\n    name: python3\n  language_info:\n    codemirror_mode:\n      name: ipython\n      version: 3\n    file_extension: .py\n    mimetype: text/x-python\n    name: python\n    nbconvert_exporter: python\n    pygments_lexer: ipython3\n    version: 3.11.7\n---\n",
+    "supporting": [
+      "setup_files/figure-ipynb"
+    ],
+    "filters": []
+  }
+}

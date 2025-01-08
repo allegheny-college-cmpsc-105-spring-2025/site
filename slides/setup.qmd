@@ -1,0 +1,50 @@
+---
+title: "Week 1: Setup"
+author: "Emily Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+---
+
+## Welcome to CMPSC 105
+
+## Data Exploration
+
+::: incremental
+- this course is for anyone interested in becoming familiar with:
+  - data visualization
+  - data analysis
+  - data gathering
+- jump starts independent research projects with generalizable skills
+- CIS Informatics Major
+- CIS Data Science Major/Minor
+:::
+
+## Materials
+
+::: incremental
+- [Course website asdfg](https://github.com/allegheny-college-cmpsc-105-generic)
+  - syllabus
+  - schedule for reading and assignment due dates
+  - links to all course materials
+- GitHub for accessing and submitting assignments
+- Google Colab for completing assignments
+- Google Forms for group activities
+- Discord for announcements and participation
+- Canvas for grades
+
+
+:::
+
+## Setting up
+
+- bookmark the website
+- bookmark discord channel
+- make github account
+- etc
+- see Student ACM chapter for help
+
+## CIS Shared Values
+
+![](https://www.cis.allegheny.edu/images/values.png)
