@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+<link href="../images/magnifying.png" rel="icon" type="image/png">
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -10,7 +11,7 @@
   <meta name="generator" content="quarto-1.6.39">
 
   <meta name="author" content="Emily Graber">
-  <title>data-exploration – Week 2: Data Display</title>
+  <title>Data Exploration – Week 2: Data Display</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -95,6 +96,15 @@
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0G1PHPKVFB"></script>
+
+  <script type="text/javascript">
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-0G1PHPKVFB', { 'anonymize_ip': true});
+  </script>
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -236,13 +246,19 @@ Emily Graber
 </section>
 <section id="notebook-excerpt" class="slide level2">
 <h2>notebook excerpt</h2>
-<div>
 <div class="quarto-embed-nb-cell" data-notebook="/Users/egraber/Documents/Teaching/S2025-CMPSC105/site/code/temp.ipynb" data-notebook-cellid="cell-print-hello">
-<div id="print-hello" class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="bu">print</span>(<span class="st">"hello"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>hello</code></pre>
+<div id="print-hello" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb1" data-code-line-numbers="1|2|3|4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="bu">print</span>(<span class="st">"hello"</span>)</span>
+<span id="cb1-2"><a></a><span class="bu">print</span>(<span class="st">"line 2"</span>)</span>
+<span id="cb1-3"><a></a><span class="bu">print</span>(<span class="st">"line 3"</span>)</span>
+<span id="cb1-4"><a></a><span class="bu">print</span>(<span class="st">"line 4"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div class="cell fragment" data-execution_count="1">
+<div class="cell-output cell-output-stdout">
+<pre><code>hello
+line 2
+line 3
+line 4</code></pre>
 </div>
 </div>
 </div>

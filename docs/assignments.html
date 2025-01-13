@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Schedule – data-exploration</title>
+<title>Assignments – Data Exploration</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/magnifying.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -66,6 +67,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0G1PHPKVFB"></script>
+
+<script type="text/javascript">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-0G1PHPKVFB', { 'anonymize_ip': true});
+</script>
 
 
 <link rel="stylesheet" href="styles.css">
@@ -79,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">data-exploration</span>
+    <span class="navbar-title">Data Exploration</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -93,12 +103,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./schedule.html" aria-current="page"> 
-<span class="menu-text">Schedule</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./materials.html"> 
 <span class="menu-text">Materials</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./assignments.html" aria-current="page"> 
+<span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./discord.html"> 
@@ -119,21 +129,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#week-1---setup" id="toc-week-1---setup" class="nav-link active" data-scroll-target="#week-1---setup">Week 1 - Setup</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Schedule</h1>
+<h1 class="title">Assignments</h1>
 </div>
 
 
@@ -150,33 +154,59 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="week-1---setup" class="level2">
-<h2 class="anchored" data-anchor-id="week-1---setup">Week 1 - Setup</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Date</th>
-<th>Due</th>
-<th>Links to in-class materials</th>
-<th>Links to new assignments</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Tu Jan 14</td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Th Jan 16</td>
-<td></td>
-<td></td>
-<td><a href="https://chartio.com/learn/charts/essential-chart-types-for-data-visualization/">Reading: Gentle Chart Types</a> <br> <a href="https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614">Reading: Visualizations p.&nbsp;19-32</a> <br> <a href="https://classroom.github.com/a/36z5eOtg">Lab 1: Hall of Fame</a> due 2:30pm Jan 26</td>
-</tr>
-</tbody>
-</table>
-<!-- ## Week 2 - Intro to Visualization in Sheets
+<p><strong>Welcome</strong></p>
+<ul>
+<li>Week One: January 14, 16: Setup
+<ul>
+<li>Reading: <a href="https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614&amp;ppg=35">Making Sense of Data, Chapter 2, p19-32</a></li>
+<li>Lab: Setup</li>
+</ul></li>
+</ul>
+<p><strong>Data Display</strong></p>
+<ul>
+<li>Week Two: January 21, 23: Display Types and Anatomy of a Chart</li>
+<li>Week Three: January 28, 30: Data Distortion</li>
+<li>Week Four: February 4, 7: Data Display in Real Time</li>
+<li>Week Five: February 11, 13: Interactive Display</li>
+</ul>
+<p><strong>Data Gathering</strong></p>
+<ul>
+<li>Week Six: February 18, 20: Turning Anything Into Data
+<ul>
+<li>Lab: Vocal Analysis</li>
+</ul></li>
+<li>Week Seven: February 25, 27: Web Data Analytics and Scraping
+<ul>
+<li>Lab: Google Analytics</li>
+</ul></li>
+<li>Spring Break: March 1-9</li>
+<li>Week Eight: March 11, 13: Data Entry and Storage with Pandas</li>
+</ul>
+<p><strong>Data Processing</strong></p>
+<ul>
+<li>Week Nine: March 18, 20: Statistics</li>
+<li>Week Ten: March 25, 27: Data Transformations</li>
+<li>Week Eleven: April 1, 3: Modeling and Overfitting</li>
+<li>Week Twelve: April 8: Filtering</li>
+</ul>
+<p><strong>Data Storytelling</strong></p>
+<ul>
+<li>Week Thirteen: April 15, 17: Hypothesis Driven Analysis</li>
+<li>Week Fourteen: April 22, 24: Storytelling Challenge</li>
+<li>Week Fifteen: April 29: Project Preparation</li>
+</ul>
+<p><strong>Final Presentations Code C</strong></p>
+<ul>
+<li>Thursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks</li>
+</ul>
+<!-- ## Week 1 - Setup
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|Tu Jan 14||||
+|Th Jan 16|||[Reading: Gentle Chart Types](https://chartio.com/learn/charts/essential-chart-types-for-data-visualization/) </br> [Reading: Visualizations p. 19-32](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614) </br> [Lab 1: Hall of Fame](https://classroom.github.com/a/36z5eOtg) due 2:30pm Jan 26|
+
+## Week 2 - Intro to Visualization in Sheets
 
 | Date  | Due              | Links to in-class materials | Links to new assignments |
 |-------|------------------|-----------------------------|----------------------|
@@ -296,7 +326,6 @@ ul.task-list li input[type="checkbox"] {
 |Tu May 07|[Project Repo: Data Insight](https://classroom.github.com/a/pojZiZlA) due at 11:59am||| -->
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

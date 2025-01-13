@@ -1,6 +1,9 @@
 ---
 title: "Materials"
-format: live-html
+format:
+  live-html:
+    toc: true
+    toc-depth: 3
 ---
 
 ## Quick Links
@@ -9,6 +12,10 @@ format: live-html
 - [Course GitHub Organization](https://github.com/allegheny-college-cmpsc-105-spring-2025)
 - [Course GitHub Website Repo](https://github.com/allegheny-college-cmpsc-105-spring-2025/site)
 - [Python Notebooks Directory](https://github.com/allegheny-college-cmpsc-105-spring-2025/site/tree/main/code)
+
+## Content
+
+### Welcome
 
 <details>
 <summary>Week One: January 14, 16: Setup</summary>
@@ -22,9 +29,95 @@ format: live-html
 
 setup notebook [in repo](https://github.com/allegheny-college-cmpsc-105-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb)
 
+[slides pdf asdfg](docs/slides/)
 </details>
 
-## Week 2 [20250121]
+
+
+### Data Display
+
+<details>
+<summary>Week Two: January 21, 23: Data Display</summary>
 
 ```{.markdown code-preview="slides/data-display.qmd" width="780" height="500"}
 ```
+
+```{pyodide}
+
+```
+
+setup notebook [in repo](https://github.com/allegheny-college-cmpsc-105-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb)
+
+[slides pdf asdfg](docs/slides/)
+</details>
+
+
+
+
+<details>
+<summary>Week Three: January 28, 30: Data Distortion</summary>
+</details>
+
+<details>
+<summary>Week Four: February 4, 7: Data Display in Real Time</summary>
+</details>
+
+
+<details>
+<summary>Week Five: February 11, 13: Interactive Display</summary>
+</details>
+
+### Data Gathering
+
+<details>
+<summary>Week Six: February 18, 20: Turning Anything Into Data</summary>
+</details>
+
+
+<details>
+<summary>Week Seven: February 25, 27: Web Data Analytics and Scraping</summary>
+</details>
+
+
+<details>
+<summary>Week Eight: March 11, 13: Data Entry and Storage with Pandas</summary>
+</details>
+
+### Data Processing
+
+<details>
+<summary>Week Nine: March 18, 20: Statistics</summary>
+</details>
+
+
+<details>
+<summary>Week Ten: March 25, 27: Data Transformations</summary>
+</details>
+
+
+<details>
+<summary>Week Eleven: April 1, 3: Modeling and Overfitting</summary>
+</details>
+
+
+<details>
+<summary>Week Twelve: April 8: Filtering</summary>
+</details>
+
+### Data Storytelling
+
+<details>
+<summary>Week Thirteen: April 15, 17: Hypothesis Driven Analysis</summary>
+</details>
+
+<details>
+<summary>Week Fourteen: April 22, 24: Storytelling Challenge</summary>
+</details>
+
+<details>
+<summary>Week Fifteen: April 29: Project Preparation</summary>
+</details>
+
+### Final Presentations
+
+- Thursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks

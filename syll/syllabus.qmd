@@ -77,8 +77,8 @@ DR tag rationale: This course will primarily focus on methods of data collection
 **Data Storytelling**
 
 - Week Thirteen: April 15, 17: Hypothesis Driven Analysis
-- Week Fourteen: April 22, 24: Storytelling Challenge
-- Week Fifteen: April 29: Project Preparation
+- Week Fourteen: April 22, 24: Storytelling Challenge & Project Preparation
+- Week Fifteen: April 29: No Class Meeting
 
 **Final Presentations Code C**
 
@@ -205,7 +205,7 @@ If extenuating circumstances are severe enough to require more absences and toke
 ### _Using GitHub and Discord_
 
 This course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place
-in the Data Structures Channel in Discord.
+in the Data Exploration Channel in Discord.
 
 The Allegheny College Computer and Information Science Discord
 Server will also have useful announcements about departmental activities

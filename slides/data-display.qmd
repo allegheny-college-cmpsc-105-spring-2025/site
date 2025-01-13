@@ -34,9 +34,8 @@ controls: true
 
 ## notebook excerpt
 
-::: incremental
-{{< embed ../code/temp.ipynb#print-hello echo=true eval=false >}}
-:::
+{{< embed ../code/temp.ipynb#print-hello echo=true output-location=fragment >}}
+
 
 ## pyodide test grabbing markdown w live-html
 

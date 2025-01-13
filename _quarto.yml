@@ -3,13 +3,15 @@ project:
   output-dir: docs
 
 website:
-  title: "data-exploration"
+  title: "Data Exploration"
+  favicon: images/magnifying.png
+  google-analytics: G-0G1PHPKVFB
   navbar:
     left:
       - href: index.qmd
         text: Syllabus
-      - schedule.qmd
       - materials.qmd
+      - assignments.qmd
       - discord.qmd
       - grades.qmd
 
