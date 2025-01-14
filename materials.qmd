@@ -20,19 +20,12 @@ format:
 <details>
 <summary>Week One: January 14, 16: Setup</summary>
 
-```{.markdown code-preview="slides/setup.qmd" width="780" height="500"}
+```{.markdown code-preview="slides/01-welcome.qmd" width="780" height="500"}
 ```
 
-```{pyodide}
+[slides pdf](slides/01-welcome.pdf)
 
-```
-
-setup notebook [in repo](https://github.com/allegheny-college-cmpsc-105-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb)
-
-[slides pdf asdfg](docs/slides/)
 </details>
-
-
 
 ### Data Display
 
@@ -48,7 +41,6 @@ setup notebook [in repo](https://github.com/allegheny-college-cmpsc-105-spring-2
 
 setup notebook [in repo](https://github.com/allegheny-college-cmpsc-105-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb)
 
-[slides pdf asdfg](docs/slides/)
 </details>
 
 

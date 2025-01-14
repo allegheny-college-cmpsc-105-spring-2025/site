@@ -1,0 +1,121 @@
+---
+title: "Welcome to CMPSC 105"
+author: "Prof. Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+---
+
+## CMPSC 105 - Data Exploration
+
+- Spring 2025  
+- Tu/Th 9:30-10:45am  
+- Th 2:30-4pm  
+- Alden 101  
+
+## Where are we?
+
+::: incremental
+- Department of Computer and Information Science
+- Four Majors/Minors
+  - Computer Science
+  - Data Science
+  - Informatics
+  - Software Engineering
+  
+- Common Doubles
+  - Art, Science, and Innovation
+  - Economics
+:::
+
+## What is this course about?
+
+::: incremental
+- this course is for anyone interested in becoming familiar with:
+  - data visualization
+  - data analysis
+  - data gathering
+  - data storytelling
+- jump starts independent research projects with generalizable skills
+- CIS Informatics Major
+- CIS Data Science Major/Minor
+:::
+
+## Learning Outcomes
+
+- Identify and describe key elements in different types of data visualizations.
+- Visualize data on web-based platforms.
+- Develop hypotheses and find data to address hypotheses.
+- Calculate statistics and visualize key patterns in the data with Python.
+- Document data explorations in markdown.
+
+## Other Syllabus Highlights
+
+::: incremental
+- Participation is a major part of participation (30% of overall grade)
+- Participation includes:
+  - Discord use at least once per week
+  - Completing group work
+  - Quizzes on readings and other class materials
+- Labs are due before lab!
+- Four tokens grant automatic extensions for one week
+- After the first week, five absences will be excused before overall grade is impacted
+  - three lates are equivalent to an absence
+:::
+
+## Materials
+
+::: incremental
+- Course Website
+  - syllabus
+  - assignment schedule for reading and lab due dates
+  - course materials
+:::
+
+## Materials Continued
+
+::: incremental
+- GitHub for accessing and submitting assignments
+- Google Colab for completing assignments
+- Google Forms
+- Discord for announcements and participation
+- Canvas for grades
+:::
+
+## Tell us about yourself!
+
+![](https://2.bp.blogspot.com/-Nc9YO_-F8yI/TcSIAB-nR-I/AAAAAAAAAGI/hPkuxqkqVcU/s1600/music-clipartMUSIC1.jpg)
+
+Name, where you are from, first favorite band, and some of your current favorite foods?
+ 
+## CIS Shared Values
+
+![](https://www.cis.allegheny.edu/images/values.png)
+
+# What if?
+
+![](https://www.cis.allegheny.edu/images/values.png){.absolute top=0 right=-150 height="200"}
+
+:::{.column width=80%}
+::: incremental
+- a student knows they are going to be late to a one-on-one office hours appointment?
+- a student wants to submit their work late but not use a token?
+- a student has a question but has not reviewed notes or read the textbook?
+:::
+:::
+
+## Partnerships
+
+- Students who have experience with GitHub, Python, Python Notebooks, Discord
+- Students new to computer science
+
+## Setting up
+
+- bookmark the [website](https://allegheny-college-cmpsc-105-spring-2025.github.io/site/)
+- bookmark access to [your repos](https://github.com/allegheny-college-cmpsc-105-spring-2025)
+- bookmark the [105 Discord Channel](https://discord.com/channels/877320365825749002/1326293822002561154),
+  or [access from the course website](discord.qmd)
+- bookmark notes that you take in Google Colab or elsewhere
+- bookmark [Canvas](https://allegheny.instructure.com/courses/12163)
+- etc.

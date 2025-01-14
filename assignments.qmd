@@ -5,14 +5,21 @@ title: "Assignments"
 **Welcome**
 
 - Week One: January 14, 16: Setup
-  - Reading: [Making Sense of Data, Chapter 2, p19-32](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614&ppg=35)
-  - Lab: Setup
+  - Reading: [Making Sense of Data, Chapter 2, p. 19-32](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614&ppg=35)
+  - Lab: Practice
+
+<!-- practice using sheets, how to type formula =, how to pull down the formula -->
+<!-- or not sheets...practice with colab. downloading. submitting back to github -->
 
 **Data Display**
 
 - Week Two: January 21, 23: Display Types and Anatomy of a Chart
+  - Lab: Colab
+  <!-- precoded plots exemplifying graph types. students identify all things -->
+  <!-- come up with story for the figures -->
 - Week Three: January 28, 30: Data Distortion
 - Week Four: February 4, 7: Data Display in Real Time
+  - Lab: Song Data Tableau
 - Week Five: February 11, 13: Interactive Display
   
 **Data Gathering**
@@ -21,21 +28,27 @@ title: "Assignments"
   - Lab: Vocal Analysis
 - Week Seven: February 25, 27: Web Data Analytics and Scraping
   - Lab: Google Analytics
+  <!-- https://quarto.org/docs/publishing/ci.html -->
 - Spring Break: March 1-9
 - Week Eight: March 11, 13: Data Entry and Storage with Pandas
+
 
 **Data Processing**
 
 - Week Nine: March 18, 20: Statistics
+  - Lab: Numpy Calculations
 - Week Ten: March 25, 27: Data Transformations
+  - Lab: Dot-to-dot
 - Week Eleven: April 1, 3: Modeling and Overfitting
+  - Lab: Matplotlib
 - Week Twelve: April 8: Filtering
 
 **Data Storytelling**
 
 - Week Thirteen: April 15, 17: Hypothesis Driven Analysis
-- Week Fourteen: April 22, 24: Storytelling Challenge
-- Week Fifteen: April 29: Project Preparation
+  - Lab: Hypothesis Testing
+- Week Fourteen: April 22, 24: Storytelling Challenge & Project Preparation
+- Week Fifteen: April 29: No Class Meeting
 
 **Final Presentations Code C**
 

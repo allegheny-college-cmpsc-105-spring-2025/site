@@ -14,39 +14,39 @@
     "text": "Announcements\n\n\n\nMade with https://docs.widgetbot.io/"
   },
   {
-    "objectID": "slides/setup.html#welcome-to-cmpsc-105",
-    "href": "slides/setup.html#welcome-to-cmpsc-105",
-    "title": "Week 1: Setup",
-    "section": "Welcome to CMPSC 105",
-    "text": "Welcome to CMPSC 105"
+    "objectID": "slides/data-display.html#goals",
+    "href": "slides/data-display.html#goals",
+    "title": "Week 2: Data Display",
+    "section": "Goals",
+    "text": "Goals\n\n\nreview graph types\nreview chart types\nreview anatomy of a chart"
   },
   {
-    "objectID": "slides/setup.html#data-exploration",
-    "href": "slides/setup.html#data-exploration",
-    "title": "Week 1: Setup",
-    "section": "Data Exploration",
-    "text": "Data Exploration\n\n\nthis course is for anyone interested in becoming familiar with:\n\ndata visualization\ndata analysis\ndata gathering\n\njump starts independent research projects with generalizable skills\nCIS Informatics Major\nCIS Data Science Major/Minor"
+    "objectID": "slides/data-display.html#critical-thinking-in-groups",
+    "href": "slides/data-display.html#critical-thinking-in-groups",
+    "title": "Week 2: Data Display",
+    "section": "Critical Thinking in Groups",
+    "text": "Critical Thinking in Groups\n\n\nForm pairs\nDiscuss a data visualization that you recently admired\nDiscuss what it made clear that was unclear before\nIn Discord, send in a link to your partner’s vis and their name\nPresent your partner’s visualization in 30 seconds"
   },
   {
-    "objectID": "slides/setup.html#materials",
-    "href": "slides/setup.html#materials",
-    "title": "Week 1: Setup",
-    "section": "Materials",
-    "text": "Materials\n\n\nCourse Website\n\nsyllabus\nschedule for reading and assignment due dates\nlinks to all course materials\n\nGitHub for accessing and submitting assignments\nGoogle Colab for completing assignments\nGoogle Forms for group activities\nDiscord for announcements and participation\nCanvas for grades"
+    "objectID": "slides/data-display.html#summary",
+    "href": "slides/data-display.html#summary",
+    "title": "Week 2: Data Display",
+    "section": "Summary",
+    "text": "Summary\n\n\nWhat are important parts of a chart?"
   },
   {
-    "objectID": "slides/setup.html#setting-up",
-    "href": "slides/setup.html#setting-up",
-    "title": "Week 1: Setup",
-    "section": "Setting up",
-    "text": "Setting up\n\nbookmark the website\nbookmark discord channel\nmake github account\netc\nsee Student ACM chapter for help"
+    "objectID": "slides/data-display.html#notebook-excerpt",
+    "href": "slides/data-display.html#notebook-excerpt",
+    "title": "Week 2: Data Display",
+    "section": "notebook excerpt",
+    "text": "notebook excerpt\n\n\nprint(\"hello\")\nprint(\"line 2\")\nprint(\"line 3\")\nprint(\"line 4\")\n\n\n\nhello\nline 2\nline 3\nline 4"
   },
   {
-    "objectID": "slides/setup.html#cis-shared-values",
-    "href": "slides/setup.html#cis-shared-values",
-    "title": "Week 1: Setup",
-    "section": "CIS Shared Values",
-    "text": "CIS Shared Values"
+    "objectID": "slides/data-display.html#pyodide-test-grabbing-markdown-w-live-html",
+    "href": "slides/data-display.html#pyodide-test-grabbing-markdown-w-live-html",
+    "title": "Week 2: Data Display",
+    "section": "pyodide test grabbing markdown w live-html",
+    "text": "pyodide test grabbing markdown w live-html\n\nn.b. live-html format in the ipynb allows live execution, but cell must be raw…"
   },
   {
     "objectID": "index.html",
@@ -74,14 +74,14 @@
     "href": "index.html#grading",
     "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
     "section": "Grading",
-    "text": "Grading\n\n\n\nAssignment type\nPercentage\n\n\n\n\nLabs\n50%\n\n\nParticipation\n30%\n\n\nFinal Project\n20%\n\n\n\nGrading policy may change as needed during the term; any changes will be announced to the class at the time of the change. Grades will be communicated via Canvas. Please note that attendance policies may additionally affect grades as adjustments to grades will be applied on top of the base grade according to policy\n\nLabs\nThere are 8 labs during the semester. Due dates are hard deadlines. See below for policy on late work.\nThe deliverables for labs include documentation in a GitHub repo addressing specific questions or demonstrating requested calculations, analyses, visualizations, and code snippets.\nLabs will be graded for having clean work with few careless errors, correct Markdown, code, data, correct images given the context of the lab, and correct explanations of concepts in writing\n\n\nParticipation\nParticipation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate.\n\n\nFinal Project\nThe final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact will be a final, and more detailed blog post, approximately three times the work compared to a lab."
+    "text": "Grading\n\n\n\nAssignment type\nPercentage\n\n\n\n\nLabs\n50%\n\n\nParticipation\n30%\n\n\nFinal Project\n20%\n\n\n\nGrading policy may change as needed during the term; any changes will be announced to the class at the time of the change. Grades will be communicated via Canvas. Please note that attendance policies may additionally affect grades as adjustments to grades will be applied on top of the base grade according to policy\n\nLabs\nThere are 8 labs during the semester. Due dates are hard deadlines. See below for policy on late work.\nThe deliverables for labs include documentation in a GitHub repo addressing specific questions or demonstrating requested calculations, analyses, visualizations, and code snippets.\nLabs will be graded for having clean work with few careless errors, correct Markdown, code, data, correct images given the context of the lab, and correct explanations of concepts in writing\n\n\nParticipation\nParticipation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate.\n\n\nFinal Project\nThe final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact can be detailed blog post, following the format of the last lab, or a detailed data visualization with interactive visuals."
   },
   {
     "objectID": "index.html#policies",
     "href": "index.html#policies",
     "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
     "section": "Policies",
-    "text": "Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nStudents can have six absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 105 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
+    "text": "Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nStudents can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 105 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
   },
   {
     "objectID": "index.html#resources",
@@ -151,14 +151,14 @@
     "href": "syll/syllabus.html#grading",
     "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
     "section": "Grading",
-    "text": "Grading\n\n\n\nAssignment type\nPercentage\n\n\n\n\nLabs\n50%\n\n\nParticipation\n30%\n\n\nFinal Project\n20%\n\n\n\nGrading policy may change as needed during the term; any changes will be announced to the class at the time of the change. Grades will be communicated via Canvas. Please note that attendance policies may additionally affect grades as adjustments to grades will be applied on top of the base grade according to policy\n\nLabs\nThere are 8 labs during the semester. Due dates are hard deadlines. See below for policy on late work.\nThe deliverables for labs include documentation in a GitHub repo addressing specific questions or demonstrating requested calculations, analyses, visualizations, and code snippets.\nLabs will be graded for having clean work with few careless errors, correct Markdown, code, data, correct images given the context of the lab, and correct explanations of concepts in writing\n\n\nParticipation\nParticipation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate.\n\n\nFinal Project\nThe final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact will be a final, and more detailed blog post, approximately three times the work compared to a lab."
+    "text": "Grading\n\n\n\nAssignment type\nPercentage\n\n\n\n\nLabs\n50%\n\n\nParticipation\n30%\n\n\nFinal Project\n20%\n\n\n\nGrading policy may change as needed during the term; any changes will be announced to the class at the time of the change. Grades will be communicated via Canvas. Please note that attendance policies may additionally affect grades as adjustments to grades will be applied on top of the base grade according to policy\n\nLabs\nThere are 8 labs during the semester. Due dates are hard deadlines. See below for policy on late work.\nThe deliverables for labs include documentation in a GitHub repo addressing specific questions or demonstrating requested calculations, analyses, visualizations, and code snippets.\nLabs will be graded for having clean work with few careless errors, correct Markdown, code, data, correct images given the context of the lab, and correct explanations of concepts in writing\n\n\nParticipation\nParticipation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate.\n\n\nFinal Project\nThe final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact can be detailed blog post, following the format of the last lab, or a detailed data visualization with interactive visuals."
   },
   {
     "objectID": "syll/syllabus.html#policies",
     "href": "syll/syllabus.html#policies",
     "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
     "section": "Policies",
-    "text": "Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nStudents can have six absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 105 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
+    "text": "Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nStudents can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 105 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
   },
   {
     "objectID": "syll/syllabus.html#resources",
@@ -200,7 +200,7 @@
     "href": "assignments.html",
     "title": "Assignments",
     "section": "",
-    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p19-32\nLab: Setup\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Display in Real Time\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nLab: Vocal Analysis\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nLab: Google Analytics\n\nSpring Break: March 1-9\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\nData Processing\n\nWeek Nine: March 18, 20: Statistics\nWeek Ten: March 25, 27: Data Transformations\nWeek Eleven: April 1, 3: Modeling and Overfitting\nWeek Twelve: April 8: Filtering\n\nData Storytelling\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\nWeek Fourteen: April 22, 24: Storytelling Challenge\nWeek Fifteen: April 29: Project Preparation\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nLab: Practice\n\n\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nLab: Colab  \n\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Display in Real Time\n\nLab: Song Data Tableau\n\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nLab: Vocal Analysis\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nLab: Google Analytics \n\nSpring Break: March 1-9\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\nData Processing\n\nWeek Nine: March 18, 20: Statistics\n\nLab: Numpy Calculations\n\nWeek Ten: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Twelve: April 8: Filtering\n\nData Storytelling\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fourteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Fifteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   },
   {
     "objectID": "code/interactive.html#python-cell-block",
@@ -217,39 +217,81 @@
     "text": "Please check Canvas for your grades here"
   },
   {
-    "objectID": "slides/data-display.html#goals",
-    "href": "slides/data-display.html#goals",
-    "title": "Week 2: Data Display",
-    "section": "Goals",
-    "text": "Goals\n\n\nreview graph types\nreview chart types\nreview anatomy of a chart"
+    "objectID": "slides/01-welcome.html#cmpsc-105---data-exploration",
+    "href": "slides/01-welcome.html#cmpsc-105---data-exploration",
+    "title": "Welcome to CMPSC 105",
+    "section": "CMPSC 105 - Data Exploration",
+    "text": "CMPSC 105 - Data Exploration\n\nSpring 2025\n\nTu/Th 9:30-10:45am\n\nTh 2:30-4pm\n\nAlden 101"
   },
   {
-    "objectID": "slides/data-display.html#critical-thinking-in-groups",
-    "href": "slides/data-display.html#critical-thinking-in-groups",
-    "title": "Week 2: Data Display",
-    "section": "Critical Thinking in Groups",
-    "text": "Critical Thinking in Groups\n\n\nForm pairs\nDiscuss a data visualization that you recently admired\nDiscuss what it made clear that was unclear before\nIn Discord, send in a link to your partner’s vis and their name\nPresent your partner’s visualization in 30 seconds"
+    "objectID": "slides/01-welcome.html#where-are-we",
+    "href": "slides/01-welcome.html#where-are-we",
+    "title": "Welcome to CMPSC 105",
+    "section": "Where are we?",
+    "text": "Where are we?\n\n\nDepartment of Computer and Information Science\nFour Majors/Minors\n\nComputer Science\nData Science\nInformatics\nSoftware Engineering\n\nCommon Doubles\n\nArt, Science, and Innovation\nEconomics"
   },
   {
-    "objectID": "slides/data-display.html#summary",
-    "href": "slides/data-display.html#summary",
-    "title": "Week 2: Data Display",
-    "section": "Summary",
-    "text": "Summary\n\n\nWhat are important parts of a chart?"
+    "objectID": "slides/01-welcome.html#what-is-this-course-about",
+    "href": "slides/01-welcome.html#what-is-this-course-about",
+    "title": "Welcome to CMPSC 105",
+    "section": "What is this course about?",
+    "text": "What is this course about?\n\n\nthis course is for anyone interested in becoming familiar with:\n\ndata visualization\ndata analysis\ndata gathering\ndata storytelling\n\njump starts independent research projects with generalizable skills\nCIS Informatics Major\nCIS Data Science Major/Minor"
   },
   {
-    "objectID": "slides/data-display.html#notebook-excerpt",
-    "href": "slides/data-display.html#notebook-excerpt",
-    "title": "Week 2: Data Display",
-    "section": "notebook excerpt",
-    "text": "notebook excerpt\n\n\nprint(\"hello\")\nprint(\"line 2\")\nprint(\"line 3\")\nprint(\"line 4\")\n\n\n\nhello\nline 2\nline 3\nline 4"
+    "objectID": "slides/01-welcome.html#learning-outcomes",
+    "href": "slides/01-welcome.html#learning-outcomes",
+    "title": "Welcome to CMPSC 105",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nIdentify and describe key elements in different types of data visualizations.\nVisualize data on web-based platforms.\nDevelop hypotheses and find data to address hypotheses.\nCalculate statistics and visualize key patterns in the data with Python.\nDocument data explorations in markdown."
   },
   {
-    "objectID": "slides/data-display.html#pyodide-test-grabbing-markdown-w-live-html",
-    "href": "slides/data-display.html#pyodide-test-grabbing-markdown-w-live-html",
-    "title": "Week 2: Data Display",
-    "section": "pyodide test grabbing markdown w live-html",
-    "text": "pyodide test grabbing markdown w live-html\n\nn.b. live-html format in the ipynb allows live execution, but cell must be raw…"
+    "objectID": "slides/01-welcome.html#other-syllabus-highlights",
+    "href": "slides/01-welcome.html#other-syllabus-highlights",
+    "title": "Welcome to CMPSC 105",
+    "section": "Other Syllabus Highlights",
+    "text": "Other Syllabus Highlights\n\n\nParticipation is a major part of participation (30% of overall grade)\nParticipation includes:\n\nDiscord use at least once per week\nCompleting group work\nQuizzes on readings and other class materials\n\nLabs are due before lab!\nFour tokens grant automatic extensions for one week\nAfter the first week, five absences will be excused before overall grade is impacted\n\nthree lates are equivalent to an absence"
+  },
+  {
+    "objectID": "slides/01-welcome.html#materials",
+    "href": "slides/01-welcome.html#materials",
+    "title": "Welcome to CMPSC 105",
+    "section": "Materials",
+    "text": "Materials\n\n\nCourse Website\n\nsyllabus\nassignment schedule for reading and lab due dates\ncourse materials"
+  },
+  {
+    "objectID": "slides/01-welcome.html#materials-continued",
+    "href": "slides/01-welcome.html#materials-continued",
+    "title": "Welcome to CMPSC 105",
+    "section": "Materials Continued",
+    "text": "Materials Continued\n\n\nGitHub for accessing and submitting assignments\nGoogle Colab for completing assignments\nGoogle Forms\nDiscord for announcements and participation\nCanvas for grades"
+  },
+  {
+    "objectID": "slides/01-welcome.html#tell-us-about-yourself",
+    "href": "slides/01-welcome.html#tell-us-about-yourself",
+    "title": "Welcome to CMPSC 105",
+    "section": "Tell us about yourself!",
+    "text": "Tell us about yourself!\n\nName, where you are from, first favorite band, and some of your current favorite foods?"
+  },
+  {
+    "objectID": "slides/01-welcome.html#cis-shared-values",
+    "href": "slides/01-welcome.html#cis-shared-values",
+    "title": "Welcome to CMPSC 105",
+    "section": "CIS Shared Values",
+    "text": "CIS Shared Values"
+  },
+  {
+    "objectID": "slides/01-welcome.html#partnerships",
+    "href": "slides/01-welcome.html#partnerships",
+    "title": "Welcome to CMPSC 105",
+    "section": "Partnerships",
+    "text": "Partnerships\n\nStudents who have experience with GitHub, Python, Python Notebooks, Discord\nStudents new to computer science"
+  },
+  {
+    "objectID": "slides/01-welcome.html#setting-up",
+    "href": "slides/01-welcome.html#setting-up",
+    "title": "Welcome to CMPSC 105",
+    "section": "Setting up",
+    "text": "Setting up\n\nbookmark the website\nbookmark access to your repos\nbookmark the 105 Discord Channel, or access from the course website\nbookmark notes that you take in Google Colab or elsewhere\nbookmark Canvas\netc."
   },
   {
     "objectID": "materials.html",
@@ -270,6 +312,6 @@
     "href": "materials.html#content",
     "title": "Materials",
     "section": "Content",
-    "text": "Content\n\nWelcome\n\n\nWeek One: January 14, 16: Setup\n\n\n\n\n\n\n\n\nsetup notebook in repo, in site\nslides pdf asdfg\n\n\n\nData Display\n\n\nWeek Two: January 21, 23: Data Display\n\n\n\n\n\n\n\n\nsetup notebook in repo, in site\nslides pdf asdfg\n\n\n\nWeek Three: January 28, 30: Data Distortion\n\n\n\n\nWeek Four: February 4, 7: Data Display in Real Time\n\n\n\n\nWeek Five: February 11, 13: Interactive Display\n\n\n\n\nData Gathering\n\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\n\n\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\n\n\n\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\n\n\n\nData Processing\n\n\nWeek Nine: March 18, 20: Statistics\n\n\n\n\nWeek Ten: March 25, 27: Data Transformations\n\n\n\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\n\n\n\nWeek Twelve: April 8: Filtering\n\n\n\n\nData Storytelling\n\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\n\n\n\nWeek Fourteen: April 22, 24: Storytelling Challenge\n\n\n\n\nWeek Fifteen: April 29: Project Preparation\n\n\n\n\nFinal Presentations\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "text": "Content\n\nWelcome\n\n\nWeek One: January 14, 16: Setup\n\n\nslides pdf\n\n\n\nData Display\n\n\nWeek Two: January 21, 23: Data Display\n\n\n\n\n\n\n\n\nsetup notebook in repo, in site\n\n\n\nWeek Three: January 28, 30: Data Distortion\n\n\n\n\nWeek Four: February 4, 7: Data Display in Real Time\n\n\n\n\nWeek Five: February 11, 13: Interactive Display\n\n\n\n\nData Gathering\n\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\n\n\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\n\n\n\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\n\n\n\nData Processing\n\n\nWeek Nine: March 18, 20: Statistics\n\n\n\n\nWeek Ten: March 25, 27: Data Transformations\n\n\n\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\n\n\n\nWeek Twelve: April 8: Filtering\n\n\n\n\nData Storytelling\n\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\n\n\n\nWeek Fourteen: April 22, 24: Storytelling Challenge\n\n\n\n\nWeek Fifteen: April 29: Project Preparation\n\n\n\n\nFinal Presentations\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   }
 ]

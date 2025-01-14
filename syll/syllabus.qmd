@@ -1,6 +1,6 @@
 ---
 title: "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025"
-author: "Emily Graber"
+author: "Professor Emily Graber"
 ---
 
 Class Sessions: TuTh 9:30 AM-10:45 AM, Alden 101  
@@ -113,7 +113,7 @@ Participation in class work, group activities, and Discord are required. Documen
 
 ### _Final Project_
 
-The final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact will be a final, and more detailed blog post, approximately three times the work compared to a lab.
+The final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact can be detailed blog post, following the format of the last lab, or a detailed data visualization with interactive visuals.
 
 ## Policies
 
@@ -137,7 +137,7 @@ Coming to class prepared means coming with everything you need to engage in a cl
 
 One missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.
 
-Students can have six absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.
+Students can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.
 
 #### _Engagement_
 
