@@ -54,12 +54,10 @@ controls: true
 
 ::: incremental
 - Participation is a major part of participation (30% of overall grade)
-- Participation includes:
   - Discord use at least once per week
   - Completing group work
   - Quizzes on readings and other class materials
-- Labs are due before lab!
-- Four tokens grant automatic extensions for one week
+- Labs are due before lab, but four tokens grant automatic extensions for one week
 - After the first week, five absences will be excused before overall grade is impacted
   - three lates are equivalent to an absence
 :::
