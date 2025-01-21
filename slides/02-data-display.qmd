@@ -1,0 +1,135 @@
+---
+title: "Week 2: Data Display"
+subtitle: "Display Types & Anatomy of Charts"
+author: "Emily Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+---
+
+## Goals
+
+::: incremental
+- review display types
+- review anatomy of a graph
+- group activity
+:::
+
+# Display Types
+
+## Display Types
+
+:::{.column width="70%"}
+![](/images/02-graph-types.png)
+:::
+
+
+:::{.column width="30%"}
+::: incremental
+- data table
+- pie chart
+- point or dot plot 
+:::
+:::
+
+## Pie Chart
+
+{{< embed /code/data_display.ipynb#pie-chart echo=false output-location=fragment >}}
+
+## Dot Plot 
+
+{{< embed /code/data_display.ipynb#dot-plot echo=false output-location=fragment >}}
+
+## Additional Types
+
+:::{.column width="50%"}
+::: incremental
+- histogram
+- 
+- bar plot
+- line plot
+- scatter plot
+- 
+- heat map
+- box and whisker plot
+:::
+:::
+
+:::{.column width="50%"}
+::: incremental
+- &larr; occurrences (binned)
+- &larr; processed categories
+- &larr; suggestion of continuity
+- &larr; looking for relationships in continuous data
+- &larr; three variables in 2D
+- &larr; statistics about single variable 
+:::
+:::
+
+## Histogram
+
+{{< embed /code/data_display.ipynb#histogram echo=false output-location=fragment >}}
+
+## Line Plot
+
+{{< embed /code/data_display.ipynb#line-plot echo=false output-location=fragment >}}
+
+## Box and Whisker Plot
+
+{{< embed /code/data_display.ipynb#box echo=false output-location=fragment >}}
+
+## More Example Data - Whiteboard
+
+:::{.column width="50%"}
+![](/images/02-cars-binned.png)
+:::
+
+:::{.column width="50%"}
+- &larr; occurrences (binned)
+- &larr; processed categories
+- &larr; suggestion of continuity
+- &larr; looking for relationships in continuous data
+- &larr; three variables in 2D
+- &larr; statistics about single variable 
+:::
+
+# Anatomy of a Graph
+
+## Terminology
+
+:::{.column width="70%"}
+![](/images/02-anatomy-of-graph.png)
+:::
+
+:::{.column width="30%"}
+::: incremental
+- legend
+- markers
+- marker labels
+- axis labels
+- axis units
+- tick marks
+- title
+- caption
+- panels
+:::
+:::
+
+## Group Activity
+
+::: incremental
+- Form pairs
+- [Take notes](https://docs.google.com/document/d/1vglGVf4KvI8vvA6ThBezzVXg0UwAyGMBNJSDQ5HYnJg/edit?usp=sharing)
+- Interview your partner to find out about a data visualization that they recently admired
+- What did the visualization make clear that was unclear before?
+- What were all the salient features used to communicate information?
+- Present your partner's visualization
+:::
+
+<!-- ## pyodide test grabbing markdown w live-html
+
+```{.markdown code-preview="../code/interactive.qmd" width="780" height="500"}
+```
+
+n.b. live-html format in the ipynb allows live execution, but cell must be raw... -->

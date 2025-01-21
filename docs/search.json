@@ -14,39 +14,81 @@
     "text": "Announcements\n\n\n\nMade with https://docs.widgetbot.io/"
   },
   {
-    "objectID": "slides/data-display.html#goals",
-    "href": "slides/data-display.html#goals",
+    "objectID": "slides/02-data-display.html#goals",
+    "href": "slides/02-data-display.html#goals",
     "title": "Week 2: Data Display",
     "section": "Goals",
-    "text": "Goals\n\n\nreview graph types\nreview chart types\nreview anatomy of a chart"
+    "text": "Goals\n\n\nreview display types\nreview anatomy of a graph\ngroup activity"
   },
   {
-    "objectID": "slides/data-display.html#critical-thinking-in-groups",
-    "href": "slides/data-display.html#critical-thinking-in-groups",
+    "objectID": "slides/02-data-display.html#display-types-1",
+    "href": "slides/02-data-display.html#display-types-1",
     "title": "Week 2: Data Display",
-    "section": "Critical Thinking in Groups",
-    "text": "Critical Thinking in Groups\n\n\nForm pairs\nDiscuss a data visualization that you recently admired\nDiscuss what it made clear that was unclear before\nIn Discord, send in a link to your partner’s vis and their name\nPresent your partner’s visualization in 30 seconds"
+    "section": "Display Types",
+    "text": "Display Types\n\n\n\n\n\ndata table\npie chart\npoint or dot plot"
   },
   {
-    "objectID": "slides/data-display.html#summary",
-    "href": "slides/data-display.html#summary",
+    "objectID": "slides/02-data-display.html#pie-chart",
+    "href": "slides/02-data-display.html#pie-chart",
     "title": "Week 2: Data Display",
-    "section": "Summary",
-    "text": "Summary\n\n\nWhat are important parts of a chart?"
+    "section": "Pie Chart",
+    "text": "Pie Chart"
   },
   {
-    "objectID": "slides/data-display.html#notebook-excerpt",
-    "href": "slides/data-display.html#notebook-excerpt",
+    "objectID": "slides/02-data-display.html#dot-plot",
+    "href": "slides/02-data-display.html#dot-plot",
     "title": "Week 2: Data Display",
-    "section": "notebook excerpt",
-    "text": "notebook excerpt\n\n\nprint(\"hello\")\nprint(\"line 2\")\nprint(\"line 3\")\nprint(\"line 4\")\n\n\n\nhello\nline 2\nline 3\nline 4"
+    "section": "Dot Plot",
+    "text": "Dot Plot"
   },
   {
-    "objectID": "slides/data-display.html#pyodide-test-grabbing-markdown-w-live-html",
-    "href": "slides/data-display.html#pyodide-test-grabbing-markdown-w-live-html",
+    "objectID": "slides/02-data-display.html#additional-types",
+    "href": "slides/02-data-display.html#additional-types",
     "title": "Week 2: Data Display",
-    "section": "pyodide test grabbing markdown w live-html",
-    "text": "pyodide test grabbing markdown w live-html\n\nn.b. live-html format in the ipynb allows live execution, but cell must be raw…"
+    "section": "Additional Types",
+    "text": "Additional Types\n\n\n\nhistogram\n\nbar plot\nline plot\nscatter plot\n\nheat map\nbox and whisker plot\n\n\n\n\n\n← occurrences (binned)\n← processed categories\n← suggestion of continuity\n← looking for relationships in continuous data\n← three variables in 2D\n← statistics about single variable"
+  },
+  {
+    "objectID": "slides/02-data-display.html#histogram",
+    "href": "slides/02-data-display.html#histogram",
+    "title": "Week 2: Data Display",
+    "section": "Histogram",
+    "text": "Histogram"
+  },
+  {
+    "objectID": "slides/02-data-display.html#line-plot",
+    "href": "slides/02-data-display.html#line-plot",
+    "title": "Week 2: Data Display",
+    "section": "Line Plot",
+    "text": "Line Plot"
+  },
+  {
+    "objectID": "slides/02-data-display.html#box-and-whisker-plot",
+    "href": "slides/02-data-display.html#box-and-whisker-plot",
+    "title": "Week 2: Data Display",
+    "section": "Box and Whisker Plot",
+    "text": "Box and Whisker Plot"
+  },
+  {
+    "objectID": "slides/02-data-display.html#more-example-data---whiteboard",
+    "href": "slides/02-data-display.html#more-example-data---whiteboard",
+    "title": "Week 2: Data Display",
+    "section": "More Example Data - Whiteboard",
+    "text": "More Example Data - Whiteboard\n\n\n\n\n← occurrences (binned)\n← processed categories\n← suggestion of continuity\n← looking for relationships in continuous data\n← three variables in 2D\n← statistics about single variable"
+  },
+  {
+    "objectID": "slides/02-data-display.html#terminology",
+    "href": "slides/02-data-display.html#terminology",
+    "title": "Week 2: Data Display",
+    "section": "Terminology",
+    "text": "Terminology\n\n\n\n\n\nlegend\nmarkers\nmarker labels\naxis labels\naxis units\ntick marks\ntitle\ncaption\npanels"
+  },
+  {
+    "objectID": "slides/02-data-display.html#group-activity",
+    "href": "slides/02-data-display.html#group-activity",
+    "title": "Week 2: Data Display",
+    "section": "Group Activity",
+    "text": "Group Activity\n\n\nForm pairs\nTake notes\nInterview your partner to find out about a data visualization that they recently admired\nWhat did the visualization make clear that was unclear before?\nWhat were all the salient features used to communicate information?\nPresent your partner’s visualization"
   },
   {
     "objectID": "index.html",
@@ -126,6 +168,20 @@
     "text": "Open In Colab\n\n\nThis is a test notebook file\nprint(\"trying to get live code block inside the python notebook\")\n\n\nCode\nprint(\"hello\")\nprint(\"line 2\")\nprint(\"line 3\")\nprint(\"line 4\")\n\n\nhello\nline 2\nline 3\nline 4\n\n\n\n\nCode\nprint(\"this is another print message\")\n\n\nthis is another print message"
   },
   {
+    "objectID": "code/data_display.html",
+    "href": "code/data_display.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Open In Colab\n\n\nThe data table below shows how many millions of prescriptions are obtained from various sources in the United States annually.\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\nTraditional\n914\n\n\nIndependent\n666\n\n\nMassMerch\n238\n\n\nSuperMarket\n221\n\n\nMailOrder\n86\n\n\n\n\n\nCode\n# import pandas and make dataframe from the data above\n\nimport pandas as pd\n\ndata = {'Drug Source': ['Traditional', 'Independent', 'MassMerch', 'SuperMarket', 'MailOrder'],\n        'Num Prescriptions': [914, 666, 238, 221, 86]}\ndf = pd.DataFrame(data)\n\ndf\n\n\n\n\n\n\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\n0\nTraditional\n914\n\n\n1\nIndependent\n666\n\n\n2\nMassMerch\n238\n\n\n3\nSuperMarket\n221\n\n\n4\nMailOrder\n86\n\n\n\n\n\n\n\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.scatter(df['Num Prescriptions'], df['Drug Source'])\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Drug Source')\nplt.title('Drug Source vs. Number of Prescriptions')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.pie(df['Num Prescriptions'], labels=df['Drug Source'])\nplt.title('Drug Source')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Terrible Example\n\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.hist(df['Num Prescriptions'], bins=20)\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Frequency')\nplt.title('Histogram of Number of Prescriptions')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Suggests False Continuity\n\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()  # Adjust figure size for better visualization\nplt.plot(df['Drug Source'], df['Num Prescriptions'], marker='o', linestyle='-')\nplt.xlabel('Drug Source')\nplt.ylabel('Number of Prescriptions (Millions)')\nplt.title('Number of Prescriptions by Drug Source')\nplt.grid(True, linestyle='--', alpha=0.7)  # Add a grid for better readability\nplt.xticks(rotation=45, ha='right') # Rotate x-axis labels for better visibility\nplt.tight_layout() # Adjust layout to prevent labels from overlapping\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\n# Not telling a clear story given the specific data\n\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure(figsize=(8, 6))\nplt.boxplot(df['Num Prescriptions'], vert=False)  # Create the boxplot\nplt.xlabel('Number of Prescriptions')\nplt.title('Box Plot of Number of Prescriptions')\nplt.show()"
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nLab: Practice Lab\n\n\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data, Chapter 2, p. 32-50\nLab: Colab  \n\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Display in Real Time\n\nLab: Song Data Tableau\n\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nLab: Vocal Analysis\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nLab: Google Analytics \n\nSpring Break: March 1-9\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\nData Processing\n\nWeek Nine: March 18, 20: Statistics\n\nLab: Numpy Calculations\n\nWeek Ten: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Twelve: April 8: Filtering\n\nData Storytelling\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fourteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Fifteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+  },
+  {
     "objectID": "syll/syllabus.html",
     "href": "syll/syllabus.html",
     "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
@@ -194,13 +250,6 @@
     "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
     "section": "Syllabus Changes",
     "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
-  },
-  {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "Assignments",
-    "section": "",
-    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nLab: Practice Lab\n\n\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nLab: Colab  \n\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Display in Real Time\n\nLab: Song Data Tableau\n\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nLab: Vocal Analysis\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nLab: Google Analytics \n\nSpring Break: March 1-9\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\nData Processing\n\nWeek Nine: March 18, 20: Statistics\n\nLab: Numpy Calculations\n\nWeek Ten: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Twelve: April 8: Filtering\n\nData Storytelling\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fourteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Fifteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   },
   {
     "objectID": "code/interactive.html#python-cell-block",
@@ -312,6 +361,6 @@
     "href": "materials.html#content",
     "title": "Materials",
     "section": "Content",
-    "text": "Content\n\nWelcome\n\n\nWeek One: January 14, 16: Setup\n\n\nSlides PDF\nReading: Making Sense of Data, Chapter 2, p. 19-32\nLab: Practice Lab\nDue: Thursday Jan 23, 2:30pm\n\n\n\nData Display\n\n\nWeek Two: January 21, 23: Data Display\n\n\n\n\n\n\n\n\nsetup notebook in repo, in site\n\n\n\nWeek Three: January 28, 30: Data Distortion\n\n\n\n\nWeek Four: February 4, 7: Data Display in Real Time\n\n\n\n\nWeek Five: February 11, 13: Interactive Display\n\n\n\n\nData Gathering\n\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\n\n\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\n\n\n\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\n\n\n\nData Processing\n\n\nWeek Nine: March 18, 20: Statistics\n\n\n\n\nWeek Ten: March 25, 27: Data Transformations\n\n\n\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\n\n\n\nWeek Twelve: April 8: Filtering\n\n\n\n\nData Storytelling\n\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\n\n\n\nWeek Fourteen: April 22, 24: Storytelling Challenge\n\n\n\n\nWeek Fifteen: April 29: Project Preparation\n\n\n\n\nFinal Presentations\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "text": "Content\n\nWelcome\n\n\nWeek One: January 14, 16: Setup\n\n\nSlides PDF\nReading: Making Sense of Data, Chapter 2, p. 19-32\nLab: Practice Lab\nDue: Thursday Jan 23, 2:30pm\n\n\n\nData Display\n\n\nWeek Two: January 21, 23: Data Display\n\n\n\n\n\nWeek Three: January 28, 30: Data Distortion\n\n\n\n\nWeek Four: February 4, 7: Data Display in Real Time\n\n\n\n\nWeek Five: February 11, 13: Interactive Display\n\n\n\n\nData Gathering\n\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\n\n\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\n\n\n\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\n\n\n\nData Processing\n\n\nWeek Nine: March 18, 20: Statistics\n\n\n\n\nWeek Ten: March 25, 27: Data Transformations\n\n\n\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\n\n\n\nWeek Twelve: April 8: Filtering\n\n\n\n\nData Storytelling\n\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\n\n\n\nWeek Fourteen: April 22, 24: Storytelling Challenge\n\n\n\n\nWeek Fifteen: April 29: Project Preparation\n\n\n\n\nFinal Presentations\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   }
 ]

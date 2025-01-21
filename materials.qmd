@@ -37,14 +37,8 @@ Due: Thursday Jan 23, 2:30pm
 <details>
 <summary>Week Two: January 21, 23: Data Display</summary>
 
-```{.markdown code-preview="slides/data-display.qmd" width="780" height="500"}
+```{.markdown code-preview="slides/02-data-display.qmd" width="780" height="500"}
 ```
-
-```{pyodide}
-
-```
-
-setup notebook [in repo](https://github.com/allegheny-college-cmpsc-105-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb)
 
 </details>
 
@@ -118,3 +112,14 @@ setup notebook [in repo](https://github.com/allegheny-college-cmpsc-105-spring-2
 ### Final Presentations
 
 - Thursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks
+
+
+<!-- 
+
+### Notes
+
+```{pyodide}
+
+```
+
+setup notebook [in repo](https://github.com/allegheny-college-cmpsc-105-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb) -->

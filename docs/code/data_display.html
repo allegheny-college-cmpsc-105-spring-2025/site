@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assignments – Data Exploration</title>
+<title>data_display – Data Exploration</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./images/magnifying.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../images/magnifying.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,9 +110,12 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-0G1PHPKVFB', { 'anonymize_ip': true});
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -88,7 +125,7 @@ gtag('config', 'G-0G1PHPKVFB', { 'anonymize_ip': true});
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Data Exploration</span>
     </a>
   </div>
@@ -99,23 +136,23 @@ gtag('config', 'G-0G1PHPKVFB', { 'anonymize_ip': true});
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Syllabus</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./materials.html"> 
+    <a class="nav-link" href="../materials.html"> 
 <span class="menu-text">Materials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./assignments.html" aria-current="page"> 
+    <a class="nav-link" href="../assignments.html"> 
 <span class="menu-text">Assignments</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./discord.html"> 
+    <a class="nav-link" href="../discord.html"> 
 <span class="menu-text">Discord Channel</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./grades.html"> 
+    <a class="nav-link" href="../grades.html"> 
 <span class="menu-text">Grades</span></a>
   </li>  
 </ul>
@@ -133,218 +170,220 @@ gtag('config', 'G-0G1PHPKVFB', { 'anonymize_ip': true});
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Assignments</h1>
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="https://githubtocolab.com/allegheny-college-cmpsc-101-spring-2025/site/blob/main/code/data_display.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" class="img-fluid figure-img" alt="Open In Colab"></a></p>
+<figcaption>Open In Colab</figcaption>
+</figure>
 </div>
+<p>The data table below shows how many millions of prescriptions are obtained from various sources in the United States annually.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Drug Source</th>
+<th>Num Prescriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Traditional</td>
+<td>914</td>
+</tr>
+<tr class="even">
+<td>Independent</td>
+<td>666</td>
+</tr>
+<tr class="odd">
+<td>MassMerch</td>
+<td>238</td>
+</tr>
+<tr class="even">
+<td>SuperMarket</td>
+<td>221</td>
+</tr>
+<tr class="odd">
+<td>MailOrder</td>
+<td>86</td>
+</tr>
+</tbody>
+</table>
+<div id="cell-pandas-dataframe" class="cell" data-execution_count="8">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import pandas and make dataframe from the data above</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> {<span class="st">'Drug Source'</span>: [<span class="st">'Traditional'</span>, <span class="st">'Independent'</span>, <span class="st">'MassMerch'</span>, <span class="st">'SuperMarket'</span>, <span class="st">'MailOrder'</span>],</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        <span class="st">'Num Prescriptions'</span>: [<span class="dv">914</span>, <span class="dv">666</span>, <span class="dv">238</span>, <span class="dv">221</span>, <span class="dv">86</span>]}</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame(data)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div id="pandas-dataframe" class="cell-output cell-output-display" data-execution_count="8">
+<div>
 
 
+<table class="dataframe caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Drug Source</th>
+<th data-quarto-table-cell-role="th">Num Prescriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Traditional</td>
+<td>914</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Independent</td>
+<td>666</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>MassMerch</td>
+<td>238</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>SuperMarket</td>
+<td>221</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>MailOrder</td>
+<td>86</td>
+</tr>
+</tbody>
+</table>
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p><strong>Welcome</strong></p>
-<ul>
-<li>Week One: January 14, 16: Setup
-<ul>
-<li>Reading: <a href="https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614&amp;ppg=35">Making Sense of Data, Chapter 2, p.&nbsp;19-32</a></li>
-<li>Lab: <a href="https://classroom.github.com/a/ypH8iEXF">Practice Lab</a></li>
-</ul></li>
-</ul>
-<!-- practice using sheets, how to type formula =, how to pull down the formula -->
-<!-- or not sheets...practice with colab. downloading. submitting back to github -->
-<p><strong>Data Display</strong></p>
-<ul>
-<li>Week Two: January 21, 23: Display Types and Anatomy of a Chart
-<ul>
-<li>Reading: <a href="https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614&amp;ppg=48">Making Sense of Data, Chapter 2, p.&nbsp;32-50</a></li>
-<li>Lab: Colab <!-- precoded plots exemplifying graph types. students identify all things --> <!-- come up with story for the figures --></li>
-</ul></li>
-<li>Week Three: January 28, 30: Data Distortion</li>
-<li>Week Four: February 4, 7: Data Display in Real Time
-<ul>
-<li>Lab: Song Data Tableau</li>
-</ul></li>
-<li>Week Five: February 11, 13: Interactive Display</li>
-</ul>
-<p><strong>Data Gathering</strong></p>
-<ul>
-<li>Week Six: February 18, 20: Turning Anything Into Data
-<ul>
-<li>Lab: Vocal Analysis</li>
-</ul></li>
-<li>Week Seven: February 25, 27: Web Data Analytics and Scraping
-<ul>
-<li>Lab: Google Analytics <!-- https://quarto.org/docs/publishing/ci.html --></li>
-</ul></li>
-<li>Spring Break: March 1-9</li>
-<li>Week Eight: March 11, 13: Data Entry and Storage with Pandas</li>
-</ul>
-<p><strong>Data Processing</strong></p>
-<ul>
-<li>Week Nine: March 18, 20: Statistics
-<ul>
-<li>Lab: Numpy Calculations</li>
-</ul></li>
-<li>Week Ten: March 25, 27: Data Transformations
-<ul>
-<li>Lab: Dot-to-dot</li>
-</ul></li>
-<li>Week Eleven: April 1, 3: Modeling and Overfitting
-<ul>
-<li>Lab: Matplotlib</li>
-</ul></li>
-<li>Week Twelve: April 8: Filtering</li>
-</ul>
-<p><strong>Data Storytelling</strong></p>
-<ul>
-<li>Week Thirteen: April 15, 17: Hypothesis Driven Analysis
-<ul>
-<li>Lab: Hypothesis Testing</li>
-</ul></li>
-<li>Week Fourteen: April 22, 24: Storytelling Challenge &amp; Project Preparation</li>
-<li>Week Fifteen: April 29: No Class Meeting</li>
-</ul>
-<p><strong>Final Presentations Code C</strong></p>
-<ul>
-<li>Thursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks</li>
-</ul>
-<!-- ## Week 1 - Setup
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|Tu Jan 14||||
-|Th Jan 16|||[Reading: Gentle Chart Types](https://chartio.com/learn/charts/essential-chart-types-for-data-visualization/) </br> [Reading: Visualizations p. 19-32](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614) </br> [Lab 1: Hall of Fame](https://classroom.github.com/a/36z5eOtg) due 2:30pm Jan 26|
-
-## Week 2 - Intro to Visualization in Sheets
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Jan 22|[Reading: Gentle Chart Types](https://chartio.com/learn/charts/essential-chart-types-for-data-visualization/) </br> [Reading: Visualizations p. 19-32](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614)|[Slides: Intro to Visualizations](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240122-introduction-to-visualizations.pdf) ||
-|W Jan 24||[Slides: Organization and Transformation](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240124-data-transformation-organization.pdf) ||
-|F Jan 26|Lightning talks 11-11:50am <br> [Lab 1: Hall of Fame](https://classroom.github.com/a/36z5eOtg) due 2:30pm||[Lab 2: Dot to dot](https://classroom.github.com/a/0Kb-l_iO) due Feb 2 at 2:30pm|
-
-## Week 3 - Transformations
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Jan 29||[Slides: Tranformations Continued](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240129-transformations-continued.pdf)||
-|W Jan 31||[Colab: Installation Instructions](https://colab.research.google.com/github/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240131_colab_intro.ipynb)||
-|F Feb 02|||[Reading: File Naming](https://uq.pressbooks.pub/digital-essentials-data-and-files/chapter/file-naming-and-formats/) <br> [Reading: File Systems All Sections](https://e115.engr.ncsu.edu/file-systems/) <br> [Lab 3: Dot to do ipynb](https://classroom.github.com/a/igLOWZ-h) due Feb 9 at 2:30pm|
-
-## Week 4 - Storytelling
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Feb 05||[Slides: File Organization](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240205-file-system-review.pdf)||
-|W Feb 07|[Reading: File Naming](https://uq.pressbooks.pub/digital-essentials-data-and-files/chapter/file-naming-and-formats/) <br> [Reading: File Systems All Sections](https://e115.engr.ncsu.edu/file-systems/)|[Slides: Data Storytelling](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240207-data-storytelling.pdf)|[Reading: Storytelling Music Example p. 1-7](https://journals.sagepub.com/doi/epdf/10.2190/EM.31.1.c)|
-|F Feb 09|[Lab 2: Dot to dot](https://classroom.github.com/a/0Kb-l_iO) due at 2:30pm <br> [Lab 3: Dot to dot ipynb](https://classroom.github.com/a/igLOWZ-h) due at 2:30pm|[Colab: Vocal Analysis](https://colab.research.google.com/github/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240209_voice_analysis.ipynb)|[Reading: Science & Story p. 8-14](https://allegheny.alma.exlibrisgroup.com/discovery/openurl?institution=01ACO_INST&rfr_id=info:sid%2Fsummon&rft_dat=ie%3D51154733620003906,ie%3D5159145450003906,ie%3D2148230190003906,language%3DEN&svc_dat=CTO&u.ignore_date_coverage=true&vid=01ACO_INST:Services) <br> [Lab 4: Voice Analysis](https://classroom.github.com/a/fJEPT6I4) due Feb 16th at 11:59pm|
-
-## Week 5 - Google Analytics
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Feb 12|||[Reading: General Storytelling](https://clauswilke.com/dataviz/telling-a-story.html)|
-|W Feb 14|[Reading: Storytelling Music Example p. 1-7](https://journals.sagepub.com/doi/epdf/10.2190/EM.31.1.c)|[Slides: Google Analytics by OBC](https://github.com/CMPSC-301-Allegheny-College-Spring-2023/classDocs/blob/main/lessons/02/02week_cs301_24Jan2023_googleAnalytics.pdf)|[Reading: Storytelling Business Example](https://mitsloan.mit.edu/ideas-made-to-matter/next-chapter-analytics-data-storytelling)|
-|F Feb 16|[Lab 4: Voice Analysis](https://classroom.github.com/a/fJEPT6I4) due 11:59 pm||[Lab 5: Resto Google Analytics](https://classroom.github.com/a/RbaYQTOJ) due F Feb 23 at 11:59pm|
-
-## Week 6 - Dashboards
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Feb 19||||
-|W Feb 21||[Slides: Dashboards](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240221-dashboards.pdf)||
-|F Feb 23|[Lab 5: Resto Google Analytics](https://classroom.github.com/a/RbaYQTOJ) due F Feb 23 at 11:59pm|||
-
-## Week 7 - Introduction to Numpy
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Feb 26||||
-|W Feb 28||Intro to numpy||
-|F Mar 01||[Slides: transformations in numpy](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240301-transformations-in-numpy.pdf)|[Reading: Describing Data p. 17-46](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=31)|
-
-## Spring Break
-
-## Week 8 - Stats
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Mar 11|[Reading: Describing Data p. 17-46](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=31)|[Slides: data descriptors in numpy](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240311-describing-data-in-numpy.pdf)|[Lab 6: Data Descriptors in Numpy](https://classroom.github.com/a/yx1xFxym) due March 18th at 11am|
-|W Mar 13|||[Reading: Preparing Data Tables p. 47-59](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=61)|
-|F Mar 15||[Slides: distributions intro](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240315-distributions-intro.pdf)||
-
-## Week 9 - Stats Continued
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Mar 18|[Lab 6: Data Descriptors in Numpy](https://classroom.github.com/a/yx1xFxym) due at 11am|[Slides: confidence interval, hypothesis testing](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240318-hypothesis-testing.pdf)||
-|W Mar 20|[Reading: Preparing Data Tables p. 47-59](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=61)|[Slides: hypothesis testing continued](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240320-hypothesis-testing-continued.pdf)||
-|F Mar 22||[Board: Matplotlib Intro]|[Lab 7: Testing Hypotheses](https://classroom.github.com/a/gnvNGjAL) due March 29th at 11:59pm|
-
-## Week 10 - Matplotlib
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Mar 25||[Board: Logical Indexing]||
-|W Mar 27||[Code: matplotlib formatting](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240327-matplotlib-formatting.py)||
-|F Mar 29|[Lab 7: Testing Hypotheses](https://classroom.github.com/a/gnvNGjAL) due March at 11:59pm||[Lab 8: Matplotlib](https://classroom.github.com/a/UlUzGaDt) due April 5 at 11:59pm|
-
-## Week 11 - Linear Relationships
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Apr 01||[Slides: Correlation and Regression](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240401-correlation-regression.pdf)|[Reading: Correlation p. 69-71](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=83)|
-|W Apr 03||||
-|F Apr 05|[Lab 8: Matplotlib](https://classroom.github.com/a/UlUzGaDt) due at 11:59pm|||
-
-## Week 12 - Tableau Public
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Apr 08||[Biased and Unbiased Slopes]||
-|W Apr 10||Tableau Public - first exploration||
-|F Apr 12||Tableau Public - overfitting |[Lab 9: Songdata Correlations](https://classroom.github.com/a/VfrKh8M7) due Apr 19 at 11:59pm|
-
-## Week 13 - Project Consultation
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Apr 15||||
-|W Apr 17||||
-|F Apr 19|[Lab 9: Songdata Correlations](https://classroom.github.com/a/VfrKh8M7) due at 11:59pm|[Initial Project Meetings](https://docs.google.com/spreadsheets/d/1PQoFkdfPZGWLfPZzknpVNqdnq6-bgphOttl5uiCnWKU/edit?usp=sharing)||
-
-## Week 14 - Project Consultation
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Apr 22||||
-|W Apr 24|||[Project Repo: Data Insight](https://classroom.github.com/a/pojZiZlA) due May 7 at 11:59am|
-|F Apr 26 class||[Department Survey](https://forms.gle/KhXfL4juCt7VPegRA) <br> [RSE Survey](https://allegheny.instructure.com/courses/10873/external_tools/1268)||
-|F Apr 26 lab|[Checkpoint Presentations](https://docs.google.com/spreadsheets/d/1PQoFkdfPZGWLfPZzknpVNqdnq6-bgphOttl5uiCnWKU/edit?usp=sharing)|||
-
-## Week 15 - Project Consultation
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|M Apr 29|[Checkpoint Presentations](https://docs.google.com/spreadsheets/d/1PQoFkdfPZGWLfPZzknpVNqdnq6-bgphOttl5uiCnWKU/edit?usp=sharing)|||
-
-## Final Project Due
-
-| Date  | Due              | Links to in-class materials | Links to new assignments |
-|-------|------------------|-----------------------------|----------------------|
-|Tu May 07|[Project Repo: Data Insight](https://classroom.github.com/a/pojZiZlA) due at 11:59am||| -->
+</div>
+</div>
+</div>
+<div id="cell-dot-plot" class="cell" data-execution_count="9">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming df is already created in the previous code</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>plt.figure()</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>plt.scatter(df[<span class="st">'Num Prescriptions'</span>], df[<span class="st">'Drug Source'</span>])</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Number of Prescriptions'</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Drug Source'</span>)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Drug Source vs. Number of Prescriptions'</span>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data_display_files/figure-html/dot-plot-output-1.png" id="dot-plot" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-pie-chart" class="cell" data-execution_count="10">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming df is already created in the previous code</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>plt.figure()</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>plt.pie(df[<span class="st">'Num Prescriptions'</span>], labels<span class="op">=</span>df[<span class="st">'Drug Source'</span>])</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Drug Source'</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data_display_files/figure-html/pie-chart-output-1.png" id="pie-chart" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-histogram" class="cell" data-execution_count="11">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Terrible Example</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming df is already created in the previous code</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>plt.figure()</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>plt.hist(df[<span class="st">'Num Prescriptions'</span>], bins<span class="op">=</span><span class="dv">20</span>)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Number of Prescriptions'</span>)</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Frequency'</span>)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Histogram of Number of Prescriptions'</span>)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data_display_files/figure-html/histogram-output-1.png" id="histogram" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-line-plot" class="cell" data-execution_count="12">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Suggests False Continuity</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming df is already created in the previous code</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>plt.figure()  <span class="co"># Adjust figure size for better visualization</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>plt.plot(df[<span class="st">'Drug Source'</span>], df[<span class="st">'Num Prescriptions'</span>], marker<span class="op">=</span><span class="st">'o'</span>, linestyle<span class="op">=</span><span class="st">'-'</span>)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Drug Source'</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Number of Prescriptions (Millions)'</span>)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Number of Prescriptions by Drug Source'</span>)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>, linestyle<span class="op">=</span><span class="st">'--'</span>, alpha<span class="op">=</span><span class="fl">0.7</span>)  <span class="co"># Add a grid for better readability</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">45</span>, ha<span class="op">=</span><span class="st">'right'</span>) <span class="co"># Rotate x-axis labels for better visibility</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>plt.tight_layout() <span class="co"># Adjust layout to prevent labels from overlapping</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data_display_files/figure-html/line-plot-output-1.png" id="line-plot" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cell-box" class="cell" data-execution_count="13">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Not telling a clear story given the specific data</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Assuming df is already created in the previous code</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>plt.boxplot(df[<span class="st">'Num Prescriptions'</span>], vert<span class="op">=</span><span class="va">False</span>)  <span class="co"># Create the boxplot</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Number of Prescriptions'</span>)</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Box Plot of Number of Prescriptions'</span>)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="data_display_files/figure-html/box-output-1.png" id="box" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 
 
 
