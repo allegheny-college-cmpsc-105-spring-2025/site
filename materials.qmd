@@ -40,6 +40,8 @@ Due: Thursday Jan 23, 2:30pm
 ```{.markdown code-preview="slides/02-data-display.qmd" width="780" height="500"}
 ```
 
+[Class Activity: Data Display](code/data_display.ipynb)
+
 </details>
 
 
