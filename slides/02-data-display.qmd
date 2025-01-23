@@ -35,11 +35,11 @@ controls: true
 
 ## Pie Chart
 
-{{< embed /code/data_display.ipynb#pie-chart echo=false output-location=fragment >}}
+{{< embed /code/data_display_activity.ipynb#pie-chart echo=false output-location=fragment >}}
 
 ## Dot Plot 
 
-{{< embed /code/data_display.ipynb#dot-plot echo=false output-location=fragment >}}
+{{< embed /code/data_display_activity.ipynb#dot-plot echo=false output-location=fragment >}}
 
 ## Additional Types
 
@@ -69,15 +69,15 @@ controls: true
 
 ## Histogram
 
-{{< embed /code/data_display.ipynb#histogram echo=false output-location=fragment >}}
+{{< embed /code/data_display_activity.ipynb#histogram echo=false output-location=fragment >}}
 
 ## Line Plot
 
-{{< embed /code/data_display.ipynb#line-plot echo=false output-location=fragment >}}
+{{< embed /code/data_display_activity.ipynb#line-plot echo=false output-location=fragment >}}
 
 ## Box and Whisker Plot
 
-{{< embed /code/data_display.ipynb#box echo=false output-location=fragment >}}
+{{< embed /code/data_display_activity.ipynb#box echo=false output-location=fragment >}}
 
 ## More Example Data - Whiteboard
 

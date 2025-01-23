@@ -15,7 +15,7 @@ title: "Assignments"
 
 - Week Two: January 21, 23: Display Types and Anatomy of a Chart
   - Reading: [Making Sense of Data, Chapter 2, p. 32-50](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614&ppg=48)
-  - Class Activity: [Data Display](code/data_display.ipynb)
+  - Class Activity: [Data Display](code/data_display_activity.ipynb)
   - Lab: [Data Display](https://classroom.github.com/a/4qDGRQsy)
   <!-- precoded plots exemplifying graph types. students identify all things -->
   <!-- come up with story for the figures -->

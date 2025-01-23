@@ -44,7 +44,7 @@ Due: Thursday Jan 23, 2:30pm
 
 [Reading: Making Sense of Data, Chapter 2, p. 19-32](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614&ppg=35)
 
-[Class Activity: Data Display](code/data_display.ipynb)
+[Class Activity: Data Display](code/data_display_activity.ipynb)
 
 [Lab: Data Display](https://classroom.github.com/a/4qDGRQsy)  
 Due: Thursday Jan 30, 2:30pm
