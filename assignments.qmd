@@ -20,6 +20,9 @@ title: "Assignments"
   <!-- precoded plots exemplifying graph types. students identify all things -->
   <!-- come up with story for the figures -->
 - Week Three: January 28, 30: Data Distortion
+  - Reading: [Misleading Graphs](https://web.stevenson.edu/mbranson/m4tp/version1/fake-news-misleading-graphs.html)
+  - Class Activity: [Data Distortion](code/data_distortion_activity.ipynb)
+  - Lab: [Data Distortion]
 - Week Four: February 4, 7: Data Display in Real Time
   - Lab: Song Data Tableau
 - Week Five: February 11, 13: Interactive Display

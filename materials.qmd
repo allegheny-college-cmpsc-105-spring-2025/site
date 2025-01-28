@@ -56,6 +56,14 @@ Due: Thursday Jan 30, 2:30pm
 
 <details>
 <summary>Week Three: January 28, 30: Data Distortion</summary>
+
+[Reading: Misleading Graphs](https://web.stevenson.edu/mbranson/m4tp/version1/fake-news-misleading-graphs.html)
+
+[Class Activity: Data Distortion](code/data_distortion_activity.ipynb)
+
+[Lab: Data Distortion]    
+Due: Thursday Feb 6, 2:30pm
+
 </details>
 
 <details>
