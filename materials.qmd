@@ -61,18 +61,22 @@ Due: Thursday Jan 30, 2:30pm
 
 [Class Activity: Data Distortion](code/data_distortion_activity.ipynb)
 
-[Lab: Data Distortion]    
+[Lab: Data Distortion](https://classroom.github.com/a/MlNXvWRF)  
 Due: Thursday Feb 6, 2:30pm
 
 </details>
 
 <details>
-<summary>Week Four: February 4, 7: Data Display in Real Time</summary>
+<summary>Week Four: February 4, 7: Interactive Display</summary>
+
+[Lab: Song Data Tableau]  
+Due:
+
 </details>
 
 
 <details>
-<summary>Week Five: February 11, 13: Interactive Display</summary>
+<summary>Week Five: February 11, 13: Data Display in Real Time</summary>
 </details>
 
 ### Data Gathering
