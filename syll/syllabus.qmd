@@ -57,7 +57,7 @@ DR tag rationale: This course will primarily focus on methods of data collection
 
 - Week Two: January 21, 23: Display Types and Anatomy of a Chart
 - Week Three: January 28, 30: Data Distortion
-- Week Four: February 4, 7: Controlling What Displays
+- Week Four: February 4, 7: Data Filtering
 - Week Five: February 11, 13: Interactive Display
   
 **Data Gathering**
@@ -72,7 +72,7 @@ DR tag rationale: This course will primarily focus on methods of data collection
 - Week Nine: March 18, 20: Statistics
 - Week Ten: March 25, 27: Data Transformations
 - Week Eleven: April 1, 3: Modeling and Overfitting
-- Week Twelve: April 8: Filtering
+- Week Twelve: April 8: Clustering
 
 **Data Storytelling**
 

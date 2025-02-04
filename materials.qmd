@@ -117,7 +117,7 @@ Due:
 
 
 <details>
-<summary>Week Twelve: April 8: Filtering</summary>
+<summary>Week Twelve: April 8: Clustering</summary>
 </details>
 
 ### Data Storytelling
