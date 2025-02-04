@@ -1,6 +1,5 @@
 ---
-title: "Week 2: Data Display"
-subtitle: "Data Distortion"
+title: "Week 3: Data Distortion"
 author: "Emily Graber"
 format: revealjs
 slide-number: true

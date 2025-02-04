@@ -23,9 +23,11 @@ title: "Assignments"
   - Reading: [Misleading Graphs](https://web.stevenson.edu/mbranson/m4tp/version1/fake-news-misleading-graphs.html)
   - Class Activity: [Data Distortion](code/data_distortion_activity.ipynb)
   - Lab: [Data Distortion](https://classroom.github.com/a/MlNXvWRF)
-- Week Four: February 4, 7: Interactive Display
-  - Lab: Song Data Tableau
-- Week Five: February 11, 13: Data Display in Real Time
+- Week Four: February 4, 7: Data Filtering
+  - Video: [https://youtu.be/v5pJfu-yn-0]
+  - Class Activity: [Data Filtering](code/data_filtering_activity.ipynb)
+  - Lab: 
+- Week Five: February 11, 13: Interactive Display
   
 **Data Gathering**
 

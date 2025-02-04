@@ -67,16 +67,20 @@ Due: Thursday Feb 6, 2:30pm
 </details>
 
 <details>
-<summary>Week Four: February 4, 7: Interactive Display</summary>
+<summary>Week Four: February 4, 7: Data Filtering</summary>
 
-[Lab: Song Data Tableau]  
+[Video: Logical Indexing](https://youtu.be/v5pJfu-yn-0)
+
+[Class Activity: Data Filtering](code/data_filtering_activity.ipynb)
+
+[Lab: ]  
 Due:
 
 </details>
 
 
 <details>
-<summary>Week Five: February 11, 13: Data Display in Real Time</summary>
+<summary>Week Five: February 11, 13: Interactive Display</summary>
 </details>
 
 ### Data Gathering
