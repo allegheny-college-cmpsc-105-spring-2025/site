@@ -26,7 +26,8 @@ title: "Assignments"
 - Week Four: February 4, 7: Data Filtering
   - Video: [Logical Indexing](https://youtu.be/v5pJfu-yn-0)
   - Class Activity: [Data Filtering](code/data_filtering_activity.ipynb)
-  - Lab: 
+  - Lab: [Data Filtering](https://classroom.github.com/a/TwR2gnVy)  
+  - [Activities Repo](https://classroom.github.com/a/WsxZrwZP) 
 - Week Five: February 11, 13: Interactive Display
   
 **Data Gathering**

@@ -111,6 +111,10 @@ in writing
 
 Participation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate. Collegial conversations about course topics or activities are also allowed.
 
+You will have access to a repository for submitting all of your class activities. Each activity that you do in class will contribute to your overall participation grade. There is no grading scheme for class activities. I will simply check that the activity was turned in at the end of the class period, and that you have made an effort to do the activity as intended, and figures are showing.
+
+If the activity is not turned in at the end of the class period, then it will not be counted toward your participation grade.
+
 ### _Final Project_
 
 The final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact can be detailed blog post, following the format of the last lab, or a detailed data visualization with interactive visuals.

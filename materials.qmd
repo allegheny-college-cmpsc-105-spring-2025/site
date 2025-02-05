@@ -73,8 +73,10 @@ Due: Thursday Feb 6, 2:30pm
 
 [Class Activity: Data Filtering](code/data_filtering_activity.ipynb)
 
-[Lab: ]  
-Due:
+[Activities Repo](https://classroom.github.com/a/WsxZrwZP)
+
+[Lab: Data Filtering](https://classroom.github.com/a/TwR2gnVy)  
+Due: Thursday Feb 13, 2:30pm
 
 </details>
 
