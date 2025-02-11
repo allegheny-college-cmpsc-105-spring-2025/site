@@ -29,6 +29,9 @@ title: "Assignments"
   - Lab: [Data Filtering](https://classroom.github.com/a/TwR2gnVy)  
   - [Activities Repo](https://classroom.github.com/a/WsxZrwZP) 
 - Week Five: February 11, 13: Interactive Display
+  - Explore: [Interactive Viz Gallery](https://www.tableau.com/viz-gallery)
+  - Class Activity: [Data Interactivity](code/data_interactivity_activity.ipynb)
+  - Lab: 
   
 **Data Gathering**
 

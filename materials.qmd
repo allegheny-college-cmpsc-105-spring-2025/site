@@ -83,6 +83,11 @@ Due: Thursday Feb 13, 2:30pm
 
 <details>
 <summary>Week Five: February 11, 13: Interactive Display</summary>
+
+[Interactive Viz Gallery](https://www.tableau.com/viz-gallery)
+
+[Class Activity: Data Interactivity](code/data_interactivity_activity.ipynb)
+
 </details>
 
 ### Data Gathering

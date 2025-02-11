@@ -273,18 +273,60 @@
     "text": "Goals\n\nLook at code that can generate common data displays\nModify code that can generate common data displays\nDescribe how common data displays are able to convey information that was not apparent in raw data\n\n\nTODO: Run the first code cell\nTODO: In the variable explorer ({x}), what Type does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), what Shape does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), hover over the variable df to see the values. What relationship do the values have to the Shape of df? Explain what the shape means. Write your response here:\nTODO: Looking at the rest of the code cells that can generate figures, what patterns do you see repeated in the code? Write your response here:\nTODO: Run the code cells, stopping once you reach the next section. Examine the figures.\nTODO: Explain what relationship exists between the reddish code in quotes and the figures that are generated. Write your response here:\nTODO: Find a piece of code where a marker was explicitly specified. Change the marker to an upward triangle, a square, and a star based on the matplotlib documentation and rerun the code.\nTODO: Overall, do these figures reveal anything about this data that was not so apparent when looking at df? Write your response here:\nNow, move on to the next section\n\nThe data table below shows how many millions of prescriptions are obtained from various sources in the United States annually.\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\nTraditional\n914\n\n\nIndependent\n666\n\n\nMassMerch\n238\n\n\nSuperMarket\n221\n\n\nMailOrder\n86\n\n\n\n\n\nCode\n# import pandas and make dataframe\n\nimport pandas as pd\n\ndata = {'Drug Source': ['Traditional', 'Independent', 'MassMerch', 'SuperMarket', 'MailOrder'],\n        'Num Prescriptions': [914, 666, 238, 221, 86]}\ndf = pd.DataFrame(data)\n\ndf\n\n\n\n\n\n\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\n0\nTraditional\n914\n\n\n1\nIndependent\n666\n\n\n2\nMassMerch\n238\n\n\n3\nSuperMarket\n221\n\n\n4\nMailOrder\n86\n\n\n\n\n\n\n\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.scatter(df['Num Prescriptions'], df['Drug Source'])\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Drug Source')\nplt.title('Drug Source vs. Number of Prescriptions')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.pie(df['Num Prescriptions'], labels=df['Drug Source'])\nplt.title('Drug Source')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.hist(df['Num Prescriptions'], bins=20)\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Frequency')\nplt.title('Histogram of Number of Prescriptions')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()  # Adjust figure size for better visualization\nplt.plot(df['Drug Source'], df['Num Prescriptions'], marker='o', linestyle='-')\nplt.xlabel('Drug Source')\nplt.ylabel('Number of Prescriptions (Millions)')\nplt.title('Number of Prescriptions by Drug Source')\nplt.grid(True, linestyle='--', alpha=0.7)  # Add a grid for better readability\nplt.xticks(rotation=45) # Rotate x-axis labels for better visibility\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.boxplot(df['Num Prescriptions'])  # Create the boxplot\nplt.xlabel('Number of Prescriptions')\nplt.title('Box Plot of Number of Prescriptions')\nplt.show()"
   },
   {
-    "objectID": "code/interactive.html#python-cell-block",
-    "href": "code/interactive.html#python-cell-block",
-    "title": "interactive test",
-    "section": "python cell block",
-    "text": "python cell block\n\nprint(\"python test\")\n\npython test"
+    "objectID": "code/data_interactivity_activity.html",
+    "href": "code/data_interactivity_activity.html",
+    "title": "Interactive Data Display Activity",
+    "section": "",
+    "text": "Open In Colab"
   },
   {
-    "objectID": "assignments.html",
-    "href": "assignments.html",
-    "title": "Assignments",
-    "section": "",
-    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nLab: Practice Lab\n\n\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data, Chapter 2, p. 32-50\nClass Activity: Data Display\nLab: Data Display  \n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering\n\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nLab: Vocal Analysis\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nLab: Google Analytics \n\nSpring Break: March 1-9\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\nData Processing\n\nWeek Nine: March 18, 20: Statistics\n\nLab: Numpy Calculations\n\nWeek Ten: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Twelve: April 8: Clustering\n\nData Storytelling\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fourteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Fifteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "objectID": "code/data_interactivity_activity.html#basic-function",
+    "href": "code/data_interactivity_activity.html#basic-function",
+    "title": "Interactive Data Display Activity",
+    "section": "Basic Function",
+    "text": "Basic Function\n\n\nCode\nplt.figure(figsize=(8, 4))\nplt.plot([0.1,0.2,0.3,0.4,0.5], [-2,-1,0,1,2], '*-')\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.title('Y vs X')\nplt.xlim(0,2)\nplt.ylim(-5,5)\nplt.show()\n\n# TODO: What happens when you run this code cell?\n# TODO: What is the title?\n\n\n\n\nCode\n# Here is a function with the same code as above\n\n\ndef plot_line():\n    plt.figure(figsize=(8, 4))\n    plt.plot([0.1,0.2,0.3,0.4,0.5], [-2,-1,0,1,2], '*-')\n    plt.xlabel('X')\n    plt.ylabel('Y')\n    plt.title('Y vs X')\n    plt.xlim(0,2)\n    plt.ylim(-5,5)\n    plt.show()\n\n\n# TODO: What happens when you run this code cell?\n\n\n\n\nCode\nplot_line()\n\n# TODO: What happens when you run this code cell?\n# TODO: How did the computer know what to do?"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#more-interesting-function",
+    "href": "code/data_interactivity_activity.html#more-interesting-function",
+    "title": "Interactive Data Display Activity",
+    "section": "More interesting function",
+    "text": "More interesting function\n\n\nCode\n# Create a sine wave with frequency 2 Hz and amplitude 3. Use variable name y\n# Then plot it\n\nfreq = 2\namplitude = 3\n\npi = 3.14159\n\nt = np.arange(0, 2, 2/1000)\ny = amplitude * np.sin(2 * pi * freq * t)\n\n\nplt.figure(figsize=(8, 4))\nplt.plot(t, y, label=f'Sin(2 pi {freq} t) * {amplitude}')\nplt.xlabel('Time (seconds)')\nplt.ylabel('Amplitude')\nplt.legend()\nplt.xlim(0,2)\nplt.ylim(-5,5)\nplt.grid(True)\nplt.show()\n\n# TODO: What happens when you run this code cell?\n\n\n\n\nCode\ndef plot_sine(freq, amplitude):\n\n  pi = 3.14159\n\n  t = np.arange(0, 2, 2/1000)\n  y = amplitude * np.sin(2 * pi * freq * t)\n\n\n  plt.figure(figsize=(8, 4))\n  plt.plot(t, y, label=f'Sin(2 pi {freq} t) * {amplitude}')\n  plt.xlabel('Time (seconds)')\n  plt.ylabel('Amplitude')\n  plt.legend()\n  plt.xlim(0,2)\n  plt.ylim(-5,5)\n  plt.grid(True)\n  plt.show()\n\n# TODO: What happens when you run this code cell?\n# Decribe what you see above that is new\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=2, amplitude=3)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=2, amplitude=1)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=6, amplitude=1)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#interactive-function-call",
+    "href": "code/data_interactivity_activity.html#interactive-function-call",
+    "title": "Interactive Data Display Activity",
+    "section": "Interactive function call!",
+    "text": "Interactive function call!\n\n\nCode\nplt.close('all')\n\n# The interact function takes the plotting function, and parameters of the plotting function!\n# The parameters of the plotting function turn into sliders\n# the slider must be specified with some information: (start, end, hop)\n\ninteract(plot_sine, freq=(0.1, 10.0, 0.1), amplitude=(0.1, 5.0, 0.1))"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#now-with-data-in-a-df",
+    "href": "code/data_interactivity_activity.html#now-with-data-in-a-df",
+    "title": "Interactive Data Display Activity",
+    "section": "Now with Data in a DF",
+    "text": "Now with Data in a DF\n\n\nCode\n\n\ndf = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter/refs/heads/main/data/data-distortion-noaa-2006-2020-USW00004843.csv',\n    sep=',',\n    names = ['INDEX', 'STATION', 'NAME', 'LATITUDE', 'LONGITUDE', 'ELEVATION',\n       'DATE', 'month', 'day', 'hour', 'HLY-TEMP-NORMAL'],\n    skiprows=1\n)\n\nprint(df.head()) # Display the first few rows of the DataFrame\n\n\n\n\nCode\n# a plotting function\n# it has a parameter called month\n\ndef plot_df(month):\n\n    plt.figure(figsize=(8, 4))\n    plt.plot(df.loc[df['month']==month,'INDEX'], df.loc[df['month']==month,'HLY-TEMP-NORMAL'])\n    plt.xticks(df.loc[df['month']==month,'INDEX'][::72], df.loc[df['month']==month,'DATE'][::72], rotation=90)\n    plt.xlabel('Time (hours)')\n    plt.ylabel('Normals (F)')\n    plt.title(f'Month {month}')\n    plt.ylim(-20,100)\n    plt.show()\n\n# TODO: What happens when you run this cell?\n\n\n\n\nCode\nplt.close('all')\n\n\n# The interact function takes the plotting function, and parameters of the plotting function!\n# The parameters of the plotting function turn into sliders\n# the slider must be specified with some information: (start, end, hop)\n\n\ninteract(plot_df, month=(1,12,1))"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#you-try",
+    "href": "code/data_interactivity_activity.html#you-try",
+    "title": "Interactive Data Display Activity",
+    "section": "You Try",
+    "text": "You Try\n\n\nCode\n# TODOs\n# make a plotting function that has a parameter of month and hour\n# inside the function, set up filtering that considers both the month & hour\n# Make sure the filters select just rows from df that are equal to (==) the selected month and hour\n\n\n\n\nCode\n# TODOs\n# Call your function, but turn the parameters into sliders!\n# the month will only go from 1 to 12\n# the hour should only go from 0 to 24"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#discord-post",
+    "href": "code/data_interactivity_activity.html#discord-post",
+    "title": "Interactive Data Display Activity",
+    "section": "Discord Post",
+    "text": "Discord Post\nTODO: Post about data that you would like to filter interactively or data that you have seen filtered interactively. These will be shared in class on Thursday."
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#submit-this-completed-activity-to-your-activities-repository",
+    "href": "code/data_interactivity_activity.html#submit-this-completed-activity-to-your-activities-repository",
+    "title": "Interactive Data Display Activity",
+    "section": "Submit this completed activity to your activities repository",
+    "text": "Submit this completed activity to your activities repository"
   },
   {
     "objectID": "syll/syllabus.html",
@@ -355,6 +397,20 @@
     "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
     "section": "Syllabus Changes",
     "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments",
+    "section": "",
+    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nLab: Practice Lab\n\n\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data, Chapter 2, p. 32-50\nClass Activity: Data Display\nLab: Data Display  \n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering\n\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab:\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nLab: Vocal Analysis\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nLab: Google Analytics \n\nSpring Break: March 1-9\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\nData Processing\n\nWeek Nine: March 18, 20: Statistics\n\nLab: Numpy Calculations\n\nWeek Ten: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Twelve: April 8: Clustering\n\nData Storytelling\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fourteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Fifteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+  },
+  {
+    "objectID": "code/interactive.html#python-cell-block",
+    "href": "code/interactive.html#python-cell-block",
+    "title": "interactive test",
+    "section": "python cell block",
+    "text": "python cell block\n\nprint(\"python test\")\n\npython test"
   },
   {
     "objectID": "code/data_filtering_activity.html",
@@ -592,6 +648,6 @@
     "href": "materials.html#content",
     "title": "Materials",
     "section": "Content",
-    "text": "Content\n\nWelcome\n\n\nWeek One: January 14, 16: Setup\n\n\nSlides PDF\nReading: Making Sense of Data, Chapter 2, p. 19-32\nLab: Practice Lab\nDue: Thursday Jan 23, 2:30pm\n\n\n\nData Display\n\n\nWeek Two: January 21, 23: Data Display\n\n\nSlides PDF\nReading: Making Sense of Data, Chapter 2, p. 19-32\nClass Activity: Data Display\nLab: Data Display\nDue: Thursday Jan 30, 2:30pm\n\n\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion\nDue: Thursday Feb 6, 2:30pm\n\n\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nActivities Repo\nLab: Data Filtering\nDue: Thursday Feb 13, 2:30pm\n\n\n\nWeek Five: February 11, 13: Interactive Display\n\n\n\n\nData Gathering\n\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\n\n\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\n\n\n\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\n\n\n\nData Processing\n\n\nWeek Nine: March 18, 20: Statistics\n\n\n\n\nWeek Ten: March 25, 27: Data Transformations\n\n\n\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\n\n\n\nWeek Twelve: April 8: Clustering\n\n\n\n\nData Storytelling\n\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\n\n\n\nWeek Fourteen: April 22, 24: Storytelling Challenge\n\n\n\n\nWeek Fifteen: April 29: Project Preparation\n\n\n\n\nFinal Presentations\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "text": "Content\n\nWelcome\n\n\nWeek One: January 14, 16: Setup\n\n\nSlides PDF\nReading: Making Sense of Data, Chapter 2, p. 19-32\nLab: Practice Lab\nDue: Thursday Jan 23, 2:30pm\n\n\n\nData Display\n\n\nWeek Two: January 21, 23: Data Display\n\n\nSlides PDF\nReading: Making Sense of Data, Chapter 2, p. 19-32\nClass Activity: Data Display\nLab: Data Display\nDue: Thursday Jan 30, 2:30pm\n\n\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion\nDue: Thursday Feb 6, 2:30pm\n\n\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nActivities Repo\nLab: Data Filtering\nDue: Thursday Feb 13, 2:30pm\n\n\n\nWeek Five: February 11, 13: Interactive Display\n\nInteractive Viz Gallery\nClass Activity: Data Interactivity\n\n\n\nData Gathering\n\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\n\n\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\n\n\n\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\n\n\n\nData Processing\n\n\nWeek Nine: March 18, 20: Statistics\n\n\n\n\nWeek Ten: March 25, 27: Data Transformations\n\n\n\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\n\n\n\nWeek Twelve: April 8: Clustering\n\n\n\n\nData Storytelling\n\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\n\n\n\nWeek Fourteen: April 22, 24: Storytelling Challenge\n\n\n\n\nWeek Fifteen: April 29: Project Preparation\n\n\n\n\nFinal Presentations\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   }
 ]
