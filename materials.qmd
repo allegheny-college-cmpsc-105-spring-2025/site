@@ -88,6 +88,9 @@ Due: Thursday Feb 13, 2:30pm
 
 [Class Activity: Data Interactivity](code/data_interactivity_activity.ipynb)
 
+[Lab: Data Interactivity](https://classroom.github.com/a/xwNOik6D)  
+Due: Thursday Feb 20, 2:30pm
+
 </details>
 
 ### Data Gathering

@@ -31,7 +31,7 @@ title: "Assignments"
 - Week Five: February 11, 13: Interactive Display
   - Explore: [Interactive Viz Gallery](https://www.tableau.com/viz-gallery)
   - Class Activity: [Data Interactivity](code/data_interactivity_activity.ipynb)
-  - Lab: 
+  - Lab: [Data Interactivity](https://classroom.github.com/a/xwNOik6D)
   
 **Data Gathering**
 
