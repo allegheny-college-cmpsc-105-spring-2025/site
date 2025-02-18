@@ -1,0 +1,149 @@
+---
+title: "Week 6: Data Gathering"
+author: "Emily Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+---
+
+## Goals
+
+::: incremental
+- What **types** of data can you gather?
+- What **sources** can data come from?
+:::
+
+# Data Types
+
+Reading: [Types of Variables](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch8/5214817-eng.htm)
+
+## Data Types
+
+:::{.column width="100%"}
+![](https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/national/data%2520types%2520examples.png)
+:::
+
+and numerical discrete!
+
+## Categorical Nominal
+
+::: incremental
+- Name only, qualitative
+  - car makes
+  - zip code
+  - eye color
+- **Dichotomous variable** refers to a categorical nominal variables with only two values
+  - left handed / right handed
+  - current student / non student
+:::
+
+
+## Categorical Ordinal
+
+::: incremental
+- ordered, quasi-quantitative
+  - agreement level
+  - education level
+- ordinal data can seem almost quantitative, but there is no way to know the value of the levels
+- ordinal scales are usually used to measure non-numeric features like happiness, customer satisfaction
+- **Likert Items** are often used to obtain categorical ordinal data
+:::
+
+## Likert Items
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Example_Likert_Scale.svg/1024px-Example_Likert_Scale.svg.png)
+
+## Numerical Data
+
+::: incremental
+- Numerical data are quantitative
+- **Discrete** means countable
+  - number of students
+  - number of views or likes
+:::
+
+## Numerical Data {.smaller}
+
+::: incremental
+- Numerical data are quantitative
+- **Continuous** means measured
+  - height must be measured
+  - **Interval** refers to continuous data with no reference point
+    - temperature, we know 28 F vs 33 F is a difference of 5, but does a difference of 5 mean the same thing between 100 and 105?
+    - Interval data cannot be divided meaningfully. Don't compute what is 1/5 of the temperature today
+    - Stats use division, causing a problem for interval data
+  - **Ratio** refers to continuous data with a reference point
+    - Height, weight, distance, speed
+    - division or other ratios are meaningful. Professor Luman is twice my height!
+:::
+
+## Practice
+
+Recall an example for each data type
+
+:::{.column width="100%"}
+![](https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/national/data%2520types%2520examples.png)
+:::
+
+and numerical discrete!
+
+. . .
+
+[https://forms.gle/rqqcmMtnEHc6g3276](https://forms.gle/rqqcmMtnEHc6g3276)
+
+# Data Sources
+
+Reading: [Surveys](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch14/spd_0001-eng.htm)
+
+## Surveys
+
+::: incremental
+- Survey development should be guided by a hypothesis
+- Only questions that have appropriate data types for analysis should be used
+- Quality controls should be in place
+- Human Subjects Research must be reviewed by the Institutional Review Board
+- Based on the Google Form, what was wrong?
+:::
+
+## Sensors {.smaller}
+
+::: incremental
+- electronic sensors for things
+  - motion detection
+  - freezer thermometer
+  - tire pressure sensor
+- sensors for people
+  - motion capture
+  - body temperature
+  - electro-physiological
+    - ECG - electrocardiogram
+    - EEG - electroencephalogram
+    - electrodermal
+:::
+
+. . .
+
+[https://www.youtube.com/watch?v=yyxVG-4Jd-o](https://www.youtube.com/watch?v=yyxVG-4Jd-o)  
+[Max with Mediapipe]()
+
+## Scanners with sensors
+
+::: incremental
+- Scanners actively cause something to change to make measurement possible
+  - fMRI
+  - CT scan
+  - others?
+:::
+
+## Images as Data
+
+- MUSIC175/materials/20241126-drawing.maxpat
+- Biology uses stains to for counting cells
+- [Image fraud](slides/06-new-yorker.pdf)
+
+## Sound as Data
+
+## Time as Data
+
+## End

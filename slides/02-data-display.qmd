@@ -46,11 +46,9 @@ controls: true
 :::{.column width="50%"}
 ::: incremental
 - histogram
-- 
 - bar plot
 - line plot
 - scatter plot
-- 
 - heat map
 - box and whisker plot
 :::
@@ -60,10 +58,10 @@ controls: true
 ::: incremental
 - &larr; occurrences (binned)
 - &larr; processed categories
-- &larr; suggestion of continuity
-- &larr; looking for relationships in continuous data
+- &larr; continuous line
+- &larr; shows relationships
 - &larr; three variables in 2D
-- &larr; statistics about single variable 
+- &larr; stat on a variable 
 :::
 :::
 
@@ -78,21 +76,6 @@ controls: true
 ## Box and Whisker Plot
 
 {{< embed /code/data_display_activity.ipynb#box echo=false output-location=fragment >}}
-
-## More Example Data - Whiteboard
-
-:::{.column width="50%"}
-![](/images/02-cars-binned.png)
-:::
-
-:::{.column width="50%"}
-- &larr; occurrences (binned)
-- &larr; processed categories
-- &larr; suggestion of continuity
-- &larr; looking for relationships in continuous data
-- &larr; three variables in 2D
-- &larr; statistics about single variable 
-:::
 
 # Anatomy of a Graph
 
@@ -127,9 +110,4 @@ controls: true
 - Present your partner's visualization
 :::
 
-<!-- ## pyodide test grabbing markdown w live-html
-
-```{.markdown code-preview="../code/interactive.qmd" width="780" height="500"}
-```
-
-n.b. live-html format in the ipynb allows live execution, but cell must be raw... -->
+## End

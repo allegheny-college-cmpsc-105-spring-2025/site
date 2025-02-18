@@ -20,40 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -73,9 +39,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-79108a0fc1995748cbd19a5b0e3e3e7c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/live-runtime/live-runtime.js" type="module"></script>
-<link href="site_libs/quarto-contrib/live-runtime/live-runtime.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -112,10 +76,9 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 gtag('config', 'G-0G1PHPKVFB', { 'anonymize_ip': true});
 </script>
-<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
-<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -144,10 +107,6 @@ gtag('config', 'G-0G1PHPKVFB', { 'anonymize_ip': true});
 <span class="menu-text">Materials</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./assignments.html"> 
-<span class="menu-text">Assignments</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./discord.html"> 
 <span class="menu-text">Discord Channel</span></a>
   </li>  
@@ -166,23 +125,8 @@ gtag('config', 'G-0G1PHPKVFB', { 'anonymize_ip': true});
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#quick-links" id="toc-quick-links" class="nav-link active" data-scroll-target="#quick-links">Quick Links</a></li>
-  <li><a href="#content" id="toc-content" class="nav-link" data-scroll-target="#content">Content</a>
-  <ul class="collapse">
-  <li><a href="#welcome" id="toc-welcome" class="nav-link" data-scroll-target="#welcome">Welcome</a></li>
-  <li><a href="#data-display" id="toc-data-display" class="nav-link" data-scroll-target="#data-display">Data Display</a></li>
-  <li><a href="#data-gathering" id="toc-data-gathering" class="nav-link" data-scroll-target="#data-gathering">Data Gathering</a></li>
-  <li><a href="#data-processing" id="toc-data-processing" class="nav-link" data-scroll-target="#data-processing">Data Processing</a></li>
-  <li><a href="#data-storytelling" id="toc-data-storytelling" class="nav-link" data-scroll-target="#data-storytelling">Data Storytelling</a></li>
-  <li><a href="#final-presentations" id="toc-final-presentations" class="nav-link" data-scroll-target="#final-presentations">Final Presentations</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -206,184 +150,221 @@ gtag('config', 'G-0G1PHPKVFB', { 'anonymize_ip': true});
 </header>
 
 
-<section id="quick-links" class="level2">
-<h2 class="anchored" data-anchor-id="quick-links">Quick Links</h2>
+<p><strong>Welcome</strong></p>
 <ul>
-<li><a href="https://allegheny-college-cmpsc-105-spring-2025.github.io/site/">Course Website</a></li>
-<li><a href="https://github.com/allegheny-college-cmpsc-105-spring-2025">Course GitHub Organization</a></li>
-<li><a href="https://github.com/allegheny-college-cmpsc-105-spring-2025/site">Course GitHub Website Repo</a></li>
-<li><a href="https://github.com/allegheny-college-cmpsc-105-spring-2025/site/tree/main/code">Python Notebooks Directory</a></li>
+<li>Week One: January 14, 16: Setup
+<ul>
+<li>Reading: <a href="https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614&amp;ppg=35">Making Sense of Data, Chapter 2, p.&nbsp;19-32</a></li>
+<li>Slides: <a href="./slides/01-welcome.html">Welcome Reveal</a>, <a href="slides/01-welcome.pdf">Welcome PDF</a></li>
+<li>Lab: <a href="https://classroom.github.com/a/ypH8iEXF">Practice Lab</a> Due: Thursday Jan 23, 2:30pm</li>
+</ul></li>
 </ul>
-</section>
-<section id="content" class="level2">
-<h2 class="anchored" data-anchor-id="content">Content</h2>
-<section id="welcome" class="level3">
-<h3 class="anchored" data-anchor-id="welcome">Welcome</h3>
-<details>
-<summary>
-Week One: January 14, 16: Setup
-</summary>
-<div class="sourceCode" id="cb1" width="780" height="500"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><iframe class="sourceCode markdown code-with-copy" src="slides/01-welcome.html"></iframe></div>
-<p><a href="slides/01-welcome.pdf">Slides PDF</a></p>
-<p><a href="https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614&amp;ppg=35">Reading: Making Sense of Data, Chapter 2, p.&nbsp;19-32</a></p>
-<p><a href="https://classroom.github.com/a/ypH8iEXF">Lab: Practice Lab</a><br>
-Due: Thursday Jan 23, 2:30pm</p>
-</details>
-</section>
-<section id="data-display" class="level3">
-<h3 class="anchored" data-anchor-id="data-display">Data Display</h3>
-<details>
-<summary>
-Week Two: January 21, 23: Data Display
-</summary>
-<div class="sourceCode" id="cb2" width="780" height="500"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><iframe class="sourceCode markdown code-with-copy" src="slides/02-data-display.html"></iframe></div>
-<p><a href="slides/02-data-display.pdf">Slides PDF</a></p>
-<p><a href="https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614&amp;ppg=35">Reading: Making Sense of Data, Chapter 2, p.&nbsp;19-32</a></p>
-<p><a href="./code/data_display_activity.html">Class Activity: Data Display</a></p>
-<p><a href="https://classroom.github.com/a/4qDGRQsy">Lab: Data Display</a><br>
-Due: Thursday Jan 30, 2:30pm</p>
-</details>
-<details>
-<summary>
-Week Three: January 28, 30: Data Distortion
-</summary>
-<p><a href="https://web.stevenson.edu/mbranson/m4tp/version1/fake-news-misleading-graphs.html">Reading: Misleading Graphs</a></p>
-<p><a href="./code/data_distortion_activity.html">Class Activity: Data Distortion</a></p>
-<p><a href="https://classroom.github.com/a/MlNXvWRF">Lab: Data Distortion</a><br>
-Due: Thursday Feb 6, 2:30pm</p>
-</details>
-<details>
-<summary>
-Week Four: February 4, 7: Data Filtering
-</summary>
-<p><a href="https://youtu.be/v5pJfu-yn-0">Video: Logical Indexing</a></p>
-<p><a href="./code/data_filtering_activity.html">Class Activity: Data Filtering</a></p>
-<p><a href="https://classroom.github.com/a/WsxZrwZP">Activities Repo</a></p>
-<p><a href="https://classroom.github.com/a/TwR2gnVy">Lab: Data Filtering</a><br>
-Due: Thursday Feb 13, 2:30pm</p>
-</details>
-<details>
-<summary>
-Week Five: February 11, 13: Interactive Display
-</summary>
-<p><a href="https://www.tableau.com/viz-gallery">Interactive Viz Gallery</a></p>
-<p><a href="./code/data_interactivity_activity.html">Class Activity: Data Interactivity</a></p>
-<p><a href="https://classroom.github.com/a/xwNOik6D">Lab: Data Interactivity</a><br>
-Due: Thursday Feb 20, 2:30pm</p>
-</details>
-</section>
-<section id="data-gathering" class="level3">
-<h3 class="anchored" data-anchor-id="data-gathering">Data Gathering</h3>
-<details>
-<summary>
-Week Six: February 18, 20: Turning Anything Into Data
-</summary>
-</details>
-<details>
-<summary>
-Week Seven: February 25, 27: Web Data Analytics and Scraping
-</summary>
-</details>
-<details>
-<summary>
-Week Eight: March 11, 13: Data Entry and Storage with Pandas
-</summary>
-</details>
-</section>
-<section id="data-processing" class="level3">
-<h3 class="anchored" data-anchor-id="data-processing">Data Processing</h3>
-<details>
-<summary>
-Week Nine: March 18, 20: Statistics
-</summary>
-</details>
-<details>
-<summary>
-Week Ten: March 25, 27: Data Transformations
-</summary>
-</details>
-<details>
-<summary>
-Week Eleven: April 1, 3: Modeling and Overfitting
-</summary>
-</details>
-<details>
-<summary>
-Week Twelve: April 8: Clustering
-</summary>
-</details>
-</section>
-<section id="data-storytelling" class="level3">
-<h3 class="anchored" data-anchor-id="data-storytelling">Data Storytelling</h3>
-<details>
-<summary>
-Week Thirteen: April 15, 17: Hypothesis Driven Analysis
-</summary>
-</details>
-<details>
-<summary>
-Week Fourteen: April 22, 24: Storytelling Challenge
-</summary>
-</details>
-<details>
-<summary>
-Week Fifteen: April 29: Project Preparation
-</summary>
-</details>
-</section>
-<section id="final-presentations" class="level3">
-<h3 class="anchored" data-anchor-id="final-presentations">Final Presentations</h3>
+<!-- practice using sheets, how to type formula =, how to pull down the formula -->
+<!-- or not sheets...practice with colab. downloading. submitting back to github -->
+<p><strong>Data Display</strong></p>
+<ul>
+<li>Week Two: January 21, 23: Display Types and Anatomy of a Chart
+<ul>
+<li>Reading: <a href="https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614&amp;ppg=48">Making Sense of Data, Chapter 2, p.&nbsp;32-50</a></li>
+<li>Slides: Display Types and Anatomy of a Chart <a href="./slides/02-data-display.html">Reveal</a>, <a href="slides/02-data-display.pdf">PDF</a></li>
+<li>Class Activity: <a href="./code/data_display_activity.html">Data Display</a></li>
+<li>Lab: <a href="https://classroom.github.com/a/4qDGRQsy">Data Display</a> Due: Thursday Jan 30, 2:30pm <!-- precoded plots exemplifying graph types. students identify all things --> <!-- come up with story for the figures --></li>
+</ul></li>
+<li>Week Three: January 28, 30: Data Distortion
+<ul>
+<li>Reading: <a href="https://web.stevenson.edu/mbranson/m4tp/version1/fake-news-misleading-graphs.html">Misleading Graphs</a></li>
+<li>Class Activity: <a href="./code/data_distortion_activity.html">Data Distortion</a></li>
+<li>Lab: <a href="https://classroom.github.com/a/MlNXvWRF">Data Distortion</a> Due: Thursday Feb 6, 2:30pm</li>
+</ul></li>
+<li>Week Four: February 4, 7: Data Filtering
+<ul>
+<li>Video: <a href="https://youtu.be/v5pJfu-yn-0">Logical Indexing</a></li>
+<li>Class Activity: <a href="./code/data_filtering_activity.html">Data Filtering</a></li>
+<li>Lab: <a href="https://classroom.github.com/a/TwR2gnVy">Data Filtering</a> Due: Thursday Feb 13, 2:30pm</li>
+<li><a href="https://classroom.github.com/a/WsxZrwZP">Activities Repo</a></li>
+</ul></li>
+<li>Week Five: February 11, 13: Interactive Display
+<ul>
+<li>Explore: <a href="https://www.tableau.com/viz-gallery">Interactive Viz Gallery</a></li>
+<li>Class Activity: <a href="./code/data_interactivity_activity.html">Data Interactivity</a></li>
+<li>Lab: <a href="https://classroom.github.com/a/xwNOik6D">Data Interactivity</a> Due: Thursday Feb 20, 2:30pm</li>
+</ul></li>
+</ul>
+<p><strong>Data Gathering</strong></p>
+<ul>
+<li>Week Six: February 18, 20: Turning Anything Into Data
+<ul>
+<li>Reading: <a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch8/5214817-eng.htm">Variable Types</a></li>
+<li>Reading: <a href="https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch14/spd_0001-eng.htm">Surveys</a></li>
+<li>Slides: <a href="./slides/06-data-gathering.html">Data Gathering</a></li>
+<li>Class Activity: <a href="https://forms.gle/rqqcmMtnEHc6g3276">Google Form Data</a></li>
+<li>Lab: Data Entry</li>
+</ul></li>
+<li>Week Seven: February 25, 27: Web Data Analytics and Scraping
+<ul>
+<li>Lab: Google Analytics <!-- https://quarto.org/docs/publishing/ci.html --></li>
+</ul></li>
+<li>Spring Break: March 1-9</li>
+<li>Week Eight: March 11, 13: Data Wrangling</li>
+</ul>
+<p><strong>Data Processing</strong></p>
+<ul>
+<li>Week Nine: March 18, 20: Statistics
+<ul>
+<li>Lab: Numpy Calculations</li>
+</ul></li>
+<li>Week Ten: March 25, 27: Data Transformations
+<ul>
+<li>Lab: Dot-to-dot</li>
+</ul></li>
+<li>Week Eleven: April 1, 3: Modeling and Overfitting
+<ul>
+<li>Lab: Matplotlib</li>
+</ul></li>
+<li>Week Twelve: April 8: Clustering</li>
+</ul>
+<p><strong>Data Storytelling</strong></p>
+<ul>
+<li>Week Thirteen: April 15, 17: Hypothesis Driven Analysis
+<ul>
+<li>Lab: Hypothesis Testing</li>
+</ul></li>
+<li>Week Fourteen: April 22, 24: Storytelling Challenge &amp; Project Preparation</li>
+<li>Week Fifteen: April 29: No Class Meeting</li>
+</ul>
+<p><strong>Final Presentations Code C</strong></p>
 <ul>
 <li>Thursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks</li>
 </ul>
-<!-- 
+<!-- ## Week 1 - Setup
 
-### Notes
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|Tu Jan 14||||
+|Th Jan 16|||[Reading: Gentle Chart Types](https://chartio.com/learn/charts/essential-chart-types-for-data-visualization/) </br> [Reading: Visualizations p. 19-32](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614) </br> [Lab 1: Hall of Fame](https://classroom.github.com/a/36z5eOtg) due 2:30pm Jan 26|
+
+## Week 2 - Intro to Visualization in Sheets
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Jan 22|[Reading: Gentle Chart Types](https://chartio.com/learn/charts/essential-chart-types-for-data-visualization/) </br> [Reading: Visualizations p. 19-32](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=427614)|[Slides: Intro to Visualizations](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240122-introduction-to-visualizations.pdf) ||
+|W Jan 24||[Slides: Organization and Transformation](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240124-data-transformation-organization.pdf) ||
+|F Jan 26|Lightning talks 11-11:50am <br> [Lab 1: Hall of Fame](https://classroom.github.com/a/36z5eOtg) due 2:30pm||[Lab 2: Dot to dot](https://classroom.github.com/a/0Kb-l_iO) due Feb 2 at 2:30pm|
+
+## Week 3 - Transformations
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Jan 29||[Slides: Tranformations Continued](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240129-transformations-continued.pdf)||
+|W Jan 31||[Colab: Installation Instructions](https://colab.research.google.com/github/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240131_colab_intro.ipynb)||
+|F Feb 02|||[Reading: File Naming](https://uq.pressbooks.pub/digital-essentials-data-and-files/chapter/file-naming-and-formats/) <br> [Reading: File Systems All Sections](https://e115.engr.ncsu.edu/file-systems/) <br> [Lab 3: Dot to do ipynb](https://classroom.github.com/a/igLOWZ-h) due Feb 9 at 2:30pm|
+
+## Week 4 - Storytelling
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Feb 05||[Slides: File Organization](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240205-file-system-review.pdf)||
+|W Feb 07|[Reading: File Naming](https://uq.pressbooks.pub/digital-essentials-data-and-files/chapter/file-naming-and-formats/) <br> [Reading: File Systems All Sections](https://e115.engr.ncsu.edu/file-systems/)|[Slides: Data Storytelling](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240207-data-storytelling.pdf)|[Reading: Storytelling Music Example p. 1-7](https://journals.sagepub.com/doi/epdf/10.2190/EM.31.1.c)|
+|F Feb 09|[Lab 2: Dot to dot](https://classroom.github.com/a/0Kb-l_iO) due at 2:30pm <br> [Lab 3: Dot to dot ipynb](https://classroom.github.com/a/igLOWZ-h) due at 2:30pm|[Colab: Vocal Analysis](https://colab.research.google.com/github/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240209_voice_analysis.ipynb)|[Reading: Science & Story p. 8-14](https://allegheny.alma.exlibrisgroup.com/discovery/openurl?institution=01ACO_INST&rfr_id=info:sid%2Fsummon&rft_dat=ie%3D51154733620003906,ie%3D5159145450003906,ie%3D2148230190003906,language%3DEN&svc_dat=CTO&u.ignore_date_coverage=true&vid=01ACO_INST:Services) <br> [Lab 4: Voice Analysis](https://classroom.github.com/a/fJEPT6I4) due Feb 16th at 11:59pm|
+
+## Week 5 - Google Analytics
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Feb 12|||[Reading: General Storytelling](https://clauswilke.com/dataviz/telling-a-story.html)|
+|W Feb 14|[Reading: Storytelling Music Example p. 1-7](https://journals.sagepub.com/doi/epdf/10.2190/EM.31.1.c)|[Slides: Google Analytics by OBC](https://github.com/CMPSC-301-Allegheny-College-Spring-2023/classDocs/blob/main/lessons/02/02week_cs301_24Jan2023_googleAnalytics.pdf)|[Reading: Storytelling Business Example](https://mitsloan.mit.edu/ideas-made-to-matter/next-chapter-analytics-data-storytelling)|
+|F Feb 16|[Lab 4: Voice Analysis](https://classroom.github.com/a/fJEPT6I4) due 11:59 pm||[Lab 5: Resto Google Analytics](https://classroom.github.com/a/RbaYQTOJ) due F Feb 23 at 11:59pm|
+
+## Week 6 - Dashboards
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Feb 19||||
+|W Feb 21||[Slides: Dashboards](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240221-dashboards.pdf)||
+|F Feb 23|[Lab 5: Resto Google Analytics](https://classroom.github.com/a/RbaYQTOJ) due F Feb 23 at 11:59pm|||
+
+## Week 7 - Introduction to Numpy
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Feb 26||||
+|W Feb 28||Intro to numpy||
+|F Mar 01||[Slides: transformations in numpy](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240301-transformations-in-numpy.pdf)|[Reading: Describing Data p. 17-46](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=31)|
+
+## Spring Break
+
+## Week 8 - Stats
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Mar 11|[Reading: Describing Data p. 17-46](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=31)|[Slides: data descriptors in numpy](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240311-describing-data-in-numpy.pdf)|[Lab 6: Data Descriptors in Numpy](https://classroom.github.com/a/yx1xFxym) due March 18th at 11am|
+|W Mar 13|||[Reading: Preparing Data Tables p. 47-59](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=61)|
+|F Mar 15||[Slides: distributions intro](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240315-distributions-intro.pdf)||
+
+## Week 9 - Stats Continued
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Mar 18|[Lab 6: Data Descriptors in Numpy](https://classroom.github.com/a/yx1xFxym) due at 11am|[Slides: confidence interval, hypothesis testing](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240318-hypothesis-testing.pdf)||
+|W Mar 20|[Reading: Preparing Data Tables p. 47-59](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=61)|[Slides: hypothesis testing continued](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240320-hypothesis-testing-continued.pdf)||
+|F Mar 22||[Board: Matplotlib Intro]|[Lab 7: Testing Hypotheses](https://classroom.github.com/a/gnvNGjAL) due March 29th at 11:59pm|
+
+## Week 10 - Matplotlib
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Mar 25||[Board: Logical Indexing]||
+|W Mar 27||[Code: matplotlib formatting](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240327-matplotlib-formatting.py)||
+|F Mar 29|[Lab 7: Testing Hypotheses](https://classroom.github.com/a/gnvNGjAL) due March at 11:59pm||[Lab 8: Matplotlib](https://classroom.github.com/a/UlUzGaDt) due April 5 at 11:59pm|
+
+## Week 11 - Linear Relationships
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Apr 01||[Slides: Correlation and Regression](https://github.com/allegheny-college-cmpsc-105-spring-2024/course-materials/blob/main/notes/20240401-correlation-regression.pdf)|[Reading: Correlation p. 69-71](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=83)|
+|W Apr 03||||
+|F Apr 05|[Lab 8: Matplotlib](https://classroom.github.com/a/UlUzGaDt) due at 11:59pm|||
+
+## Week 12 - Tableau Public
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Apr 08||[Biased and Unbiased Slopes]||
+|W Apr 10||Tableau Public - first exploration||
+|F Apr 12||Tableau Public - overfitting |[Lab 9: Songdata Correlations](https://classroom.github.com/a/VfrKh8M7) due Apr 19 at 11:59pm|
+
+## Week 13 - Project Consultation
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Apr 15||||
+|W Apr 17||||
+|F Apr 19|[Lab 9: Songdata Correlations](https://classroom.github.com/a/VfrKh8M7) due at 11:59pm|[Initial Project Meetings](https://docs.google.com/spreadsheets/d/1PQoFkdfPZGWLfPZzknpVNqdnq6-bgphOttl5uiCnWKU/edit?usp=sharing)||
+
+## Week 14 - Project Consultation
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Apr 22||||
+|W Apr 24|||[Project Repo: Data Insight](https://classroom.github.com/a/pojZiZlA) due May 7 at 11:59am|
+|F Apr 26 class||[Department Survey](https://forms.gle/KhXfL4juCt7VPegRA) <br> [RSE Survey](https://allegheny.instructure.com/courses/10873/external_tools/1268)||
+|F Apr 26 lab|[Checkpoint Presentations](https://docs.google.com/spreadsheets/d/1PQoFkdfPZGWLfPZzknpVNqdnq6-bgphOttl5uiCnWKU/edit?usp=sharing)|||
+
+## Week 15 - Project Consultation
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|M Apr 29|[Checkpoint Presentations](https://docs.google.com/spreadsheets/d/1PQoFkdfPZGWLfPZzknpVNqdnq6-bgphOttl5uiCnWKU/edit?usp=sharing)|||
+
+## Final Project Due
+
+| Date  | Due              | Links to in-class materials | Links to new assignments |
+|-------|------------------|-----------------------------|----------------------|
+|Tu May 07|[Project Repo: Data Insight](https://classroom.github.com/a/pojZiZlA) due at 11:59am||| -->
 
 
-
-
-
-```wnwniuehu
-
-```
-
-
-
-
-
-setup notebook [in repo](https://github.com/allegheny-college-cmpsc-105-spring-2025/site/blob/main/code/temp.ipynb), [in site](code/temp.ipynb) -->
-
-
-<script type="ojs-module-contents">
-eyJjb250ZW50cyI6W119
-</script>
-<div id="exercise-loading-indicator" class="exercise-loading-indicator d-none d-flex align-items-center gap-2">
-<div id="exercise-loading-status" class="d-flex gap-2">
-
-</div>
-<div class="spinner-grow spinner-grow-sm">
-
-</div>
-</div>
-<script type="vfs-file">
-W10=
-</script>
-</section>
-</section>
 
 </main> <!-- /main -->
-<script type="ojs-module-contents">
-eyJjb250ZW50cyI6W119
-</script>
-<script type="module">
-if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
-window._ojs.paths.runtimeToDoc = "../..";
-window._ojs.paths.runtimeToRoot = "../..";
-window._ojs.paths.docToRoot = "";
-window._ojs.selfContained = false;
-window._ojs.runtime.interpretFromScriptTags();
-</script>
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
