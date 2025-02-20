@@ -110,4 +110,18 @@ controls: true
 - Present your partner's visualization
 :::
 
+## Group Activity 2
+
+::: incremental
+- Form new pairs
+- pull up https://www.nytimes.com/2023/07/26/learning/over-75-new-york-times-graphs-for-students-to-analyze.html
+- Find a visualization that uses a line plot
+- Find a visualization that uses a histogram
+- Find a visualization that uses a bar chart
+- Find a visualization that uses a heat map
+- Find a visualization that uses a scatter plot
+- Find a visualization that uses something else
+- Find a visualization that is too complicated
+- Find a visualization that is collectively your favorite
+
 ## End

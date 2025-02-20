@@ -5,6 +5,7 @@ format: revealjs
 slide-number: true
 touch: true
 controls: true
+echo: true
 ---
 
 ## Goals
@@ -12,6 +13,7 @@ controls: true
 ::: incremental
 - What **types** of data can you gather?
 - What **sources** can data come from?
+- How is data **stored** (for CMPSC 105)?
 :::
 
 # Data Types
@@ -94,21 +96,56 @@ and numerical discrete!
 
 # Data Sources
 
-Reading: [Surveys](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch14/spd_0001-eng.htm)
+:::{.column width="50%"}
+![](https://rforhr.com/dataacquisition_hraplc.png)
+:::
 
-## Surveys
+:::{.column width="50%"}
+::: incremental
+- Pre-existing data
+- Extracted data
+- Acquired data
+:::
+:::
+
+::: footer
+https://rforhr.com/dataacquisition.html
+:::
+
+## Data Acquisition
+
+Getting brand new data using surveys and sensors!
+
+## Surveys for Acquisition
+
+::: incremental
+- surveys are directed toward people
+- surveys answer subjective perceptual and behavioral questions, primarily
+- different questions produce different data types
+  - multiple choice questions
+  - free response questions
+  - slider ratings
+  - Likert scales
+:::
+
+## Surveys for Acquisition
 
 ::: incremental
 - Survey development should be guided by a hypothesis
 - Only questions that have appropriate data types for analysis should be used
-- Quality controls should be in place
+- Quality controls should be in place (e.g. timestamps, inclusion criteria)
+- Data security protocols should be in place to protect private data
 - Human Subjects Research must be reviewed by the Institutional Review Board
-- Based on the Google Form, what was wrong?
 :::
 
-## Sensors {.smaller}
+. . .
+
+Reading: [Surveys](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch14/spd_0001-eng.htm)
+
+## Sensors for Acquisition {.smaller}
 
 ::: incremental
+- sensors can measure inanimate objects/materials or people/animals
 - electronic sensors for things
   - motion detection
   - freezer thermometer
@@ -122,28 +159,151 @@ Reading: [Surveys](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch14/spd_00
     - electrodermal
 :::
 
-. . .
+## Sensors for Acquisition {.smaller}
 
-[https://www.youtube.com/watch?v=yyxVG-4Jd-o](https://www.youtube.com/watch?v=yyxVG-4Jd-o)  
-[Max with Mediapipe]()
+<!-- ![](https://www.youtube.com/watch?v=yyxVG-4Jd-o) -->
 
-## Scanners with sensors
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yyxVG-4Jd-o?si=P7La4JN65cbNuTyj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Acquisition Drawbacks
 
 ::: incremental
-- Scanners actively cause something to change to make measurement possible
-  - fMRI
-  - CT scan
-  - others?
+- time consuming
+- data management is required (persistent storage, security)
+- maybe the data already exist somewhere
+- maybe surveys and sensors cannot answer the question you have
 :::
 
-## Images as Data
+# Extracted Data
 
-- MUSIC175/materials/20241126-drawing.maxpat
-- Biology uses stains to for counting cells
-- [Image fraud](slides/06-new-yorker.pdf)
+## Extracting Data from Documents {.smaller}
 
-## Sound as Data
+::: incremental
+- Documents often contain information but it is not in an analyzable format
+  - Author names on research papers
+  - Foreground of an image
+  - Background of an image
+  - Video transcripts of speech
+  - Video transcripts of sounds
+  - Cells (biology) appearing in images
+  - Language structure
+    - noun, verb, adj, conjunction,
+    - word length
+    - num vowels
+    - num syllables
+    - etc
+:::
 
-## Time as Data
+## Extracting Data by Web Scraping {.smaller}
+
+::: incremental
+- Scraping is gathering data form websites by reading into the html structure to get the content out of specific html tagged elements.
+- Scraping tools exist to assist with formatting
+  - Requests, BeautifulSoup, Selenium
+  - example with [https://en.wikipedia.org/wiki/Tadasu_no_Mori](https://en.wikipedia.org/wiki/Tadasu_no_Mori) 
+:::
+
+. . .
+
+```{python}
+#| output-location: slide
+import requests
+# Making a GET request
+r = requests.get('https://en.wikipedia.org/wiki/Tadasu_no_Mori')
+# print content of request
+print(r.content)
+```
+
+## Extracting Data Storage
+
+::: incremental
+- extracted data must be entered into usable structures
+  - databases
+  - spreadsheets
+  - plain text files
+:::
+
+## Drawbacks of Extracting Data
+
+::: incremental
+- data entry is time consuming
+- data *should* be consistent, but real data is never perfect, so compromises must be made
+- human errors can be difficult to detect
+- data entry done with automated entry tools is hard to validate
+- validation takes human time, or accepted inaccuracy
+:::
+
+# Pre-existing Data
+
+## Sources of Pre-existing Data
+
+::: incremental
+- [Tableau Data](https://public.tableau.com/app/learn/sample-data)
+- [Others](https://docs.google.com/spreadsheets/d/1uliFBPpcPtAoBczaGXCLgI00mMh7fUdTaObcTEnTtgw/edit?usp=sharing)
+:::
+
+## Drawbacks of Pre-existing Data
+
+::: incremental
+- Ethical collection practices may or may not have been used
+- data have been used repeatedly in explorations leading to bias and overfitting on the data across explorations
+- maybe the pre-existing data cannot answer the question you have
+:::
+
+# Data Fraud
+
+. . .
+
+- [Image fraud Article](https://www.newyorker.com/science/elements/how-a-sharp-eyed-scientist-became-biologys-image-detective), [PDF](slides/06-new-yorker.pdf)
+  
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GeAPtIdb4Qs?si=SueWvWaEizvKWtow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+# Data Storage for CMPSC 105
+
+In this class, we store data in plain text CSV files
+
+## CSV {.smaller}
+
+::: incremental
+- Comma-separated values format
+- plain text file
+  - readable and writable in many software programs
+    - Google Sheets
+    - MS excel
+    - Notepad
+    - Sublime Text
+    - VS Code
+:::
+
+. . .
+
+Reading [CSV Section 2.4 & 2.4.1](https://jhudatascience.org/tidyversecourse/get-data.html#csvs)
+
+## CSV Activity
+
+Make a CSV file based on this one image to explore this open question: Are healthy foods too expensive?
+
+![](https://c7.alamy.com/comp/CNTYDX/tesco-shopping-receipt-CNTYDX.jpg)
+
+How many different things can you imaging recording off of this one image?!
+
+## CSV Activity Details {.smaller}
+
+Start a Google Sheet. Include:
+
+- Store Name
+- Date
+- Time
+- Location
+- Total number of items purchased
+- Total number of non-food items purchased
+- Total amount of "health" foods
+- Total cost in USD
+- Total cost of "health" foods
+- Total cost of non-food items
+
+## Submit your work to your Activities Repo
+
+Use the name "data-gathering-activity.csv"
 
 ## End
