@@ -39,11 +39,12 @@ title: "Materials"
 
 - Week Six: February 18, 20: Turning Anything Into Data
   - Reading: [Variable Types](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch8/5214817-eng.htm)
-  - Reading: [Surveys](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch14/spd_0001-eng.htm)
   - Slides: [Data Gathering](slides/06-data-gathering.qmd)
   - Class Activity: [Google Form Data](https://forms.gle/rqqcmMtnEHc6g3276)
-  - Lab: Data Entry
+  - Class Activity: [Make data-gathering-activity.csv](slides/06-data-gathering.qmd#csv-activity)
+  - Lab: [Data Entry](https://classroom.github.com/a/ltosB-79) Due: Thursday Feb 27, 2:30pm
 - Week Seven: February 25, 27: Web Data Analytics and Scraping
+  - Reading: [Site Maps](https://markitors.com/what-is-a-sitemap/)
   - Lab: Google Analytics
   <!-- https://quarto.org/docs/publishing/ci.html -->
 - Spring Break: March 1-9

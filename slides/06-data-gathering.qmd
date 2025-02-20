@@ -97,7 +97,7 @@ and numerical discrete!
 # Data Sources
 
 :::{.column width="50%"}
-![](https://rforhr.com/dataacquisition_hraplc.png)
+![](https://rforhr.com/dataacquisition_hraplc.png){width="130%"}
 :::
 
 :::{.column width="50%"}
@@ -205,8 +205,7 @@ Reading: [Surveys](https://www150.statcan.gc.ca/n1/edu/power-pouvoir/ch14/spd_00
 
 . . .
 
-```{python}
-#| output-location: slide
+```python
 import requests
 # Making a GET request
 r = requests.get('https://en.wikipedia.org/wiki/Tadasu_no_Mori')
@@ -214,7 +213,7 @@ r = requests.get('https://en.wikipedia.org/wiki/Tadasu_no_Mori')
 print(r.content)
 ```
 
-## Extracting Data Storage
+## Extracting Data & Storage
 
 ::: incremental
 - extracted data must be entered into usable structures
@@ -231,6 +230,7 @@ print(r.content)
 - human errors can be difficult to detect
 - data entry done with automated entry tools is hard to validate
 - validation takes human time, or accepted inaccuracy
+- arbitrary decisions may have to be made
 :::
 
 # Pre-existing Data
@@ -254,7 +254,7 @@ print(r.content)
 
 . . .
 
-- [Image fraud Article](https://www.newyorker.com/science/elements/how-a-sharp-eyed-scientist-became-biologys-image-detective), [PDF](slides/06-new-yorker.pdf)
+[Image fraud Article](https://www.newyorker.com/science/elements/how-a-sharp-eyed-scientist-became-biologys-image-detective), [PDF](/slides/06-new-yorker.pdf)
   
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GeAPtIdb4Qs?si=SueWvWaEizvKWtow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
