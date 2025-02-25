@@ -205,6 +205,8 @@ If extenuating circumstances are severe enough to require more absences and toke
     - [Full Text](https://jakevdp.github.io/PythonDataScienceHandbook/index.html)
 - Python for Data Analysis, 3E by Wes McKinney
     - [Full Text](https://wesmckinney.com/book/)
+- Articles
+  - [Variable Types](https://www.ncbi.nlm.nih.gov/books/NBK557882/)
 
 ---
 

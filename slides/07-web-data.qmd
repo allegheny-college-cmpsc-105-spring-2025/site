@@ -1,0 +1,30 @@
+---
+title: "Week 7: Web Data"
+author: "Emily Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+echo: true
+---
+
+## Goals
+
+- structuring text
+- WYSIWYG vs markup
+
+## Structured Text
+
+- HTML - Hypertext Markup Language
+- CSS - Cascading Style Sheets
+- XML - Extensible Markup Language
+- LaTeX - Compiled Markup
+- markdown
+
+## Markup Languages
+
+"It is a semantic and structural markup language for text documents"
+
+::: footer
+https://www.oreilly.com/library/view/xml-in-a/0596007647/ch01s05.html
+:::
