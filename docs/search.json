@@ -606,21 +606,154 @@
     "href": "slides/07-web-data.html#goals",
     "title": "Week 7: Web Data",
     "section": "Goals",
-    "text": "Goals\n\nstructuring text\nWYSIWYG vs markup"
+    "text": "Goals\n\nWebsite structure\nGathering content off the web\nGathering data about web usage\n\nGoogle Analytics"
   },
   {
-    "objectID": "slides/07-web-data.html#structured-text",
-    "href": "slides/07-web-data.html#structured-text",
+    "objectID": "slides/07-web-data.html#raw-file-types",
+    "href": "slides/07-web-data.html#raw-file-types",
     "title": "Week 7: Web Data",
-    "section": "Structured Text",
-    "text": "Structured Text\n\nHTML - Hypertext Markup Language\nCSS - Cascading Style Sheets\nXML - Extensible Markup Language\nLaTeX - Compiled Markup\nmarkdown"
+    "section": "Raw File Types",
+    "text": "Raw File Types\n\n\nHTML - Hypertext Markup Language\nCSS - Cascading Style Sheets\nXML - Extensible Markup Language\n(also javascript for coding interactions with buttons, and dynamically loading content)"
   },
   {
-    "objectID": "slides/07-web-data.html#markup-languages",
-    "href": "slides/07-web-data.html#markup-languages",
+    "objectID": "slides/07-web-data.html#examples",
+    "href": "slides/07-web-data.html#examples",
     "title": "Week 7: Web Data",
-    "section": "Markup Languages",
-    "text": "Markup Languages\n“It is a semantic and structural markup language for text documents”\n\nhttps://www.oreilly.com/library/view/xml-in-a/0596007647/ch01s05.html"
+    "section": "Examples",
+    "text": "Examples\n\n\nHTML\n\nnotice tags &lt;p&gt;&lt;/p&gt;, &lt;div&gt;&lt;/div&gt;\ncontent is inside of tags\nnot WYSIWYG like MS Word documents\n\nCSS\n\nnotice metadata marking things like font names and colors\n\n“font-family:”\n“color:”\n\nhttps://quarto.org/docs/output-formats/html-themes.html\n\nXML\n\nhierarchical (nested structure)\ntagged metadata\n\n(javascript)\n\n\n\nhttps://www.oreilly.com/library/view/xml-in-a/0596007647/ch01s05.html"
+  },
+  {
+    "objectID": "slides/07-web-data.html#metadata",
+    "href": "slides/07-web-data.html#metadata",
+    "title": "Week 7: Web Data",
+    "section": "Metadata",
+    "text": "Metadata\n\nApplications like your browser need to know metadata about content.\n\n\nwhat kind of content is it?\nif it is a paragraph, it should be rendered one way\nif it is an image, it should be rendered a different way\nif it is a url, it should be clickable"
+  },
+  {
+    "objectID": "slides/07-web-data.html#example",
+    "href": "slides/07-web-data.html#example",
+    "title": "Week 7: Web Data",
+    "section": "Example",
+    "text": "Example"
+  },
+  {
+    "objectID": "slides/07-web-data.html#other-markup",
+    "href": "slides/07-web-data.html#other-markup",
+    "title": "Week 7: Web Data",
+    "section": "Other Markup",
+    "text": "Other Markup\n\n\nLaTeX - Compiled Markup, often used for rendering mathematical expressions\nmarkdown\n\n\n\n## Report for Data Exploration\n\n### Introduction\n\nData was explored using different chart types.\n\n### Methods\n\nMatplotlib functions for making line charts, boxplots, and historgrams were used."
+  },
+  {
+    "objectID": "slides/07-web-data.html#rendered-version",
+    "href": "slides/07-web-data.html#rendered-version",
+    "title": "Week 7: Web Data",
+    "section": "Rendered version",
+    "text": "Rendered version\n\nReport for Data Exploration\nIntroduction\nData was explored using different chart types.\nMethods\nMatplotlib functions for making line charts, boxplots, and historgrams were used."
+  },
+  {
+    "objectID": "slides/07-web-data.html#summary-of-website-structure",
+    "href": "slides/07-web-data.html#summary-of-website-structure",
+    "title": "Week 7: Web Data",
+    "section": "Summary of Website Structure",
+    "text": "Summary of Website Structure\n\n\nwebsites use structured texts that can be rendered\nmetadata tags are everywhere\nmetadata tags describe the data and can be used to locate data"
+  },
+  {
+    "objectID": "slides/07-web-data.html#how-things-end-up-in-search-engine-results",
+    "href": "slides/07-web-data.html#how-things-end-up-in-search-engine-results",
+    "title": "Week 7: Web Data",
+    "section": "How Things End Up in Search Engine Results",
+    "text": "How Things End Up in Search Engine Results\nsearch engine bots, aka crawlers or spiders, need to know about all the pages on a website and all the content on the pages in order to make it indexable, i.e. usable for web searching.\nA Google bot has to discover webpages, crawl them, index them, and query a giant database to return related content to search terms."
+  },
+  {
+    "objectID": "slides/07-web-data.html#discovery",
+    "href": "slides/07-web-data.html#discovery",
+    "title": "Week 7: Web Data",
+    "section": "Discovery",
+    "text": "Discovery\n\n\ndone with robots.txt\nsitemaps"
+  },
+  {
+    "objectID": "slides/07-web-data.html#robots.txt",
+    "href": "slides/07-web-data.html#robots.txt",
+    "title": "Week 7: Web Data",
+    "section": "robots.txt",
+    "text": "robots.txt"
+  },
+  {
+    "objectID": "slides/07-web-data.html#robots.txt-1",
+    "href": "slides/07-web-data.html#robots.txt-1",
+    "title": "Week 7: Web Data",
+    "section": "robots.txt",
+    "text": "robots.txt\n\n\ndirectives tell bots where to go / not go (“disallow”)\n\nhelps protect information (in theory) on admin pages or other private pages\nhelps keep search engine results relevant\ncould prevent duplication if duplicate information is on a website\n\nincludes links to sitemaps!"
+  },
+  {
+    "objectID": "slides/07-web-data.html#sitemaps",
+    "href": "slides/07-web-data.html#sitemaps",
+    "title": "Week 7: Web Data",
+    "section": "Sitemaps",
+    "text": "Sitemaps\n\n\nlists out all pages (unique urls) of a website that should be indexed\nthese can be used to scrape information off a website\nlarge websites may have multiple site maps"
+  },
+  {
+    "objectID": "slides/07-web-data.html#sitemaps-1",
+    "href": "slides/07-web-data.html#sitemaps-1",
+    "title": "Week 7: Web Data",
+    "section": "Sitemaps",
+    "text": "Sitemaps\n\n\nhttps://markitors.com/what-is-a-sitemap/"
+  },
+  {
+    "objectID": "slides/07-web-data.html#participation",
+    "href": "slides/07-web-data.html#participation",
+    "title": "Week 7: Web Data",
+    "section": "Participation",
+    "text": "Participation\n\nhow many sitemaps does Facebook have?\nhow many sitemaps does Allegheny have?\nWalmart?\nOn another sharable site, see what you find and post a sitemap in Discord!"
+  },
+  {
+    "objectID": "slides/07-web-data.html#crawling",
+    "href": "slides/07-web-data.html#crawling",
+    "title": "Week 7: Web Data",
+    "section": "Crawling",
+    "text": "Crawling"
+  },
+  {
+    "objectID": "slides/07-web-data.html#indexing",
+    "href": "slides/07-web-data.html#indexing",
+    "title": "Week 7: Web Data",
+    "section": "Indexing",
+    "text": "Indexing"
+  },
+  {
+    "objectID": "slides/07-web-data.html#scraping",
+    "href": "slides/07-web-data.html#scraping",
+    "title": "Week 7: Web Data",
+    "section": "Scraping",
+    "text": "Scraping\n\nregular people (not Google) can also get content off the web by using strategies similar to discorvery, crawling, and indexing."
+  },
+  {
+    "objectID": "slides/07-web-data.html#scrapping-tools",
+    "href": "slides/07-web-data.html#scrapping-tools",
+    "title": "Week 7: Web Data",
+    "section": "Scrapping tools",
+    "text": "Scrapping tools\n\nCode: Requests, BeautifulSoup\nApplications:\n\n\n    \n\nCredit: Octoparse"
+  },
+  {
+    "objectID": "slides/07-web-data.html#activity",
+    "href": "slides/07-web-data.html#activity",
+    "title": "Week 7: Web Data",
+    "section": "Activity",
+    "text": "Activity\n\nTry to get a csv file from dataminer\nname it scraping-activity.csv\nupload to your activities repo"
+  },
+  {
+    "objectID": "slides/07-web-data.html#google-analytics",
+    "href": "slides/07-web-data.html#google-analytics",
+    "title": "Week 7: Web Data",
+    "section": "Google Analytics",
+    "text": "Google Analytics\nsee Data Analytics Slides"
+  },
+  {
+    "objectID": "slides/07-web-data.html#end",
+    "href": "slides/07-web-data.html#end",
+    "title": "Week 7: Web Data",
+    "section": "End",
+    "text": "End"
   },
   {
     "objectID": "slides/01-welcome.html#cmpsc-105---data-exploration",
@@ -704,6 +837,6 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping \n\nReading: Site Maps \nSlides (OBC): Google Analytics\nLab: Google Analytics  \n\nSpring Break: March 1-9\nWeek Eight: March 11, 13: Data Wrangling\n\nData Processing\n\nWeek Nine: March 18, 20: Statistics\n\nLab: Numpy Calculations\n\nWeek Ten: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Twelve: April 8: Clustering \n\nData Storytelling\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fourteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Fifteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nSlides (OBC): Google Analytics\nLab: Google Analytics  \n\nSpring Break: March 1-9\nWeek Eight: March 11, 13: Data Wrangling\n\nData Processing\n\nWeek Nine: March 18, 20: Statistics\n\nLab: Numpy Calculations\n\nWeek Ten: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Twelve: April 8: Clustering \n\nData Storytelling\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fourteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Fifteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   }
 ]

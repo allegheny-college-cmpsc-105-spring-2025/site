@@ -10,21 +10,207 @@ echo: true
 
 ## Goals
 
-- structuring text
-- WYSIWYG vs markup
+- Website structure
+- Gathering content off the web
+- Gathering data about web usage
+  - Google Analytics
 
-## Structured Text
+# Website structure
 
+  - structured text
+
+## Raw File Types
+
+::: incremental
 - HTML - Hypertext Markup Language
 - CSS - Cascading Style Sheets
 - XML - Extensible Markup Language
-- LaTeX - Compiled Markup
-- markdown
+- (also javascript for coding interactions with buttons, and dynamically loading content)
+:::
 
-## Markup Languages
+## Examples {.smaller}
 
-"It is a semantic and structural markup language for text documents"
+::: incremental
+- [HTML](https://github.com/allegheny-college-cmpsc-105-spring-2025/site/blob/main/docs/syll/syllabus.html)
+  - notice tags `<p></p>`, `<div></div>`
+  - content is inside of tags
+  - not WYSIWYG like MS Word documents
+- [CSS](https://rpubs.com/drgregmartin/1266676)
+  - notice metadata marking things like font names and colors
+    - "font-family:"
+    - "color:"
+  - https://quarto.org/docs/output-formats/html-themes.html
+- [XML](https://www.walmart.com/sitemap_store_main.xml)
+  - hierarchical (nested structure)
+  - tagged metadata
+- ([javascript](https://gist.githubusercontent.com/gaearon/0b180827c190fe4fd98b4c7f570ea4a8/raw/b9157ce933c79a4559d2aa9ff3372668cce48de7/LikeButton.js))
+:::
 
 ::: footer
 https://www.oreilly.com/library/view/xml-in-a/0596007647/ch01s05.html
+::: 
+
+## Metadata
+
+. . .
+
+Applications like your browser need to know metadata about content.
+
+::: incremental
+- what kind of content is it?
+- if it is a paragraph, it should be rendered one way
+- if it is an image, it should be rendered a different way
+- if it is a url, it should be clickable
 :::
+
+## Example
+
+. . .
+
+![](/images/magnifying.png){width="40%"}
+![](/images/magnifying-text.png){width="40%"}
+
+## Other Markup
+
+::: incremental
+- LaTeX - Compiled Markup, often used for rendering mathematical expressions
+- markdown
+:::
+
+. . .
+
+```md
+## Report for Data Exploration
+
+### Introduction
+
+Data was explored using different chart types.
+
+### Methods
+
+Matplotlib functions for making line charts, boxplots, and historgrams were used.
+```
+
+## Rendered version
+
+. . .
+
+### Report for Data Exploration
+
+#### Introduction
+
+Data was explored using different chart types.
+
+#### Methods
+
+Matplotlib functions for making line charts, boxplots, and historgrams were used.
+
+## Summary of Website Structure
+
+::: incremental
+- websites use structured texts that can be rendered
+- metadata tags are everywhere
+- metadata tags describe the data and can be used to locate data
+:::
+
+
+# Gathering content off the web
+
+::: incremental
+- discovery
+- crawling
+- indexing
+- scraping
+:::
+
+## How Things End Up in Search Engine Results
+
+search engine **bots**, aka **crawlers** or **spiders**, need to know about all
+the pages on a website and all the content on the pages in order to make it
+indexable, i.e. usable for web searching.
+
+A Google bot has to discover webpages, crawl them, index them, and query a giant database to return related content to search terms.
+
+## Discovery
+
+::: incremental
+- done with robots.txt
+- sitemaps
+:::
+
+## robots.txt
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AyPAfzcVn2c?si=NJAYhn4UuwcVKz3p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## robots.txt
+
+::: incremental
+- **directives** tell bots where to go / not go ("disallow")
+  - helps protect information (in theory) on admin pages or other private pages
+  - helps keep search engine results relevant
+  - could prevent duplication if duplicate information is on a website
+- includes links to **sitemaps**!
+:::
+
+## Sitemaps
+
+::: incremental
+- lists out all pages (unique urls) of a website that *should* be indexed
+- these can be used to scrape information off a website
+- large websites may have multiple site maps
+:::
+
+## Sitemaps
+
+![](https://cdn-calje.nitrocdn.com/GkmQdHKNVIJfcQBXNILzBTGjrbmQaEsK/assets/images/optimized/rev-03ab418/markitors.com/wp-content/uploads/2021/05/Sitemap-Example.jpg)
+
+::: footer
+https://markitors.com/what-is-a-sitemap/
+:::
+
+## Participation
+
+- how many sitemaps does Facebook have?
+- how many sitemaps does Allegheny have?
+- Walmart?
+- On another sharable site, see what you find and post a sitemap in Discord!
+
+## Crawling
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JuK7NnfyEuc?si=QvbXbsoQ9M1yYKST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Indexing
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pe-NSvBTg2o?si=aNcKWBtEf5XCKysV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Scraping
+
+- regular people (not Google) can also get content off the web by using strategies similar to discorvery, crawling, and indexing.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ct8Gxo8StBU?si=03rnReEcYjkGkVRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Scrapping tools
+
+- Code: Requests, BeautifulSoup
+- Applications:
+
+<pre>
+<a href="https://www.octoparse.com/blog/9-free-web-scrapers-that-you-cannot-miss#10-free-web-scraping-tools-in-2024" target="_blank">
+    <img src="https://op-official-us-1251101074.cos.na-siliconvalley.myqcloud.com/en/20241218175825452.png" alt="10 FREE Web Scraping Tools in 2024" width="30%" />
+</a>
+<p>Credit: <a href="https://www.octoparse.com/blog/9-free-web-scrapers-that-you-cannot-miss#10-free-web-scraping-tools-in-2024">Octoparse</a></p>
+</pre>
+
+## Activity
+
+- Try to get a csv file from [dataminer](https://dataminer.io/)
+- name it scraping-activity.csv
+- upload to your activities repo
+
+# Gathering data about web usage
+
+## Google Analytics
+
+see [Data Analytics Slides](/slides/07-cs301_24Jan2023_googleAnalytics.pdf)
+
+## End

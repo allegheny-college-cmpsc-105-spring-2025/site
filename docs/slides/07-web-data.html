@@ -29,6 +29,71 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      { color: #003b4f; background-color: #f1f3f5; }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span { color: #003b4f; } /* Normal */
+    code span.al { color: #ad0000; } /* Alert */
+    code span.an { color: #5e5e5e; } /* Annotation */
+    code span.at { color: #657422; } /* Attribute */
+    code span.bn { color: #ad0000; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #20794d; } /* Char */
+    code span.cn { color: #8f5902; } /* Constant */
+    code span.co { color: #5e5e5e; } /* Comment */
+    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+    code span.dt { color: #ad0000; } /* DataType */
+    code span.dv { color: #ad0000; } /* DecVal */
+    code span.er { color: #ad0000; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #ad0000; } /* Float */
+    code span.fu { color: #4758ab; } /* Function */
+    code span.im { color: #00769e; } /* Import */
+    code span.in { color: #5e5e5e; } /* Information */
+    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
+    code span.op { color: #5e5e5e; } /* Operator */
+    code span.ot { color: #003b4f; } /* Other */
+    code span.pp { color: #ad0000; } /* Preprocessor */
+    code span.sc { color: #5e5e5e; } /* SpecialChar */
+    code span.ss { color: #20794d; } /* SpecialString */
+    code span.st { color: #20794d; } /* String */
+    code span.va { color: #111111; } /* Variable */
+    code span.vs { color: #20794d; } /* VerbatimString */
+    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-0G1PHPKVFB"></script>
@@ -151,29 +216,246 @@ Emily Graber
 <section id="goals" class="slide level2">
 <h2>Goals</h2>
 <ul>
-<li>structuring text</li>
-<li>WYSIWYG vs markup</li>
-</ul>
-</section>
-<section id="structured-text" class="slide level2">
-<h2>Structured Text</h2>
+<li>Website structure</li>
+<li>Gathering content off the web</li>
+<li>Gathering data about web usage
 <ul>
-<li>HTML - Hypertext Markup Language</li>
-<li>CSS - Cascading Style Sheets</li>
-<li>XML - Extensible Markup Language</li>
-<li>LaTeX - Compiled Markup</li>
-<li>markdown</li>
+<li>Google Analytics</li>
+</ul></li>
 </ul>
 </section>
-<section id="markup-languages" class="slide level2">
-<h2>Markup Languages</h2>
-<p>“It is a semantic and structural markup language for text documents”</p>
+<section>
+<section id="website-structure" class="title-slide slide level1 center">
+<h1>Website structure</h1>
+<ul>
+<li>structured text</li>
+</ul>
+</section>
+<section id="raw-file-types" class="slide level2">
+<h2>Raw File Types</h2>
+<div>
+<ul>
+<li class="fragment">HTML - Hypertext Markup Language</li>
+<li class="fragment">CSS - Cascading Style Sheets</li>
+<li class="fragment">XML - Extensible Markup Language</li>
+<li class="fragment">(also javascript for coding interactions with buttons, and dynamically loading content)</li>
+</ul>
+</div>
+</section>
+<section id="examples" class="slide level2 smaller">
+<h2>Examples</h2>
+<div>
+<ul>
+<li class="fragment"><a href="https://github.com/allegheny-college-cmpsc-105-spring-2025/site/blob/main/docs/syll/syllabus.html">HTML</a>
+<ul>
+<li class="fragment">notice tags <code>&lt;p&gt;&lt;/p&gt;</code>, <code>&lt;div&gt;&lt;/div&gt;</code></li>
+<li class="fragment">content is inside of tags</li>
+<li class="fragment">not WYSIWYG like MS Word documents</li>
+</ul></li>
+<li class="fragment"><a href="https://rpubs.com/drgregmartin/1266676">CSS</a>
+<ul>
+<li class="fragment">notice metadata marking things like font names and colors
+<ul>
+<li class="fragment">“font-family:”</li>
+<li class="fragment">“color:”</li>
+</ul></li>
+<li class="fragment">https://quarto.org/docs/output-formats/html-themes.html</li>
+</ul></li>
+<li class="fragment"><a href="https://www.walmart.com/sitemap_store_main.xml">XML</a>
+<ul>
+<li class="fragment">hierarchical (nested structure)</li>
+<li class="fragment">tagged metadata</li>
+</ul></li>
+<li class="fragment">(<a href="https://gist.githubusercontent.com/gaearon/0b180827c190fe4fd98b4c7f570ea4a8/raw/b9157ce933c79a4559d2aa9ff3372668cce48de7/LikeButton.js">javascript</a>)</li>
+</ul>
+</div>
 <div class="footer">
 <p>https://www.oreilly.com/library/view/xml-in-a/0596007647/ch01s05.html</p>
 </div>
+</section>
+<section id="metadata" class="slide level2">
+<h2>Metadata</h2>
+<div class="fragment">
+<p>Applications like your browser need to know metadata about content.</p>
+<div>
+<ul>
+<li class="fragment">what kind of content is it?</li>
+<li class="fragment">if it is a paragraph, it should be rendered one way</li>
+<li class="fragment">if it is an image, it should be rendered a different way</li>
+<li class="fragment">if it is a url, it should be clickable</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="example" class="slide level2">
+<h2>Example</h2>
+<div class="fragment">
+<p><img data-src="../images/magnifying.png" style="width:40.0%"> <img data-src="../images/magnifying-text.png" style="width:40.0%"></p>
+</div>
+</section>
+<section id="other-markup" class="slide level2">
+<h2>Other Markup</h2>
+<div>
+<ul>
+<li class="fragment">LaTeX - Compiled Markup, often used for rendering mathematical expressions</li>
+<li class="fragment">markdown</li>
+</ul>
+</div>
+<div class="fragment">
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource md number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="fu">## Report for Data Exploration</span></span>
+<span id="cb1-2"><a></a></span>
+<span id="cb1-3"><a></a><span class="fu">### Introduction</span></span>
+<span id="cb1-4"><a></a></span>
+<span id="cb1-5"><a></a>Data was explored using different chart types.</span>
+<span id="cb1-6"><a></a></span>
+<span id="cb1-7"><a></a><span class="fu">### Methods</span></span>
+<span id="cb1-8"><a></a></span>
+<span id="cb1-9"><a></a>Matplotlib functions for making line charts, boxplots, and historgrams were used.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="rendered-version" class="slide level2">
+<h2>Rendered version</h2>
+<div class="fragment">
+<h3 id="report-for-data-exploration">Report for Data Exploration</h3>
+<h4 id="introduction">Introduction</h4>
+<p>Data was explored using different chart types.</p>
+<h4 id="methods">Methods</h4>
+<p>Matplotlib functions for making line charts, boxplots, and historgrams were used.</p>
+</div>
+</section>
+<section id="summary-of-website-structure" class="slide level2">
+<h2>Summary of Website Structure</h2>
+<div>
+<ul>
+<li class="fragment">websites use structured texts that can be rendered</li>
+<li class="fragment">metadata tags are everywhere</li>
+<li class="fragment">metadata tags describe the data and can be used to locate data</li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="gathering-content-off-the-web" class="title-slide slide level1 center">
+<h1>Gathering content off the web</h1>
+<div>
+<ul>
+<li class="fragment">discovery</li>
+<li class="fragment">crawling</li>
+<li class="fragment">indexing</li>
+<li class="fragment">scraping</li>
+</ul>
+</div>
+</section>
+<section id="how-things-end-up-in-search-engine-results" class="slide level2">
+<h2>How Things End Up in Search Engine Results</h2>
+<p>search engine <strong>bots</strong>, aka <strong>crawlers</strong> or <strong>spiders</strong>, need to know about all the pages on a website and all the content on the pages in order to make it indexable, i.e.&nbsp;usable for web searching.</p>
+<p>A Google bot has to discover webpages, crawl them, index them, and query a giant database to return related content to search terms.</p>
+</section>
+<section id="discovery" class="slide level2">
+<h2>Discovery</h2>
+<div>
+<ul>
+<li class="fragment">done with robots.txt</li>
+<li class="fragment">sitemaps</li>
+</ul>
+</div>
+</section>
+<section id="robots.txt" class="slide level2">
+<h2>robots.txt</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AyPAfzcVn2c?si=NJAYhn4UuwcVKz3p" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</section>
+<section id="robots.txt-1" class="slide level2">
+<h2>robots.txt</h2>
+<div>
+<ul>
+<li class="fragment"><strong>directives</strong> tell bots where to go / not go (“disallow”)
+<ul>
+<li class="fragment">helps protect information (in theory) on admin pages or other private pages</li>
+<li class="fragment">helps keep search engine results relevant</li>
+<li class="fragment">could prevent duplication if duplicate information is on a website</li>
+</ul></li>
+<li class="fragment">includes links to <strong>sitemaps</strong>!</li>
+</ul>
+</div>
+</section>
+<section id="sitemaps" class="slide level2">
+<h2>Sitemaps</h2>
+<div>
+<ul>
+<li class="fragment">lists out all pages (unique urls) of a website that <em>should</em> be indexed</li>
+<li class="fragment">these can be used to scrape information off a website</li>
+<li class="fragment">large websites may have multiple site maps</li>
+</ul>
+</div>
+</section>
+<section id="sitemaps-1" class="slide level2">
+<h2>Sitemaps</h2>
 
+<img data-src="https://cdn-calje.nitrocdn.com/GkmQdHKNVIJfcQBXNILzBTGjrbmQaEsK/assets/images/optimized/rev-03ab418/markitors.com/wp-content/uploads/2021/05/Sitemap-Example.jpg" class="r-stretch"><div class="footer">
+<p>https://markitors.com/what-is-a-sitemap/</p>
+</div>
+</section>
+<section id="participation" class="slide level2">
+<h2>Participation</h2>
+<ul>
+<li>how many sitemaps does Facebook have?</li>
+<li>how many sitemaps does Allegheny have?</li>
+<li>Walmart?</li>
+<li>On another sharable site, see what you find and post a sitemap in Discord!</li>
+</ul>
+</section>
+<section id="crawling" class="slide level2">
+<h2>Crawling</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JuK7NnfyEuc?si=QvbXbsoQ9M1yYKST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</section>
+<section id="indexing" class="slide level2">
+<h2>Indexing</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pe-NSvBTg2o?si=aNcKWBtEf5XCKysV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</section>
+<section id="scraping" class="slide level2">
+<h2>Scraping</h2>
+<ul>
+<li>regular people (not Google) can also get content off the web by using strategies similar to discorvery, crawling, and indexing.</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ct8Gxo8StBU?si=03rnReEcYjkGkVRp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+</iframe>
+</section>
+<section id="scrapping-tools" class="slide level2">
+<h2>Scrapping tools</h2>
+<ul>
+<li>Code: Requests, BeautifulSoup</li>
+<li>Applications:</li>
+</ul>
+<pre><a href="https://www.octoparse.com/blog/9-free-web-scrapers-that-you-cannot-miss#10-free-web-scraping-tools-in-2024" target="_blank">
+    <img src="https://op-official-us-1251101074.cos.na-siliconvalley.myqcloud.com/en/20241218175825452.png" alt="10 FREE Web Scraping Tools in 2024" width="30%">
+</a>
+<p>Credit: <a href="https://www.octoparse.com/blog/9-free-web-scrapers-that-you-cannot-miss#10-free-web-scraping-tools-in-2024">Octoparse</a></p>
+</pre>
+</section>
+<section id="activity" class="slide level2">
+<h2>Activity</h2>
+<ul>
+<li>Try to get a csv file from <a href="https://dataminer.io/">dataminer</a></li>
+<li>name it scraping-activity.csv</li>
+<li>upload to your activities repo</li>
+</ul>
+</section></section>
+<section>
+<section id="gathering-data-about-web-usage" class="title-slide slide level1 center">
+<h1>Gathering data about web usage</h1>
 
 </section>
+<section id="google-analytics" class="slide level2">
+<h2>Google Analytics</h2>
+<p>see <a href="../slides/07-cs301_24Jan2023_googleAnalytics.pdf">Data Analytics Slides</a></p>
+</section>
+<section id="end" class="slide level2">
+<h2>End</h2>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
