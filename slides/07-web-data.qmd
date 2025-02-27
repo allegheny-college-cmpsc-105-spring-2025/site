@@ -201,13 +201,26 @@ https://markitors.com/what-is-a-sitemap/
 <p>Credit: <a href="https://www.octoparse.com/blog/9-free-web-scrapers-that-you-cannot-miss#10-free-web-scraping-tools-in-2024">Octoparse</a></p>
 </pre>
 
+## Data Miner
+
+. . .
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zrq5E0zagGw?si=b9gNEtEno0_pO_yV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Activity
 
 - Try to get a csv file from [dataminer](https://dataminer.io/)
+  - click on `make your own recipe`
+  - ![](/images/07-dataminer.png){width="20%"}
 - name it scraping-activity.csv
 - upload to your activities repo
 
-# Gathering data about web usage
+## Summary of gathering content off the web
+
+- thanks to structured text on the web, scraping code or programs can gather information and
+  turn it into useable data for exploration.
+
+# Gathering data *about* web usage
 
 ## Google Analytics
 

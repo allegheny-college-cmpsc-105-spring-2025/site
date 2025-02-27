@@ -735,11 +735,25 @@
     "text": "Scrapping tools\n\nCode: Requests, BeautifulSoup\nApplications:\n\n\n    \n\nCredit: Octoparse"
   },
   {
+    "objectID": "slides/07-web-data.html#data-miner",
+    "href": "slides/07-web-data.html#data-miner",
+    "title": "Week 7: Web Data",
+    "section": "Data Miner",
+    "text": "Data Miner"
+  },
+  {
     "objectID": "slides/07-web-data.html#activity",
     "href": "slides/07-web-data.html#activity",
     "title": "Week 7: Web Data",
     "section": "Activity",
-    "text": "Activity\n\nTry to get a csv file from dataminer\nname it scraping-activity.csv\nupload to your activities repo"
+    "text": "Activity\n\nTry to get a csv file from dataminer\n\nclick on make your own recipe\n\n\nname it scraping-activity.csv\nupload to your activities repo"
+  },
+  {
+    "objectID": "slides/07-web-data.html#summary-of-gathering-content-off-the-web",
+    "href": "slides/07-web-data.html#summary-of-gathering-content-off-the-web",
+    "title": "Week 7: Web Data",
+    "section": "Summary of gathering content off the web",
+    "text": "Summary of gathering content off the web\n\nthanks to structured text on the web, scraping code or programs can gather information and turn it into useable data for exploration."
   },
   {
     "objectID": "slides/07-web-data.html#google-analytics",
