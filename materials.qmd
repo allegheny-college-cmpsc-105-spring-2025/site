@@ -41,7 +41,7 @@ title: "Materials"
 - Week Seven: February 25, 27: Web Data Analytics and Scraping
   - Reading: [Site Maps](https://markitors.com/what-is-a-sitemap/)
   - Slides: [Gathering Web Data](slides/07-web-data.qmd)
-  - Slides (OBC): [Google Analytics](slides/07-cs301_24Jan2023_googleAnalytics.pdf)
+  - Class Activity Optional: [Make data-scraping-activity.csv](slides/07-web-data.qmd#optional-activity)
   - Lab: Google Analytics
   <!-- https://quarto.org/docs/publishing/ci.html -->
   <!-- https://allegheny.edu/sitemap_index.xml -->

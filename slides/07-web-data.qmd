@@ -207,12 +207,12 @@ https://markitors.com/what-is-a-sitemap/
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Zrq5E0zagGw?si=b9gNEtEno0_pO_yV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-## Activity
+## Optional Activity
 
 - Try to get a csv file from [dataminer](https://dataminer.io/)
   - click on `make your own recipe`
   - ![](/images/07-dataminer.png){width="20%"}
-- name it scraping-activity.csv
+- name it `data-scraping-activity.csv`
 - upload to your activities repo
 
 ## Summary of gathering content off the web
