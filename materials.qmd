@@ -47,10 +47,10 @@ title: "Materials"
   <!-- https://allegheny.edu/sitemap_index.xml -->
 - Spring Break: March 1-9
 - Week Nine: March 11, 13: Data Wrangling
-  - Reading: [Site Maps](https://markitors.com/what-is-a-sitemap/)
+  <!-- - Reading: [Site Maps](https://markitors.com/what-is-a-sitemap/) -->
   - Slides: [Data Wrangling](slides/09-data-wrangling.qmd)
-  - Class Activity Optional: [Make data-scraping-activity.csv](slides/07-web-data.qmd#optional-activity)
-  - Lab: Google Analytics
+  - Class Activity: [Data Wrangling Notebook](code/data_wrangling_activity.ipynb)
+  <!-- - Lab: Google Analytics -->
 
 
 **Data Processing**
