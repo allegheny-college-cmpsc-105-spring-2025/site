@@ -14,88 +14,662 @@
     "text": "Announcements\n\n\n\nMade with https://docs.widgetbot.io/"
   },
   {
-    "objectID": "slides/02-data-display.html#goals",
-    "href": "slides/02-data-display.html#goals",
-    "title": "Week 2: Data Display",
+    "objectID": "slides/09-data-wrangling.html#goals",
+    "href": "slides/09-data-wrangling.html#goals",
+    "title": "Week 9: Data Wrangling",
     "section": "Goals",
-    "text": "Goals\n\n\nreview display types\nreview anatomy of a graph\ngroup activity"
+    "text": "Goals\n\ndefine the data wrangling cycle\nreview sanity checks on data\nreview common operations to manipulate data\nuse pandas to wrangle data in notebook"
   },
   {
-    "objectID": "slides/02-data-display.html#display-types-1",
-    "href": "slides/02-data-display.html#display-types-1",
-    "title": "Week 2: Data Display",
-    "section": "Display Types",
-    "text": "Display Types\n\n\n\n\n\ndata table\npie chart\npoint or dot plot"
+    "objectID": "slides/09-data-wrangling.html#definition",
+    "href": "slides/09-data-wrangling.html#definition",
+    "title": "Week 9: Data Wrangling",
+    "section": "Definition",
+    "text": "Definition\nData wrangling is the process of cleaning, preprocessing and validating raw data before use"
   },
   {
-    "objectID": "slides/02-data-display.html#pie-chart",
-    "href": "slides/02-data-display.html#pie-chart",
-    "title": "Week 2: Data Display",
-    "section": "Pie Chart",
-    "text": "Pie Chart"
+    "objectID": "slides/09-data-wrangling.html#cycle",
+    "href": "slides/09-data-wrangling.html#cycle",
+    "title": "Week 9: Data Wrangling",
+    "section": "Cycle",
+    "text": "Cycle"
   },
   {
-    "objectID": "slides/02-data-display.html#dot-plot",
-    "href": "slides/02-data-display.html#dot-plot",
-    "title": "Week 2: Data Display",
-    "section": "Dot Plot",
-    "text": "Dot Plot"
+    "objectID": "slides/09-data-wrangling.html#section",
+    "href": "slides/09-data-wrangling.html#section",
+    "title": "Week 9: Data Wrangling",
+    "section": "",
+    "text": "shape –&gt; df.shape()\ncolumn names –&gt; df.column\ntypes of data –&gt; df.dtypes"
   },
   {
-    "objectID": "slides/02-data-display.html#additional-types",
-    "href": "slides/02-data-display.html#additional-types",
-    "title": "Week 2: Data Display",
-    "section": "Additional Types",
-    "text": "Additional Types\n\n\n\nhistogram\nbar plot\nline plot\nscatter plot\nheat map\nbox and whisker plot\n\n\n\n\n\n← occurrences (binned)\n← processed categories\n← continuous line\n← shows relationships\n← three variables in 2D\n← stat on a variable"
+    "objectID": "slides/09-data-wrangling.html#section-1",
+    "href": "slides/09-data-wrangling.html#section-1",
+    "title": "Week 9: Data Wrangling",
+    "section": "",
+    "text": "If a column has a mix of strings and other data types (e.g., numbers or None values), pandas defaults to object. [GPT]"
   },
   {
-    "objectID": "slides/02-data-display.html#histogram",
-    "href": "slides/02-data-display.html#histogram",
-    "title": "Week 2: Data Display",
-    "section": "Histogram",
-    "text": "Histogram"
+    "objectID": "slides/09-data-wrangling.html#accessing-specific-rows-and-columns",
+    "href": "slides/09-data-wrangling.html#accessing-specific-rows-and-columns",
+    "title": "Week 9: Data Wrangling",
+    "section": "Accessing specific rows and columns",
+    "text": "Accessing specific rows and columns\nloc iloc"
   },
   {
-    "objectID": "slides/02-data-display.html#line-plot",
-    "href": "slides/02-data-display.html#line-plot",
-    "title": "Week 2: Data Display",
-    "section": "Line Plot",
-    "text": "Line Plot"
+    "objectID": "slides/09-data-wrangling.html#concatenation",
+    "href": "slides/09-data-wrangling.html#concatenation",
+    "title": "Week 9: Data Wrangling",
+    "section": "Concatenation",
+    "text": "Concatenation\nAlong Rows Along Cols"
   },
   {
-    "objectID": "slides/02-data-display.html#box-and-whisker-plot",
-    "href": "slides/02-data-display.html#box-and-whisker-plot",
-    "title": "Week 2: Data Display",
-    "section": "Box and Whisker Plot",
-    "text": "Box and Whisker Plot"
+    "objectID": "slides/09-data-wrangling.html#reformatting-strings",
+    "href": "slides/09-data-wrangling.html#reformatting-strings",
+    "title": "Week 9: Data Wrangling",
+    "section": "Reformatting Strings",
+    "text": "Reformatting Strings\nRegular Expressions inside of pd.DataFrame.str.replace()\n\n[] Groups together characters to search for\n[^...] Negation (matches anything not inside the brackets).\na-z Matches lowercase letters a to z.\n+ Matches one or more occurrences of the unwanted characters."
   },
   {
-    "objectID": "slides/02-data-display.html#terminology",
-    "href": "slides/02-data-display.html#terminology",
-    "title": "Week 2: Data Display",
-    "section": "Terminology",
-    "text": "Terminology\n\n\n\n\n\nlegend\nmarkers\nmarker labels\naxis labels\naxis units\ntick marks\ntitle\ncaption\npanels"
+    "objectID": "slides/09-data-wrangling.html#reformatting-strings-1",
+    "href": "slides/09-data-wrangling.html#reformatting-strings-1",
+    "title": "Week 9: Data Wrangling",
+    "section": "Reformatting Strings",
+    "text": "Reformatting Strings\ndf[‘YOUR COLUMN’].str.split(‘YOUR DELIMITER’, expand=True)"
   },
   {
-    "objectID": "slides/02-data-display.html#group-activity",
-    "href": "slides/02-data-display.html#group-activity",
-    "title": "Week 2: Data Display",
-    "section": "Group Activity",
-    "text": "Group Activity\n\n\nForm pairs\nTake notes\nInterview your partner to find out about a data visualization that they recently admired\nWhat did the visualization make clear that was unclear before?\nWhat were all the salient features used to communicate information?\nPresent your partner’s visualization"
+    "objectID": "slides/01-welcome.html#cmpsc-105---data-exploration",
+    "href": "slides/01-welcome.html#cmpsc-105---data-exploration",
+    "title": "Welcome to CMPSC 105",
+    "section": "CMPSC 105 - Data Exploration",
+    "text": "CMPSC 105 - Data Exploration\n\nSpring 2025\n\nTu/Th 9:30-10:45am\n\nTh 2:30-4pm\n\nAlden 101"
   },
   {
-    "objectID": "slides/02-data-display.html#group-activity-2",
-    "href": "slides/02-data-display.html#group-activity-2",
-    "title": "Week 2: Data Display",
-    "section": "Group Activity 2",
-    "text": "Group Activity 2\n\n\nForm new pairs\npull up https://www.nytimes.com/2023/07/26/learning/over-75-new-york-times-graphs-for-students-to-analyze.html\nFind a visualization that uses a line plot\nFind a visualization that uses a histogram\nFind a visualization that uses a bar chart\nFind a visualization that uses a heat map\nFind a visualization that uses a scatter plot\nFind a visualization that uses something else\nFind a visualization that is too complicated\nFind a visualization that is collectively your favorite\n\n\nEnd"
+    "objectID": "slides/01-welcome.html#where-are-we",
+    "href": "slides/01-welcome.html#where-are-we",
+    "title": "Welcome to CMPSC 105",
+    "section": "Where are we?",
+    "text": "Where are we?\n\n\nDepartment of Computer and Information Science\nFour Majors/Minors\n\nComputer Science\nData Science\nInformatics\nSoftware Engineering\n\nCommon Doubles\n\nArt, Science, and Innovation\nEconomics"
   },
   {
-    "objectID": "slides/02-data-display.html#end",
-    "href": "slides/02-data-display.html#end",
-    "title": "Week 2: Data Display",
+    "objectID": "slides/01-welcome.html#what-is-this-course-about",
+    "href": "slides/01-welcome.html#what-is-this-course-about",
+    "title": "Welcome to CMPSC 105",
+    "section": "What is this course about?",
+    "text": "What is this course about?\n\n\nthis course is for anyone interested in becoming familiar with:\n\ndata visualization\ndata analysis\ndata gathering\ndata storytelling\n\njump starts independent research projects with generalizable skills\nCIS Informatics Major\nCIS Data Science Major/Minor"
+  },
+  {
+    "objectID": "slides/01-welcome.html#learning-outcomes",
+    "href": "slides/01-welcome.html#learning-outcomes",
+    "title": "Welcome to CMPSC 105",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\n\nIdentify and describe key elements in different types of data visualizations.\nVisualize data on web-based platforms.\nDevelop hypotheses and find data to address hypotheses.\nCalculate statistics and visualize key patterns in the data with Python.\nDocument data explorations in markdown."
+  },
+  {
+    "objectID": "slides/01-welcome.html#other-syllabus-highlights",
+    "href": "slides/01-welcome.html#other-syllabus-highlights",
+    "title": "Welcome to CMPSC 105",
+    "section": "Other Syllabus Highlights",
+    "text": "Other Syllabus Highlights\n\n\nParticipation is a major part of participation (30% of overall grade)\n\nDiscord use at least once per week\nCompleting group work\nQuizzes on readings and other class materials\n\nLabs are due before lab, but four tokens grant automatic extensions for one week\nAfter the first week, five absences will be excused before overall grade is impacted\n\nthree lates are equivalent to an absence"
+  },
+  {
+    "objectID": "slides/01-welcome.html#materials",
+    "href": "slides/01-welcome.html#materials",
+    "title": "Welcome to CMPSC 105",
+    "section": "Materials",
+    "text": "Materials\n\n\nCourse Website\n\nsyllabus\nassignment schedule for reading and lab due dates\ncourse materials"
+  },
+  {
+    "objectID": "slides/01-welcome.html#materials-continued",
+    "href": "slides/01-welcome.html#materials-continued",
+    "title": "Welcome to CMPSC 105",
+    "section": "Materials Continued",
+    "text": "Materials Continued\n\n\nGitHub for accessing and submitting assignments\nGoogle Colab for completing assignments\nGoogle Forms\nDiscord for announcements and participation\nCanvas for grades"
+  },
+  {
+    "objectID": "slides/01-welcome.html#tell-us-about-yourself",
+    "href": "slides/01-welcome.html#tell-us-about-yourself",
+    "title": "Welcome to CMPSC 105",
+    "section": "Tell us about yourself!",
+    "text": "Tell us about yourself!\n\nName, where you are from, first favorite band, and some of your current favorite foods?"
+  },
+  {
+    "objectID": "slides/01-welcome.html#cis-shared-values",
+    "href": "slides/01-welcome.html#cis-shared-values",
+    "title": "Welcome to CMPSC 105",
+    "section": "CIS Shared Values",
+    "text": "CIS Shared Values"
+  },
+  {
+    "objectID": "slides/01-welcome.html#partnerships",
+    "href": "slides/01-welcome.html#partnerships",
+    "title": "Welcome to CMPSC 105",
+    "section": "Partnerships",
+    "text": "Partnerships\n\nStudents who have experience with GitHub, Python, Python Notebooks, Discord\nStudents new to computer science"
+  },
+  {
+    "objectID": "slides/01-welcome.html#setting-up",
+    "href": "slides/01-welcome.html#setting-up",
+    "title": "Welcome to CMPSC 105",
+    "section": "Setting up",
+    "text": "Setting up\n\nbookmark the website\nbookmark access to your repos\nbookmark the 105 Discord Channel, or access from the course website\nbookmark notes that you take in Google Colab or elsewhere\nbookmark Canvas\netc."
+  },
+  {
+    "objectID": "slides/07-web-data.html#goals",
+    "href": "slides/07-web-data.html#goals",
+    "title": "Week 7: Web Data",
+    "section": "Goals",
+    "text": "Goals\n\nWebsite structure\nGathering content off the web\nGathering data about web usage\n\nGoogle Analytics"
+  },
+  {
+    "objectID": "slides/07-web-data.html#raw-file-types",
+    "href": "slides/07-web-data.html#raw-file-types",
+    "title": "Week 7: Web Data",
+    "section": "Raw File Types",
+    "text": "Raw File Types\n\n\nHTML - Hypertext Markup Language\nCSS - Cascading Style Sheets\nXML - Extensible Markup Language\n(also javascript for coding interactions with buttons, and dynamically loading content)"
+  },
+  {
+    "objectID": "slides/07-web-data.html#examples",
+    "href": "slides/07-web-data.html#examples",
+    "title": "Week 7: Web Data",
+    "section": "Examples",
+    "text": "Examples\n\n\nHTML\n\nnotice tags &lt;p&gt;&lt;/p&gt;, &lt;div&gt;&lt;/div&gt;\ncontent is inside of tags\nnot WYSIWYG like MS Word documents\n\nCSS\n\nnotice metadata marking things like font names and colors\n\n“font-family:”\n“color:”\n\nhttps://quarto.org/docs/output-formats/html-themes.html\n\nXML\n\nhierarchical (nested structure)\ntagged metadata\n\n(javascript)\n\n\n\nhttps://www.oreilly.com/library/view/xml-in-a/0596007647/ch01s05.html"
+  },
+  {
+    "objectID": "slides/07-web-data.html#metadata",
+    "href": "slides/07-web-data.html#metadata",
+    "title": "Week 7: Web Data",
+    "section": "Metadata",
+    "text": "Metadata\n\nApplications like your browser need to know metadata about content.\n\n\nwhat kind of content is it?\nif it is a paragraph, it should be rendered one way\nif it is an image, it should be rendered a different way\nif it is a url, it should be clickable"
+  },
+  {
+    "objectID": "slides/07-web-data.html#example",
+    "href": "slides/07-web-data.html#example",
+    "title": "Week 7: Web Data",
+    "section": "Example",
+    "text": "Example"
+  },
+  {
+    "objectID": "slides/07-web-data.html#other-markup",
+    "href": "slides/07-web-data.html#other-markup",
+    "title": "Week 7: Web Data",
+    "section": "Other Markup",
+    "text": "Other Markup\n\n\nLaTeX - Compiled Markup, often used for rendering mathematical expressions\nmarkdown\n\n\n\n## Report for Data Exploration\n\n### Introduction\n\nData was explored using different chart types.\n\n### Methods\n\nMatplotlib functions for making line charts, boxplots, and historgrams were used."
+  },
+  {
+    "objectID": "slides/07-web-data.html#rendered-version",
+    "href": "slides/07-web-data.html#rendered-version",
+    "title": "Week 7: Web Data",
+    "section": "Rendered version",
+    "text": "Rendered version\n\nReport for Data Exploration\nIntroduction\nData was explored using different chart types.\nMethods\nMatplotlib functions for making line charts, boxplots, and historgrams were used."
+  },
+  {
+    "objectID": "slides/07-web-data.html#summary-of-website-structure",
+    "href": "slides/07-web-data.html#summary-of-website-structure",
+    "title": "Week 7: Web Data",
+    "section": "Summary of Website Structure",
+    "text": "Summary of Website Structure\n\n\nwebsites use structured texts that can be rendered\nmetadata tags are everywhere\nmetadata tags describe the data and can be used to locate data"
+  },
+  {
+    "objectID": "slides/07-web-data.html#how-things-end-up-in-search-engine-results",
+    "href": "slides/07-web-data.html#how-things-end-up-in-search-engine-results",
+    "title": "Week 7: Web Data",
+    "section": "How Things End Up in Search Engine Results",
+    "text": "How Things End Up in Search Engine Results\nsearch engine bots, aka crawlers or spiders, need to know about all the pages on a website and all the content on the pages in order to make it indexable, i.e. usable for web searching.\nA Google bot has to discover webpages, crawl them, index them, and query a giant database to return related content to search terms."
+  },
+  {
+    "objectID": "slides/07-web-data.html#discovery",
+    "href": "slides/07-web-data.html#discovery",
+    "title": "Week 7: Web Data",
+    "section": "Discovery",
+    "text": "Discovery\n\n\ndone with robots.txt\nsitemaps"
+  },
+  {
+    "objectID": "slides/07-web-data.html#robots.txt",
+    "href": "slides/07-web-data.html#robots.txt",
+    "title": "Week 7: Web Data",
+    "section": "robots.txt",
+    "text": "robots.txt"
+  },
+  {
+    "objectID": "slides/07-web-data.html#robots.txt-1",
+    "href": "slides/07-web-data.html#robots.txt-1",
+    "title": "Week 7: Web Data",
+    "section": "robots.txt",
+    "text": "robots.txt\n\n\ndirectives tell bots where to go / not go (“disallow”)\n\nhelps protect information (in theory) on admin pages or other private pages\nhelps keep search engine results relevant\ncould prevent duplication if duplicate information is on a website\n\nincludes links to sitemaps!"
+  },
+  {
+    "objectID": "slides/07-web-data.html#sitemaps",
+    "href": "slides/07-web-data.html#sitemaps",
+    "title": "Week 7: Web Data",
+    "section": "Sitemaps",
+    "text": "Sitemaps\n\n\nlists out all pages (unique urls) of a website that should be indexed\nthese can be used to scrape information off a website\nlarge websites may have multiple site maps"
+  },
+  {
+    "objectID": "slides/07-web-data.html#sitemaps-1",
+    "href": "slides/07-web-data.html#sitemaps-1",
+    "title": "Week 7: Web Data",
+    "section": "Sitemaps",
+    "text": "Sitemaps\n\n\nhttps://markitors.com/what-is-a-sitemap/"
+  },
+  {
+    "objectID": "slides/07-web-data.html#participation",
+    "href": "slides/07-web-data.html#participation",
+    "title": "Week 7: Web Data",
+    "section": "Participation",
+    "text": "Participation\n\nhow many sitemaps does Facebook have?\nhow many sitemaps does Allegheny have?\nWalmart?\nOn another sharable site, see what you find and post a sitemap in Discord!"
+  },
+  {
+    "objectID": "slides/07-web-data.html#crawling",
+    "href": "slides/07-web-data.html#crawling",
+    "title": "Week 7: Web Data",
+    "section": "Crawling",
+    "text": "Crawling"
+  },
+  {
+    "objectID": "slides/07-web-data.html#indexing",
+    "href": "slides/07-web-data.html#indexing",
+    "title": "Week 7: Web Data",
+    "section": "Indexing",
+    "text": "Indexing"
+  },
+  {
+    "objectID": "slides/07-web-data.html#scraping",
+    "href": "slides/07-web-data.html#scraping",
+    "title": "Week 7: Web Data",
+    "section": "Scraping",
+    "text": "Scraping\n\nregular people (not Google) can also get content off the web by using strategies similar to discorvery, crawling, and indexing."
+  },
+  {
+    "objectID": "slides/07-web-data.html#scrapping-tools",
+    "href": "slides/07-web-data.html#scrapping-tools",
+    "title": "Week 7: Web Data",
+    "section": "Scrapping tools",
+    "text": "Scrapping tools\n\nCode: Requests, BeautifulSoup\nApplications:\n\n\n    \n\nCredit: Octoparse"
+  },
+  {
+    "objectID": "slides/07-web-data.html#data-miner",
+    "href": "slides/07-web-data.html#data-miner",
+    "title": "Week 7: Web Data",
+    "section": "Data Miner",
+    "text": "Data Miner"
+  },
+  {
+    "objectID": "slides/07-web-data.html#optional-activity",
+    "href": "slides/07-web-data.html#optional-activity",
+    "title": "Week 7: Web Data",
+    "section": "Optional Activity",
+    "text": "Optional Activity\n\nTry to get a csv file from dataminer\n\nclick on make your own recipe\n\n\nname it data-scraping-activity.csv\nupload to your activities repo"
+  },
+  {
+    "objectID": "slides/07-web-data.html#summary-of-gathering-content-off-the-web",
+    "href": "slides/07-web-data.html#summary-of-gathering-content-off-the-web",
+    "title": "Week 7: Web Data",
+    "section": "Summary of gathering content off the web",
+    "text": "Summary of gathering content off the web\n\nthanks to structured text on the web, scraping code or programs can gather information and turn it into useable data for exploration."
+  },
+  {
+    "objectID": "slides/07-web-data.html#google-analytics",
+    "href": "slides/07-web-data.html#google-analytics",
+    "title": "Week 7: Web Data",
+    "section": "Google Analytics",
+    "text": "Google Analytics\nsee Data Analytics Slides"
+  },
+  {
+    "objectID": "slides/07-web-data.html#end",
+    "href": "slides/07-web-data.html#end",
+    "title": "Week 7: Web Data",
     "section": "End",
     "text": "End"
+  },
+  {
+    "objectID": "grades.html",
+    "href": "grades.html",
+    "title": "Grades",
+    "section": "",
+    "text": "Please check Canvas for your grades here"
+  },
+  {
+    "objectID": "code/data_wrangling_activity.html",
+    "href": "code/data_wrangling_activity.html",
+    "title": "Data Wrangling Activity",
+    "section": "",
+    "text": "Open In Colab"
+  },
+  {
+    "objectID": "code/data_wrangling_activity.html#discord-post",
+    "href": "code/data_wrangling_activity.html#discord-post",
+    "title": "Data Wrangling Activity",
+    "section": "Discord Post",
+    "text": "Discord Post\nTODO: Don’t forget to ask questions in Discord. One Discord post per week is required."
+  },
+  {
+    "objectID": "code/data_wrangling_activity.html#submit-this-completed-activity-to-your-activities-repository",
+    "href": "code/data_wrangling_activity.html#submit-this-completed-activity-to-your-activities-repository",
+    "title": "Data Wrangling Activity",
+    "section": "Submit this completed activity to your activities repository",
+    "text": "Submit this completed activity to your activities repository"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html",
+    "href": "code/data_filtering_activity.html",
+    "title": "Class Activity",
+    "section": "",
+    "text": "Open In Colab"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#goals",
+    "href": "code/data_filtering_activity.html#goals",
+    "title": "Class Activity",
+    "section": "Goals",
+    "text": "Goals\n\nWork with colleagues at your table\nReview variables and assignment\nWrite code to control a matrix\nWrite code for logical contorl\nWrite code for dataframe control"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#variables-and-assignment-ref",
+    "href": "code/data_filtering_activity.html#variables-and-assignment-ref",
+    "title": "Class Activity",
+    "section": "Variables and Assignment (REF)",
+    "text": "Variables and Assignment (REF)\n\n\nCode\n# Variables are names - a reusable label for a data value.\n\nname = 'Marc'\nprint(name)\npi = 3.14\nprint(pi)\ncustomer_id = \"1234\"\n# TODO: add a print statement to see customer_id\naccount_balance = 1000\n# TODO: add a print statement to see account_balance\n\n\n\n\nCode\n# if the same name is used to store new data, the old data is lost\n\npi = 3.14\nprint(pi)\npi = 'Marc'\n# TODO: add a print statement to see pi\n\n\n\n\nCode\n# assignment is a fancy term for associating or storing data\n\n# here 3.14 is assigned to the variable name pi using the `=`\npi = 3.14\n\n# TODO: assign the value 5 to pi\n# TODO: add a print statement to see pi\n# TODO: assign the value \"hello\" to message\n# TODO: add a print statement to see message\n# TODO: assign the value [1,2,3,4,5] to data\n# TODO: add a print statement to see data\n\n\n\nReserved Words\nThe following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your program variables.\n\nand, as, assert, async, await, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#matrix",
+    "href": "code/data_filtering_activity.html#matrix",
+    "title": "Class Activity",
+    "section": "Matrix",
+    "text": "Matrix\n\n\nCode\n# TODO: run this code to make a simple matrix in a pandas dataframe\n\nimport pandas as pd\n\nmatrix = pd.read_csv(\n    '/content/data-filtering-matrix.csv',\n    sep=',',\n    names = ['A', 'B', 'C'],\n    skiprows=1)\n\n\n\n\nCode\n# TODO: add a print statement to see the dataframe\nprint(matrix)\n\n\n\n\nCode\n# The matrix contains 15 values in five rows and three columns\n# TODO: verify this using the data explorer\n\n\n# Each item has a unique location in the matrix given by its row and column\n# Using python convention, the rows and columns are idenfied with integers starting at 0!\n\n# On the 0th row, column 0 has the value of 0.0\n# On the 4nd row, column 0 has the value of 4.0\n# TODO: What is the largest row index in the matrix?\n# TODO: What is the largest column index in the matrix?\n\n# Here's how you access the element on row 4, column 0\nelement = matrix.iloc[4,0]\nprint(element)\n\n# TODO: access the element on row 3 column 2 and assign it to the variable `another_element`\n# TODO: add a print statement to see `another_element`\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# Indexing to get one element is very simple, but what if you want multiple elements in a row, or in a column?\n\n# Slicing is the way to do it!\n# the sytax for slicing is like this: [start_index:end_index:hop_size]\n# Using python convention, note that the end_index will not be included in the slice\n\n# Here is a slice example on the columns\nslice_example = matrix.iloc[0,0:2:1]\nprint(slice_example)\n\n# TODO: use words to write out what the slice contains\n\n# TODO: Write a slice that gets the first through fourth rows (not including 4) from column two and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Write a slice that gets the 0th through fourth rows (not including 4) from column one, hopping by 2, and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Come up with your own example\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# The syntax of a slice is [start:end:hop_size], but if start or end is left out, then the endpoints are assumed!\n# warning - don't forget to include the `:`\n\n# Here is every columns in row 0, including the start and INCLUDING the end!\nfull_slice = matrix.iloc[0,::1]\nprint(full_slice)\n\n# TODO: Write a slice that gets every column in row 4, including the start and INCLUDING the end! Assign to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: make sure you get what you expect! Is there anything unexpected?\n\n\n\n\nCode\n# Slices to endpoints have already been used in our labs\n\n# TODO: find any spot where the slices have been used in our labs and put a link for yourself below\n# TODO: how was the slice used in the lab?"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#logical-control",
+    "href": "code/data_filtering_activity.html#logical-control",
+    "title": "Class Activity",
+    "section": "Logical Control",
+    "text": "Logical Control\n\n\nCode\n# First lets review some comparison operators\n\n\nThe following table summarizes the most commonly used comparison operators in Python, along with their definition when applied to numbers.\n\n\n\noperator\noperation on numbers\n\n\n\n\n==\nequal to\n\n\n!=\nnot equal to\n\n\n&gt;\ngreater than\n\n\n&gt;=\ngreater than or equal to\n\n\n&lt;\nless than\n\n\n&lt;=\nless than or equal to\n\n\n\nAs their name suggests, comparison operators allow us to compare two values.\n\n\nCode\n# Here is a comparison of 4 vs 5. It asks the question: is four larger than five?\n# TODO: what answer should come out?\n# TODO: run this, what does come out?\n4 &gt; 5\n\n\n\n\nCode\n# As you can see, comparison operators allow us to compare values and result in a boolean type indicating whether the comparison is `True` or `False`.\n# TODO: make a comparison the checks if five is greater than four, assign to a variable and print it\n# TODO: make a comparison the checks if five is not equal to four, assign to a variable and print it\n# TODO: make a comparison the checks if five is equal to four, assign to a variable and print it\n\n\n\n\nCode\n# TODO: what is the difference between `=` and `==`?\n\n\n\n\nCode\n# It turns out that matrices can be compared too!\n# What elements in the matrix are greater than 1?\n\n# TODO: what do you think will happen\nselection = matrix &gt; 1\n# TODO: add a print statement to see selection\n# Does it match your expectations?\n\n\n\n\nCode\n# Write another comparison with matrix to ask which elements are equal to 4, assign to a variable called select_4 and print\n\n\n\n\nCode\n# Now we can use the selection to access only those elements!\n# The rows and columns do not need to be set.\n# Simply use the selection as the only index! Amazing!\n\nresult = matrix[selection]\nprint(result)\n\n# TODO: use select_4 as the only index, assign to variable and print\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Finally, I want to show you how to combine comparions\n# Think of this question: what elements in the matrix are greater than one AND less then three?\n# The AND is done with `&`\n\ngreaterthanone = matrix &gt; 1\nprint(\"greather than one: \\n\", greaterthanone)\nlessthanthree = matrix &lt; 3\nprint(\"less than three: \\n\", lessthanthree)\nboth = greaterthanone & lessthanthree\nprint(\"both: \\n\", both)\nresult = matrix[both]\nprint(\"result: \\n\", result)\n\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Here is the same thing, but all in one line of code...\n\nprint(matrix[(matrix &gt; 1) & (matrix &lt; 3)])\n\n\n\n\nCode\n# TODO: think of one or more questions you have and then post it in discord.\n# TODO: As you see your colleagues questions, reply to their message if you have the answer!"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#dataframe-control-with-.loc",
+    "href": "code/data_filtering_activity.html#dataframe-control-with-.loc",
+    "title": "Class Activity",
+    "section": "Dataframe Control with .loc",
+    "text": "Dataframe Control with .loc\n\n\nCode\n# Controlling a Dataframe is similar to controlling a matrix.\n# Slicing is possible and logical comparison are possible!\n# One of the main differences is that indexing is done with .loc\n\n# Below is a the hourly temperature normals dataset for Meadville in a pandas dataframe called `dfm`\n# This same dataset was used in the data_distortion lab\n# The columns are named\n# The column containing the normals is called `HLY-TEMP-NORMAL`\n# Each hour is a year is given in the column called `INDEX`\n# A readable label for each hour in a year is given in the column called `DATE`\n\n# lets apply your new skills of logical indexing to this dataset\n\n\n\n\nCode\n# TODO: run this cell\n\n# load pre-existing tools available for data exploration\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# create a pandas dataframe\ndfm = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter/refs/heads/main/data/data-distortion-noaa-2006-2020-USW00004843.csv',\n    sep=',',\n    names = ['INDEX', 'STATION', 'NAME', 'LATITUDE', 'LONGITUDE', 'ELEVATION',\n       'DATE', 'month', 'day', 'hour', 'HLY-TEMP-NORMAL'],\n    skiprows=1\n)\n\n# Display the first few rows of the DataFrame\nprint(dfm.head())\n\n\n\n\nCode\n# TODO: how many rows are in the dataframe?\n# TODO: how many columns are in the dataframe?\n\n\n\n\nCode\n# This cell creates logical filters, then applies them with .loc\n\n# Only rows from the midnight hour in the month of March are selected\nselected_hours = dfm['hour'] == 0\nselected_months = dfm['month'] == 3\nselected_rows = selected_hours & selected_months\n\n\n# new dataframes are made that contain ONLY THE SELECTED ROWS using .loc\n# here is the syntax for .loc: .loc[rows, columns]\ndfm_selected_normals = dfm.loc[selected_rows, 'HLY-TEMP-NORMAL']\ndfm_selected_indices = dfm.loc[selected_rows, 'INDEX']\ndfm_selected_dates = dfm.loc[selected_rows, 'DATE']\n\n\nprint(dfm_selected_normals)\nprint(dfm_selected_indices)\nprint(dfm_selected_dates)\n\n\n\n\nCode\n# Here is the same thing in one line\n\ndfm.loc[(dfm['hour'] == 0) & (dfm['month'] == 3), 'INDEX']\n\n\n\n\nCode\n# Assuming df is already created in the previous code cell\n\n# TODO: Run this code cell\n# TODO: What does the figure show?\n# TODO: Fill in appropriate title, xlabel and ylabel using you understanding of logical indexing\n\n# Control how many xtick labels are on the x axis\nxtick_hopsize = 3\n\n# Clear out memory (doesn't impact the visualization, but keeps the computer happy)\nplt.close('all')\n\n# make a blank canvas\nplt.figure(figsize=(12, 4))\n\n# set the overall title for all subfigures\nplt.suptitle('Figure 1')\n\n# subplot 1\nplt.subplot(1, 2, 1)\nplt.plot(dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 1\nplt.plot(dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 2\nplt.plot(dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 3\nplt.plot(dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 4\nplt.plot(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 5\nplt.plot(dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 6\nplt.plot(dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 7\nplt.plot(dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 8\nplt.legend(['7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM'])\n# the plt.xticks function labels the ticks so that dates appear instead of index\nplt.xticks(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'][::xtick_hopsize], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'DATE'][::xtick_hopsize], rotation=90)\nplt.xlabel('')\nplt.ylabel('')\nplt.title('')\nplt.grid(True)\n\nplt.show()"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#video",
+    "href": "code/data_filtering_activity.html#video",
+    "title": "Class Activity",
+    "section": "Video",
+    "text": "Video\n\n\nCode\n# TODO: watch the video (also linked on the course website) - https://youtu.be/v5pJfu-yn-0\n\n# TODO: What two terms are used instead of logical indexing?"
+  },
+  {
+    "objectID": "syll/syllabus.html",
+    "href": "syll/syllabus.html",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "",
+    "text": "Class Sessions: TuTh 9:30 AM-10:45 AM, Alden 101\nLaboratory Session: Th, 2:30 PM-4 PM, Alden 101\nInstructor: Professor Emily Graber, egraber@allegheny.edu\nOffice Location: Alden Hall 106\nOffice Hours: Visit Google Calendar to reserve an appointment as needed."
+  },
+  {
+    "objectID": "syll/syllabus.html#course-description",
+    "href": "syll/syllabus.html#course-description",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Course Description",
+    "text": "Course Description\nAn introduction to the methods of collecting, exploring, transforming and visualizing data for storytelling. Often participating in team-based and hands-on activities, students learn how to use web platforms and dashboards to acquire, explore and investigate data to generate summarized key data insights using visual techniques. Students also apply open-source programming language to discover patterns in the data, test hypotheses, and check assumptions using graphical representations. During a weekly laboratory session, students employ cutting-edge software tools to complete projects, reporting on their results through both written documents and oral presentations. Students are invited to use their own departmentally approved laptop in this course; a limited number of laptops are available for use during class and lab sessions.\nPrerequisite: None\nDistribution Requirements: QR, SP.\nDR tag rationale: This course will primarily focus on methods of data collection, foundational data analysis of numerical data, and visualizations of such data. Additionally, students will participate in the scientific process during the exploratory data analysis and apply scientific reasoning to analyze and synthesize data.\n\nLearning Outcomes\n\nDevelop hypotheses based on motivating problems and/or observations and identify appropriate data to address hypotheses.\nIdentify and describe key elements in different types of data visualizations.\nUse web-based platforms to accurately present data sets through multiple visualizations.\nUse an open-source programming language to compute summary statistics and visualize key patterns in the data.\nContribute to and present structured, web-based documentation that describes data exploration steps and visualization-based conclusions.\n\n\n\nScientific Process and Knowledge (SP)\n\nCourses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry.\n\n\n\nQuantitative Reasoning (QR)\n\nQuantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations."
+  },
+  {
+    "objectID": "syll/syllabus.html#schedule-at-a-glance",
+    "href": "syll/syllabus.html#schedule-at-a-glance",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Schedule at-a-glance",
+    "text": "Schedule at-a-glance\nWelcome\n\nWeek One: January 14, 16: Setup\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Filtering\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data \nWeek Seven: February 25, 27: Web Data Analytics and Scraping\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics\nWeek Eleven: March 25, 27: Data Transformations\nWeek Twelve: April 1, 3: Modeling and Overfitting\nWeek Thirteen: April 8: Clustering\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Hypothesis Driven Analysis\nWeek Fifteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks\n\nComplete Final Exam Schedule"
+  },
+  {
+    "objectID": "syll/syllabus.html#grading",
+    "href": "syll/syllabus.html#grading",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Grading",
+    "text": "Grading\n\n\n\nAssignment type\nPercentage\n\n\n\n\nLabs\n50%\n\n\nParticipation\n30%\n\n\nFinal Project\n20%\n\n\n\nGrading policy may change as needed during the term; any changes will be announced to the class at the time of the change. Grades will be communicated via Canvas. Please note that attendance policies may additionally affect grades as adjustments to grades will be applied on top of the base grade according to policy\n\nLabs\nThere are 8 labs during the semester. Due dates are hard deadlines. See below for policy on late work.\nThe deliverables for labs include documentation in a GitHub repo addressing specific questions or demonstrating requested calculations, analyses, visualizations, and code snippets.\nLabs will be graded for having clean work with few careless errors, correct Markdown, code, data, correct images given the context of the lab, and correct explanations of concepts in writing\n\n\nParticipation\nParticipation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate. Collegial conversations about course topics or activities are also allowed.\nYou will have access to a repository for submitting all of your class activities. Each activity that you do in class will contribute to your overall participation grade. There is no grading scheme for class activities. I will simply check that the activity was turned in at the end of the class period, and that you have made an effort to do the activity as intended, and figures are showing.\nIf the activity is not turned in at the end of the class period, then it will not be counted toward your participation grade.\n\n\nFinal Project\nThe final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact can be detailed blog post, following the format of the last lab, or a detailed data visualization with interactive visuals."
+  },
+  {
+    "objectID": "syll/syllabus.html#policies",
+    "href": "syll/syllabus.html#policies",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Policies",
+    "text": "Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nStudents can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\nAs a general guideline, students cannot miss more than two weeks of class in total throughout the academic semester without receiving a letter grade reduction.\nFor this course, excluding the first week and five excused absences, overall course grade will go down by 1/3 of a letter grade for each additional absence or absence equivalence regardless of base grade.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 105 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
+  },
+  {
+    "objectID": "syll/syllabus.html#resources",
+    "href": "syll/syllabus.html#resources",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Resources",
+    "text": "Resources\n\nFundamentals of Data Visualization\n\nFull Text\n\nMaking Sense of Data by Glenn J. Myatt and Wayne P. Johnson\n\nI. Exploratory Data Analysis\nII. Data Visualization\nIII. Interactive Visualizations\n\nNaked statistics: stripping the dread from the data by Charles J. Wheelan\n\nGoogle Preview\n\nNatural Resources Biometrics by Diane Kiarnan\n\nFull Text\n\nPython Data Science Handbook by Jake VanderPlas\n\nFull Text\n\nPython for Data Analysis, 3E by Wes McKinney\n\nFull Text\n\nArticles\n\nVariable Types"
+  },
+  {
+    "objectID": "syll/syllabus.html#communications",
+    "href": "syll/syllabus.html#communications",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Communications",
+    "text": "Communications\n\nUsing GitHub and Discord\nThis course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place in the Data Exploration Channel in Discord.\nThe Allegheny College Computer and Information Science Discord Server will also have useful announcements about departmental activities including TL office hours.\n\n\nUsing Email\nAlthough we will primarily use Discord for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails."
+  },
+  {
+    "objectID": "syll/syllabus.html#honor-code",
+    "href": "syll/syllabus.html#honor-code",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Honor Code",
+    "text": "Honor Code\nThe Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny Academic Bulletin. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who has matriculated at the College has acknowledged the following Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\nEffective Collaboration\nComputer science is an inherently collaborative discipline. The Department of Computer and Information Science at Allegheny College encourages students to engage in collaboration. However, in the context of individual coursework, through which each student must demonstrate their own knowledge, there are certain forms of collaboration that are and are not acceptable.\n\nAcceptable forms of collaboration include:\n\nDiscussing high-level concepts.\nReferring someone to a course text book, course slides, example programs, or other resources that contain helpful information or instructions.\nOutlining the high-level steps to solving a problem, without mentioning specific\nlines of code that need to be written.\n\nUnacceptable forms of collaboration include:\n\nSharing details about specific lines of code, including showing your source code to someone or looking at someone else’s code.\nCopying someone else’s source code, technical writing, program commands, or program output, even with some slight modifications.\nTyping source code, technical writing, or commands on someone else’s computer.\n\n\n\n\nPlagiarism and Artificial Intelligence\nStudents may not pass off or represent the work of another student, or their own prior work, as their own current work in any case. Plagiarism and AI-generatated code, text, or images are not permitted in any assignment type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other coursework, students are expected to adhere to the given instructions for the particular exam or item of coursework. It is the responsibility of the student to review the authorization specifications on every item and act appropriately, upholding the honor code. Suspected plagiarized or unauthorized use of AI to generate the work that is turned in will be reported to the Honor Code Committee. This policy does not preclude the use of AI to learn."
+  },
+  {
+    "objectID": "syll/syllabus.html#educational-accommodations",
+    "href": "syll/syllabus.html#educational-accommodations",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Educational Accommodations",
+    "text": "Educational Accommodations\nThe Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Students with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898. Student Accessibility and Support Services is part of the Learning Commons and is located in Pelletier Library. Please do this as soon as possible to ensure that approved accommodations are implemented in a timely fashion."
+  },
+  {
+    "objectID": "syll/syllabus.html#syllabus-changes",
+    "href": "syll/syllabus.html#syllabus-changes",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Syllabus Changes",
+    "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html",
+    "href": "code/data_interactivity_activity.html",
+    "title": "Interactive Data Display Activity",
+    "section": "",
+    "text": "Open In Colab"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#basic-function",
+    "href": "code/data_interactivity_activity.html#basic-function",
+    "title": "Interactive Data Display Activity",
+    "section": "Basic Function",
+    "text": "Basic Function\n\n\nCode\nplt.figure(figsize=(8, 4))\nplt.plot([0.1,0.2,0.3,0.4,0.5], [-2,-1,0,1,2], '*-')\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.title('Y vs X')\nplt.xlim(0,2)\nplt.ylim(-5,5)\nplt.show()\n\n# TODO: What happens when you run this code cell?\n# TODO: What is the title?\n\n\n\n\nCode\n# Here is a function with the same code as above\n\n\ndef plot_line():\n    plt.figure(figsize=(8, 4))\n    plt.plot([0.1,0.2,0.3,0.4,0.5], [-2,-1,0,1,2], '*-')\n    plt.xlabel('X')\n    plt.ylabel('Y')\n    plt.title('Y vs X')\n    plt.xlim(0,2)\n    plt.ylim(-5,5)\n    plt.show()\n\n\n# TODO: What happens when you run this code cell?\n\n\n\n\nCode\nplot_line()\n\n# TODO: What happens when you run this code cell?\n# TODO: How did the computer know what to do?"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#more-interesting-function",
+    "href": "code/data_interactivity_activity.html#more-interesting-function",
+    "title": "Interactive Data Display Activity",
+    "section": "More interesting function",
+    "text": "More interesting function\n\n\nCode\n# Create a sine wave with frequency 2 Hz and amplitude 3. Use variable name y\n# Then plot it\n\nfreq = 2\namplitude = 3\n\npi = 3.14159\n\nt = np.arange(0, 2, 2/1000)\ny = amplitude * np.sin(2 * pi * freq * t)\n\n\nplt.figure(figsize=(8, 4))\nplt.plot(t, y, label=f'Sin(2 pi {freq} t) * {amplitude}')\nplt.xlabel('Time (seconds)')\nplt.ylabel('Amplitude')\nplt.legend()\nplt.xlim(0,2)\nplt.ylim(-5,5)\nplt.grid(True)\nplt.show()\n\n# TODO: What happens when you run this code cell?\n\n\n\n\nCode\ndef plot_sine(freq, amplitude):\n\n  pi = 3.14159\n\n  t = np.arange(0, 2, 2/1000)\n  y = amplitude * np.sin(2 * pi * freq * t)\n\n\n  plt.figure(figsize=(8, 4))\n  plt.plot(t, y, label=f'Sin(2 pi {freq} t) * {amplitude}')\n  plt.xlabel('Time (seconds)')\n  plt.ylabel('Amplitude')\n  plt.legend()\n  plt.xlim(0,2)\n  plt.ylim(-5,5)\n  plt.grid(True)\n  plt.show()\n\n# TODO: What happens when you run this code cell?\n# Decribe what you see above that is new\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=2, amplitude=3)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=2, amplitude=1)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=6, amplitude=1)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#interactive-function-call",
+    "href": "code/data_interactivity_activity.html#interactive-function-call",
+    "title": "Interactive Data Display Activity",
+    "section": "Interactive function call!",
+    "text": "Interactive function call!\n\n\nCode\nplt.close('all')\n\n# The interact function takes the plotting function, and parameters of the plotting function!\n# The parameters of the plotting function turn into sliders\n# the slider must be specified with some information: (start, end, hop)\n\ninteract(plot_sine, freq=(0.1, 10.0, 0.1), amplitude=(0.1, 5.0, 0.1))"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#now-with-data-in-a-df",
+    "href": "code/data_interactivity_activity.html#now-with-data-in-a-df",
+    "title": "Interactive Data Display Activity",
+    "section": "Now with Data in a DF",
+    "text": "Now with Data in a DF\n\n\nCode\n\n\ndf = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter/refs/heads/main/data/data-distortion-noaa-2006-2020-USW00004843.csv',\n    sep=',',\n    names = ['INDEX', 'STATION', 'NAME', 'LATITUDE', 'LONGITUDE', 'ELEVATION',\n       'DATE', 'month', 'day', 'hour', 'HLY-TEMP-NORMAL'],\n    skiprows=1\n)\n\nprint(df.head()) # Display the first few rows of the DataFrame\n\n\n\n\nCode\n# a plotting function\n# it has a parameter called month\n\ndef plot_df(month):\n\n    plt.figure(figsize=(8, 4))\n    plt.plot(df.loc[df['month']==month,'INDEX'], df.loc[df['month']==month,'HLY-TEMP-NORMAL'])\n    plt.xticks(df.loc[df['month']==month,'INDEX'][::72], df.loc[df['month']==month,'DATE'][::72], rotation=90)\n    plt.xlabel('Time (hours)')\n    plt.ylabel('Normals (F)')\n    plt.title(f'Month {month}')\n    plt.ylim(-20,100)\n    plt.show()\n\n# TODO: What happens when you run this cell?\n\n\n\n\nCode\nplt.close('all')\n\n\n# The interact function takes the plotting function, and parameters of the plotting function!\n# The parameters of the plotting function turn into sliders\n# the slider must be specified with some information: (start, end, hop)\n\n\ninteract(plot_df, month=(1,12,1))"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#you-try",
+    "href": "code/data_interactivity_activity.html#you-try",
+    "title": "Interactive Data Display Activity",
+    "section": "You Try",
+    "text": "You Try\n\n\nCode\n# TODOs\n# make a plotting function that has a parameter of month and hour\n# inside the function, set up filtering that considers both the month & hour\n# Make sure the filters select just rows from df that are equal to (==) the selected month and hour\n\n\n\n\nCode\n# TODOs\n# Call your function, but turn the parameters into sliders!\n# the month will only go from 1 to 12\n# the hour should only go from 0 to 24"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#discord-post",
+    "href": "code/data_interactivity_activity.html#discord-post",
+    "title": "Interactive Data Display Activity",
+    "section": "Discord Post",
+    "text": "Discord Post\nTODO: Post about data that you would like to filter interactively or data that you have seen filtered interactively. These will be shared in class on Thursday."
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#submit-this-completed-activity-to-your-activities-repository",
+    "href": "code/data_interactivity_activity.html#submit-this-completed-activity-to-your-activities-repository",
+    "title": "Interactive Data Display Activity",
+    "section": "Submit this completed activity to your activities repository",
+    "text": "Submit this completed activity to your activities repository"
+  },
+  {
+    "objectID": "code/data_display_activity.html",
+    "href": "code/data_display_activity.html",
+    "title": "Class Activity",
+    "section": "",
+    "text": "Open In Colab"
+  },
+  {
+    "objectID": "code/data_display_activity.html#goals",
+    "href": "code/data_display_activity.html#goals",
+    "title": "Class Activity",
+    "section": "Goals",
+    "text": "Goals\n\nLook at code that can generate common data displays\nModify code that can generate common data displays\nDescribe how common data displays are able to convey information that was not apparent in raw data\n\n\nTODO: Run the first code cell\nTODO: In the variable explorer ({x}), what Type does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), what Shape does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), hover over the variable df to see the values. What relationship do the values have to the Shape of df? Explain what the shape means. Write your response here:\nTODO: Looking at the rest of the code cells that can generate figures, what patterns do you see repeated in the code? Write your response here:\nTODO: Run the code cells, stopping once you reach the next section. Examine the figures.\nTODO: Explain what relationship exists between the reddish code in quotes and the figures that are generated. Write your response here:\nTODO: Find a piece of code where a marker was explicitly specified. Change the marker to an upward triangle, a square, and a star based on the matplotlib documentation and rerun the code.\nTODO: Overall, do these figures reveal anything about this data that was not so apparent when looking at df? Write your response here:\nNow, move on to the next section\n\nThe data table below shows how many millions of prescriptions are obtained from various sources in the United States annually.\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\nTraditional\n914\n\n\nIndependent\n666\n\n\nMassMerch\n238\n\n\nSuperMarket\n221\n\n\nMailOrder\n86\n\n\n\n\n\nCode\n# import pandas and make dataframe\n\nimport pandas as pd\n\ndata = {'Drug Source': ['Traditional', 'Independent', 'MassMerch', 'SuperMarket', 'MailOrder'],\n        'Num Prescriptions': [914, 666, 238, 221, 86]}\ndf = pd.DataFrame(data)\n\ndf\n\n\n\n\n\n\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\n0\nTraditional\n914\n\n\n1\nIndependent\n666\n\n\n2\nMassMerch\n238\n\n\n3\nSuperMarket\n221\n\n\n4\nMailOrder\n86\n\n\n\n\n\n\n\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.scatter(df['Num Prescriptions'], df['Drug Source'])\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Drug Source')\nplt.title('Drug Source vs. Number of Prescriptions')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.pie(df['Num Prescriptions'], labels=df['Drug Source'])\nplt.title('Drug Source')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.hist(df['Num Prescriptions'], bins=20)\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Frequency')\nplt.title('Histogram of Number of Prescriptions')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()  # Adjust figure size for better visualization\nplt.plot(df['Drug Source'], df['Num Prescriptions'], marker='o', linestyle='-')\nplt.xlabel('Drug Source')\nplt.ylabel('Number of Prescriptions (Millions)')\nplt.title('Number of Prescriptions by Drug Source')\nplt.grid(True, linestyle='--', alpha=0.7)  # Add a grid for better readability\nplt.xticks(rotation=45) # Rotate x-axis labels for better visibility\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.boxplot(df['Num Prescriptions'])  # Create the boxplot\nplt.xlabel('Number of Prescriptions')\nplt.title('Box Plot of Number of Prescriptions')\nplt.show()"
+  },
+  {
+    "objectID": "code/data_distortion_activity.html",
+    "href": "code/data_distortion_activity.html",
+    "title": "Class Activity",
+    "section": "",
+    "text": "Open In Colab"
+  },
+  {
+    "objectID": "code/data_distortion_activity.html#goals",
+    "href": "code/data_distortion_activity.html#goals",
+    "title": "Class Activity",
+    "section": "Goals",
+    "text": "Goals\n\nWork with colleagues at your table\nLook at code that can distort data displays\nModify code to distort data displays\nDescribe how data distortion can imply information that was not in raw data\n\n\n\nCode\n# TODO All Tables: Run this code cell that makes pre-existing tools available for data exploration\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\n\n\nCode\n# TODO All Tables: Run this code cell that creates a pandas dataframe\n\ndf = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/site/main/data/data-distortion-bls-LNS14000000.csv',\n    sep=',',\n    names = ['Timepoint', 'Year', 'Month', 'Label', 'Value'],\n    skiprows=1\n)\n\nprint(df.head()) # Display the first few rows of the DataFrame"
+  },
+  {
+    "objectID": "code/data_distortion_activity.html#table-1",
+    "href": "code/data_distortion_activity.html#table-1",
+    "title": "Class Activity",
+    "section": "Table 1",
+    "text": "Table 1\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(12, 4))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()\n\n\n\nTODO: What does this figure show?"
+  },
+  {
+    "objectID": "code/data_distortion_activity.html#table-2",
+    "href": "code/data_distortion_activity.html#table-2",
+    "title": "Class Activity",
+    "section": "Table 2",
+    "text": "Table 2\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(6, 2))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(0,100)\nplt.show()\n\n\n\nTODO: What does this figure show?"
+  },
+  {
+    "objectID": "code/data_distortion_activity.html#table-3",
+    "href": "code/data_distortion_activity.html#table-3",
+    "title": "Class Activity",
+    "section": "Table 3",
+    "text": "Table 3\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(3, 6))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(0,100)\nplt.show()\n\n\n\nTODO: What does this figure show?"
+  },
+  {
+    "objectID": "code/data_distortion_activity.html#table-4",
+    "href": "code/data_distortion_activity.html#table-4",
+    "title": "Class Activity",
+    "section": "Table 4",
+    "text": "Table 4\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(3, 9))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()\n\n\n\nTODO: What does this figure show?"
+  },
+  {
+    "objectID": "code/data_distortion_activity.html#discussion",
+    "href": "code/data_distortion_activity.html#discussion",
+    "title": "Class Activity",
+    "section": "Discussion",
+    "text": "Discussion\nShare your observations\n\nWhat did the plot at your table show?\nWhat is the best representation of the data?"
+  },
+  {
+    "objectID": "code/data_distortion_activity.html#technical-exploration",
+    "href": "code/data_distortion_activity.html#technical-exploration",
+    "title": "Class Activity",
+    "section": "Technical Exploration",
+    "text": "Technical Exploration\n\nWhat new python expressions do you see in the code?\nTry changing them below to see what happens\n\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n# TODO: Change the xlim, ylim, and figsize to see what happens\n\n# TODO: try plt.xlim(800,900)\n# TODO: adjust the ylim so that the line does not go off the canvas\n# TODO: change the figsize to make a tall, skinny canvas\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(10,6))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=45)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()"
+  },
+  {
+    "objectID": "code/data_distortion_activity.html#closing-thoughts",
+    "href": "code/data_distortion_activity.html#closing-thoughts",
+    "title": "Class Activity",
+    "section": "Closing Thoughts",
+    "text": "Closing Thoughts\n\nTODO: Describe how data distortion can imply things that were not in raw data\nTODO: How could daily life be impacted by distorted data?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "",
+    "text": "Class Sessions: TuTh 9:30 AM-10:45 AM, Alden 101\nLaboratory Session: Th, 2:30 PM-4 PM, Alden 101\nInstructor: Professor Emily Graber, egraber@allegheny.edu\nOffice Location: Alden Hall 106\nOffice Hours: Visit Google Calendar to reserve an appointment as needed."
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Course Description",
+    "text": "Course Description\nAn introduction to the methods of collecting, exploring, transforming and visualizing data for storytelling. Often participating in team-based and hands-on activities, students learn how to use web platforms and dashboards to acquire, explore and investigate data to generate summarized key data insights using visual techniques. Students also apply open-source programming language to discover patterns in the data, test hypotheses, and check assumptions using graphical representations. During a weekly laboratory session, students employ cutting-edge software tools to complete projects, reporting on their results through both written documents and oral presentations. Students are invited to use their own departmentally approved laptop in this course; a limited number of laptops are available for use during class and lab sessions.\nPrerequisite: None\nDistribution Requirements: QR, SP.\nDR tag rationale: This course will primarily focus on methods of data collection, foundational data analysis of numerical data, and visualizations of such data. Additionally, students will participate in the scientific process during the exploratory data analysis and apply scientific reasoning to analyze and synthesize data.\n\nLearning Outcomes\n\nDevelop hypotheses based on motivating problems and/or observations and identify appropriate data to address hypotheses.\nIdentify and describe key elements in different types of data visualizations.\nUse web-based platforms to accurately present data sets through multiple visualizations.\nUse an open-source programming language to compute summary statistics and visualize key patterns in the data.\nContribute to and present structured, web-based documentation that describes data exploration steps and visualization-based conclusions.\n\n\n\nScientific Process and Knowledge (SP)\n\nCourses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry.\n\n\n\nQuantitative Reasoning (QR)\n\nQuantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations."
+  },
+  {
+    "objectID": "index.html#schedule-at-a-glance",
+    "href": "index.html#schedule-at-a-glance",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Schedule at-a-glance",
+    "text": "Schedule at-a-glance\nWelcome\n\nWeek One: January 14, 16: Setup\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Filtering\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data \nWeek Seven: February 25, 27: Web Data Analytics and Scraping\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics\nWeek Eleven: March 25, 27: Data Transformations\nWeek Twelve: April 1, 3: Modeling and Overfitting\nWeek Thirteen: April 8: Clustering\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Hypothesis Driven Analysis\nWeek Fifteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks\n\nComplete Final Exam Schedule"
+  },
+  {
+    "objectID": "index.html#grading",
+    "href": "index.html#grading",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Grading",
+    "text": "Grading\n\n\n\nAssignment type\nPercentage\n\n\n\n\nLabs\n50%\n\n\nParticipation\n30%\n\n\nFinal Project\n20%\n\n\n\nGrading policy may change as needed during the term; any changes will be announced to the class at the time of the change. Grades will be communicated via Canvas. Please note that attendance policies may additionally affect grades as adjustments to grades will be applied on top of the base grade according to policy\n\nLabs\nThere are 8 labs during the semester. Due dates are hard deadlines. See below for policy on late work.\nThe deliverables for labs include documentation in a GitHub repo addressing specific questions or demonstrating requested calculations, analyses, visualizations, and code snippets.\nLabs will be graded for having clean work with few careless errors, correct Markdown, code, data, correct images given the context of the lab, and correct explanations of concepts in writing\n\n\nParticipation\nParticipation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate. Collegial conversations about course topics or activities are also allowed.\nYou will have access to a repository for submitting all of your class activities. Each activity that you do in class will contribute to your overall participation grade. There is no grading scheme for class activities. I will simply check that the activity was turned in at the end of the class period, and that you have made an effort to do the activity as intended, and figures are showing.\nIf the activity is not turned in at the end of the class period, then it will not be counted toward your participation grade.\n\n\nFinal Project\nThe final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact can be detailed blog post, following the format of the last lab, or a detailed data visualization with interactive visuals."
+  },
+  {
+    "objectID": "index.html#policies",
+    "href": "index.html#policies",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Policies",
+    "text": "Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nStudents can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\nAs a general guideline, students cannot miss more than two weeks of class in total throughout the academic semester without receiving a letter grade reduction.\nFor this course, excluding the first week and five excused absences, overall course grade will go down by 1/3 of a letter grade for each additional absence or absence equivalence regardless of base grade.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 105 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Resources",
+    "text": "Resources\n\nFundamentals of Data Visualization\n\nFull Text\n\nMaking Sense of Data by Glenn J. Myatt and Wayne P. Johnson\n\nI. Exploratory Data Analysis\nII. Data Visualization\nIII. Interactive Visualizations\n\nNaked statistics: stripping the dread from the data by Charles J. Wheelan\n\nGoogle Preview\n\nNatural Resources Biometrics by Diane Kiarnan\n\nFull Text\n\nPython Data Science Handbook by Jake VanderPlas\n\nFull Text\n\nPython for Data Analysis, 3E by Wes McKinney\n\nFull Text\n\nArticles\n\nVariable Types"
+  },
+  {
+    "objectID": "index.html#communications",
+    "href": "index.html#communications",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Communications",
+    "text": "Communications\n\nUsing GitHub and Discord\nThis course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place in the Data Exploration Channel in Discord.\nThe Allegheny College Computer and Information Science Discord Server will also have useful announcements about departmental activities including TL office hours.\n\n\nUsing Email\nAlthough we will primarily use Discord for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails."
+  },
+  {
+    "objectID": "index.html#honor-code",
+    "href": "index.html#honor-code",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Honor Code",
+    "text": "Honor Code\nThe Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny Academic Bulletin. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who has matriculated at the College has acknowledged the following Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\nEffective Collaboration\nComputer science is an inherently collaborative discipline. The Department of Computer and Information Science at Allegheny College encourages students to engage in collaboration. However, in the context of individual coursework, through which each student must demonstrate their own knowledge, there are certain forms of collaboration that are and are not acceptable.\n\nAcceptable forms of collaboration include:\n\nDiscussing high-level concepts.\nReferring someone to a course text book, course slides, example programs, or other resources that contain helpful information or instructions.\nOutlining the high-level steps to solving a problem, without mentioning specific\nlines of code that need to be written.\n\nUnacceptable forms of collaboration include:\n\nSharing details about specific lines of code, including showing your source code to someone or looking at someone else’s code.\nCopying someone else’s source code, technical writing, program commands, or program output, even with some slight modifications.\nTyping source code, technical writing, or commands on someone else’s computer.\n\n\n\n\nPlagiarism and Artificial Intelligence\nStudents may not pass off or represent the work of another student, or their own prior work, as their own current work in any case. Plagiarism and AI-generatated code, text, or images are not permitted in any assignment type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other coursework, students are expected to adhere to the given instructions for the particular exam or item of coursework. It is the responsibility of the student to review the authorization specifications on every item and act appropriately, upholding the honor code. Suspected plagiarized or unauthorized use of AI to generate the work that is turned in will be reported to the Honor Code Committee. This policy does not preclude the use of AI to learn."
+  },
+  {
+    "objectID": "index.html#educational-accommodations",
+    "href": "index.html#educational-accommodations",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Educational Accommodations",
+    "text": "Educational Accommodations\nThe Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Students with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898. Student Accessibility and Support Services is part of the Learning Commons and is located in Pelletier Library. Please do this as soon as possible to ensure that approved accommodations are implemented in a timely fashion."
+  },
+  {
+    "objectID": "index.html#syllabus-changes",
+    "href": "index.html#syllabus-changes",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Syllabus Changes",
+    "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
   },
   {
     "objectID": "slides/06-data-gathering.html#goals",
@@ -273,584 +847,94 @@
     "text": "End"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "",
-    "text": "Class Sessions: TuTh 9:30 AM-10:45 AM, Alden 101\nLaboratory Session: Th, 2:30 PM-4 PM, Alden 101\nInstructor: Professor Emily Graber, egraber@allegheny.edu\nOffice Location: Alden Hall 106\nOffice Hours: Visit Google Calendar to reserve an appointment as needed."
-  },
-  {
-    "objectID": "index.html#course-description",
-    "href": "index.html#course-description",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Course Description",
-    "text": "Course Description\nAn introduction to the methods of collecting, exploring, transforming and visualizing data for storytelling. Often participating in team-based and hands-on activities, students learn how to use web platforms and dashboards to acquire, explore and investigate data to generate summarized key data insights using visual techniques. Students also apply open-source programming language to discover patterns in the data, test hypotheses, and check assumptions using graphical representations. During a weekly laboratory session, students employ cutting-edge software tools to complete projects, reporting on their results through both written documents and oral presentations. Students are invited to use their own departmentally approved laptop in this course; a limited number of laptops are available for use during class and lab sessions.\nPrerequisite: None\nDistribution Requirements: QR, SP.\nDR tag rationale: This course will primarily focus on methods of data collection, foundational data analysis of numerical data, and visualizations of such data. Additionally, students will participate in the scientific process during the exploratory data analysis and apply scientific reasoning to analyze and synthesize data.\n\nLearning Outcomes\n\nDevelop hypotheses based on motivating problems and/or observations and identify appropriate data to address hypotheses.\nIdentify and describe key elements in different types of data visualizations.\nUse web-based platforms to accurately present data sets through multiple visualizations.\nUse an open-source programming language to compute summary statistics and visualize key patterns in the data.\nContribute to and present structured, web-based documentation that describes data exploration steps and visualization-based conclusions.\n\n\n\nScientific Process and Knowledge (SP)\n\nCourses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry.\n\n\n\nQuantitative Reasoning (QR)\n\nQuantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations."
-  },
-  {
-    "objectID": "index.html#schedule-at-a-glance",
-    "href": "index.html#schedule-at-a-glance",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Schedule at-a-glance",
-    "text": "Schedule at-a-glance\nWelcome\n\nWeek One: January 14, 16: Setup\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Filtering\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data \nWeek Seven: February 25, 27: Web Data Analytics and Scraping\nSpring Break: March 1-9\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\nData Processing\n\nWeek Nine: March 18, 20: Statistics\nWeek Ten: March 25, 27: Data Transformations\nWeek Eleven: April 1, 3: Modeling and Overfitting\nWeek Twelve: April 8: Clustering\n\nData Storytelling\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\nWeek Fourteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Fifteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks\n\nComplete Final Exam Schedule"
-  },
-  {
-    "objectID": "index.html#grading",
-    "href": "index.html#grading",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Grading",
-    "text": "Grading\n\n\n\nAssignment type\nPercentage\n\n\n\n\nLabs\n50%\n\n\nParticipation\n30%\n\n\nFinal Project\n20%\n\n\n\nGrading policy may change as needed during the term; any changes will be announced to the class at the time of the change. Grades will be communicated via Canvas. Please note that attendance policies may additionally affect grades as adjustments to grades will be applied on top of the base grade according to policy\n\nLabs\nThere are 8 labs during the semester. Due dates are hard deadlines. See below for policy on late work.\nThe deliverables for labs include documentation in a GitHub repo addressing specific questions or demonstrating requested calculations, analyses, visualizations, and code snippets.\nLabs will be graded for having clean work with few careless errors, correct Markdown, code, data, correct images given the context of the lab, and correct explanations of concepts in writing\n\n\nParticipation\nParticipation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate. Collegial conversations about course topics or activities are also allowed.\nYou will have access to a repository for submitting all of your class activities. Each activity that you do in class will contribute to your overall participation grade. There is no grading scheme for class activities. I will simply check that the activity was turned in at the end of the class period, and that you have made an effort to do the activity as intended, and figures are showing.\nIf the activity is not turned in at the end of the class period, then it will not be counted toward your participation grade.\n\n\nFinal Project\nThe final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact can be detailed blog post, following the format of the last lab, or a detailed data visualization with interactive visuals."
-  },
-  {
-    "objectID": "index.html#policies",
-    "href": "index.html#policies",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Policies",
-    "text": "Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nStudents can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\nAs a general guideline, students cannot miss more than two weeks of class in total throughout the academic semester without receiving a letter grade reduction.\nFor this course, excluding the first week and five excused absences, overall course grade will go down by 1/3 of a letter grade for each additional absence or absence equivalence regardless of base grade.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 105 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
-  },
-  {
-    "objectID": "index.html#resources",
-    "href": "index.html#resources",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Resources",
-    "text": "Resources\n\nFundamentals of Data Visualization\n\nFull Text\n\nMaking Sense of Data by Glenn J. Myatt and Wayne P. Johnson\n\nI. Exploratory Data Analysis\nII. Data Visualization\nIII. Interactive Visualizations\n\nNaked statistics: stripping the dread from the data by Charles J. Wheelan\n\nGoogle Preview\n\nNatural Resources Biometrics by Diane Kiarnan\n\nFull Text\n\nPython Data Science Handbook by Jake VanderPlas\n\nFull Text\n\nPython for Data Analysis, 3E by Wes McKinney\n\nFull Text\n\nArticles\n\nVariable Types"
-  },
-  {
-    "objectID": "index.html#communications",
-    "href": "index.html#communications",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Communications",
-    "text": "Communications\n\nUsing GitHub and Discord\nThis course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place in the Data Exploration Channel in Discord.\nThe Allegheny College Computer and Information Science Discord Server will also have useful announcements about departmental activities including TL office hours.\n\n\nUsing Email\nAlthough we will primarily use Discord for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails."
-  },
-  {
-    "objectID": "index.html#honor-code",
-    "href": "index.html#honor-code",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Honor Code",
-    "text": "Honor Code\nThe Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny Academic Bulletin. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who has matriculated at the College has acknowledged the following Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\nEffective Collaboration\nComputer science is an inherently collaborative discipline. The Department of Computer and Information Science at Allegheny College encourages students to engage in collaboration. However, in the context of individual coursework, through which each student must demonstrate their own knowledge, there are certain forms of collaboration that are and are not acceptable.\n\nAcceptable forms of collaboration include:\n\nDiscussing high-level concepts.\nReferring someone to a course text book, course slides, example programs, or other resources that contain helpful information or instructions.\nOutlining the high-level steps to solving a problem, without mentioning specific\nlines of code that need to be written.\n\nUnacceptable forms of collaboration include:\n\nSharing details about specific lines of code, including showing your source code to someone or looking at someone else’s code.\nCopying someone else’s source code, technical writing, program commands, or program output, even with some slight modifications.\nTyping source code, technical writing, or commands on someone else’s computer.\n\n\n\n\nPlagiarism and Artificial Intelligence\nStudents may not pass off or represent the work of another student, or their own prior work, as their own current work in any case. Plagiarism and AI-generatated code, text, or images are not permitted in any assignment type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other coursework, students are expected to adhere to the given instructions for the particular exam or item of coursework. It is the responsibility of the student to review the authorization specifications on every item and act appropriately, upholding the honor code. Suspected plagiarized or unauthorized use of AI to generate the work that is turned in will be reported to the Honor Code Committee. This policy does not preclude the use of AI to learn."
-  },
-  {
-    "objectID": "index.html#educational-accommodations",
-    "href": "index.html#educational-accommodations",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Educational Accommodations",
-    "text": "Educational Accommodations\nThe Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Students with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898. Student Accessibility and Support Services is part of the Learning Commons and is located in Pelletier Library. Please do this as soon as possible to ensure that approved accommodations are implemented in a timely fashion."
-  },
-  {
-    "objectID": "index.html#syllabus-changes",
-    "href": "index.html#syllabus-changes",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Syllabus Changes",
-    "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
-  },
-  {
-    "objectID": "code/data_distortion_activity.html",
-    "href": "code/data_distortion_activity.html",
-    "title": "Class Activity",
-    "section": "",
-    "text": "Open In Colab"
-  },
-  {
-    "objectID": "code/data_distortion_activity.html#goals",
-    "href": "code/data_distortion_activity.html#goals",
-    "title": "Class Activity",
+    "objectID": "slides/02-data-display.html#goals",
+    "href": "slides/02-data-display.html#goals",
+    "title": "Week 2: Data Display",
     "section": "Goals",
-    "text": "Goals\n\nWork with colleagues at your table\nLook at code that can distort data displays\nModify code to distort data displays\nDescribe how data distortion can imply information that was not in raw data\n\n\n\nCode\n# TODO All Tables: Run this code cell that makes pre-existing tools available for data exploration\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\n\n\nCode\n# TODO All Tables: Run this code cell that creates a pandas dataframe\n\ndf = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/site/main/data/data-distortion-bls-LNS14000000.csv',\n    sep=',',\n    names = ['Timepoint', 'Year', 'Month', 'Label', 'Value'],\n    skiprows=1\n)\n\nprint(df.head()) # Display the first few rows of the DataFrame"
+    "text": "Goals\n\n\nreview display types\nreview anatomy of a graph\ngroup activity"
   },
   {
-    "objectID": "code/data_distortion_activity.html#table-1",
-    "href": "code/data_distortion_activity.html#table-1",
-    "title": "Class Activity",
-    "section": "Table 1",
-    "text": "Table 1\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(12, 4))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()\n\n\n\nTODO: What does this figure show?"
+    "objectID": "slides/02-data-display.html#display-types-1",
+    "href": "slides/02-data-display.html#display-types-1",
+    "title": "Week 2: Data Display",
+    "section": "Display Types",
+    "text": "Display Types\n\n\n\n\n\ndata table\npie chart\npoint or dot plot"
   },
   {
-    "objectID": "code/data_distortion_activity.html#table-2",
-    "href": "code/data_distortion_activity.html#table-2",
-    "title": "Class Activity",
-    "section": "Table 2",
-    "text": "Table 2\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(6, 2))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(0,100)\nplt.show()\n\n\n\nTODO: What does this figure show?"
+    "objectID": "slides/02-data-display.html#pie-chart",
+    "href": "slides/02-data-display.html#pie-chart",
+    "title": "Week 2: Data Display",
+    "section": "Pie Chart",
+    "text": "Pie Chart"
   },
   {
-    "objectID": "code/data_distortion_activity.html#table-3",
-    "href": "code/data_distortion_activity.html#table-3",
-    "title": "Class Activity",
-    "section": "Table 3",
-    "text": "Table 3\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(3, 6))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(0,100)\nplt.show()\n\n\n\nTODO: What does this figure show?"
+    "objectID": "slides/02-data-display.html#dot-plot",
+    "href": "slides/02-data-display.html#dot-plot",
+    "title": "Week 2: Data Display",
+    "section": "Dot Plot",
+    "text": "Dot Plot"
   },
   {
-    "objectID": "code/data_distortion_activity.html#table-4",
-    "href": "code/data_distortion_activity.html#table-4",
-    "title": "Class Activity",
-    "section": "Table 4",
-    "text": "Table 4\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(3, 9))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()\n\n\n\nTODO: What does this figure show?"
+    "objectID": "slides/02-data-display.html#additional-types",
+    "href": "slides/02-data-display.html#additional-types",
+    "title": "Week 2: Data Display",
+    "section": "Additional Types",
+    "text": "Additional Types\n\n\n\nhistogram\nbar plot\nline plot\nscatter plot\nheat map\nbox and whisker plot\n\n\n\n\n\n← occurrences (binned)\n← processed categories\n← continuous line\n← shows relationships\n← three variables in 2D\n← stat on a variable"
   },
   {
-    "objectID": "code/data_distortion_activity.html#discussion",
-    "href": "code/data_distortion_activity.html#discussion",
-    "title": "Class Activity",
-    "section": "Discussion",
-    "text": "Discussion\nShare your observations\n\nWhat did the plot at your table show?\nWhat is the best representation of the data?"
+    "objectID": "slides/02-data-display.html#histogram",
+    "href": "slides/02-data-display.html#histogram",
+    "title": "Week 2: Data Display",
+    "section": "Histogram",
+    "text": "Histogram"
   },
   {
-    "objectID": "code/data_distortion_activity.html#technical-exploration",
-    "href": "code/data_distortion_activity.html#technical-exploration",
-    "title": "Class Activity",
-    "section": "Technical Exploration",
-    "text": "Technical Exploration\n\nWhat new python expressions do you see in the code?\nTry changing them below to see what happens\n\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n# TODO: Change the xlim, ylim, and figsize to see what happens\n\n# TODO: try plt.xlim(800,900)\n# TODO: adjust the ylim so that the line does not go off the canvas\n# TODO: change the figsize to make a tall, skinny canvas\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(10,6))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=45)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()"
+    "objectID": "slides/02-data-display.html#line-plot",
+    "href": "slides/02-data-display.html#line-plot",
+    "title": "Week 2: Data Display",
+    "section": "Line Plot",
+    "text": "Line Plot"
   },
   {
-    "objectID": "code/data_distortion_activity.html#closing-thoughts",
-    "href": "code/data_distortion_activity.html#closing-thoughts",
-    "title": "Class Activity",
-    "section": "Closing Thoughts",
-    "text": "Closing Thoughts\n\nTODO: Describe how data distortion can imply things that were not in raw data\nTODO: How could daily life be impacted by distorted data?"
+    "objectID": "slides/02-data-display.html#box-and-whisker-plot",
+    "href": "slides/02-data-display.html#box-and-whisker-plot",
+    "title": "Week 2: Data Display",
+    "section": "Box and Whisker Plot",
+    "text": "Box and Whisker Plot"
   },
   {
-    "objectID": "code/data_filtering_activity.html",
-    "href": "code/data_filtering_activity.html",
-    "title": "Class Activity",
-    "section": "",
-    "text": "Open In Colab"
+    "objectID": "slides/02-data-display.html#terminology",
+    "href": "slides/02-data-display.html#terminology",
+    "title": "Week 2: Data Display",
+    "section": "Terminology",
+    "text": "Terminology\n\n\n\n\n\nlegend\nmarkers\nmarker labels\naxis labels\naxis units\ntick marks\ntitle\ncaption\npanels"
   },
   {
-    "objectID": "code/data_filtering_activity.html#goals",
-    "href": "code/data_filtering_activity.html#goals",
-    "title": "Class Activity",
-    "section": "Goals",
-    "text": "Goals\n\nWork with colleagues at your table\nReview variables and assignment\nWrite code to control a matrix\nWrite code for logical contorl\nWrite code for dataframe control"
+    "objectID": "slides/02-data-display.html#group-activity",
+    "href": "slides/02-data-display.html#group-activity",
+    "title": "Week 2: Data Display",
+    "section": "Group Activity",
+    "text": "Group Activity\n\n\nForm pairs\nTake notes\nInterview your partner to find out about a data visualization that they recently admired\nWhat did the visualization make clear that was unclear before?\nWhat were all the salient features used to communicate information?\nPresent your partner’s visualization"
   },
   {
-    "objectID": "code/data_filtering_activity.html#variables-and-assignment-ref",
-    "href": "code/data_filtering_activity.html#variables-and-assignment-ref",
-    "title": "Class Activity",
-    "section": "Variables and Assignment (REF)",
-    "text": "Variables and Assignment (REF)\n\n\nCode\n# Variables are names - a reusable label for a data value.\n\nname = 'Marc'\nprint(name)\npi = 3.14\nprint(pi)\ncustomer_id = \"1234\"\n# TODO: add a print statement to see customer_id\naccount_balance = 1000\n# TODO: add a print statement to see account_balance\n\n\n\n\nCode\n# if the same name is used to store new data, the old data is lost\n\npi = 3.14\nprint(pi)\npi = 'Marc'\n# TODO: add a print statement to see pi\n\n\n\n\nCode\n# assignment is a fancy term for associating or storing data\n\n# here 3.14 is assigned to the variable name pi using the `=`\npi = 3.14\n\n# TODO: assign the value 5 to pi\n# TODO: add a print statement to see pi\n# TODO: assign the value \"hello\" to message\n# TODO: add a print statement to see message\n# TODO: assign the value [1,2,3,4,5] to data\n# TODO: add a print statement to see data\n\n\n\nReserved Words\nThe following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your program variables.\n\nand, as, assert, async, await, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield"
+    "objectID": "slides/02-data-display.html#group-activity-2",
+    "href": "slides/02-data-display.html#group-activity-2",
+    "title": "Week 2: Data Display",
+    "section": "Group Activity 2",
+    "text": "Group Activity 2\n\n\nForm new pairs\npull up https://www.nytimes.com/2023/07/26/learning/over-75-new-york-times-graphs-for-students-to-analyze.html\nFind a visualization that uses a line plot\nFind a visualization that uses a histogram\nFind a visualization that uses a bar chart\nFind a visualization that uses a heat map\nFind a visualization that uses a scatter plot\nFind a visualization that uses something else\nFind a visualization that is too complicated\nFind a visualization that is collectively your favorite\n\n\nEnd"
   },
   {
-    "objectID": "code/data_filtering_activity.html#matrix",
-    "href": "code/data_filtering_activity.html#matrix",
-    "title": "Class Activity",
-    "section": "Matrix",
-    "text": "Matrix\n\n\nCode\n# TODO: run this code to make a simple matrix in a pandas dataframe\n\nimport pandas as pd\n\nmatrix = pd.read_csv(\n    '/content/data-filtering-matrix.csv',\n    sep=',',\n    names = ['A', 'B', 'C'],\n    skiprows=1)\n\n\n\n\nCode\n# TODO: add a print statement to see the dataframe\nprint(matrix)\n\n\n\n\nCode\n# The matrix contains 15 values in five rows and three columns\n# TODO: verify this using the data explorer\n\n\n# Each item has a unique location in the matrix given by its row and column\n# Using python convention, the rows and columns are idenfied with integers starting at 0!\n\n# On the 0th row, column 0 has the value of 0.0\n# On the 4nd row, column 0 has the value of 4.0\n# TODO: What is the largest row index in the matrix?\n# TODO: What is the largest column index in the matrix?\n\n# Here's how you access the element on row 4, column 0\nelement = matrix.iloc[4,0]\nprint(element)\n\n# TODO: access the element on row 3 column 2 and assign it to the variable `another_element`\n# TODO: add a print statement to see `another_element`\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# Indexing to get one element is very simple, but what if you want multiple elements in a row, or in a column?\n\n# Slicing is the way to do it!\n# the sytax for slicing is like this: [start_index:end_index:hop_size]\n# Using python convention, note that the end_index will not be included in the slice\n\n# Here is a slice example on the columns\nslice_example = matrix.iloc[0,0:2:1]\nprint(slice_example)\n\n# TODO: use words to write out what the slice contains\n\n# TODO: Write a slice that gets the first through fourth rows (not including 4) from column two and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Write a slice that gets the 0th through fourth rows (not including 4) from column one, hopping by 2, and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Come up with your own example\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# The syntax of a slice is [start:end:hop_size], but if start or end is left out, then the endpoints are assumed!\n# warning - don't forget to include the `:`\n\n# Here is every columns in row 0, including the start and INCLUDING the end!\nfull_slice = matrix.iloc[0,::1]\nprint(full_slice)\n\n# TODO: Write a slice that gets every column in row 4, including the start and INCLUDING the end! Assign to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: make sure you get what you expect! Is there anything unexpected?\n\n\n\n\nCode\n# Slices to endpoints have already been used in our labs\n\n# TODO: find any spot where the slices have been used in our labs and put a link for yourself below\n# TODO: how was the slice used in the lab?"
-  },
-  {
-    "objectID": "code/data_filtering_activity.html#logical-control",
-    "href": "code/data_filtering_activity.html#logical-control",
-    "title": "Class Activity",
-    "section": "Logical Control",
-    "text": "Logical Control\n\n\nCode\n# First lets review some comparison operators\n\n\nThe following table summarizes the most commonly used comparison operators in Python, along with their definition when applied to numbers.\n\n\n\noperator\noperation on numbers\n\n\n\n\n==\nequal to\n\n\n!=\nnot equal to\n\n\n&gt;\ngreater than\n\n\n&gt;=\ngreater than or equal to\n\n\n&lt;\nless than\n\n\n&lt;=\nless than or equal to\n\n\n\nAs their name suggests, comparison operators allow us to compare two values.\n\n\nCode\n# Here is a comparison of 4 vs 5. It asks the question: is four larger than five?\n# TODO: what answer should come out?\n# TODO: run this, what does come out?\n4 &gt; 5\n\n\n\n\nCode\n# As you can see, comparison operators allow us to compare values and result in a boolean type indicating whether the comparison is `True` or `False`.\n# TODO: make a comparison the checks if five is greater than four, assign to a variable and print it\n# TODO: make a comparison the checks if five is not equal to four, assign to a variable and print it\n# TODO: make a comparison the checks if five is equal to four, assign to a variable and print it\n\n\n\n\nCode\n# TODO: what is the difference between `=` and `==`?\n\n\n\n\nCode\n# It turns out that matrices can be compared too!\n# What elements in the matrix are greater than 1?\n\n# TODO: what do you think will happen\nselection = matrix &gt; 1\n# TODO: add a print statement to see selection\n# Does it match your expectations?\n\n\n\n\nCode\n# Write another comparison with matrix to ask which elements are equal to 4, assign to a variable called select_4 and print\n\n\n\n\nCode\n# Now we can use the selection to access only those elements!\n# The rows and columns do not need to be set.\n# Simply use the selection as the only index! Amazing!\n\nresult = matrix[selection]\nprint(result)\n\n# TODO: use select_4 as the only index, assign to variable and print\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Finally, I want to show you how to combine comparions\n# Think of this question: what elements in the matrix are greater than one AND less then three?\n# The AND is done with `&`\n\ngreaterthanone = matrix &gt; 1\nprint(\"greather than one: \\n\", greaterthanone)\nlessthanthree = matrix &lt; 3\nprint(\"less than three: \\n\", lessthanthree)\nboth = greaterthanone & lessthanthree\nprint(\"both: \\n\", both)\nresult = matrix[both]\nprint(\"result: \\n\", result)\n\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Here is the same thing, but all in one line of code...\n\nprint(matrix[(matrix &gt; 1) & (matrix &lt; 3)])\n\n\n\n\nCode\n# TODO: think of one or more questions you have and then post it in discord.\n# TODO: As you see your colleagues questions, reply to their message if you have the answer!"
-  },
-  {
-    "objectID": "code/data_filtering_activity.html#dataframe-control-with-.loc",
-    "href": "code/data_filtering_activity.html#dataframe-control-with-.loc",
-    "title": "Class Activity",
-    "section": "Dataframe Control with .loc",
-    "text": "Dataframe Control with .loc\n\n\nCode\n# Controlling a Dataframe is similar to controlling a matrix.\n# Slicing is possible and logical comparison are possible!\n# One of the main differences is that indexing is done with .loc\n\n# Below is a the hourly temperature normals dataset for Meadville in a pandas dataframe called `dfm`\n# This same dataset was used in the data_distortion lab\n# The columns are named\n# The column containing the normals is called `HLY-TEMP-NORMAL`\n# Each hour is a year is given in the column called `INDEX`\n# A readable label for each hour in a year is given in the column called `DATE`\n\n# lets apply your new skills of logical indexing to this dataset\n\n\n\n\nCode\n# TODO: run this cell\n\n# load pre-existing tools available for data exploration\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# create a pandas dataframe\ndfm = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter/refs/heads/main/data/data-distortion-noaa-2006-2020-USW00004843.csv',\n    sep=',',\n    names = ['INDEX', 'STATION', 'NAME', 'LATITUDE', 'LONGITUDE', 'ELEVATION',\n       'DATE', 'month', 'day', 'hour', 'HLY-TEMP-NORMAL'],\n    skiprows=1\n)\n\n# Display the first few rows of the DataFrame\nprint(dfm.head())\n\n\n\n\nCode\n# TODO: how many rows are in the dataframe?\n# TODO: how many columns are in the dataframe?\n\n\n\n\nCode\n# This cell creates logical filters, then applies them with .loc\n\n# Only rows from the midnight hour in the month of March are selected\nselected_hours = dfm['hour'] == 0\nselected_months = dfm['month'] == 3\nselected_rows = selected_hours & selected_months\n\n\n# new dataframes are made that contain ONLY THE SELECTED ROWS using .loc\n# here is the syntax for .loc: .loc[rows, columns]\ndfm_selected_normals = dfm.loc[selected_rows, 'HLY-TEMP-NORMAL']\ndfm_selected_indices = dfm.loc[selected_rows, 'INDEX']\ndfm_selected_dates = dfm.loc[selected_rows, 'DATE']\n\n\nprint(dfm_selected_normals)\nprint(dfm_selected_indices)\nprint(dfm_selected_dates)\n\n\n\n\nCode\n# Here is the same thing in one line\n\ndfm.loc[(dfm['hour'] == 0) & (dfm['month'] == 3), 'INDEX']\n\n\n\n\nCode\n# Assuming df is already created in the previous code cell\n\n# TODO: Run this code cell\n# TODO: What does the figure show?\n# TODO: Fill in appropriate title, xlabel and ylabel using you understanding of logical indexing\n\n# Control how many xtick labels are on the x axis\nxtick_hopsize = 3\n\n# Clear out memory (doesn't impact the visualization, but keeps the computer happy)\nplt.close('all')\n\n# make a blank canvas\nplt.figure(figsize=(12, 4))\n\n# set the overall title for all subfigures\nplt.suptitle('Figure 1')\n\n# subplot 1\nplt.subplot(1, 2, 1)\nplt.plot(dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 1\nplt.plot(dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 2\nplt.plot(dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 3\nplt.plot(dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 4\nplt.plot(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 5\nplt.plot(dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 6\nplt.plot(dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 7\nplt.plot(dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 8\nplt.legend(['7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM'])\n# the plt.xticks function labels the ticks so that dates appear instead of index\nplt.xticks(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'][::xtick_hopsize], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'DATE'][::xtick_hopsize], rotation=90)\nplt.xlabel('')\nplt.ylabel('')\nplt.title('')\nplt.grid(True)\n\nplt.show()"
-  },
-  {
-    "objectID": "code/data_filtering_activity.html#video",
-    "href": "code/data_filtering_activity.html#video",
-    "title": "Class Activity",
-    "section": "Video",
-    "text": "Video\n\n\nCode\n# TODO: watch the video (also linked on the course website) - https://youtu.be/v5pJfu-yn-0\n\n# TODO: What two terms are used instead of logical indexing?"
-  },
-  {
-    "objectID": "syll/syllabus.html",
-    "href": "syll/syllabus.html",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "",
-    "text": "Class Sessions: TuTh 9:30 AM-10:45 AM, Alden 101\nLaboratory Session: Th, 2:30 PM-4 PM, Alden 101\nInstructor: Professor Emily Graber, egraber@allegheny.edu\nOffice Location: Alden Hall 106\nOffice Hours: Visit Google Calendar to reserve an appointment as needed."
-  },
-  {
-    "objectID": "syll/syllabus.html#course-description",
-    "href": "syll/syllabus.html#course-description",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Course Description",
-    "text": "Course Description\nAn introduction to the methods of collecting, exploring, transforming and visualizing data for storytelling. Often participating in team-based and hands-on activities, students learn how to use web platforms and dashboards to acquire, explore and investigate data to generate summarized key data insights using visual techniques. Students also apply open-source programming language to discover patterns in the data, test hypotheses, and check assumptions using graphical representations. During a weekly laboratory session, students employ cutting-edge software tools to complete projects, reporting on their results through both written documents and oral presentations. Students are invited to use their own departmentally approved laptop in this course; a limited number of laptops are available for use during class and lab sessions.\nPrerequisite: None\nDistribution Requirements: QR, SP.\nDR tag rationale: This course will primarily focus on methods of data collection, foundational data analysis of numerical data, and visualizations of such data. Additionally, students will participate in the scientific process during the exploratory data analysis and apply scientific reasoning to analyze and synthesize data.\n\nLearning Outcomes\n\nDevelop hypotheses based on motivating problems and/or observations and identify appropriate data to address hypotheses.\nIdentify and describe key elements in different types of data visualizations.\nUse web-based platforms to accurately present data sets through multiple visualizations.\nUse an open-source programming language to compute summary statistics and visualize key patterns in the data.\nContribute to and present structured, web-based documentation that describes data exploration steps and visualization-based conclusions.\n\n\n\nScientific Process and Knowledge (SP)\n\nCourses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry.\n\n\n\nQuantitative Reasoning (QR)\n\nQuantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations."
-  },
-  {
-    "objectID": "syll/syllabus.html#schedule-at-a-glance",
-    "href": "syll/syllabus.html#schedule-at-a-glance",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Schedule at-a-glance",
-    "text": "Schedule at-a-glance\nWelcome\n\nWeek One: January 14, 16: Setup\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Filtering\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data \nWeek Seven: February 25, 27: Web Data Analytics and Scraping\nSpring Break: March 1-9\nWeek Eight: March 11, 13: Data Entry and Storage with Pandas\n\nData Processing\n\nWeek Nine: March 18, 20: Statistics\nWeek Ten: March 25, 27: Data Transformations\nWeek Eleven: April 1, 3: Modeling and Overfitting\nWeek Twelve: April 8: Clustering\n\nData Storytelling\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\nWeek Fourteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Fifteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks\n\nComplete Final Exam Schedule"
-  },
-  {
-    "objectID": "syll/syllabus.html#grading",
-    "href": "syll/syllabus.html#grading",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Grading",
-    "text": "Grading\n\n\n\nAssignment type\nPercentage\n\n\n\n\nLabs\n50%\n\n\nParticipation\n30%\n\n\nFinal Project\n20%\n\n\n\nGrading policy may change as needed during the term; any changes will be announced to the class at the time of the change. Grades will be communicated via Canvas. Please note that attendance policies may additionally affect grades as adjustments to grades will be applied on top of the base grade according to policy\n\nLabs\nThere are 8 labs during the semester. Due dates are hard deadlines. See below for policy on late work.\nThe deliverables for labs include documentation in a GitHub repo addressing specific questions or demonstrating requested calculations, analyses, visualizations, and code snippets.\nLabs will be graded for having clean work with few careless errors, correct Markdown, code, data, correct images given the context of the lab, and correct explanations of concepts in writing\n\n\nParticipation\nParticipation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate. Collegial conversations about course topics or activities are also allowed.\nYou will have access to a repository for submitting all of your class activities. Each activity that you do in class will contribute to your overall participation grade. There is no grading scheme for class activities. I will simply check that the activity was turned in at the end of the class period, and that you have made an effort to do the activity as intended, and figures are showing.\nIf the activity is not turned in at the end of the class period, then it will not be counted toward your participation grade.\n\n\nFinal Project\nThe final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact can be detailed blog post, following the format of the last lab, or a detailed data visualization with interactive visuals."
-  },
-  {
-    "objectID": "syll/syllabus.html#policies",
-    "href": "syll/syllabus.html#policies",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Policies",
-    "text": "Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nStudents can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\nAs a general guideline, students cannot miss more than two weeks of class in total throughout the academic semester without receiving a letter grade reduction.\nFor this course, excluding the first week and five excused absences, overall course grade will go down by 1/3 of a letter grade for each additional absence or absence equivalence regardless of base grade.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 105 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
-  },
-  {
-    "objectID": "syll/syllabus.html#resources",
-    "href": "syll/syllabus.html#resources",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Resources",
-    "text": "Resources\n\nFundamentals of Data Visualization\n\nFull Text\n\nMaking Sense of Data by Glenn J. Myatt and Wayne P. Johnson\n\nI. Exploratory Data Analysis\nII. Data Visualization\nIII. Interactive Visualizations\n\nNaked statistics: stripping the dread from the data by Charles J. Wheelan\n\nGoogle Preview\n\nNatural Resources Biometrics by Diane Kiarnan\n\nFull Text\n\nPython Data Science Handbook by Jake VanderPlas\n\nFull Text\n\nPython for Data Analysis, 3E by Wes McKinney\n\nFull Text\n\nArticles\n\nVariable Types"
-  },
-  {
-    "objectID": "syll/syllabus.html#communications",
-    "href": "syll/syllabus.html#communications",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Communications",
-    "text": "Communications\n\nUsing GitHub and Discord\nThis course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place in the Data Exploration Channel in Discord.\nThe Allegheny College Computer and Information Science Discord Server will also have useful announcements about departmental activities including TL office hours.\n\n\nUsing Email\nAlthough we will primarily use Discord for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails."
-  },
-  {
-    "objectID": "syll/syllabus.html#honor-code",
-    "href": "syll/syllabus.html#honor-code",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Honor Code",
-    "text": "Honor Code\nThe Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny Academic Bulletin. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who has matriculated at the College has acknowledged the following Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\nEffective Collaboration\nComputer science is an inherently collaborative discipline. The Department of Computer and Information Science at Allegheny College encourages students to engage in collaboration. However, in the context of individual coursework, through which each student must demonstrate their own knowledge, there are certain forms of collaboration that are and are not acceptable.\n\nAcceptable forms of collaboration include:\n\nDiscussing high-level concepts.\nReferring someone to a course text book, course slides, example programs, or other resources that contain helpful information or instructions.\nOutlining the high-level steps to solving a problem, without mentioning specific\nlines of code that need to be written.\n\nUnacceptable forms of collaboration include:\n\nSharing details about specific lines of code, including showing your source code to someone or looking at someone else’s code.\nCopying someone else’s source code, technical writing, program commands, or program output, even with some slight modifications.\nTyping source code, technical writing, or commands on someone else’s computer.\n\n\n\n\nPlagiarism and Artificial Intelligence\nStudents may not pass off or represent the work of another student, or their own prior work, as their own current work in any case. Plagiarism and AI-generatated code, text, or images are not permitted in any assignment type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other coursework, students are expected to adhere to the given instructions for the particular exam or item of coursework. It is the responsibility of the student to review the authorization specifications on every item and act appropriately, upholding the honor code. Suspected plagiarized or unauthorized use of AI to generate the work that is turned in will be reported to the Honor Code Committee. This policy does not preclude the use of AI to learn."
-  },
-  {
-    "objectID": "syll/syllabus.html#educational-accommodations",
-    "href": "syll/syllabus.html#educational-accommodations",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Educational Accommodations",
-    "text": "Educational Accommodations\nThe Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Students with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898. Student Accessibility and Support Services is part of the Learning Commons and is located in Pelletier Library. Please do this as soon as possible to ensure that approved accommodations are implemented in a timely fashion."
-  },
-  {
-    "objectID": "syll/syllabus.html#syllabus-changes",
-    "href": "syll/syllabus.html#syllabus-changes",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Syllabus Changes",
-    "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html",
-    "href": "code/data_interactivity_activity.html",
-    "title": "Interactive Data Display Activity",
-    "section": "",
-    "text": "Open In Colab"
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#basic-function",
-    "href": "code/data_interactivity_activity.html#basic-function",
-    "title": "Interactive Data Display Activity",
-    "section": "Basic Function",
-    "text": "Basic Function\n\n\nCode\nplt.figure(figsize=(8, 4))\nplt.plot([0.1,0.2,0.3,0.4,0.5], [-2,-1,0,1,2], '*-')\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.title('Y vs X')\nplt.xlim(0,2)\nplt.ylim(-5,5)\nplt.show()\n\n# TODO: What happens when you run this code cell?\n# TODO: What is the title?\n\n\n\n\nCode\n# Here is a function with the same code as above\n\n\ndef plot_line():\n    plt.figure(figsize=(8, 4))\n    plt.plot([0.1,0.2,0.3,0.4,0.5], [-2,-1,0,1,2], '*-')\n    plt.xlabel('X')\n    plt.ylabel('Y')\n    plt.title('Y vs X')\n    plt.xlim(0,2)\n    plt.ylim(-5,5)\n    plt.show()\n\n\n# TODO: What happens when you run this code cell?\n\n\n\n\nCode\nplot_line()\n\n# TODO: What happens when you run this code cell?\n# TODO: How did the computer know what to do?"
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#more-interesting-function",
-    "href": "code/data_interactivity_activity.html#more-interesting-function",
-    "title": "Interactive Data Display Activity",
-    "section": "More interesting function",
-    "text": "More interesting function\n\n\nCode\n# Create a sine wave with frequency 2 Hz and amplitude 3. Use variable name y\n# Then plot it\n\nfreq = 2\namplitude = 3\n\npi = 3.14159\n\nt = np.arange(0, 2, 2/1000)\ny = amplitude * np.sin(2 * pi * freq * t)\n\n\nplt.figure(figsize=(8, 4))\nplt.plot(t, y, label=f'Sin(2 pi {freq} t) * {amplitude}')\nplt.xlabel('Time (seconds)')\nplt.ylabel('Amplitude')\nplt.legend()\nplt.xlim(0,2)\nplt.ylim(-5,5)\nplt.grid(True)\nplt.show()\n\n# TODO: What happens when you run this code cell?\n\n\n\n\nCode\ndef plot_sine(freq, amplitude):\n\n  pi = 3.14159\n\n  t = np.arange(0, 2, 2/1000)\n  y = amplitude * np.sin(2 * pi * freq * t)\n\n\n  plt.figure(figsize=(8, 4))\n  plt.plot(t, y, label=f'Sin(2 pi {freq} t) * {amplitude}')\n  plt.xlabel('Time (seconds)')\n  plt.ylabel('Amplitude')\n  plt.legend()\n  plt.xlim(0,2)\n  plt.ylim(-5,5)\n  plt.grid(True)\n  plt.show()\n\n# TODO: What happens when you run this code cell?\n# Decribe what you see above that is new\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=2, amplitude=3)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=2, amplitude=1)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=6, amplitude=1)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?"
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#interactive-function-call",
-    "href": "code/data_interactivity_activity.html#interactive-function-call",
-    "title": "Interactive Data Display Activity",
-    "section": "Interactive function call!",
-    "text": "Interactive function call!\n\n\nCode\nplt.close('all')\n\n# The interact function takes the plotting function, and parameters of the plotting function!\n# The parameters of the plotting function turn into sliders\n# the slider must be specified with some information: (start, end, hop)\n\ninteract(plot_sine, freq=(0.1, 10.0, 0.1), amplitude=(0.1, 5.0, 0.1))"
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#now-with-data-in-a-df",
-    "href": "code/data_interactivity_activity.html#now-with-data-in-a-df",
-    "title": "Interactive Data Display Activity",
-    "section": "Now with Data in a DF",
-    "text": "Now with Data in a DF\n\n\nCode\n\n\ndf = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter/refs/heads/main/data/data-distortion-noaa-2006-2020-USW00004843.csv',\n    sep=',',\n    names = ['INDEX', 'STATION', 'NAME', 'LATITUDE', 'LONGITUDE', 'ELEVATION',\n       'DATE', 'month', 'day', 'hour', 'HLY-TEMP-NORMAL'],\n    skiprows=1\n)\n\nprint(df.head()) # Display the first few rows of the DataFrame\n\n\n\n\nCode\n# a plotting function\n# it has a parameter called month\n\ndef plot_df(month):\n\n    plt.figure(figsize=(8, 4))\n    plt.plot(df.loc[df['month']==month,'INDEX'], df.loc[df['month']==month,'HLY-TEMP-NORMAL'])\n    plt.xticks(df.loc[df['month']==month,'INDEX'][::72], df.loc[df['month']==month,'DATE'][::72], rotation=90)\n    plt.xlabel('Time (hours)')\n    plt.ylabel('Normals (F)')\n    plt.title(f'Month {month}')\n    plt.ylim(-20,100)\n    plt.show()\n\n# TODO: What happens when you run this cell?\n\n\n\n\nCode\nplt.close('all')\n\n\n# The interact function takes the plotting function, and parameters of the plotting function!\n# The parameters of the plotting function turn into sliders\n# the slider must be specified with some information: (start, end, hop)\n\n\ninteract(plot_df, month=(1,12,1))"
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#you-try",
-    "href": "code/data_interactivity_activity.html#you-try",
-    "title": "Interactive Data Display Activity",
-    "section": "You Try",
-    "text": "You Try\n\n\nCode\n# TODOs\n# make a plotting function that has a parameter of month and hour\n# inside the function, set up filtering that considers both the month & hour\n# Make sure the filters select just rows from df that are equal to (==) the selected month and hour\n\n\n\n\nCode\n# TODOs\n# Call your function, but turn the parameters into sliders!\n# the month will only go from 1 to 12\n# the hour should only go from 0 to 24"
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#discord-post",
-    "href": "code/data_interactivity_activity.html#discord-post",
-    "title": "Interactive Data Display Activity",
-    "section": "Discord Post",
-    "text": "Discord Post\nTODO: Post about data that you would like to filter interactively or data that you have seen filtered interactively. These will be shared in class on Thursday."
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#submit-this-completed-activity-to-your-activities-repository",
-    "href": "code/data_interactivity_activity.html#submit-this-completed-activity-to-your-activities-repository",
-    "title": "Interactive Data Display Activity",
-    "section": "Submit this completed activity to your activities repository",
-    "text": "Submit this completed activity to your activities repository"
-  },
-  {
-    "objectID": "code/data_display_activity.html",
-    "href": "code/data_display_activity.html",
-    "title": "Class Activity",
-    "section": "",
-    "text": "Open In Colab"
-  },
-  {
-    "objectID": "code/data_display_activity.html#goals",
-    "href": "code/data_display_activity.html#goals",
-    "title": "Class Activity",
-    "section": "Goals",
-    "text": "Goals\n\nLook at code that can generate common data displays\nModify code that can generate common data displays\nDescribe how common data displays are able to convey information that was not apparent in raw data\n\n\nTODO: Run the first code cell\nTODO: In the variable explorer ({x}), what Type does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), what Shape does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), hover over the variable df to see the values. What relationship do the values have to the Shape of df? Explain what the shape means. Write your response here:\nTODO: Looking at the rest of the code cells that can generate figures, what patterns do you see repeated in the code? Write your response here:\nTODO: Run the code cells, stopping once you reach the next section. Examine the figures.\nTODO: Explain what relationship exists between the reddish code in quotes and the figures that are generated. Write your response here:\nTODO: Find a piece of code where a marker was explicitly specified. Change the marker to an upward triangle, a square, and a star based on the matplotlib documentation and rerun the code.\nTODO: Overall, do these figures reveal anything about this data that was not so apparent when looking at df? Write your response here:\nNow, move on to the next section\n\nThe data table below shows how many millions of prescriptions are obtained from various sources in the United States annually.\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\nTraditional\n914\n\n\nIndependent\n666\n\n\nMassMerch\n238\n\n\nSuperMarket\n221\n\n\nMailOrder\n86\n\n\n\n\n\nCode\n# import pandas and make dataframe\n\nimport pandas as pd\n\ndata = {'Drug Source': ['Traditional', 'Independent', 'MassMerch', 'SuperMarket', 'MailOrder'],\n        'Num Prescriptions': [914, 666, 238, 221, 86]}\ndf = pd.DataFrame(data)\n\ndf\n\n\n\n\n\n\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\n0\nTraditional\n914\n\n\n1\nIndependent\n666\n\n\n2\nMassMerch\n238\n\n\n3\nSuperMarket\n221\n\n\n4\nMailOrder\n86\n\n\n\n\n\n\n\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.scatter(df['Num Prescriptions'], df['Drug Source'])\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Drug Source')\nplt.title('Drug Source vs. Number of Prescriptions')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.pie(df['Num Prescriptions'], labels=df['Drug Source'])\nplt.title('Drug Source')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.hist(df['Num Prescriptions'], bins=20)\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Frequency')\nplt.title('Histogram of Number of Prescriptions')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()  # Adjust figure size for better visualization\nplt.plot(df['Drug Source'], df['Num Prescriptions'], marker='o', linestyle='-')\nplt.xlabel('Drug Source')\nplt.ylabel('Number of Prescriptions (Millions)')\nplt.title('Number of Prescriptions by Drug Source')\nplt.grid(True, linestyle='--', alpha=0.7)  # Add a grid for better readability\nplt.xticks(rotation=45) # Rotate x-axis labels for better visibility\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.boxplot(df['Num Prescriptions'])  # Create the boxplot\nplt.xlabel('Number of Prescriptions')\nplt.title('Box Plot of Number of Prescriptions')\nplt.show()"
-  },
-  {
-    "objectID": "grades.html",
-    "href": "grades.html",
-    "title": "Grades",
-    "section": "",
-    "text": "Please check Canvas for your grades here"
-  },
-  {
-    "objectID": "slides/07-web-data.html#goals",
-    "href": "slides/07-web-data.html#goals",
-    "title": "Week 7: Web Data",
-    "section": "Goals",
-    "text": "Goals\n\nWebsite structure\nGathering content off the web\nGathering data about web usage\n\nGoogle Analytics"
-  },
-  {
-    "objectID": "slides/07-web-data.html#raw-file-types",
-    "href": "slides/07-web-data.html#raw-file-types",
-    "title": "Week 7: Web Data",
-    "section": "Raw File Types",
-    "text": "Raw File Types\n\n\nHTML - Hypertext Markup Language\nCSS - Cascading Style Sheets\nXML - Extensible Markup Language\n(also javascript for coding interactions with buttons, and dynamically loading content)"
-  },
-  {
-    "objectID": "slides/07-web-data.html#examples",
-    "href": "slides/07-web-data.html#examples",
-    "title": "Week 7: Web Data",
-    "section": "Examples",
-    "text": "Examples\n\n\nHTML\n\nnotice tags &lt;p&gt;&lt;/p&gt;, &lt;div&gt;&lt;/div&gt;\ncontent is inside of tags\nnot WYSIWYG like MS Word documents\n\nCSS\n\nnotice metadata marking things like font names and colors\n\n“font-family:”\n“color:”\n\nhttps://quarto.org/docs/output-formats/html-themes.html\n\nXML\n\nhierarchical (nested structure)\ntagged metadata\n\n(javascript)\n\n\n\nhttps://www.oreilly.com/library/view/xml-in-a/0596007647/ch01s05.html"
-  },
-  {
-    "objectID": "slides/07-web-data.html#metadata",
-    "href": "slides/07-web-data.html#metadata",
-    "title": "Week 7: Web Data",
-    "section": "Metadata",
-    "text": "Metadata\n\nApplications like your browser need to know metadata about content.\n\n\nwhat kind of content is it?\nif it is a paragraph, it should be rendered one way\nif it is an image, it should be rendered a different way\nif it is a url, it should be clickable"
-  },
-  {
-    "objectID": "slides/07-web-data.html#example",
-    "href": "slides/07-web-data.html#example",
-    "title": "Week 7: Web Data",
-    "section": "Example",
-    "text": "Example"
-  },
-  {
-    "objectID": "slides/07-web-data.html#other-markup",
-    "href": "slides/07-web-data.html#other-markup",
-    "title": "Week 7: Web Data",
-    "section": "Other Markup",
-    "text": "Other Markup\n\n\nLaTeX - Compiled Markup, often used for rendering mathematical expressions\nmarkdown\n\n\n\n## Report for Data Exploration\n\n### Introduction\n\nData was explored using different chart types.\n\n### Methods\n\nMatplotlib functions for making line charts, boxplots, and historgrams were used."
-  },
-  {
-    "objectID": "slides/07-web-data.html#rendered-version",
-    "href": "slides/07-web-data.html#rendered-version",
-    "title": "Week 7: Web Data",
-    "section": "Rendered version",
-    "text": "Rendered version\n\nReport for Data Exploration\nIntroduction\nData was explored using different chart types.\nMethods\nMatplotlib functions for making line charts, boxplots, and historgrams were used."
-  },
-  {
-    "objectID": "slides/07-web-data.html#summary-of-website-structure",
-    "href": "slides/07-web-data.html#summary-of-website-structure",
-    "title": "Week 7: Web Data",
-    "section": "Summary of Website Structure",
-    "text": "Summary of Website Structure\n\n\nwebsites use structured texts that can be rendered\nmetadata tags are everywhere\nmetadata tags describe the data and can be used to locate data"
-  },
-  {
-    "objectID": "slides/07-web-data.html#how-things-end-up-in-search-engine-results",
-    "href": "slides/07-web-data.html#how-things-end-up-in-search-engine-results",
-    "title": "Week 7: Web Data",
-    "section": "How Things End Up in Search Engine Results",
-    "text": "How Things End Up in Search Engine Results\nsearch engine bots, aka crawlers or spiders, need to know about all the pages on a website and all the content on the pages in order to make it indexable, i.e. usable for web searching.\nA Google bot has to discover webpages, crawl them, index them, and query a giant database to return related content to search terms."
-  },
-  {
-    "objectID": "slides/07-web-data.html#discovery",
-    "href": "slides/07-web-data.html#discovery",
-    "title": "Week 7: Web Data",
-    "section": "Discovery",
-    "text": "Discovery\n\n\ndone with robots.txt\nsitemaps"
-  },
-  {
-    "objectID": "slides/07-web-data.html#robots.txt",
-    "href": "slides/07-web-data.html#robots.txt",
-    "title": "Week 7: Web Data",
-    "section": "robots.txt",
-    "text": "robots.txt"
-  },
-  {
-    "objectID": "slides/07-web-data.html#robots.txt-1",
-    "href": "slides/07-web-data.html#robots.txt-1",
-    "title": "Week 7: Web Data",
-    "section": "robots.txt",
-    "text": "robots.txt\n\n\ndirectives tell bots where to go / not go (“disallow”)\n\nhelps protect information (in theory) on admin pages or other private pages\nhelps keep search engine results relevant\ncould prevent duplication if duplicate information is on a website\n\nincludes links to sitemaps!"
-  },
-  {
-    "objectID": "slides/07-web-data.html#sitemaps",
-    "href": "slides/07-web-data.html#sitemaps",
-    "title": "Week 7: Web Data",
-    "section": "Sitemaps",
-    "text": "Sitemaps\n\n\nlists out all pages (unique urls) of a website that should be indexed\nthese can be used to scrape information off a website\nlarge websites may have multiple site maps"
-  },
-  {
-    "objectID": "slides/07-web-data.html#sitemaps-1",
-    "href": "slides/07-web-data.html#sitemaps-1",
-    "title": "Week 7: Web Data",
-    "section": "Sitemaps",
-    "text": "Sitemaps\n\n\nhttps://markitors.com/what-is-a-sitemap/"
-  },
-  {
-    "objectID": "slides/07-web-data.html#participation",
-    "href": "slides/07-web-data.html#participation",
-    "title": "Week 7: Web Data",
-    "section": "Participation",
-    "text": "Participation\n\nhow many sitemaps does Facebook have?\nhow many sitemaps does Allegheny have?\nWalmart?\nOn another sharable site, see what you find and post a sitemap in Discord!"
-  },
-  {
-    "objectID": "slides/07-web-data.html#crawling",
-    "href": "slides/07-web-data.html#crawling",
-    "title": "Week 7: Web Data",
-    "section": "Crawling",
-    "text": "Crawling"
-  },
-  {
-    "objectID": "slides/07-web-data.html#indexing",
-    "href": "slides/07-web-data.html#indexing",
-    "title": "Week 7: Web Data",
-    "section": "Indexing",
-    "text": "Indexing"
-  },
-  {
-    "objectID": "slides/07-web-data.html#scraping",
-    "href": "slides/07-web-data.html#scraping",
-    "title": "Week 7: Web Data",
-    "section": "Scraping",
-    "text": "Scraping\n\nregular people (not Google) can also get content off the web by using strategies similar to discorvery, crawling, and indexing."
-  },
-  {
-    "objectID": "slides/07-web-data.html#scrapping-tools",
-    "href": "slides/07-web-data.html#scrapping-tools",
-    "title": "Week 7: Web Data",
-    "section": "Scrapping tools",
-    "text": "Scrapping tools\n\nCode: Requests, BeautifulSoup\nApplications:\n\n\n    \n\nCredit: Octoparse"
-  },
-  {
-    "objectID": "slides/07-web-data.html#data-miner",
-    "href": "slides/07-web-data.html#data-miner",
-    "title": "Week 7: Web Data",
-    "section": "Data Miner",
-    "text": "Data Miner"
-  },
-  {
-    "objectID": "slides/07-web-data.html#optional-activity",
-    "href": "slides/07-web-data.html#optional-activity",
-    "title": "Week 7: Web Data",
-    "section": "Optional Activity",
-    "text": "Optional Activity\n\nTry to get a csv file from dataminer\n\nclick on make your own recipe\n\n\nname it data-scraping-activity.csv\nupload to your activities repo"
-  },
-  {
-    "objectID": "slides/07-web-data.html#summary-of-gathering-content-off-the-web",
-    "href": "slides/07-web-data.html#summary-of-gathering-content-off-the-web",
-    "title": "Week 7: Web Data",
-    "section": "Summary of gathering content off the web",
-    "text": "Summary of gathering content off the web\n\nthanks to structured text on the web, scraping code or programs can gather information and turn it into useable data for exploration."
-  },
-  {
-    "objectID": "slides/07-web-data.html#google-analytics",
-    "href": "slides/07-web-data.html#google-analytics",
-    "title": "Week 7: Web Data",
-    "section": "Google Analytics",
-    "text": "Google Analytics\nsee Data Analytics Slides"
-  },
-  {
-    "objectID": "slides/07-web-data.html#end",
-    "href": "slides/07-web-data.html#end",
-    "title": "Week 7: Web Data",
+    "objectID": "slides/02-data-display.html#end",
+    "href": "slides/02-data-display.html#end",
+    "title": "Week 2: Data Display",
     "section": "End",
     "text": "End"
-  },
-  {
-    "objectID": "slides/01-welcome.html#cmpsc-105---data-exploration",
-    "href": "slides/01-welcome.html#cmpsc-105---data-exploration",
-    "title": "Welcome to CMPSC 105",
-    "section": "CMPSC 105 - Data Exploration",
-    "text": "CMPSC 105 - Data Exploration\n\nSpring 2025\n\nTu/Th 9:30-10:45am\n\nTh 2:30-4pm\n\nAlden 101"
-  },
-  {
-    "objectID": "slides/01-welcome.html#where-are-we",
-    "href": "slides/01-welcome.html#where-are-we",
-    "title": "Welcome to CMPSC 105",
-    "section": "Where are we?",
-    "text": "Where are we?\n\n\nDepartment of Computer and Information Science\nFour Majors/Minors\n\nComputer Science\nData Science\nInformatics\nSoftware Engineering\n\nCommon Doubles\n\nArt, Science, and Innovation\nEconomics"
-  },
-  {
-    "objectID": "slides/01-welcome.html#what-is-this-course-about",
-    "href": "slides/01-welcome.html#what-is-this-course-about",
-    "title": "Welcome to CMPSC 105",
-    "section": "What is this course about?",
-    "text": "What is this course about?\n\n\nthis course is for anyone interested in becoming familiar with:\n\ndata visualization\ndata analysis\ndata gathering\ndata storytelling\n\njump starts independent research projects with generalizable skills\nCIS Informatics Major\nCIS Data Science Major/Minor"
-  },
-  {
-    "objectID": "slides/01-welcome.html#learning-outcomes",
-    "href": "slides/01-welcome.html#learning-outcomes",
-    "title": "Welcome to CMPSC 105",
-    "section": "Learning Outcomes",
-    "text": "Learning Outcomes\n\nIdentify and describe key elements in different types of data visualizations.\nVisualize data on web-based platforms.\nDevelop hypotheses and find data to address hypotheses.\nCalculate statistics and visualize key patterns in the data with Python.\nDocument data explorations in markdown."
-  },
-  {
-    "objectID": "slides/01-welcome.html#other-syllabus-highlights",
-    "href": "slides/01-welcome.html#other-syllabus-highlights",
-    "title": "Welcome to CMPSC 105",
-    "section": "Other Syllabus Highlights",
-    "text": "Other Syllabus Highlights\n\n\nParticipation is a major part of participation (30% of overall grade)\n\nDiscord use at least once per week\nCompleting group work\nQuizzes on readings and other class materials\n\nLabs are due before lab, but four tokens grant automatic extensions for one week\nAfter the first week, five absences will be excused before overall grade is impacted\n\nthree lates are equivalent to an absence"
-  },
-  {
-    "objectID": "slides/01-welcome.html#materials",
-    "href": "slides/01-welcome.html#materials",
-    "title": "Welcome to CMPSC 105",
-    "section": "Materials",
-    "text": "Materials\n\n\nCourse Website\n\nsyllabus\nassignment schedule for reading and lab due dates\ncourse materials"
-  },
-  {
-    "objectID": "slides/01-welcome.html#materials-continued",
-    "href": "slides/01-welcome.html#materials-continued",
-    "title": "Welcome to CMPSC 105",
-    "section": "Materials Continued",
-    "text": "Materials Continued\n\n\nGitHub for accessing and submitting assignments\nGoogle Colab for completing assignments\nGoogle Forms\nDiscord for announcements and participation\nCanvas for grades"
-  },
-  {
-    "objectID": "slides/01-welcome.html#tell-us-about-yourself",
-    "href": "slides/01-welcome.html#tell-us-about-yourself",
-    "title": "Welcome to CMPSC 105",
-    "section": "Tell us about yourself!",
-    "text": "Tell us about yourself!\n\nName, where you are from, first favorite band, and some of your current favorite foods?"
-  },
-  {
-    "objectID": "slides/01-welcome.html#cis-shared-values",
-    "href": "slides/01-welcome.html#cis-shared-values",
-    "title": "Welcome to CMPSC 105",
-    "section": "CIS Shared Values",
-    "text": "CIS Shared Values"
-  },
-  {
-    "objectID": "slides/01-welcome.html#partnerships",
-    "href": "slides/01-welcome.html#partnerships",
-    "title": "Welcome to CMPSC 105",
-    "section": "Partnerships",
-    "text": "Partnerships\n\nStudents who have experience with GitHub, Python, Python Notebooks, Discord\nStudents new to computer science"
-  },
-  {
-    "objectID": "slides/01-welcome.html#setting-up",
-    "href": "slides/01-welcome.html#setting-up",
-    "title": "Welcome to CMPSC 105",
-    "section": "Setting up",
-    "text": "Setting up\n\nbookmark the website\nbookmark access to your repos\nbookmark the 105 Discord Channel, or access from the course website\nbookmark notes that you take in Google Colab or elsewhere\nbookmark Canvas\netc."
   },
   {
     "objectID": "materials.html",
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Google Analytics  \n\nSpring Break: March 1-9\nWeek Eight: March 11, 13: Data Wrangling\n\nData Processing\n\nWeek Nine: March 18, 20: Statistics\n\nLab: Numpy Calculations\n\nWeek Ten: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Eleven: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Twelve: April 8: Clustering \n\nData Storytelling\n\nWeek Thirteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fourteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Fifteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Google Analytics  \n\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nReading: Site Maps\nSlides: Data Wrangling\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Google Analytics\n\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics\n\nLab: Numpy Calculations\n\nWeek Eleven: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Twelve: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Thirteen: April 8: Clustering \n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fifteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   }
 ]

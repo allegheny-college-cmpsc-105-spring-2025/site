@@ -65,20 +65,20 @@ DR tag rationale: This course will primarily focus on methods of data collection
 - Week Six: February 18, 20: Turning Anything Into Data <!-- real time display -->
 - Week Seven: February 25, 27: Web Data Analytics and Scraping
 - Spring Break: March 1-9
-- Week Eight: March 11, 13: Data Entry and Storage with Pandas
+- Week Nine: March 11, 13: Data Wrangling
 
 **Data Processing**
 
-- Week Nine: March 18, 20: Statistics
-- Week Ten: March 25, 27: Data Transformations
-- Week Eleven: April 1, 3: Modeling and Overfitting
-- Week Twelve: April 8: Clustering
+- Week Ten: March 18, 20: Statistics
+- Week Eleven: March 25, 27: Data Transformations
+- Week Twelve: April 1, 3: Modeling and Overfitting
+- Week Thirteen: April 8: Clustering
 
 **Data Storytelling**
 
-- Week Thirteen: April 15, 17: Hypothesis Driven Analysis
-- Week Fourteen: April 22, 24: Storytelling Challenge & Project Preparation
-- Week Fifteen: April 29: No Class Meeting
+- Week Fourteen: April 15, 17: Hypothesis Driven Analysis
+- Week Fifteen: April 22, 24: Storytelling Challenge & Project Preparation
+- Week Sixteen: April 29: No Class Meeting
 
 **Final Presentations Code C**
 

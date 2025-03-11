@@ -46,26 +46,30 @@ title: "Materials"
   <!-- https://quarto.org/docs/publishing/ci.html -->
   <!-- https://allegheny.edu/sitemap_index.xml -->
 - Spring Break: March 1-9
-- Week Eight: March 11, 13: Data Wrangling
+- Week Nine: March 11, 13: Data Wrangling
+  - Reading: [Site Maps](https://markitors.com/what-is-a-sitemap/)
+  - Slides: [Data Wrangling](slides/09-data-wrangling.qmd)
+  - Class Activity Optional: [Make data-scraping-activity.csv](slides/07-web-data.qmd#optional-activity)
+  - Lab: Google Analytics
 
 
 **Data Processing**
 
-- Week Nine: March 18, 20: Statistics
+- Week Ten: March 18, 20: Statistics
   - Lab: Numpy Calculations
-- Week Ten: March 25, 27: Data Transformations
+- Week Eleven: March 25, 27: Data Transformations
   - Lab: Dot-to-dot
-- Week Eleven: April 1, 3: Modeling and Overfitting
+- Week Twelve: April 1, 3: Modeling and Overfitting
   - Lab: Matplotlib
-- Week Twelve: April 8: Clustering
+- Week Thirteen: April 8: Clustering
   <!-- https://youtu.be/9Mmj8NMCqEQ  -->
 
 **Data Storytelling**
 
-- Week Thirteen: April 15, 17: Hypothesis Driven Analysis
+- Week Fourteen: April 15, 17: Hypothesis Driven Analysis
   - Lab: Hypothesis Testing
-- Week Fourteen: April 22, 24: Storytelling Challenge & Project Preparation
-- Week Fifteen: April 29: No Class Meeting
+- Week Fifteen: April 22, 24: Storytelling Challenge & Project Preparation
+- Week Sixteen: April 29: No Class Meeting
 
 **Final Presentations Code C**
 

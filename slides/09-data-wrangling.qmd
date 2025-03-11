@@ -1,0 +1,65 @@
+---
+title: "Week 9: Data Wrangling"
+author: "Emily Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+echo: true
+---
+
+## Goals
+
+- define the data wrangling cycle
+- review sanity checks on data
+- review common operations to manipulate data
+- use pandas to wrangle data in notebook
+
+
+# Data Wrangling Cycle
+
+## Definition
+
+Data wrangling is the process of cleaning, preprocessing and validating raw data before use
+
+## Cycle
+
+![](https://cdn.prod.website-files.com/6064b31ff49a2d31e0493af1/66f3caad055f0798273a7f4f_664deb56e0bafd02151740eb_T-Qh9BoT4c2Drnwsm3A6EU9lVejrOecvUm8zz7w3ax-XZUh9qJ2DNYv9m-ScnOOlzL6X9D3CUjJXakkys61p9-C15trG5jWTjdF8RJ5OMr3lgMHwfmCjU6cURlh51UC_ge8sqcFgxMXVEity0499RL0.png)
+
+# Sanity Checks on Data
+
+##
+
+- shape --> df.shape()
+- column names --> df.column
+- types of data --> df.dtypes
+
+## 
+
+If a column has a mix of strings and other data types (e.g., numbers or None values), pandas defaults to object. [GPT]
+
+# Common Operations
+
+## Accessing specific rows and columns
+
+loc 
+iloc
+
+## Concatenation
+
+Along Rows
+Along Cols
+
+
+## Reformatting Strings 
+
+Regular Expressions inside of pd.DataFrame.str.replace()
+
+- `[]` Groups together characters to search for
+- `[^...]` Negation (matches anything not inside the brackets).
+- `a-z` Matches lowercase letters a to z.
+- `+` Matches one or more occurrences of the unwanted characters.
+
+## Reformatting Strings
+
+df['YOUR COLUMN'].str.split('YOUR DELIMITER', expand=True)
