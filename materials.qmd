@@ -42,15 +42,15 @@ title: "Materials"
   - Reading: [Site Maps](https://markitors.com/what-is-a-sitemap/)
   - Slides: [Gathering Web Data](slides/07-web-data.qmd)
   - Class Activity Optional: [Make data-scraping-activity.csv](slides/07-web-data.qmd#optional-activity)
-  - Lab: Google Analytics
+  - Lab: [Data Analytics](https://classroom.github.com/a/PjJ1a7Oy) Due Thursday March 13, 2:30pm
   <!-- https://quarto.org/docs/publishing/ci.html -->
   <!-- https://allegheny.edu/sitemap_index.xml -->
 - Spring Break: March 1-9
 - Week Nine: March 11, 13: Data Wrangling
   <!-- - Reading: [Site Maps](https://markitors.com/what-is-a-sitemap/) -->
-  - Slides: [Data Wrangling](slides/09-data-wrangling.qmd)
+  <!-- - Slides: [Data Wrangling](slides/09-data-wrangling.qmd) -->
   - Class Activity: [Data Wrangling Notebook](code/data_wrangling_activity.ipynb)
-  <!-- - Lab: Google Analytics -->
+  - Lab: [Data Wrangling](https://classroom.github.com/a/su5FvGaJ) Due Thursday, March 27, 2:30pm
 
 
 **Data Processing**
