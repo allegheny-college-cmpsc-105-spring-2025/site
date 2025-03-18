@@ -56,7 +56,8 @@ title: "Materials"
 **Data Processing**
 
 - Week Ten: March 18, 20: Statistics
-  - Lab: Numpy Calculations
+  - Class Activity: [Stats Intro Notebook](code/stats_intro_activity.ipynb)
+  <!-- - Lab: Numpy Calculations -->
 - Week Eleven: March 25, 27: Data Transformations
   - Lab: Dot-to-dot
 - Week Twelve: April 1, 3: Modeling and Overfitting

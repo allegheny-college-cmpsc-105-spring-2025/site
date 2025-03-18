@@ -329,74 +329,88 @@
     "text": "Please check Canvas for your grades here"
   },
   {
-    "objectID": "code/data_wrangling_activity.html",
-    "href": "code/data_wrangling_activity.html",
-    "title": "Data Wrangling Activity",
-    "section": "",
-    "text": "Open In Colab"
-  },
-  {
-    "objectID": "code/data_wrangling_activity.html#discord-post",
-    "href": "code/data_wrangling_activity.html#discord-post",
-    "title": "Data Wrangling Activity",
-    "section": "Discord Post",
-    "text": "Discord Post\nTODO: Don’t forget to ask questions in Discord. One Discord post per week is required."
-  },
-  {
-    "objectID": "code/data_wrangling_activity.html#submit-this-completed-activity-to-your-activities-repository",
-    "href": "code/data_wrangling_activity.html#submit-this-completed-activity-to-your-activities-repository",
-    "title": "Data Wrangling Activity",
-    "section": "Submit this completed activity to your activities repository",
-    "text": "Submit this completed activity to your activities repository"
-  },
-  {
-    "objectID": "code/data_filtering_activity.html",
-    "href": "code/data_filtering_activity.html",
+    "objectID": "code/data_distortion_activity.html",
+    "href": "code/data_distortion_activity.html",
     "title": "Class Activity",
     "section": "",
     "text": "Open In Colab"
   },
   {
-    "objectID": "code/data_filtering_activity.html#goals",
-    "href": "code/data_filtering_activity.html#goals",
+    "objectID": "code/data_distortion_activity.html#goals",
+    "href": "code/data_distortion_activity.html#goals",
     "title": "Class Activity",
     "section": "Goals",
-    "text": "Goals\n\nWork with colleagues at your table\nReview variables and assignment\nWrite code to control a matrix\nWrite code for logical contorl\nWrite code for dataframe control"
+    "text": "Goals\n\nWork with colleagues at your table\nLook at code that can distort data displays\nModify code to distort data displays\nDescribe how data distortion can imply information that was not in raw data\n\n\n\nCode\n# TODO All Tables: Run this code cell that makes pre-existing tools available for data exploration\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\n\n\nCode\n# TODO All Tables: Run this code cell that creates a pandas dataframe\n\ndf = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/site/main/data/data-distortion-bls-LNS14000000.csv',\n    sep=',',\n    names = ['Timepoint', 'Year', 'Month', 'Label', 'Value'],\n    skiprows=1\n)\n\nprint(df.head()) # Display the first few rows of the DataFrame"
   },
   {
-    "objectID": "code/data_filtering_activity.html#variables-and-assignment-ref",
-    "href": "code/data_filtering_activity.html#variables-and-assignment-ref",
+    "objectID": "code/data_distortion_activity.html#table-1",
+    "href": "code/data_distortion_activity.html#table-1",
     "title": "Class Activity",
-    "section": "Variables and Assignment (REF)",
-    "text": "Variables and Assignment (REF)\n\n\nCode\n# Variables are names - a reusable label for a data value.\n\nname = 'Marc'\nprint(name)\npi = 3.14\nprint(pi)\ncustomer_id = \"1234\"\n# TODO: add a print statement to see customer_id\naccount_balance = 1000\n# TODO: add a print statement to see account_balance\n\n\n\n\nCode\n# if the same name is used to store new data, the old data is lost\n\npi = 3.14\nprint(pi)\npi = 'Marc'\n# TODO: add a print statement to see pi\n\n\n\n\nCode\n# assignment is a fancy term for associating or storing data\n\n# here 3.14 is assigned to the variable name pi using the `=`\npi = 3.14\n\n# TODO: assign the value 5 to pi\n# TODO: add a print statement to see pi\n# TODO: assign the value \"hello\" to message\n# TODO: add a print statement to see message\n# TODO: assign the value [1,2,3,4,5] to data\n# TODO: add a print statement to see data\n\n\n\nReserved Words\nThe following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your program variables.\n\nand, as, assert, async, await, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield"
+    "section": "Table 1",
+    "text": "Table 1\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(12, 4))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()\n\n\n\nTODO: What does this figure show?"
   },
   {
-    "objectID": "code/data_filtering_activity.html#matrix",
-    "href": "code/data_filtering_activity.html#matrix",
+    "objectID": "code/data_distortion_activity.html#table-2",
+    "href": "code/data_distortion_activity.html#table-2",
     "title": "Class Activity",
-    "section": "Matrix",
-    "text": "Matrix\n\n\nCode\n# TODO: run this code to make a simple matrix in a pandas dataframe\n\nimport pandas as pd\n\nmatrix = pd.read_csv(\n    '/content/data-filtering-matrix.csv',\n    sep=',',\n    names = ['A', 'B', 'C'],\n    skiprows=1)\n\n\n\n\nCode\n# TODO: add a print statement to see the dataframe\nprint(matrix)\n\n\n\n\nCode\n# The matrix contains 15 values in five rows and three columns\n# TODO: verify this using the data explorer\n\n\n# Each item has a unique location in the matrix given by its row and column\n# Using python convention, the rows and columns are idenfied with integers starting at 0!\n\n# On the 0th row, column 0 has the value of 0.0\n# On the 4nd row, column 0 has the value of 4.0\n# TODO: What is the largest row index in the matrix?\n# TODO: What is the largest column index in the matrix?\n\n# Here's how you access the element on row 4, column 0\nelement = matrix.iloc[4,0]\nprint(element)\n\n# TODO: access the element on row 3 column 2 and assign it to the variable `another_element`\n# TODO: add a print statement to see `another_element`\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# Indexing to get one element is very simple, but what if you want multiple elements in a row, or in a column?\n\n# Slicing is the way to do it!\n# the sytax for slicing is like this: [start_index:end_index:hop_size]\n# Using python convention, note that the end_index will not be included in the slice\n\n# Here is a slice example on the columns\nslice_example = matrix.iloc[0,0:2:1]\nprint(slice_example)\n\n# TODO: use words to write out what the slice contains\n\n# TODO: Write a slice that gets the first through fourth rows (not including 4) from column two and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Write a slice that gets the 0th through fourth rows (not including 4) from column one, hopping by 2, and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Come up with your own example\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# The syntax of a slice is [start:end:hop_size], but if start or end is left out, then the endpoints are assumed!\n# warning - don't forget to include the `:`\n\n# Here is every columns in row 0, including the start and INCLUDING the end!\nfull_slice = matrix.iloc[0,::1]\nprint(full_slice)\n\n# TODO: Write a slice that gets every column in row 4, including the start and INCLUDING the end! Assign to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: make sure you get what you expect! Is there anything unexpected?\n\n\n\n\nCode\n# Slices to endpoints have already been used in our labs\n\n# TODO: find any spot where the slices have been used in our labs and put a link for yourself below\n# TODO: how was the slice used in the lab?"
+    "section": "Table 2",
+    "text": "Table 2\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(6, 2))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(0,100)\nplt.show()\n\n\n\nTODO: What does this figure show?"
   },
   {
-    "objectID": "code/data_filtering_activity.html#logical-control",
-    "href": "code/data_filtering_activity.html#logical-control",
+    "objectID": "code/data_distortion_activity.html#table-3",
+    "href": "code/data_distortion_activity.html#table-3",
     "title": "Class Activity",
-    "section": "Logical Control",
-    "text": "Logical Control\n\n\nCode\n# First lets review some comparison operators\n\n\nThe following table summarizes the most commonly used comparison operators in Python, along with their definition when applied to numbers.\n\n\n\noperator\noperation on numbers\n\n\n\n\n==\nequal to\n\n\n!=\nnot equal to\n\n\n&gt;\ngreater than\n\n\n&gt;=\ngreater than or equal to\n\n\n&lt;\nless than\n\n\n&lt;=\nless than or equal to\n\n\n\nAs their name suggests, comparison operators allow us to compare two values.\n\n\nCode\n# Here is a comparison of 4 vs 5. It asks the question: is four larger than five?\n# TODO: what answer should come out?\n# TODO: run this, what does come out?\n4 &gt; 5\n\n\n\n\nCode\n# As you can see, comparison operators allow us to compare values and result in a boolean type indicating whether the comparison is `True` or `False`.\n# TODO: make a comparison the checks if five is greater than four, assign to a variable and print it\n# TODO: make a comparison the checks if five is not equal to four, assign to a variable and print it\n# TODO: make a comparison the checks if five is equal to four, assign to a variable and print it\n\n\n\n\nCode\n# TODO: what is the difference between `=` and `==`?\n\n\n\n\nCode\n# It turns out that matrices can be compared too!\n# What elements in the matrix are greater than 1?\n\n# TODO: what do you think will happen\nselection = matrix &gt; 1\n# TODO: add a print statement to see selection\n# Does it match your expectations?\n\n\n\n\nCode\n# Write another comparison with matrix to ask which elements are equal to 4, assign to a variable called select_4 and print\n\n\n\n\nCode\n# Now we can use the selection to access only those elements!\n# The rows and columns do not need to be set.\n# Simply use the selection as the only index! Amazing!\n\nresult = matrix[selection]\nprint(result)\n\n# TODO: use select_4 as the only index, assign to variable and print\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Finally, I want to show you how to combine comparions\n# Think of this question: what elements in the matrix are greater than one AND less then three?\n# The AND is done with `&`\n\ngreaterthanone = matrix &gt; 1\nprint(\"greather than one: \\n\", greaterthanone)\nlessthanthree = matrix &lt; 3\nprint(\"less than three: \\n\", lessthanthree)\nboth = greaterthanone & lessthanthree\nprint(\"both: \\n\", both)\nresult = matrix[both]\nprint(\"result: \\n\", result)\n\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Here is the same thing, but all in one line of code...\n\nprint(matrix[(matrix &gt; 1) & (matrix &lt; 3)])\n\n\n\n\nCode\n# TODO: think of one or more questions you have and then post it in discord.\n# TODO: As you see your colleagues questions, reply to their message if you have the answer!"
+    "section": "Table 3",
+    "text": "Table 3\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(3, 6))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(0,100)\nplt.show()\n\n\n\nTODO: What does this figure show?"
   },
   {
-    "objectID": "code/data_filtering_activity.html#dataframe-control-with-.loc",
-    "href": "code/data_filtering_activity.html#dataframe-control-with-.loc",
+    "objectID": "code/data_distortion_activity.html#table-4",
+    "href": "code/data_distortion_activity.html#table-4",
     "title": "Class Activity",
-    "section": "Dataframe Control with .loc",
-    "text": "Dataframe Control with .loc\n\n\nCode\n# Controlling a Dataframe is similar to controlling a matrix.\n# Slicing is possible and logical comparison are possible!\n# One of the main differences is that indexing is done with .loc\n\n# Below is a the hourly temperature normals dataset for Meadville in a pandas dataframe called `dfm`\n# This same dataset was used in the data_distortion lab\n# The columns are named\n# The column containing the normals is called `HLY-TEMP-NORMAL`\n# Each hour is a year is given in the column called `INDEX`\n# A readable label for each hour in a year is given in the column called `DATE`\n\n# lets apply your new skills of logical indexing to this dataset\n\n\n\n\nCode\n# TODO: run this cell\n\n# load pre-existing tools available for data exploration\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# create a pandas dataframe\ndfm = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter/refs/heads/main/data/data-distortion-noaa-2006-2020-USW00004843.csv',\n    sep=',',\n    names = ['INDEX', 'STATION', 'NAME', 'LATITUDE', 'LONGITUDE', 'ELEVATION',\n       'DATE', 'month', 'day', 'hour', 'HLY-TEMP-NORMAL'],\n    skiprows=1\n)\n\n# Display the first few rows of the DataFrame\nprint(dfm.head())\n\n\n\n\nCode\n# TODO: how many rows are in the dataframe?\n# TODO: how many columns are in the dataframe?\n\n\n\n\nCode\n# This cell creates logical filters, then applies them with .loc\n\n# Only rows from the midnight hour in the month of March are selected\nselected_hours = dfm['hour'] == 0\nselected_months = dfm['month'] == 3\nselected_rows = selected_hours & selected_months\n\n\n# new dataframes are made that contain ONLY THE SELECTED ROWS using .loc\n# here is the syntax for .loc: .loc[rows, columns]\ndfm_selected_normals = dfm.loc[selected_rows, 'HLY-TEMP-NORMAL']\ndfm_selected_indices = dfm.loc[selected_rows, 'INDEX']\ndfm_selected_dates = dfm.loc[selected_rows, 'DATE']\n\n\nprint(dfm_selected_normals)\nprint(dfm_selected_indices)\nprint(dfm_selected_dates)\n\n\n\n\nCode\n# Here is the same thing in one line\n\ndfm.loc[(dfm['hour'] == 0) & (dfm['month'] == 3), 'INDEX']\n\n\n\n\nCode\n# Assuming df is already created in the previous code cell\n\n# TODO: Run this code cell\n# TODO: What does the figure show?\n# TODO: Fill in appropriate title, xlabel and ylabel using you understanding of logical indexing\n\n# Control how many xtick labels are on the x axis\nxtick_hopsize = 3\n\n# Clear out memory (doesn't impact the visualization, but keeps the computer happy)\nplt.close('all')\n\n# make a blank canvas\nplt.figure(figsize=(12, 4))\n\n# set the overall title for all subfigures\nplt.suptitle('Figure 1')\n\n# subplot 1\nplt.subplot(1, 2, 1)\nplt.plot(dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 1\nplt.plot(dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 2\nplt.plot(dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 3\nplt.plot(dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 4\nplt.plot(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 5\nplt.plot(dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 6\nplt.plot(dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 7\nplt.plot(dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 8\nplt.legend(['7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM'])\n# the plt.xticks function labels the ticks so that dates appear instead of index\nplt.xticks(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'][::xtick_hopsize], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'DATE'][::xtick_hopsize], rotation=90)\nplt.xlabel('')\nplt.ylabel('')\nplt.title('')\nplt.grid(True)\n\nplt.show()"
+    "section": "Table 4",
+    "text": "Table 4\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(3, 9))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()\n\n\n\nTODO: What does this figure show?"
   },
   {
-    "objectID": "code/data_filtering_activity.html#video",
-    "href": "code/data_filtering_activity.html#video",
+    "objectID": "code/data_distortion_activity.html#discussion",
+    "href": "code/data_distortion_activity.html#discussion",
     "title": "Class Activity",
-    "section": "Video",
-    "text": "Video\n\n\nCode\n# TODO: watch the video (also linked on the course website) - https://youtu.be/v5pJfu-yn-0\n\n# TODO: What two terms are used instead of logical indexing?"
+    "section": "Discussion",
+    "text": "Discussion\nShare your observations\n\nWhat did the plot at your table show?\nWhat is the best representation of the data?"
+  },
+  {
+    "objectID": "code/data_distortion_activity.html#technical-exploration",
+    "href": "code/data_distortion_activity.html#technical-exploration",
+    "title": "Class Activity",
+    "section": "Technical Exploration",
+    "text": "Technical Exploration\n\nWhat new python expressions do you see in the code?\nTry changing them below to see what happens\n\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n# TODO: Change the xlim, ylim, and figsize to see what happens\n\n# TODO: try plt.xlim(800,900)\n# TODO: adjust the ylim so that the line does not go off the canvas\n# TODO: change the figsize to make a tall, skinny canvas\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(10,6))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=45)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()"
+  },
+  {
+    "objectID": "code/data_distortion_activity.html#closing-thoughts",
+    "href": "code/data_distortion_activity.html#closing-thoughts",
+    "title": "Class Activity",
+    "section": "Closing Thoughts",
+    "text": "Closing Thoughts\n\nTODO: Describe how data distortion can imply things that were not in raw data\nTODO: How could daily life be impacted by distorted data?"
+  },
+  {
+    "objectID": "code/data_display_activity.html",
+    "href": "code/data_display_activity.html",
+    "title": "Class Activity",
+    "section": "",
+    "text": "Open In Colab"
+  },
+  {
+    "objectID": "code/data_display_activity.html#goals",
+    "href": "code/data_display_activity.html#goals",
+    "title": "Class Activity",
+    "section": "Goals",
+    "text": "Goals\n\nLook at code that can generate common data displays\nModify code that can generate common data displays\nDescribe how common data displays are able to convey information that was not apparent in raw data\n\n\nTODO: Run the first code cell\nTODO: In the variable explorer ({x}), what Type does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), what Shape does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), hover over the variable df to see the values. What relationship do the values have to the Shape of df? Explain what the shape means. Write your response here:\nTODO: Looking at the rest of the code cells that can generate figures, what patterns do you see repeated in the code? Write your response here:\nTODO: Run the code cells, stopping once you reach the next section. Examine the figures.\nTODO: Explain what relationship exists between the reddish code in quotes and the figures that are generated. Write your response here:\nTODO: Find a piece of code where a marker was explicitly specified. Change the marker to an upward triangle, a square, and a star based on the matplotlib documentation and rerun the code.\nTODO: Overall, do these figures reveal anything about this data that was not so apparent when looking at df? Write your response here:\nNow, move on to the next section\n\nThe data table below shows how many millions of prescriptions are obtained from various sources in the United States annually.\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\nTraditional\n914\n\n\nIndependent\n666\n\n\nMassMerch\n238\n\n\nSuperMarket\n221\n\n\nMailOrder\n86\n\n\n\n\n\nCode\n# import pandas and make dataframe\n\nimport pandas as pd\n\ndata = {'Drug Source': ['Traditional', 'Independent', 'MassMerch', 'SuperMarket', 'MailOrder'],\n        'Num Prescriptions': [914, 666, 238, 221, 86]}\ndf = pd.DataFrame(data)\n\ndf\n\n\n\n\n\n\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\n0\nTraditional\n914\n\n\n1\nIndependent\n666\n\n\n2\nMassMerch\n238\n\n\n3\nSuperMarket\n221\n\n\n4\nMailOrder\n86\n\n\n\n\n\n\n\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.scatter(df['Num Prescriptions'], df['Drug Source'])\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Drug Source')\nplt.title('Drug Source vs. Number of Prescriptions')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.pie(df['Num Prescriptions'], labels=df['Drug Source'])\nplt.title('Drug Source')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.hist(df['Num Prescriptions'], bins=20)\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Frequency')\nplt.title('Histogram of Number of Prescriptions')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()  # Adjust figure size for better visualization\nplt.plot(df['Drug Source'], df['Num Prescriptions'], marker='o', linestyle='-')\nplt.xlabel('Drug Source')\nplt.ylabel('Number of Prescriptions (Millions)')\nplt.title('Number of Prescriptions by Drug Source')\nplt.grid(True, linestyle='--', alpha=0.7)  # Add a grid for better readability\nplt.xticks(rotation=45) # Rotate x-axis labels for better visibility\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.boxplot(df['Num Prescriptions'])  # Create the boxplot\nplt.xlabel('Number of Prescriptions')\nplt.title('Box Plot of Number of Prescriptions')\nplt.show()"
+  },
+  {
+    "objectID": "code/stats_intro_activity.html",
+    "href": "code/stats_intro_activity.html",
+    "title": "Statistics",
+    "section": "",
+    "text": "Open In Colab\n\n\n\nStatistics\n\n\nCode\n# import pd, np, and matplotlib libraries\n\n\n\n\nCode\n# read in temperature normals dataset\n# find raw url from course site repo (https://github.com/allegheny-college-cmpsc-105-spring-2025/site)\n\ndf = pd.read_csv(\n    '',\n    sep=',',\n    skiprows=0\n)\n\n\n\n\nCode\n# TODO: display column names\n\n# TODO: Check the number of rows and columns, i.e. shape\n\n# TODO: Get Rid of uneccessary information\n# df.drop(columns=['Bad_Col1','Bad_Col2', 'etc'])\n\n# TODO: rename individual columns for convenience\n# df = df.rename(columns={'A': 'X', 'B': 'Y', 'C': 'Z'})\n\n# TODO: Check the number of rows and columns, i.e. shape again\n\n\n\n\nCode\n# mean\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.mean.html\n# df.mean(axis=1)\n\n\n\n\nCode\n# standard deviation\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.std.html\n# df.std()\n\n\n\n\nCode\n# make a figure"
   },
   {
     "objectID": "syll/syllabus.html",
@@ -525,81 +539,81 @@
     "text": "Submit this completed activity to your activities repository"
   },
   {
-    "objectID": "code/data_display_activity.html",
-    "href": "code/data_display_activity.html",
+    "objectID": "code/data_filtering_activity.html",
+    "href": "code/data_filtering_activity.html",
     "title": "Class Activity",
     "section": "",
     "text": "Open In Colab"
   },
   {
-    "objectID": "code/data_display_activity.html#goals",
-    "href": "code/data_display_activity.html#goals",
+    "objectID": "code/data_filtering_activity.html#goals",
+    "href": "code/data_filtering_activity.html#goals",
     "title": "Class Activity",
     "section": "Goals",
-    "text": "Goals\n\nLook at code that can generate common data displays\nModify code that can generate common data displays\nDescribe how common data displays are able to convey information that was not apparent in raw data\n\n\nTODO: Run the first code cell\nTODO: In the variable explorer ({x}), what Type does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), what Shape does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), hover over the variable df to see the values. What relationship do the values have to the Shape of df? Explain what the shape means. Write your response here:\nTODO: Looking at the rest of the code cells that can generate figures, what patterns do you see repeated in the code? Write your response here:\nTODO: Run the code cells, stopping once you reach the next section. Examine the figures.\nTODO: Explain what relationship exists between the reddish code in quotes and the figures that are generated. Write your response here:\nTODO: Find a piece of code where a marker was explicitly specified. Change the marker to an upward triangle, a square, and a star based on the matplotlib documentation and rerun the code.\nTODO: Overall, do these figures reveal anything about this data that was not so apparent when looking at df? Write your response here:\nNow, move on to the next section\n\nThe data table below shows how many millions of prescriptions are obtained from various sources in the United States annually.\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\nTraditional\n914\n\n\nIndependent\n666\n\n\nMassMerch\n238\n\n\nSuperMarket\n221\n\n\nMailOrder\n86\n\n\n\n\n\nCode\n# import pandas and make dataframe\n\nimport pandas as pd\n\ndata = {'Drug Source': ['Traditional', 'Independent', 'MassMerch', 'SuperMarket', 'MailOrder'],\n        'Num Prescriptions': [914, 666, 238, 221, 86]}\ndf = pd.DataFrame(data)\n\ndf\n\n\n\n\n\n\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\n0\nTraditional\n914\n\n\n1\nIndependent\n666\n\n\n2\nMassMerch\n238\n\n\n3\nSuperMarket\n221\n\n\n4\nMailOrder\n86\n\n\n\n\n\n\n\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.scatter(df['Num Prescriptions'], df['Drug Source'])\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Drug Source')\nplt.title('Drug Source vs. Number of Prescriptions')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.pie(df['Num Prescriptions'], labels=df['Drug Source'])\nplt.title('Drug Source')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.hist(df['Num Prescriptions'], bins=20)\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Frequency')\nplt.title('Histogram of Number of Prescriptions')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()  # Adjust figure size for better visualization\nplt.plot(df['Drug Source'], df['Num Prescriptions'], marker='o', linestyle='-')\nplt.xlabel('Drug Source')\nplt.ylabel('Number of Prescriptions (Millions)')\nplt.title('Number of Prescriptions by Drug Source')\nplt.grid(True, linestyle='--', alpha=0.7)  # Add a grid for better readability\nplt.xticks(rotation=45) # Rotate x-axis labels for better visibility\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.boxplot(df['Num Prescriptions'])  # Create the boxplot\nplt.xlabel('Number of Prescriptions')\nplt.title('Box Plot of Number of Prescriptions')\nplt.show()"
+    "text": "Goals\n\nWork with colleagues at your table\nReview variables and assignment\nWrite code to control a matrix\nWrite code for logical contorl\nWrite code for dataframe control"
   },
   {
-    "objectID": "code/data_distortion_activity.html",
-    "href": "code/data_distortion_activity.html",
+    "objectID": "code/data_filtering_activity.html#variables-and-assignment-ref",
+    "href": "code/data_filtering_activity.html#variables-and-assignment-ref",
     "title": "Class Activity",
+    "section": "Variables and Assignment (REF)",
+    "text": "Variables and Assignment (REF)\n\n\nCode\n# Variables are names - a reusable label for a data value.\n\nname = 'Marc'\nprint(name)\npi = 3.14\nprint(pi)\ncustomer_id = \"1234\"\n# TODO: add a print statement to see customer_id\naccount_balance = 1000\n# TODO: add a print statement to see account_balance\n\n\n\n\nCode\n# if the same name is used to store new data, the old data is lost\n\npi = 3.14\nprint(pi)\npi = 'Marc'\n# TODO: add a print statement to see pi\n\n\n\n\nCode\n# assignment is a fancy term for associating or storing data\n\n# here 3.14 is assigned to the variable name pi using the `=`\npi = 3.14\n\n# TODO: assign the value 5 to pi\n# TODO: add a print statement to see pi\n# TODO: assign the value \"hello\" to message\n# TODO: add a print statement to see message\n# TODO: assign the value [1,2,3,4,5] to data\n# TODO: add a print statement to see data\n\n\n\nReserved Words\nThe following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your program variables.\n\nand, as, assert, async, await, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#matrix",
+    "href": "code/data_filtering_activity.html#matrix",
+    "title": "Class Activity",
+    "section": "Matrix",
+    "text": "Matrix\n\n\nCode\n# TODO: run this code to make a simple matrix in a pandas dataframe\n\nimport pandas as pd\n\nmatrix = pd.read_csv(\n    '/content/data-filtering-matrix.csv',\n    sep=',',\n    names = ['A', 'B', 'C'],\n    skiprows=1)\n\n\n\n\nCode\n# TODO: add a print statement to see the dataframe\nprint(matrix)\n\n\n\n\nCode\n# The matrix contains 15 values in five rows and three columns\n# TODO: verify this using the data explorer\n\n\n# Each item has a unique location in the matrix given by its row and column\n# Using python convention, the rows and columns are idenfied with integers starting at 0!\n\n# On the 0th row, column 0 has the value of 0.0\n# On the 4nd row, column 0 has the value of 4.0\n# TODO: What is the largest row index in the matrix?\n# TODO: What is the largest column index in the matrix?\n\n# Here's how you access the element on row 4, column 0\nelement = matrix.iloc[4,0]\nprint(element)\n\n# TODO: access the element on row 3 column 2 and assign it to the variable `another_element`\n# TODO: add a print statement to see `another_element`\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# Indexing to get one element is very simple, but what if you want multiple elements in a row, or in a column?\n\n# Slicing is the way to do it!\n# the sytax for slicing is like this: [start_index:end_index:hop_size]\n# Using python convention, note that the end_index will not be included in the slice\n\n# Here is a slice example on the columns\nslice_example = matrix.iloc[0,0:2:1]\nprint(slice_example)\n\n# TODO: use words to write out what the slice contains\n\n# TODO: Write a slice that gets the first through fourth rows (not including 4) from column two and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Write a slice that gets the 0th through fourth rows (not including 4) from column one, hopping by 2, and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Come up with your own example\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# The syntax of a slice is [start:end:hop_size], but if start or end is left out, then the endpoints are assumed!\n# warning - don't forget to include the `:`\n\n# Here is every columns in row 0, including the start and INCLUDING the end!\nfull_slice = matrix.iloc[0,::1]\nprint(full_slice)\n\n# TODO: Write a slice that gets every column in row 4, including the start and INCLUDING the end! Assign to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: make sure you get what you expect! Is there anything unexpected?\n\n\n\n\nCode\n# Slices to endpoints have already been used in our labs\n\n# TODO: find any spot where the slices have been used in our labs and put a link for yourself below\n# TODO: how was the slice used in the lab?"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#logical-control",
+    "href": "code/data_filtering_activity.html#logical-control",
+    "title": "Class Activity",
+    "section": "Logical Control",
+    "text": "Logical Control\n\n\nCode\n# First lets review some comparison operators\n\n\nThe following table summarizes the most commonly used comparison operators in Python, along with their definition when applied to numbers.\n\n\n\noperator\noperation on numbers\n\n\n\n\n==\nequal to\n\n\n!=\nnot equal to\n\n\n&gt;\ngreater than\n\n\n&gt;=\ngreater than or equal to\n\n\n&lt;\nless than\n\n\n&lt;=\nless than or equal to\n\n\n\nAs their name suggests, comparison operators allow us to compare two values.\n\n\nCode\n# Here is a comparison of 4 vs 5. It asks the question: is four larger than five?\n# TODO: what answer should come out?\n# TODO: run this, what does come out?\n4 &gt; 5\n\n\n\n\nCode\n# As you can see, comparison operators allow us to compare values and result in a boolean type indicating whether the comparison is `True` or `False`.\n# TODO: make a comparison the checks if five is greater than four, assign to a variable and print it\n# TODO: make a comparison the checks if five is not equal to four, assign to a variable and print it\n# TODO: make a comparison the checks if five is equal to four, assign to a variable and print it\n\n\n\n\nCode\n# TODO: what is the difference between `=` and `==`?\n\n\n\n\nCode\n# It turns out that matrices can be compared too!\n# What elements in the matrix are greater than 1?\n\n# TODO: what do you think will happen\nselection = matrix &gt; 1\n# TODO: add a print statement to see selection\n# Does it match your expectations?\n\n\n\n\nCode\n# Write another comparison with matrix to ask which elements are equal to 4, assign to a variable called select_4 and print\n\n\n\n\nCode\n# Now we can use the selection to access only those elements!\n# The rows and columns do not need to be set.\n# Simply use the selection as the only index! Amazing!\n\nresult = matrix[selection]\nprint(result)\n\n# TODO: use select_4 as the only index, assign to variable and print\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Finally, I want to show you how to combine comparions\n# Think of this question: what elements in the matrix are greater than one AND less then three?\n# The AND is done with `&`\n\ngreaterthanone = matrix &gt; 1\nprint(\"greather than one: \\n\", greaterthanone)\nlessthanthree = matrix &lt; 3\nprint(\"less than three: \\n\", lessthanthree)\nboth = greaterthanone & lessthanthree\nprint(\"both: \\n\", both)\nresult = matrix[both]\nprint(\"result: \\n\", result)\n\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Here is the same thing, but all in one line of code...\n\nprint(matrix[(matrix &gt; 1) & (matrix &lt; 3)])\n\n\n\n\nCode\n# TODO: think of one or more questions you have and then post it in discord.\n# TODO: As you see your colleagues questions, reply to their message if you have the answer!"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#dataframe-control-with-.loc",
+    "href": "code/data_filtering_activity.html#dataframe-control-with-.loc",
+    "title": "Class Activity",
+    "section": "Dataframe Control with .loc",
+    "text": "Dataframe Control with .loc\n\n\nCode\n# Controlling a Dataframe is similar to controlling a matrix.\n# Slicing is possible and logical comparison are possible!\n# One of the main differences is that indexing is done with .loc\n\n# Below is a the hourly temperature normals dataset for Meadville in a pandas dataframe called `dfm`\n# This same dataset was used in the data_distortion lab\n# The columns are named\n# The column containing the normals is called `HLY-TEMP-NORMAL`\n# Each hour is a year is given in the column called `INDEX`\n# A readable label for each hour in a year is given in the column called `DATE`\n\n# lets apply your new skills of logical indexing to this dataset\n\n\n\n\nCode\n# TODO: run this cell\n\n# load pre-existing tools available for data exploration\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# create a pandas dataframe\ndfm = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter/refs/heads/main/data/data-distortion-noaa-2006-2020-USW00004843.csv',\n    sep=',',\n    names = ['INDEX', 'STATION', 'NAME', 'LATITUDE', 'LONGITUDE', 'ELEVATION',\n       'DATE', 'month', 'day', 'hour', 'HLY-TEMP-NORMAL'],\n    skiprows=1\n)\n\n# Display the first few rows of the DataFrame\nprint(dfm.head())\n\n\n\n\nCode\n# TODO: how many rows are in the dataframe?\n# TODO: how many columns are in the dataframe?\n\n\n\n\nCode\n# This cell creates logical filters, then applies them with .loc\n\n# Only rows from the midnight hour in the month of March are selected\nselected_hours = dfm['hour'] == 0\nselected_months = dfm['month'] == 3\nselected_rows = selected_hours & selected_months\n\n\n# new dataframes are made that contain ONLY THE SELECTED ROWS using .loc\n# here is the syntax for .loc: .loc[rows, columns]\ndfm_selected_normals = dfm.loc[selected_rows, 'HLY-TEMP-NORMAL']\ndfm_selected_indices = dfm.loc[selected_rows, 'INDEX']\ndfm_selected_dates = dfm.loc[selected_rows, 'DATE']\n\n\nprint(dfm_selected_normals)\nprint(dfm_selected_indices)\nprint(dfm_selected_dates)\n\n\n\n\nCode\n# Here is the same thing in one line\n\ndfm.loc[(dfm['hour'] == 0) & (dfm['month'] == 3), 'INDEX']\n\n\n\n\nCode\n# Assuming df is already created in the previous code cell\n\n# TODO: Run this code cell\n# TODO: What does the figure show?\n# TODO: Fill in appropriate title, xlabel and ylabel using you understanding of logical indexing\n\n# Control how many xtick labels are on the x axis\nxtick_hopsize = 3\n\n# Clear out memory (doesn't impact the visualization, but keeps the computer happy)\nplt.close('all')\n\n# make a blank canvas\nplt.figure(figsize=(12, 4))\n\n# set the overall title for all subfigures\nplt.suptitle('Figure 1')\n\n# subplot 1\nplt.subplot(1, 2, 1)\nplt.plot(dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 1\nplt.plot(dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 2\nplt.plot(dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 3\nplt.plot(dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 4\nplt.plot(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 5\nplt.plot(dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 6\nplt.plot(dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 7\nplt.plot(dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 8\nplt.legend(['7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM'])\n# the plt.xticks function labels the ticks so that dates appear instead of index\nplt.xticks(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'][::xtick_hopsize], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'DATE'][::xtick_hopsize], rotation=90)\nplt.xlabel('')\nplt.ylabel('')\nplt.title('')\nplt.grid(True)\n\nplt.show()"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#video",
+    "href": "code/data_filtering_activity.html#video",
+    "title": "Class Activity",
+    "section": "Video",
+    "text": "Video\n\n\nCode\n# TODO: watch the video (also linked on the course website) - https://youtu.be/v5pJfu-yn-0\n\n# TODO: What two terms are used instead of logical indexing?"
+  },
+  {
+    "objectID": "code/data_wrangling_activity.html",
+    "href": "code/data_wrangling_activity.html",
+    "title": "Data Wrangling Activity",
     "section": "",
     "text": "Open In Colab"
   },
   {
-    "objectID": "code/data_distortion_activity.html#goals",
-    "href": "code/data_distortion_activity.html#goals",
-    "title": "Class Activity",
-    "section": "Goals",
-    "text": "Goals\n\nWork with colleagues at your table\nLook at code that can distort data displays\nModify code to distort data displays\nDescribe how data distortion can imply information that was not in raw data\n\n\n\nCode\n# TODO All Tables: Run this code cell that makes pre-existing tools available for data exploration\n\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n\n\n\nCode\n# TODO All Tables: Run this code cell that creates a pandas dataframe\n\ndf = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/site/main/data/data-distortion-bls-LNS14000000.csv',\n    sep=',',\n    names = ['Timepoint', 'Year', 'Month', 'Label', 'Value'],\n    skiprows=1\n)\n\nprint(df.head()) # Display the first few rows of the DataFrame"
+    "objectID": "code/data_wrangling_activity.html#discord-post",
+    "href": "code/data_wrangling_activity.html#discord-post",
+    "title": "Data Wrangling Activity",
+    "section": "Discord Post",
+    "text": "Discord Post\nTODO: Don’t forget to ask questions in Discord. One Discord post per week is required."
   },
   {
-    "objectID": "code/data_distortion_activity.html#table-1",
-    "href": "code/data_distortion_activity.html#table-1",
-    "title": "Class Activity",
-    "section": "Table 1",
-    "text": "Table 1\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(12, 4))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()\n\n\n\nTODO: What does this figure show?"
+    "objectID": "code/data_wrangling_activity.html#submit-this-completed-activity-to-your-activities-repository",
+    "href": "code/data_wrangling_activity.html#submit-this-completed-activity-to-your-activities-repository",
+    "title": "Data Wrangling Activity",
+    "section": "Submit this completed activity to your activities repository",
+    "text": "Submit this completed activity to your activities repository"
   },
   {
-    "objectID": "code/data_distortion_activity.html#table-2",
-    "href": "code/data_distortion_activity.html#table-2",
-    "title": "Class Activity",
-    "section": "Table 2",
-    "text": "Table 2\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(6, 2))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(0,100)\nplt.show()\n\n\n\nTODO: What does this figure show?"
-  },
-  {
-    "objectID": "code/data_distortion_activity.html#table-3",
-    "href": "code/data_distortion_activity.html#table-3",
-    "title": "Class Activity",
-    "section": "Table 3",
-    "text": "Table 3\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(3, 6))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(0,100)\nplt.show()\n\n\n\nTODO: What does this figure show?"
-  },
-  {
-    "objectID": "code/data_distortion_activity.html#table-4",
-    "href": "code/data_distortion_activity.html#table-4",
-    "title": "Class Activity",
-    "section": "Table 4",
-    "text": "Table 4\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(3, 9))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=0)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()\n\n\n\nTODO: What does this figure show?"
-  },
-  {
-    "objectID": "code/data_distortion_activity.html#discussion",
-    "href": "code/data_distortion_activity.html#discussion",
-    "title": "Class Activity",
-    "section": "Discussion",
-    "text": "Discussion\nShare your observations\n\nWhat did the plot at your table show?\nWhat is the best representation of the data?"
-  },
-  {
-    "objectID": "code/data_distortion_activity.html#technical-exploration",
-    "href": "code/data_distortion_activity.html#technical-exploration",
-    "title": "Class Activity",
-    "section": "Technical Exploration",
-    "text": "Technical Exploration\n\nWhat new python expressions do you see in the code?\nTry changing them below to see what happens\n\n\n\nCode\n# TODO: Run this code cell that creates a line graph of the data\n# TODO: Change the xlim, ylim, and figsize to see what happens\n\n# TODO: try plt.xlim(800,900)\n# TODO: adjust the ylim so that the line does not go off the canvas\n# TODO: change the figsize to make a tall, skinny canvas\n\n# Assuming df is already created in the previous code cell\nplt.close('all')\n\nplt.figure(figsize=(10,6))\nplt.plot(df['Timepoint'], df['Value'], '*-')\nplt.xticks(df['Timepoint'][::12], df['Label'][::12], rotation=45)\nplt.xlabel('Timepoint (Years)')\nplt.ylabel('Unemployment Rate (%)')\nplt.title('Unemployment Rate Year to Year')\nplt.grid(True)\nplt.xlim(20,40)\nplt.ylim(3,8)\nplt.show()"
-  },
-  {
-    "objectID": "code/data_distortion_activity.html#closing-thoughts",
-    "href": "code/data_distortion_activity.html#closing-thoughts",
-    "title": "Class Activity",
-    "section": "Closing Thoughts",
-    "text": "Closing Thoughts\n\nTODO: Describe how data distortion can imply things that were not in raw data\nTODO: How could daily life be impacted by distorted data?"
+    "objectID": "code/20250317_testing_debugging.html",
+    "href": "code/20250317_testing_debugging.html",
+    "title": "Guttag Chapter 8",
+    "section": "",
+    "text": "Open In Colab\n\n\n\nGuttag Chapter 8\n\n# Example function within palindromechecker.palindrome\n\n# TODO: what is the module name?\n# TODO: what is the package name?\n# TODO: does the function def within the module rely on any imported objects?\n\ndef pal_rev(word: str) -&gt; bool:\n  \"\"\"Determine if a given word is a palindrome.\"\"\"\n  # TODO: reverse the word\n  # TODO: return whether or not the reversed word is the same as the word\n\n\n# Example function within palindromechecker.palindrome\n\n# TODO: what is the module name?\n# TODO: what is the package name?\n# TODO: does the function def within the module rely on any imported objects?\n\ndef pal_rev(word: str) -&gt; bool:\n  \"\"\"Determine if a given word is a palindrome.\"\"\"\n  return word == word[::-1]\n\n\n# Example function within tests.test_palindrome\n\n# TODO: what is the module name?\n# TODO: what is the package name?\n# TODO: does the function def within the module rely on any imported objects?\n\ndef test_short_not_palindrome_word_reverse():\n    \"\"\"Ensure that a short word of \"taylor\" does not work correctly with reverse.\"\"\"\n    # TODO: hard code the input\n    # TODO: hard code the expected answer\n    # TODO: call the function under test with the hard coded input\n    # TODO: make sure the return value is saved!\n    # TODO: use the assert syntax compare the hard coded expected answer with\n    # the returned answer\n\n\ndef test_short_not_palindrome_word_reverse():\n    \"\"\"Ensure that a short word of \"taylor\" does not work correctly with reverse.\"\"\"\n    test_word = 'taylor' # hard coded\n    expected_result = False # hard coded\n    result = pal_rev(test_word)\n    assert result == expected_result"
   },
   {
     "objectID": "index.html",
@@ -935,6 +949,6 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Data Analytics Due Thursday March 13, 2:30pm  \n\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling  \n\nClass Activity: Data Wrangling Notebook\nLab: Data Wrangling Due Thursday, March 27, 2:30pm\n\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics\n\nLab: Numpy Calculations\n\nWeek Eleven: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Twelve: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Thirteen: April 8: Clustering \n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fifteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Data Analytics Due Thursday March 13, 2:30pm  \n\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling  \n\nClass Activity: Data Wrangling Notebook\nLab: Data Wrangling Due Thursday, March 27, 2:30pm\n\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics\n\nClass Activity: Stats Intro Notebook \n\nWeek Eleven: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Twelve: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Thirteen: April 8: Clustering \n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fifteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   }
 ]
