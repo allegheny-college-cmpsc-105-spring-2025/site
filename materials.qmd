@@ -57,6 +57,7 @@ title: "Materials"
 
 - Week Ten: March 18, 20: Statistics
   - Class Activity: [Stats Intro Notebook](code/stats_intro_activity.ipynb)
+  - Slides: [Hypothesis Testing](slides/10-hypothesis-testing.pdf)
   <!-- - Lab: Numpy Calculations -->
 - Week Eleven: March 25, 27: Data Transformations
   - Lab: Dot-to-dot
