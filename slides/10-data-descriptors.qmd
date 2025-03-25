@@ -1,0 +1,214 @@
+---
+title: "Week 10: Data Descriptors"
+author: "Emily Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+echo: true
+---
+
+## Goals
+
+- Central Tendencies
+  - Mode, Median, Mean
+- Distributions
+  - Histograms, Range, Standard Deviation, Z-scores
+- Stats in Practice
+  - Pandas
+  - Class Activity
+
+# Measures of Central Tendency
+
+## Mode Definition
+
+The most common value in a sample. Usually a measure of "central tendency".
+
+## Mode Examples
+
+3, 4, 5, 6, 7, 7, 7, 8, 8, 9
+
+. . .
+
+7
+
+. . .
+
+8, 5, 3, 7, 4, 6, 7, 8, 9, 7
+
+. . .
+
+7
+
+. . .
+
+3, 4, 5, 6, 7, 7, 7, 8, 8, 8, 9
+
+. . .
+
+- Use the average in case of multiple modes, or a set with both modes
+- 7.5 or {7,8}
+
+
+## Median Definition
+
+Middle value once a variable has been sorted low to high
+
+## Median Example
+
+::: incremental
+- raw: 3, 4, 7, 2, 3, 7, 4, 2, 4, 7, 4
+- sorted: 2, 2, 3, 3, 4, 4, 4, 4, 7, 7, 7
+- 6th is middle of 11: 4
+- Take mean if there are two middles
+:::
+
+
+## Mean Definition
+
+Sum of all the values in a sample divided by the number of values.
+
+$$
+\bar x = {\Sigma_{i = 1}^{N} x_i \over N}
+$$
+
+
+
+# Measures of Distributions
+
+## Range Definition
+
+Distance between lowest and highest values in a variable (subtract high minus low)
+
+::: incremental
+- raw: 3, 4, 7, 2, 3, 7, 4, 2, 4, 7, 4
+- sorted: 2, 2, 3, 3, 4, 4, 4, 4, 7, 7, 7
+- highest: 7
+- lowest: 2
+- range: 7 - 2 --> 5
+:::
+
+## Quartiles Definition
+
+The middle value (median), the middle value of the lower half (lower quartile), the middle value of the upper half (upper quartile)
+
+::: incremental
+- raw: 3, 4, 7, 2, 3, 7, 4, 2, 4, 7, 4
+- sorted: 2, 2, 3, 3, 4, 4, 4, 4, 7, 7, 7
+- middle is element 6 out of 11: 4
+- lower quartile is element 3 out of 5: 3
+- upper quartile is element 3 out of 5: 7
+- exclude the median in calculating the uq and lq
+:::
+
+## Box Plots {.smaller}
+
+Visualizations of quartiles and range  (and mean and outliers)
+
+![](https://pro.arcgis.com/en/pro-app/3.3/help/analysis/geoprocessing/charts/GUID-0E2C3730-C535-40CD-8152-80D794A996A7-web.png)
+![](https://blogs.sas.com/content/iml/files/2019/08/boxschematic1.png)
+
+## Box Plots {.smaller}
+
+Sketch a box plot for the following data:
+
+- raw: 3, 4, 7, 2, 3, 7, 4, 2, 4, 7, 4
+- sorted: 2, 2, 3, 3, 4, 4, 4, 4, 7, 7, 7
+- middle is element 6 out of 11: 4
+- lq is element 3 out of 5: 3
+- uq is element -3 out of 5: 7
+
+![](https://blogs.sas.com/content/iml/files/2019/08/boxschematic1.png)
+
+## Variance Definition {.smaller}
+
+Describes the spread of the data and how tightly clustered around the mean it is. 
+
+::: incremental
+- Mathematically, it is the normalized sum of squared errors.
+- Errors are comparisons of each data point with the mean (subtraction)
+- Squaring makes all errors positive and penalizes large errors
+- Summing and normalizing is like finding the average squared error
+- $\sigma^2$ represents variance
+:::
+
+. . .
+
+$$
+\sigma^2 = {\Sigma_{i = 1}^{N}(x_i - \bar x)^2 \over N-1}
+$$
+
+
+## Standard Deviation Definition {.smaller}
+
+Square root of variance. Describes the spread of the data and how tightly clustered around the mean it is.
+
+. . .
+
+$$
+\sigma^2 = {\Sigma_{i = 1}^{N}(x_i - \bar x)^2 \over N-1}
+$$
+$$
+\sigma = \sqrt{\Sigma_{i = 1}^{N}(x_i - \bar x)^2 \over N-1}
+$$
+
+## Visualizations of Standard Deviation {.smaller}
+
+- small STD --> narrow distribution of data, most is close to the mean
+- large STD --> wide distribution of data, a lot is not close to the mean
+- x axis is the variable (e.g. birth weight), y axis is count or frequency or proportion (how many babies born with that weight)
+
+![](https://mathcenter.oxford.emory.edu/site/math117/shapeCenterAndSpread/examplesOfSpread.jpg)
+
+
+## Visualization of Distributions {.smaller}
+
+Histograms show spread as well as distribution shape.
+
+- Which distribution might describe adult human height?
+- Which distribution might describe age frequencies in the human population?
+- Which distribution might describe median household income in USA?
+
+![](https://media.geeksforgeeks.org/wp-content/uploads/20230726175644/Frequency-Distribution-Curve-1.png)
+
+## Normal Distribution Terminology Overload
+
+- Normal
+- Bell-Shaped
+- Gaussian
+- Standard Normal (mean 0, std 1)
+
+## Z-scores {.smaller}
+
+A linear transformation that converts data points into measures of how many standard deviations away the data is from the mean.
+
+- data point is compared with mean
+- the difference is normalized with respect to the standard deviation (division)
+- z-score of 0 means that the data point is identical to the mean
+- negative z-score means that the data point is smaller than the mean
+- positive z-score means that the data point is larger than the mean
+
+$$
+z_i = {x_i - \bar x \over \sigma}
+$$
+
+# Stats in Practice
+
+## Pandas Examples {.smaller}
+
+::: incremental
+- mean - df.mean() or df['column'].mean()
+- median - df.median() or df['column'].median()
+- mode - df.mode() or df['column'].mode()
+- std - df.std() or df['column'].std()
+- z-score - (df['column'] - df['column'].mean()) / df['column'].std()
+- historgrams
+  - import matplotlib.pyplot as plt
+  - plt.hist(variable, bins)
+:::
+
+## Class Activity
+
+- [Stats Intro Activity](/code/stats_intro_activity.ipynb)
+
+# End

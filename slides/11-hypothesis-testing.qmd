@@ -1,0 +1,126 @@
+---
+title: "Week 11: Hypothesis Testing"
+author: "Emily Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+echo: true
+---
+
+## Goals
+
+- Single-sample vs multi-sample statistics
+- Standard Normal Distribution
+- Hypothesis Testing
+- T-test
+- In practice
+
+# Single Sample versus Multi Sample Statistics
+
+## Sample vs Population
+
+![](https://miro.medium.com/v2/resize:fit:1400/1*83WLnE2QTeOHSjbPJDVKfw.png)
+
+A `sample` of the human `population` might be everyone in this classroom, Alden 101. Another `sample` might be everyone in Alden 109. Another `sample` might be everyone in Brooks.
+
+## Observations
+
+![](https://miro.medium.com/v2/resize:fit:1400/1*83WLnE2QTeOHSjbPJDVKfw.png)
+
+For each `sample`, there are multiple `observations`.
+
+If I ask everyone in Alden 101 their birth weight, how many `observations` will there be in the `sample`?
+
+## Sample Statistics {.smaller}
+
+::: incremental
+- Statistics like mean, median, mode, std are summaries of a sample of a population. 
+- Statistics that come from a single sample are called a `sample mean`, `sample std`. But...
+- The sample mean of birth weight in Alden 101 is likely slightly different than the sample mean of birth weight in Alden 109 right now!
+- This means that there exists a distribution of sample means for birth weight!
+- The hypothetical distribution of sample means is called the `sampling distribution`.
+:::
+
+## Sampling Distribution
+
+![](https://mathbitsnotebook.com/Algebra2/Statistics/sampdisgraphic3.jpg)
+
+## Sampling Distribution Shape {.smaller}
+
+Note how the sampling distribution narrows as more samples are used to make the probability distribution
+
+- area under the curve stays at 1, or 100% chance
+
+![](https://lsj.readthedocs.io/da/latest/_images/lsj_samplingDistDiffN.svg)
+
+## Sampling Distribution Statistics {.smaller}
+
+- the `sampling distribution` is conceptually from multiple samples, and also has stats.
+- the mean of the `sampling distribution` is called the `expect value of the mean`
+- the std of the `sampling distribution` is called the `standard error of the mean`, $SEM$
+- note that we can't actually measure multiple samples, we never see the sampling distribution
+- mathematically and statistically, we can use it...
+
+## Standard Error of the Mean {.smaller}
+
+$$
+SEM = {\sigma \over \sqrt{N}}
+$$
+
+::: incremental
+- recall, SEM is the standard deviation of the sampling distribution
+- SEM can be calculated from ONE SAMPLE
+- It is desirable to have a small SEM because that would signify that the all the data are close to the true population mean!
+- if N of the single sample is very large, the SEM will be small
+- if $\sigma$ of a single sample is small, the SEM will be small
+:::
+
+## Making Confident Statements {.smaller}
+
+- We can say with a set level of confidence that a single sample mean is within a certain interval, using the following formula:
+
+$$
+\bar x \pm z_{\alpha/2} \times SEM \\
+SEM = {\sigma \over \sqrt{N}}
+$$
+
+- $z_{\alpha/2}$ is a fixed number read off of a standard normal distribution when $\alpha$ is chosen.
+- $\alpha$ represents the chance that we are wrong. It is a proportion of 1, usually, 0.05. 
+
+## Confidence Intervals
+
+- CIs are chosen by researchers, 95% confidence level is common choice.
+- 95% CI refers to area under a Standard Normal Distribution and corresponds with $\alpha$ of .05
+  
+$$
+CI = 100 \times (1 - \alpha)
+$$
+
+# Standard Normal Distribution
+
+## Standard Normal Distribution {.smaller}
+
+- y axis is proportion
+- x axis is z-scores, i.e. how many standard deviations away something is from the mean
+- recall $z_i = {x_i - \bar x \over \sigma}$
+- area under the curve is unity, 1 aka 100%
+
+![](https://www.w3schools.com/statistics/img_standard_normal.svg)
+
+## Critical Z Value {.smaller}
+
+![](https://www.w3schools.com/statistics/img_standard_normal.svg)
+
+::: incremental
+- if $\alpha$ is .05, $\alpha/2$ is 0.025 and $z_{\alpha/2}$ is 1.96
+- if $\alpha$ is .01, $\alpha/2$ is 0.005, what is $z_{\alpha/2}$? 
+:::
+
+## Critical Z Value - Table
+
+[Reading Z table](https://www.simplypsychology.org/z-score.html)
+
+![](https://www.earlyyears.tv/wp-content/uploads/2025/02/Z-Score-Table-1.png)
+
+# End

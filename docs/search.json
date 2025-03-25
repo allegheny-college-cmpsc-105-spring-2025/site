@@ -77,6 +77,97 @@
     "text": "Reformatting Strings\ndf[‘YOUR COLUMN’].str.split(‘YOUR DELIMITER’, expand=True)"
   },
   {
+    "objectID": "slides/11-hypothesis-testing.html#goals",
+    "href": "slides/11-hypothesis-testing.html#goals",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Goals",
+    "text": "Goals\n\nSingle-sample vs multi-sample statistics\nStandard Normal Distribution\nHypothesis Testing\nT-test\nIn practice"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#sample-vs-population",
+    "href": "slides/11-hypothesis-testing.html#sample-vs-population",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Sample vs Population",
+    "text": "Sample vs Population\n\nA sample of the human population might be everyone in this classroom, Alden 101. Another sample might be everyone in Alden 109. Another sample might be everyone in Brooks."
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#observations",
+    "href": "slides/11-hypothesis-testing.html#observations",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Observations",
+    "text": "Observations\n\nFor each sample, there are multiple observations.\nIf I ask everyone in Alden 101 their birth weight, how many observations will there be in the sample?"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#sample-statistics",
+    "href": "slides/11-hypothesis-testing.html#sample-statistics",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Sample Statistics",
+    "text": "Sample Statistics\n\n\nStatistics like mean, median, mode, std are summaries of a sample of a population.\nStatistics that come from a single sample are called a sample mean, sample std. But…\nThe sample mean of birth weight in Alden 101 is likely slightly different than the sample mean of birth weight in Alden 109 right now!\nThis means that there exists a distribution of sample means for birth weight!\nThe hypothetical distribution of sample means is called the sampling distribution."
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#sampling-distribution",
+    "href": "slides/11-hypothesis-testing.html#sampling-distribution",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Sampling Distribution",
+    "text": "Sampling Distribution"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#sampling-distribution-shape",
+    "href": "slides/11-hypothesis-testing.html#sampling-distribution-shape",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Sampling Distribution Shape",
+    "text": "Sampling Distribution Shape\nNote how the sampling distribution narrows as more samples are used to make the probability distribution\n\narea under the curve stays at 1, or 100% chance"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#sampling-distribution-statistics",
+    "href": "slides/11-hypothesis-testing.html#sampling-distribution-statistics",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Sampling Distribution Statistics",
+    "text": "Sampling Distribution Statistics\n\nthe sampling distribution is conceptually from multiple samples, and also has stats.\nthe mean of the sampling distribution is called the expect value of the mean\nthe std of the sampling distribution is called the standard error of the mean, \\(SEM\\)\nnote that we can’t actually measure multiple samples, we never see the sampling distribution\nmathematically and statistically, we can use it…"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#standard-error-of-the-mean",
+    "href": "slides/11-hypothesis-testing.html#standard-error-of-the-mean",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Standard Error of the Mean",
+    "text": "Standard Error of the Mean\n\\[\nSEM = {\\sigma \\over \\sqrt{N}}\n\\]\n\n\nrecall, SEM is the standard deviation of the sampling distribution\nSEM can be calculated from ONE SAMPLE\nIt is desirable to have a small SEM because that would signify that the all the data are close to the true population mean!\nif N of the single sample is very large, the SEM will be small\nif \\(\\sigma\\) of a single sample is small, the SEM will be small"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#making-confident-statements",
+    "href": "slides/11-hypothesis-testing.html#making-confident-statements",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Making Confident Statements",
+    "text": "Making Confident Statements\n\nWe can say with a set level of confidence that a single sample mean is within a certain interval, using the following formula:\n\n\\[\n\\bar x \\pm z_{\\alpha/2} \\times SEM \\\\\nSEM = {\\sigma \\over \\sqrt{N}}\n\\]\n\n\\(z_{\\alpha/2}\\) is a fixed number read off of a standard normal distribution when \\(\\alpha\\) is chosen.\n\\(\\alpha\\) represents the chance that we are wrong. It is a proportion of 1, usually, 0.05."
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#confidence-intervals",
+    "href": "slides/11-hypothesis-testing.html#confidence-intervals",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Confidence Intervals",
+    "text": "Confidence Intervals\n\nCIs are chosen by researchers, 95% confidence level is common choice.\n95% CI refers to area under a Standard Normal Distribution and corresponds with \\(\\alpha\\) of .05\n\n\\[\nCI = 100 \\times (1 - \\alpha)\n\\]"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#standard-normal-distribution-1",
+    "href": "slides/11-hypothesis-testing.html#standard-normal-distribution-1",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Standard Normal Distribution",
+    "text": "Standard Normal Distribution\n\ny axis is proportion\nx axis is z-scores, i.e. how many standard deviations away something is from the mean\nrecall \\(z_i = {x_i - \\bar x \\over \\sigma}\\)\narea under the curve is unity, 1 aka 100%"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#critical-z-value",
+    "href": "slides/11-hypothesis-testing.html#critical-z-value",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Critical Z Value",
+    "text": "Critical Z Value\n\n\n\nif \\(\\alpha\\) is .05, \\(\\alpha/2\\) is 0.025 and \\(z_{\\alpha/2}\\) is 1.96\nif \\(\\alpha\\) is .01, \\(\\alpha/2\\) is 0.005, what is \\(z_{\\alpha/2}\\)?"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#critical-z-value---table",
+    "href": "slides/11-hypothesis-testing.html#critical-z-value---table",
+    "title": "Week 11: Hypothesis Testing",
+    "section": "Critical Z Value - Table",
+    "text": "Critical Z Value - Table\nReading Z table"
+  },
+  {
     "objectID": "slides/01-welcome.html#cmpsc-105---data-exploration",
     "href": "slides/01-welcome.html#cmpsc-105---data-exploration",
     "title": "Welcome to CMPSC 105",
@@ -861,6 +952,132 @@
     "text": "End"
   },
   {
+    "objectID": "slides/10-data-descriptors.html#goals",
+    "href": "slides/10-data-descriptors.html#goals",
+    "title": "Week 10: Data Descriptors",
+    "section": "Goals",
+    "text": "Goals\n\nCentral Tendencies\n\nMode, Median, Mean\n\nDistributions\n\nHistograms, Range, Standard Deviation, Z-scores\n\nStats in Practice\n\nPandas\nClass Activity"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#mode-definition",
+    "href": "slides/10-data-descriptors.html#mode-definition",
+    "title": "Week 10: Data Descriptors",
+    "section": "Mode Definition",
+    "text": "Mode Definition\nThe most common value in a sample. Usually a measure of “central tendency”."
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#mode-examples",
+    "href": "slides/10-data-descriptors.html#mode-examples",
+    "title": "Week 10: Data Descriptors",
+    "section": "Mode Examples",
+    "text": "Mode Examples\n3, 4, 5, 6, 7, 7, 7, 8, 8, 9\n\n7\n\n\n8, 5, 3, 7, 4, 6, 7, 8, 9, 7\n\n\n7\n\n\n3, 4, 5, 6, 7, 7, 7, 8, 8, 8, 9\n\n\n\nUse the average in case of multiple modes, or a set with both modes\n7.5 or {7,8}"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#median-definition",
+    "href": "slides/10-data-descriptors.html#median-definition",
+    "title": "Week 10: Data Descriptors",
+    "section": "Median Definition",
+    "text": "Median Definition\nMiddle value once a variable has been sorted low to high"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#median-example",
+    "href": "slides/10-data-descriptors.html#median-example",
+    "title": "Week 10: Data Descriptors",
+    "section": "Median Example",
+    "text": "Median Example\n\n\nraw: 3, 4, 7, 2, 3, 7, 4, 2, 4, 7, 4\nsorted: 2, 2, 3, 3, 4, 4, 4, 4, 7, 7, 7\n6th is middle of 11: 4\nTake mean if there are two middles"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#mean-definition",
+    "href": "slides/10-data-descriptors.html#mean-definition",
+    "title": "Week 10: Data Descriptors",
+    "section": "Mean Definition",
+    "text": "Mean Definition\nSum of all the values in a sample divided by the number of values.\n\\[\n\\bar x = {\\Sigma_{i = 1}^{N} x_i \\over N}\n\\]"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#range-definition",
+    "href": "slides/10-data-descriptors.html#range-definition",
+    "title": "Week 10: Data Descriptors",
+    "section": "Range Definition",
+    "text": "Range Definition\nDistance between lowest and highest values in a variable (subtract high minus low)\n\n\nraw: 3, 4, 7, 2, 3, 7, 4, 2, 4, 7, 4\nsorted: 2, 2, 3, 3, 4, 4, 4, 4, 7, 7, 7\nhighest: 7\nlowest: 2\nrange: 7 - 2 –&gt; 5"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#quartiles-definition",
+    "href": "slides/10-data-descriptors.html#quartiles-definition",
+    "title": "Week 10: Data Descriptors",
+    "section": "Quartiles Definition",
+    "text": "Quartiles Definition\nThe middle value (median), the middle value of the lower half (lower quartile), the middle value of the upper half (upper quartile)\n\n\nraw: 3, 4, 7, 2, 3, 7, 4, 2, 4, 7, 4\nsorted: 2, 2, 3, 3, 4, 4, 4, 4, 7, 7, 7\nmiddle is element 6 out of 11: 4\nlower quartile is element 3 out of 5: 3\nupper quartile is element 3 out of 5: 7\nexclude the median in calculating the uq and lq"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#box-plots",
+    "href": "slides/10-data-descriptors.html#box-plots",
+    "title": "Week 10: Data Descriptors",
+    "section": "Box Plots",
+    "text": "Box Plots\nVisualizations of quartiles and range (and mean and outliers)"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#box-plots-1",
+    "href": "slides/10-data-descriptors.html#box-plots-1",
+    "title": "Week 10: Data Descriptors",
+    "section": "Box Plots",
+    "text": "Box Plots\nSketch a box plot for the following data:\n\nraw: 3, 4, 7, 2, 3, 7, 4, 2, 4, 7, 4\nsorted: 2, 2, 3, 3, 4, 4, 4, 4, 7, 7, 7\nmiddle is element 6 out of 11: 4\nlq is element 3 out of 5: 3\nuq is element -3 out of 5: 7"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#variance-definition",
+    "href": "slides/10-data-descriptors.html#variance-definition",
+    "title": "Week 10: Data Descriptors",
+    "section": "Variance Definition",
+    "text": "Variance Definition\nDescribes the spread of the data and how tightly clustered around the mean it is.\n\n\nMathematically, it is the normalized sum of squared errors.\nErrors are comparisons of each data point with the mean (subtraction)\nSquaring makes all errors positive and penalizes large errors\nSumming and normalizing is like finding the average squared error\n\\(\\sigma^2\\) represents variance\n\n\n\n\\[\n\\sigma^2 = {\\Sigma_{i = 1}^{N}(x_i - \\bar x)^2 \\over N-1}\n\\]"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#standard-deviation-definition",
+    "href": "slides/10-data-descriptors.html#standard-deviation-definition",
+    "title": "Week 10: Data Descriptors",
+    "section": "Standard Deviation Definition",
+    "text": "Standard Deviation Definition\nSquare root of variance. Describes the spread of the data and how tightly clustered around the mean it is.\n\n\\[\n\\sigma^2 = {\\Sigma_{i = 1}^{N}(x_i - \\bar x)^2 \\over N-1}\n\\] \\[\n\\sigma = \\sqrt{\\Sigma_{i = 1}^{N}(x_i - \\bar x)^2 \\over N-1}\n\\]"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#visualizations-of-standard-deviation",
+    "href": "slides/10-data-descriptors.html#visualizations-of-standard-deviation",
+    "title": "Week 10: Data Descriptors",
+    "section": "Visualizations of Standard Deviation",
+    "text": "Visualizations of Standard Deviation\n\nsmall STD –&gt; narrow distribution of data, most is close to the mean\nlarge STD –&gt; wide distribution of data, a lot is not close to the mean\nx axis is the variable (e.g. birth weight), y axis is count or frequency or proportion (how many babies born with that weight)"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#visualization-of-distributions",
+    "href": "slides/10-data-descriptors.html#visualization-of-distributions",
+    "title": "Week 10: Data Descriptors",
+    "section": "Visualization of Distributions",
+    "text": "Visualization of Distributions\nHistograms show spread as well as distribution shape.\n\nWhich distribution might describe adult human height?\nWhich distribution might describe age frequencies in the human population?\nWhich distribution might describe median household income in USA?"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#normal-distribution-terminology-overload",
+    "href": "slides/10-data-descriptors.html#normal-distribution-terminology-overload",
+    "title": "Week 10: Data Descriptors",
+    "section": "Normal Distribution Terminology Overload",
+    "text": "Normal Distribution Terminology Overload\n\nNormal\nBell-Shaped\nGaussian\nStandard Normal (mean 0, std 1)"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#z-scores",
+    "href": "slides/10-data-descriptors.html#z-scores",
+    "title": "Week 10: Data Descriptors",
+    "section": "Z-scores",
+    "text": "Z-scores\nA linear transformation that converts data points into measures of how many standard deviations away the data is from the mean.\n\ndata point is compared with mean\nthe difference is normalized with respect to the standard deviation (division)\nz-score of 0 means that the data point is identical to the mean\nnegative z-score means that the data point is smaller than the mean\npositive z-score means that the data point is larger than the mean\n\n\\[\nz_i = {x_i - \\bar x \\over \\sigma}\n\\]"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#pandas-examples",
+    "href": "slides/10-data-descriptors.html#pandas-examples",
+    "title": "Week 10: Data Descriptors",
+    "section": "Pandas Examples",
+    "text": "Pandas Examples\n\n\nmean - df.mean() or df[‘column’].mean()\nmedian - df.median() or df[‘column’].median()\nmode - df.mode() or df[‘column’].mode()\nstd - df.std() or df[‘column’].std()\nz-score - (df[‘column’] - df[‘column’].mean()) / df[‘column’].std()\nhistorgrams\n\nimport matplotlib.pyplot as plt\nplt.hist(variable, bins)"
+  },
+  {
+    "objectID": "slides/10-data-descriptors.html#class-activity",
+    "href": "slides/10-data-descriptors.html#class-activity",
+    "title": "Week 10: Data Descriptors",
+    "section": "Class Activity",
+    "text": "Class Activity\n\nStats Intro Activity"
+  },
+  {
     "objectID": "slides/02-data-display.html#goals",
     "href": "slides/02-data-display.html#goals",
     "title": "Week 2: Data Display",
@@ -949,6 +1166,6 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Data Analytics Due Thursday March 13, 2:30pm  \n\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling  \n\nClass Activity: Data Wrangling Notebook\nLab: Data Wrangling Due Thursday, March 27, 2:30pm\n\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics\n\nClass Activity: Stats Intro Notebook\nSlides: Hypothesis Testing \n\nWeek Eleven: March 25, 27: Data Transformations\n\nLab: Dot-to-dot\n\nWeek Twelve: April 1, 3: Modeling and Overfitting\n\nLab: Matplotlib\n\nWeek Thirteen: April 8: Clustering \n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Hypothesis Driven Analysis\n\nLab: Hypothesis Testing\n\nWeek Fifteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data II, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data II, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Data Analytics Due Thursday March 13, 2:30pm \n\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nReading: Making Sense of Data I, Chapter 3, Preparing Data Tables \nClass Activity: Data Wrangling Notebook\nLab: Data Wrangling Due Thursday, March 27, 2:30pm\n\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics Intro\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 17-37\nSlides: Data Descriptors\nClass Activity: Stats Intro Notebook\nLab: No new lab\n\nWeek Eleven: March 25, 27: Hypothesis Testing\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 37-42\nSlides: Hypothesis Testing\nClass Activity: [Hypothesis Testing]   \n\nWeek Twelve: April 1, 3: Modeling and Comparing\n\nReading: Making Sense of Data I, Chapter 4, Understanding Relationships  \n\nWeek Thirteen: April 8: Clustering\n\nReading: Making Sense of Data I, Chapter 5, Groups in Data \n\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Storytelling Challenge\nWeek Fifteen: April 22, 24: Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   }
 ]
