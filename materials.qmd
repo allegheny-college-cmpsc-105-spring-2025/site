@@ -62,7 +62,7 @@ title: "Materials"
 - Week Eleven: March 25, 27: Inferential Statistics
   - Reading: [Making Sense of Data I, Chapter 2, Describing Data, p. 37-42](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=50)
   - Slides: [Inferential Statistics](slides/11-hypothesis-testing.qmd)
-  - Class Activity: [Hypothesis Testing]
+  - Class Activity: [Inferential Stats Activity](/code/stats_inferential_activity.ipynb)
   <!-- lab must be on checking stats with transformations by hand -->
   <!-- - Lab: Dot-to-dot -->
   <!-- - Lab: Hypothesis Testing -->
