@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.6.39">
 
   <meta name="author" content="Emily Graber">
-  <title>Data Exploration – Week 11: Hypothesis Testing</title>
+  <title>Data Exploration – Week 11: Inferential Statistics</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -137,7 +137,7 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Week 11: Hypothesis Testing</h1>
+  <h1 class="title">Week 11: Inferential Statistics</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -151,17 +151,105 @@ Emily Graber
 <section id="goals" class="slide level2">
 <h2>Goals</h2>
 <ul>
-<li>Single-sample vs multi-sample statistics</li>
 <li>Standard Normal Distribution</li>
-<li>Hypothesis Testing</li>
-<li>T-test</li>
-<li>In practice</li>
+<li>Single-sample vs multi-sample statistics</li>
+<li>Activity</li>
 </ul>
 </section>
 <section>
+<section id="standard-normal-distribution" class="title-slide slide level1 center">
+<h1>Standard Normal Distribution</h1>
+
+</section>
+<section id="standard-normal-distribution-1" class="slide level2 smaller">
+<h2>Standard Normal Distribution</h2>
+<ul>
+<li>y axis is proportion</li>
+<li>x axis is z-scores, i.e.&nbsp;how many standard deviations away something is from the mean</li>
+<li>recall <span class="math inline">\(z_i = {x_i - \bar x \over \sigma}\)</span></li>
+<li>area under the curve is unity, 1 aka 100%</li>
+</ul>
+
+<img data-src="https://www.w3schools.com/statistics/img_standard_normal.svg" class="r-stretch"></section>
+<section id="proportions-vs-z-scores" class="slide level2 smaller">
+<h2>Proportions vs Z scores</h2>
+
+<img data-src="https://www.w3schools.com/statistics/img_standard_normal.svg" class="r-stretch"><div>
+<ul>
+<li class="fragment">z-scores are on the x axis</li>
+<li class="fragment">proportions above and below a certain z-score are the area under the curve</li>
+<li class="fragment">what z-score boundary would separate 2.2% of the area in the right tail?</li>
+<li class="fragment">2</li>
+</ul>
+</div>
+</section>
+<section id="proportions-vs-z-scores-1" class="slide level2 smaller">
+<h2>Proportions vs Z scores</h2>
+
+<img data-src="https://www.w3schools.com/statistics/img_standard_normal.svg" class="r-stretch"><div>
+<ul>
+<li class="fragment">z-scores are on the x axis</li>
+<li class="fragment">proportions above and below a certain z-score are the area under the curve</li>
+<li class="fragment">what z-score boundary would separate 15.8% of the area in the left tail?</li>
+<li class="fragment">-1</li>
+</ul>
+</div>
+</section>
+<section id="proportions-vs-z-scores-2" class="slide level2 smaller">
+<h2>Proportions vs Z scores</h2>
+
+<img data-src="https://www.w3schools.com/statistics/img_standard_normal.svg" class="r-stretch"><div>
+<ul>
+<li class="fragment">what <span class="math inline">\(\pm\)</span> z-score boundary would separate 4.4% of the area split between the right and left tails?</li>
+<li class="fragment"><span class="math inline">\(\pm\)</span> 2</li>
+<li class="fragment">Fancy way to ask the same thing: <span class="math inline">\(\alpha\)</span> is .044, <span class="math inline">\(\alpha/2\)</span> is 0.022, what is <span class="math inline">\(z_{\alpha/2}\)</span>?</li>
+</ul>
+</div>
+</section>
+<section id="what-is-alpha" class="slide level2 smaller">
+<h2>What is <span class="math inline">\(\alpha\)</span>?</h2>
+
+<img data-src="https://www.w3schools.com/statistics/img_standard_normal.svg" class="r-stretch"><div>
+<ul>
+<li class="fragment"><span class="math inline">\(\alpha\)</span> is the greek letter used to talk about proportions of the data out of a total of 1.</li>
+<li class="fragment"><span class="math inline">\(\alpha/2\)</span> is simple division, splitting the area in half</li>
+<li class="fragment"><span class="math inline">\(z_{\alpha/2}\)</span> is asking for a z-score off the x-axis that sections off the requested area.</li>
+<li class="fragment">if <span class="math inline">\(\alpha\)</span> is .05, what is <span class="math inline">\(z_{\alpha/2}\)</span>?</li>
+<li class="fragment">slightly less than 2</li>
+</ul>
+</div>
+</section>
+<section id="all-z-values---unit-normal-table" class="slide level2">
+<h2>All Z Values - Unit Normal Table</h2>
+
+<img data-src="../images/unit-normal-table.png" class="r-stretch"><p><a href="https://www.westga.edu/academics/research/vrc/assets/docs/UnitNormalTable.pdf">Full Unit Normal Table</a></p>
+</section>
+<section id="question-1" class="slide level2">
+<h2>Question 1</h2>
+<p>For a normal distribution, what is the probability of selecting a z-score that is larger than than <span class="math inline">\(z = 1.96\)</span>?</p>
+<ul>
+<li><a href="https://www.westga.edu/academics/research/vrc/assets/docs/UnitNormalTable.pdf">Unit Normal Table for standard normal distribution</a></li>
+</ul>
+</section>
+<section id="z-scores-and-inferential-statistics" class="slide level2">
+<h2>Z scores and Inferential Statistics</h2>
+<p>Z scores and the standard normal distribution are essential for inferential statistics.</p>
+<div>
+<ul>
+<li class="fragment">z scores make all data comparable</li>
+<li class="fragment">the standard normal distribution has a fixed area of 1 and can be understood in terms of probability</li>
+<li class="fragment">we can now ask formalized questions</li>
+<li class="fragment">what z-score must some data have for it to only occur 5% of the time or less?</li>
+<li class="fragment">n.b.&nbsp;5% is a nice threshold which is commonly accepted as being statistically meaningful</li>
+</ul>
+</div>
+</section></section>
+<section>
 <section id="single-sample-versus-multi-sample-statistics" class="title-slide slide level1 center">
 <h1>Single Sample versus Multi Sample Statistics</h1>
-
+<div class="fragment">
+<p><img data-src="https://miro.medium.com/v2/resize:fit:590/1*7yYHBcSVf9iyN6Ire8WJBw.jpeg"></p>
+</div>
 </section>
 <section id="sample-vs-population" class="slide level2">
 <h2>Sample vs Population</h2>
@@ -178,7 +266,7 @@ Emily Graber
 <h2>Sample Statistics</h2>
 <div>
 <ul>
-<li class="fragment">Statistics like mean, median, mode, std are summaries of a sample of a population.</li>
+<li class="fragment">Statistics like mean, median, mode, std are descriptive summaries of a sample of a population.</li>
 <li class="fragment">Statistics that come from a single sample are called a <code>sample mean</code>, <code>sample std</code>. But…</li>
 <li class="fragment">The sample mean of birth weight in Alden 101 is likely slightly different than the sample mean of birth weight in Alden 109 right now!</li>
 <li class="fragment">This means that there exists a distribution of sample means for birth weight!</li>
@@ -190,24 +278,35 @@ Emily Graber
 <h2>Sampling Distribution</h2>
 
 <img data-src="https://mathbitsnotebook.com/Algebra2/Statistics/sampdisgraphic3.jpg" class="r-stretch"></section>
+<section id="sampling-distribution-statistics" class="slide level2 smaller">
+<h2>Sampling Distribution Statistics</h2>
+<div>
+<ul>
+<li class="fragment">the <code>sampling distribution</code> is conceptually from multiple samples, and has stats.</li>
+<li class="fragment">the mean of the <code>sampling distribution</code> is the <code>expected value of the mean</code></li>
+<li class="fragment">the std of the <code>sampling distribution</code> is the <code>standard error of the mean</code>, <span class="math inline">\(SEM\)</span></li>
+<li class="fragment">note that we can’t actually measure multiple samples, we never see the sampling distribution</li>
+<li class="fragment">mathematically and statistically, we can use it</li>
+<li class="fragment">The central limit theorem states:
+<ul>
+<li class="fragment">For any population with mean <span class="math inline">\(\mu\)</span> and standard deviation <span class="math inline">\(\sigma\)</span>, the distribution of sample means for sample size N will have a mean of <span class="math inline">\(\mu\)</span> and a standard deviation of <span class="math inline">\(SEM = {\sigma \over \sqrt{N}}\)</span> and will approach a normal distribution as n approaches infinity, but N = 30 is close enough.</li>
+</ul></li>
+</ul>
+</div>
+</section>
 <section id="sampling-distribution-shape" class="slide level2 smaller">
 <h2>Sampling Distribution Shape</h2>
-<p>Note how the sampling distribution narrows as more samples are used to make the probability distribution</p>
+<p>Note how the sampling distribution narrows as more observations (N) are used to make the sampling distribution</p>
+
+<img data-src="https://lsj.readthedocs.io/da/latest/_images/lsj_samplingDistDiffN.svg" class="r-stretch"></section>
+<section id="class-coin-exercise" class="slide level2">
+<h2>Class Coin Exercise</h2>
 <ul>
-<li>area under the curve stays at 1, or 100% chance</li>
+<li>make a sample with three coin flips (heads = 0, tails = 1). Compute the sample mean with N=3</li>
+<li>make a sample with ten coin flips (heads = 0, tails = 1). Compute the sample mean with N=10</li>
 </ul>
 
 <img data-src="https://lsj.readthedocs.io/da/latest/_images/lsj_samplingDistDiffN.svg" class="r-stretch"></section>
-<section id="sampling-distribution-statistics" class="slide level2 smaller">
-<h2>Sampling Distribution Statistics</h2>
-<ul>
-<li>the <code>sampling distribution</code> is conceptually from multiple samples, and also has stats.</li>
-<li>the mean of the <code>sampling distribution</code> is called the <code>expect value of the mean</code></li>
-<li>the std of the <code>sampling distribution</code> is called the <code>standard error of the mean</code>, <span class="math inline">\(SEM\)</span></li>
-<li>note that we can’t actually measure multiple samples, we never see the sampling distribution</li>
-<li>mathematically and statistically, we can use it…</li>
-</ul>
-</section>
 <section id="standard-error-of-the-mean" class="slide level2 smaller">
 <h2>Standard Error of the Mean</h2>
 <p><span class="math display">\[
@@ -220,6 +319,27 @@ SEM = {\sigma \over \sqrt{N}}
 <li class="fragment">It is desirable to have a small SEM because that would signify that the all the data are close to the true population mean!</li>
 <li class="fragment">if N of the single sample is very large, the SEM will be small</li>
 <li class="fragment">if <span class="math inline">\(\sigma\)</span> of a single sample is small, the SEM will be small</li>
+</ul>
+</div>
+</section>
+<section id="question-2" class="slide level2 smaller">
+<h2>Question 2</h2>
+<p>The population distribution of SAT scores is normal with a mean of <span class="math inline">\(\mu = 500\)</span>. For a random sample of 25 students (N = 25) and a standard deviation of <span class="math inline">\(\sigma = 100\)</span>, what is the probability that the sample mean <span class="math inline">\(\bar x\)</span> will be greater than 540? Greater than 700?</p>
+<ul>
+<li><a href="https://www.westga.edu/academics/research/vrc/assets/docs/UnitNormalTable.pdf">Unit Normal Table for standard normal distribution</a></li>
+</ul>
+<div class="fragment">
+<p>for <span class="math inline">\(\bar x = 540\)</span>, <span class="math inline">\(p = 0.0228\)</span>, so it is quite unlikely for a sample of 25 students to get an average SAT score higher than 540.</p>
+</div>
+</section>
+<section id="z-scores-for-one-sample-in-a-sampling-distribution" class="slide level2">
+<h2>Z scores for one Sample in a Sampling Distribution</h2>
+<div>
+<ul>
+<li class="fragment">assume the sampling distribution has mean <span class="math inline">\(\mu\)</span> and standard deviation <span class="math inline">\(SEM = {\sigma \over \sqrt{N}}\)</span></li>
+<li class="fragment">assume the single sample mean <span class="math inline">\(\bar x\)</span></li>
+<li class="fragment">recall that z-scored observations from single sample relate each sample to the sample mean <span class="math inline">\(z_i = {x_i - \bar x \over \sigma}\)</span></li>
+<li class="fragment"><span class="math inline">\(z_{sample} = {\mu - \bar x \over SEM}\)</span></li>
 </ul>
 </div>
 </section>
@@ -246,24 +366,9 @@ SEM = {\sigma \over \sqrt{N}}
 <p><span class="math display">\[
 CI = 100 \times (1 - \alpha)
 \]</span></p>
-</section></section>
-<section>
-<section id="standard-normal-distribution" class="title-slide slide level1 center">
-<h1>Standard Normal Distribution</h1>
-
 </section>
-<section id="standard-normal-distribution-1" class="slide level2 smaller">
-<h2>Standard Normal Distribution</h2>
-<ul>
-<li>y axis is proportion</li>
-<li>x axis is z-scores, i.e.&nbsp;how many standard deviations away something is from the mean</li>
-<li>recall <span class="math inline">\(z_i = {x_i - \bar x \over \sigma}\)</span></li>
-<li>area under the curve is unity, 1 aka 100%</li>
-</ul>
-
-<img data-src="https://www.w3schools.com/statistics/img_standard_normal.svg" class="r-stretch"></section>
-<section id="critical-z-value" class="slide level2 smaller">
-<h2>Critical Z Value</h2>
+<section id="critical-z-value" class="slide level2">
+<h2>Critical Z-value</h2>
 
 <img data-src="https://www.w3schools.com/statistics/img_standard_normal.svg" class="r-stretch"><div>
 <ul>
@@ -271,12 +376,12 @@ CI = 100 \times (1 - \alpha)
 <li class="fragment">if <span class="math inline">\(\alpha\)</span> is .01, <span class="math inline">\(\alpha/2\)</span> is 0.005, what is <span class="math inline">\(z_{\alpha/2}\)</span>?</li>
 </ul>
 </div>
+<p><a href="https://www.westga.edu/academics/research/vrc/assets/docs/UnitNormalTable.pdf">Full Unit Normal Table</a></p>
 </section>
-<section id="critical-z-value---table" class="slide level2">
-<h2>Critical Z Value - Table</h2>
-<p><a href="https://www.simplypsychology.org/z-score.html">Reading Z table</a></p>
-
-<img data-src="https://www.earlyyears.tv/wp-content/uploads/2025/02/Z-Score-Table-1.png" class="r-stretch"></section></section>
+<section id="activity" class="slide level2">
+<h2>Activity</h2>
+<p><a href="../code/stats_inferential_activity.html">stats_inferential_activity.ipynb</a></p>
+</section></section>
 <section id="end" class="title-slide slide level1 center">
 <h1>End</h1>
 

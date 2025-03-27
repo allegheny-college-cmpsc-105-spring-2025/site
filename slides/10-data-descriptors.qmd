@@ -192,6 +192,22 @@ $$
 z_i = {x_i - \bar x \over \sigma}
 $$
 
+## Z-scored Normal Data {.smaller}
+
+When normal (gaussian) data is z-scored, the distribution looks like this:
+
+![](https://www.w3schools.com/statistics/img_standard_normal.svg)
+
+. . .
+
+::: incremental
+- x axis is the z-score of normal data
+- y axis is the proportion of data with that z-score
+- area totals 1, or 100%
+- the standard deviation of z-scored data is always 1
+- the mean of z-scored data is always 0 
+:::
+
 # Stats in Practice
 
 ## Pandas Examples {.smaller}

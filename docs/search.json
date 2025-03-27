@@ -79,93 +79,163 @@
   {
     "objectID": "slides/11-hypothesis-testing.html#goals",
     "href": "slides/11-hypothesis-testing.html#goals",
-    "title": "Week 11: Hypothesis Testing",
+    "title": "Week 11: Inferential Statistics",
     "section": "Goals",
-    "text": "Goals\n\nSingle-sample vs multi-sample statistics\nStandard Normal Distribution\nHypothesis Testing\nT-test\nIn practice"
+    "text": "Goals\n\nStandard Normal Distribution\nSingle-sample vs multi-sample statistics\nActivity"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#standard-normal-distribution-1",
+    "href": "slides/11-hypothesis-testing.html#standard-normal-distribution-1",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Standard Normal Distribution",
+    "text": "Standard Normal Distribution\n\ny axis is proportion\nx axis is z-scores, i.e. how many standard deviations away something is from the mean\nrecall \\(z_i = {x_i - \\bar x \\over \\sigma}\\)\narea under the curve is unity, 1 aka 100%"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#proportions-vs-z-scores",
+    "href": "slides/11-hypothesis-testing.html#proportions-vs-z-scores",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Proportions vs Z scores",
+    "text": "Proportions vs Z scores\n\n\n\nz-scores are on the x axis\nproportions above and below a certain z-score are the area under the curve\nwhat z-score boundary would separate 2.2% of the area in the right tail?\n2"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#proportions-vs-z-scores-1",
+    "href": "slides/11-hypothesis-testing.html#proportions-vs-z-scores-1",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Proportions vs Z scores",
+    "text": "Proportions vs Z scores\n\n\n\nz-scores are on the x axis\nproportions above and below a certain z-score are the area under the curve\nwhat z-score boundary would separate 15.8% of the area in the left tail?\n-1"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#proportions-vs-z-scores-2",
+    "href": "slides/11-hypothesis-testing.html#proportions-vs-z-scores-2",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Proportions vs Z scores",
+    "text": "Proportions vs Z scores\n\n\n\nwhat \\(\\pm\\) z-score boundary would separate 4.4% of the area split between the right and left tails?\n\\(\\pm\\) 2\nFancy way to ask the same thing: \\(\\alpha\\) is .044, \\(\\alpha/2\\) is 0.022, what is \\(z_{\\alpha/2}\\)?"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#what-is-alpha",
+    "href": "slides/11-hypothesis-testing.html#what-is-alpha",
+    "title": "Week 11: Inferential Statistics",
+    "section": "What is \\(\\alpha\\)?",
+    "text": "What is \\(\\alpha\\)?\n\n\n\n\\(\\alpha\\) is the greek letter used to talk about proportions of the data out of a total of 1.\n\\(\\alpha/2\\) is simple division, splitting the area in half\n\\(z_{\\alpha/2}\\) is asking for a z-score off the x-axis that sections off the requested area.\nif \\(\\alpha\\) is .05, what is \\(z_{\\alpha/2}\\)?\nslightly less than 2"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#all-z-values---unit-normal-table",
+    "href": "slides/11-hypothesis-testing.html#all-z-values---unit-normal-table",
+    "title": "Week 11: Inferential Statistics",
+    "section": "All Z Values - Unit Normal Table",
+    "text": "All Z Values - Unit Normal Table\n\nFull Unit Normal Table"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#question-1",
+    "href": "slides/11-hypothesis-testing.html#question-1",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Question 1",
+    "text": "Question 1\nFor a normal distribution, what is the probability of selecting a z-score that is larger than than \\(z = 1.96\\)?\n\nUnit Normal Table for standard normal distribution"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#z-scores-and-inferential-statistics",
+    "href": "slides/11-hypothesis-testing.html#z-scores-and-inferential-statistics",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Z scores and Inferential Statistics",
+    "text": "Z scores and Inferential Statistics\nZ scores and the standard normal distribution are essential for inferential statistics.\n\n\nz scores make all data comparable\nthe standard normal distribution has a fixed area of 1 and can be understood in terms of probability\nwe can now ask formalized questions\nwhat z-score must some data have for it to only occur 5% of the time or less?\nn.b. 5% is a nice threshold which is commonly accepted as being statistically meaningful"
   },
   {
     "objectID": "slides/11-hypothesis-testing.html#sample-vs-population",
     "href": "slides/11-hypothesis-testing.html#sample-vs-population",
-    "title": "Week 11: Hypothesis Testing",
+    "title": "Week 11: Inferential Statistics",
     "section": "Sample vs Population",
     "text": "Sample vs Population\n\nA sample of the human population might be everyone in this classroom, Alden 101. Another sample might be everyone in Alden 109. Another sample might be everyone in Brooks."
   },
   {
     "objectID": "slides/11-hypothesis-testing.html#observations",
     "href": "slides/11-hypothesis-testing.html#observations",
-    "title": "Week 11: Hypothesis Testing",
+    "title": "Week 11: Inferential Statistics",
     "section": "Observations",
     "text": "Observations\n\nFor each sample, there are multiple observations.\nIf I ask everyone in Alden 101 their birth weight, how many observations will there be in the sample?"
   },
   {
     "objectID": "slides/11-hypothesis-testing.html#sample-statistics",
     "href": "slides/11-hypothesis-testing.html#sample-statistics",
-    "title": "Week 11: Hypothesis Testing",
+    "title": "Week 11: Inferential Statistics",
     "section": "Sample Statistics",
-    "text": "Sample Statistics\n\n\nStatistics like mean, median, mode, std are summaries of a sample of a population.\nStatistics that come from a single sample are called a sample mean, sample std. But…\nThe sample mean of birth weight in Alden 101 is likely slightly different than the sample mean of birth weight in Alden 109 right now!\nThis means that there exists a distribution of sample means for birth weight!\nThe hypothetical distribution of sample means is called the sampling distribution."
+    "text": "Sample Statistics\n\n\nStatistics like mean, median, mode, std are descriptive summaries of a sample of a population.\nStatistics that come from a single sample are called a sample mean, sample std. But…\nThe sample mean of birth weight in Alden 101 is likely slightly different than the sample mean of birth weight in Alden 109 right now!\nThis means that there exists a distribution of sample means for birth weight!\nThe hypothetical distribution of sample means is called the sampling distribution."
   },
   {
     "objectID": "slides/11-hypothesis-testing.html#sampling-distribution",
     "href": "slides/11-hypothesis-testing.html#sampling-distribution",
-    "title": "Week 11: Hypothesis Testing",
+    "title": "Week 11: Inferential Statistics",
     "section": "Sampling Distribution",
     "text": "Sampling Distribution"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#sampling-distribution-shape",
-    "href": "slides/11-hypothesis-testing.html#sampling-distribution-shape",
-    "title": "Week 11: Hypothesis Testing",
-    "section": "Sampling Distribution Shape",
-    "text": "Sampling Distribution Shape\nNote how the sampling distribution narrows as more samples are used to make the probability distribution\n\narea under the curve stays at 1, or 100% chance"
-  },
-  {
     "objectID": "slides/11-hypothesis-testing.html#sampling-distribution-statistics",
     "href": "slides/11-hypothesis-testing.html#sampling-distribution-statistics",
-    "title": "Week 11: Hypothesis Testing",
+    "title": "Week 11: Inferential Statistics",
     "section": "Sampling Distribution Statistics",
-    "text": "Sampling Distribution Statistics\n\nthe sampling distribution is conceptually from multiple samples, and also has stats.\nthe mean of the sampling distribution is called the expect value of the mean\nthe std of the sampling distribution is called the standard error of the mean, \\(SEM\\)\nnote that we can’t actually measure multiple samples, we never see the sampling distribution\nmathematically and statistically, we can use it…"
+    "text": "Sampling Distribution Statistics\n\n\nthe sampling distribution is conceptually from multiple samples, and has stats.\nthe mean of the sampling distribution is the expected value of the mean\nthe std of the sampling distribution is the standard error of the mean, \\(SEM\\)\nnote that we can’t actually measure multiple samples, we never see the sampling distribution\nmathematically and statistically, we can use it\nThe central limit theorem states:\n\nFor any population with mean \\(\\mu\\) and standard deviation \\(\\sigma\\), the distribution of sample means for sample size N will have a mean of \\(\\mu\\) and a standard deviation of \\(SEM = {\\sigma \\over \\sqrt{N}}\\) and will approach a normal distribution as n approaches infinity, but N = 30 is close enough."
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#sampling-distribution-shape",
+    "href": "slides/11-hypothesis-testing.html#sampling-distribution-shape",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Sampling Distribution Shape",
+    "text": "Sampling Distribution Shape\nNote how the sampling distribution narrows as more observations (N) are used to make the sampling distribution"
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#class-coin-exercise",
+    "href": "slides/11-hypothesis-testing.html#class-coin-exercise",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Class Coin Exercise",
+    "text": "Class Coin Exercise\n\nmake a sample with three coin flips (heads = 0, tails = 1). Compute the sample mean with N=3\nmake a sample with ten coin flips (heads = 0, tails = 1). Compute the sample mean with N=10"
   },
   {
     "objectID": "slides/11-hypothesis-testing.html#standard-error-of-the-mean",
     "href": "slides/11-hypothesis-testing.html#standard-error-of-the-mean",
-    "title": "Week 11: Hypothesis Testing",
+    "title": "Week 11: Inferential Statistics",
     "section": "Standard Error of the Mean",
     "text": "Standard Error of the Mean\n\\[\nSEM = {\\sigma \\over \\sqrt{N}}\n\\]\n\n\nrecall, SEM is the standard deviation of the sampling distribution\nSEM can be calculated from ONE SAMPLE\nIt is desirable to have a small SEM because that would signify that the all the data are close to the true population mean!\nif N of the single sample is very large, the SEM will be small\nif \\(\\sigma\\) of a single sample is small, the SEM will be small"
   },
   {
+    "objectID": "slides/11-hypothesis-testing.html#question-2",
+    "href": "slides/11-hypothesis-testing.html#question-2",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Question 2",
+    "text": "Question 2\nThe population distribution of SAT scores is normal with a mean of \\(\\mu = 500\\). For a random sample of 25 students (N = 25) and a standard deviation of \\(\\sigma = 100\\), what is the probability that the sample mean \\(\\bar x\\) will be greater than 540? Greater than 700?\n\nUnit Normal Table for standard normal distribution\n\n\nfor \\(\\bar x = 540\\), \\(p = 0.0228\\), so it is quite unlikely for a sample of 25 students to get an average SAT score higher than 540."
+  },
+  {
+    "objectID": "slides/11-hypothesis-testing.html#z-scores-for-one-sample-in-a-sampling-distribution",
+    "href": "slides/11-hypothesis-testing.html#z-scores-for-one-sample-in-a-sampling-distribution",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Z scores for one Sample in a Sampling Distribution",
+    "text": "Z scores for one Sample in a Sampling Distribution\n\n\nassume the sampling distribution has mean \\(\\mu\\) and standard deviation \\(SEM = {\\sigma \\over \\sqrt{N}}\\)\nassume the single sample mean \\(\\bar x\\)\nrecall that z-scored observations from single sample relate each sample to the sample mean \\(z_i = {x_i - \\bar x \\over \\sigma}\\)\n\\(z_{sample} = {\\mu - \\bar x \\over SEM}\\)"
+  },
+  {
     "objectID": "slides/11-hypothesis-testing.html#making-confident-statements",
     "href": "slides/11-hypothesis-testing.html#making-confident-statements",
-    "title": "Week 11: Hypothesis Testing",
+    "title": "Week 11: Inferential Statistics",
     "section": "Making Confident Statements",
     "text": "Making Confident Statements\n\nWe can say with a set level of confidence that a single sample mean is within a certain interval, using the following formula:\n\n\\[\n\\bar x \\pm z_{\\alpha/2} \\times SEM \\\\\nSEM = {\\sigma \\over \\sqrt{N}}\n\\]\n\n\\(z_{\\alpha/2}\\) is a fixed number read off of a standard normal distribution when \\(\\alpha\\) is chosen.\n\\(\\alpha\\) represents the chance that we are wrong. It is a proportion of 1, usually, 0.05."
   },
   {
     "objectID": "slides/11-hypothesis-testing.html#confidence-intervals",
     "href": "slides/11-hypothesis-testing.html#confidence-intervals",
-    "title": "Week 11: Hypothesis Testing",
+    "title": "Week 11: Inferential Statistics",
     "section": "Confidence Intervals",
     "text": "Confidence Intervals\n\nCIs are chosen by researchers, 95% confidence level is common choice.\n95% CI refers to area under a Standard Normal Distribution and corresponds with \\(\\alpha\\) of .05\n\n\\[\nCI = 100 \\times (1 - \\alpha)\n\\]"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#standard-normal-distribution-1",
-    "href": "slides/11-hypothesis-testing.html#standard-normal-distribution-1",
-    "title": "Week 11: Hypothesis Testing",
-    "section": "Standard Normal Distribution",
-    "text": "Standard Normal Distribution\n\ny axis is proportion\nx axis is z-scores, i.e. how many standard deviations away something is from the mean\nrecall \\(z_i = {x_i - \\bar x \\over \\sigma}\\)\narea under the curve is unity, 1 aka 100%"
-  },
-  {
     "objectID": "slides/11-hypothesis-testing.html#critical-z-value",
     "href": "slides/11-hypothesis-testing.html#critical-z-value",
-    "title": "Week 11: Hypothesis Testing",
-    "section": "Critical Z Value",
-    "text": "Critical Z Value\n\n\n\nif \\(\\alpha\\) is .05, \\(\\alpha/2\\) is 0.025 and \\(z_{\\alpha/2}\\) is 1.96\nif \\(\\alpha\\) is .01, \\(\\alpha/2\\) is 0.005, what is \\(z_{\\alpha/2}\\)?"
+    "title": "Week 11: Inferential Statistics",
+    "section": "Critical Z-value",
+    "text": "Critical Z-value\n\n\n\nif \\(\\alpha\\) is .05, \\(\\alpha/2\\) is 0.025 and \\(z_{\\alpha/2}\\) is 1.96\nif \\(\\alpha\\) is .01, \\(\\alpha/2\\) is 0.005, what is \\(z_{\\alpha/2}\\)?\n\n\nFull Unit Normal Table"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#critical-z-value---table",
-    "href": "slides/11-hypothesis-testing.html#critical-z-value---table",
-    "title": "Week 11: Hypothesis Testing",
-    "section": "Critical Z Value - Table",
-    "text": "Critical Z Value - Table\nReading Z table"
+    "objectID": "slides/11-hypothesis-testing.html#activity",
+    "href": "slides/11-hypothesis-testing.html#activity",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Activity",
+    "text": "Activity\nstats_inferential_activity.ipynb"
   },
   {
     "objectID": "slides/01-welcome.html#cmpsc-105---data-exploration",
@@ -483,25 +553,116 @@
     "text": "Closing Thoughts\n\nTODO: Describe how data distortion can imply things that were not in raw data\nTODO: How could daily life be impacted by distorted data?"
   },
   {
-    "objectID": "code/data_display_activity.html",
-    "href": "code/data_display_activity.html",
+    "objectID": "code/stats_inferential_activity.html",
+    "href": "code/stats_inferential_activity.html",
+    "title": "Data Exploration",
+    "section": "",
+    "text": "Open In Colab\n\n\nFor a normal distribution, what is the probability of selecting a z-score that is larger than than \\(z = 1.96\\)?\nTODO: Write python code that can simulate a standard normal distribution and the unit normal table to find the answer\n\n\nCode\nimport scipy\n\n# TODO: import pd, np, and matplotlib libraries\n\n\n\n\nCode\n# TODO: write down the mean of a standard normal distribution\n# TODO: write down the std of a standard normal distribution\n\n# TODO: use a function out of numpy called random.normal, passing in the mean, std, and how many samples to draw\n# https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html\n\n# TODO: convert to dataframe\n\n\n\n\nCode\n# TODO: sanity check the mean\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.mean.html\n# df.mean(axis=1)\n\n\n\n\nCode\n# TODO: sanity check the standard deviation\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.std.html\n# df.std()\n\n\n\n\nCode\n# TODO: use scipy stats library to call a function called percentileofscore\n# this function operates on data frames\n# it finds the quantile of the specified z-value with tow parameters, the df and z-value\n\n\n\n\nCode\n# TODO: Sanity check by re-computing the z for a given proportion\n# Use the numpy quantile function to pass in a particular quantile (or area) for\n# which we would like to know the z score boundary\n# https://numpy.org/doc/stable/reference/generated/numpy.quantile.html\n# parameters are the data and the quantile\n\n# TODO: what is the difference between quantile and percentile?\n\n\n\n\nCode\n# TODO: redefine the quantile in terms of an alpha/2\n\n\n\n\nCode\n# TODO: plot the random normal data!\n# NOTE: the density parameter will normalize the y axis\n\n\n# TODO: add a vertical line on your figure to mark the critical z-value\n\n\nWork through this problem and verify everything in code. (Gravetter & Wallnau, Example 7.3)\n\nOnce again, the distribution of SAT scores forms a normal distribution with a mean of \\(\\mu = 500\\) and SEM = 20. For this example, we are going to determine what kind of sample mean is likely to be obtained as the average SAT score for a random sample of N = 25 students (\\(\\sigma = 100\\)). Specifically, we determine the exact range of values that is expected for the sample mean 80% of the time. Our goal is to find the range of values that make up the middle 80% of the distribution. Because the distribution is normal, we can use the unit normal table. First, the 80% in the middle is split in half, with 40% (0.4000) on each side of the mean. Looking up 0.4000 in column D (the proportion between the mean and z), we find a corresponding z-score of z = 1.28. Thus, the z-score boundaries for the middle 80% are z = \\(\\pm 1.28\\). By definition, a z-score of 1.28 represents a location that is 1.28 standard deviations (or standard errors) from the mean. With a standard error of 20 points, the distance from the mean is 1.28 * (20) = 25.6 points. The mean is \\(\\mu = 500\\), so a distance of 25.6 in both directions produces a range of values from 474.4 to 525.6. Thus, 80% of all the possible sample means are contained in a range between 474.4 and 525.6. If we select a sample of N = 25 students, we can be 80% confident that the mean SAT score for the sample will be in this range."
+  },
+  {
+    "objectID": "code/data_filtering_activity.html",
+    "href": "code/data_filtering_activity.html",
     "title": "Class Activity",
     "section": "",
     "text": "Open In Colab"
   },
   {
-    "objectID": "code/data_display_activity.html#goals",
-    "href": "code/data_display_activity.html#goals",
+    "objectID": "code/data_filtering_activity.html#goals",
+    "href": "code/data_filtering_activity.html#goals",
     "title": "Class Activity",
     "section": "Goals",
-    "text": "Goals\n\nLook at code that can generate common data displays\nModify code that can generate common data displays\nDescribe how common data displays are able to convey information that was not apparent in raw data\n\n\nTODO: Run the first code cell\nTODO: In the variable explorer ({x}), what Type does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), what Shape does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), hover over the variable df to see the values. What relationship do the values have to the Shape of df? Explain what the shape means. Write your response here:\nTODO: Looking at the rest of the code cells that can generate figures, what patterns do you see repeated in the code? Write your response here:\nTODO: Run the code cells, stopping once you reach the next section. Examine the figures.\nTODO: Explain what relationship exists between the reddish code in quotes and the figures that are generated. Write your response here:\nTODO: Find a piece of code where a marker was explicitly specified. Change the marker to an upward triangle, a square, and a star based on the matplotlib documentation and rerun the code.\nTODO: Overall, do these figures reveal anything about this data that was not so apparent when looking at df? Write your response here:\nNow, move on to the next section\n\nThe data table below shows how many millions of prescriptions are obtained from various sources in the United States annually.\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\nTraditional\n914\n\n\nIndependent\n666\n\n\nMassMerch\n238\n\n\nSuperMarket\n221\n\n\nMailOrder\n86\n\n\n\n\n\nCode\n# import pandas and make dataframe\n\nimport pandas as pd\n\ndata = {'Drug Source': ['Traditional', 'Independent', 'MassMerch', 'SuperMarket', 'MailOrder'],\n        'Num Prescriptions': [914, 666, 238, 221, 86]}\ndf = pd.DataFrame(data)\n\ndf\n\n\n\n\n\n\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\n0\nTraditional\n914\n\n\n1\nIndependent\n666\n\n\n2\nMassMerch\n238\n\n\n3\nSuperMarket\n221\n\n\n4\nMailOrder\n86\n\n\n\n\n\n\n\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.scatter(df['Num Prescriptions'], df['Drug Source'])\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Drug Source')\nplt.title('Drug Source vs. Number of Prescriptions')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.pie(df['Num Prescriptions'], labels=df['Drug Source'])\nplt.title('Drug Source')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.hist(df['Num Prescriptions'], bins=20)\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Frequency')\nplt.title('Histogram of Number of Prescriptions')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()  # Adjust figure size for better visualization\nplt.plot(df['Drug Source'], df['Num Prescriptions'], marker='o', linestyle='-')\nplt.xlabel('Drug Source')\nplt.ylabel('Number of Prescriptions (Millions)')\nplt.title('Number of Prescriptions by Drug Source')\nplt.grid(True, linestyle='--', alpha=0.7)  # Add a grid for better readability\nplt.xticks(rotation=45) # Rotate x-axis labels for better visibility\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.boxplot(df['Num Prescriptions'])  # Create the boxplot\nplt.xlabel('Number of Prescriptions')\nplt.title('Box Plot of Number of Prescriptions')\nplt.show()"
+    "text": "Goals\n\nWork with colleagues at your table\nReview variables and assignment\nWrite code to control a matrix\nWrite code for logical contorl\nWrite code for dataframe control"
   },
   {
-    "objectID": "code/stats_intro_activity.html",
-    "href": "code/stats_intro_activity.html",
-    "title": "Statistics",
+    "objectID": "code/data_filtering_activity.html#variables-and-assignment-ref",
+    "href": "code/data_filtering_activity.html#variables-and-assignment-ref",
+    "title": "Class Activity",
+    "section": "Variables and Assignment (REF)",
+    "text": "Variables and Assignment (REF)\n\n\nCode\n# Variables are names - a reusable label for a data value.\n\nname = 'Marc'\nprint(name)\npi = 3.14\nprint(pi)\ncustomer_id = \"1234\"\n# TODO: add a print statement to see customer_id\naccount_balance = 1000\n# TODO: add a print statement to see account_balance\n\n\n\n\nCode\n# if the same name is used to store new data, the old data is lost\n\npi = 3.14\nprint(pi)\npi = 'Marc'\n# TODO: add a print statement to see pi\n\n\n\n\nCode\n# assignment is a fancy term for associating or storing data\n\n# here 3.14 is assigned to the variable name pi using the `=`\npi = 3.14\n\n# TODO: assign the value 5 to pi\n# TODO: add a print statement to see pi\n# TODO: assign the value \"hello\" to message\n# TODO: add a print statement to see message\n# TODO: assign the value [1,2,3,4,5] to data\n# TODO: add a print statement to see data\n\n\n\nReserved Words\nThe following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your program variables.\n\nand, as, assert, async, await, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#matrix",
+    "href": "code/data_filtering_activity.html#matrix",
+    "title": "Class Activity",
+    "section": "Matrix",
+    "text": "Matrix\n\n\nCode\n# TODO: run this code to make a simple matrix in a pandas dataframe\n\nimport pandas as pd\n\nmatrix = pd.read_csv(\n    '/content/data-filtering-matrix.csv',\n    sep=',',\n    names = ['A', 'B', 'C'],\n    skiprows=1)\n\n\n\n\nCode\n# TODO: add a print statement to see the dataframe\nprint(matrix)\n\n\n\n\nCode\n# The matrix contains 15 values in five rows and three columns\n# TODO: verify this using the data explorer\n\n\n# Each item has a unique location in the matrix given by its row and column\n# Using python convention, the rows and columns are idenfied with integers starting at 0!\n\n# On the 0th row, column 0 has the value of 0.0\n# On the 4nd row, column 0 has the value of 4.0\n# TODO: What is the largest row index in the matrix?\n# TODO: What is the largest column index in the matrix?\n\n# Here's how you access the element on row 4, column 0\nelement = matrix.iloc[4,0]\nprint(element)\n\n# TODO: access the element on row 3 column 2 and assign it to the variable `another_element`\n# TODO: add a print statement to see `another_element`\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# Indexing to get one element is very simple, but what if you want multiple elements in a row, or in a column?\n\n# Slicing is the way to do it!\n# the sytax for slicing is like this: [start_index:end_index:hop_size]\n# Using python convention, note that the end_index will not be included in the slice\n\n# Here is a slice example on the columns\nslice_example = matrix.iloc[0,0:2:1]\nprint(slice_example)\n\n# TODO: use words to write out what the slice contains\n\n# TODO: Write a slice that gets the first through fourth rows (not including 4) from column two and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Write a slice that gets the 0th through fourth rows (not including 4) from column one, hopping by 2, and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Come up with your own example\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# The syntax of a slice is [start:end:hop_size], but if start or end is left out, then the endpoints are assumed!\n# warning - don't forget to include the `:`\n\n# Here is every columns in row 0, including the start and INCLUDING the end!\nfull_slice = matrix.iloc[0,::1]\nprint(full_slice)\n\n# TODO: Write a slice that gets every column in row 4, including the start and INCLUDING the end! Assign to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: make sure you get what you expect! Is there anything unexpected?\n\n\n\n\nCode\n# Slices to endpoints have already been used in our labs\n\n# TODO: find any spot where the slices have been used in our labs and put a link for yourself below\n# TODO: how was the slice used in the lab?"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#logical-control",
+    "href": "code/data_filtering_activity.html#logical-control",
+    "title": "Class Activity",
+    "section": "Logical Control",
+    "text": "Logical Control\n\n\nCode\n# First lets review some comparison operators\n\n\nThe following table summarizes the most commonly used comparison operators in Python, along with their definition when applied to numbers.\n\n\n\noperator\noperation on numbers\n\n\n\n\n==\nequal to\n\n\n!=\nnot equal to\n\n\n&gt;\ngreater than\n\n\n&gt;=\ngreater than or equal to\n\n\n&lt;\nless than\n\n\n&lt;=\nless than or equal to\n\n\n\nAs their name suggests, comparison operators allow us to compare two values.\n\n\nCode\n# Here is a comparison of 4 vs 5. It asks the question: is four larger than five?\n# TODO: what answer should come out?\n# TODO: run this, what does come out?\n4 &gt; 5\n\n\n\n\nCode\n# As you can see, comparison operators allow us to compare values and result in a boolean type indicating whether the comparison is `True` or `False`.\n# TODO: make a comparison the checks if five is greater than four, assign to a variable and print it\n# TODO: make a comparison the checks if five is not equal to four, assign to a variable and print it\n# TODO: make a comparison the checks if five is equal to four, assign to a variable and print it\n\n\n\n\nCode\n# TODO: what is the difference between `=` and `==`?\n\n\n\n\nCode\n# It turns out that matrices can be compared too!\n# What elements in the matrix are greater than 1?\n\n# TODO: what do you think will happen\nselection = matrix &gt; 1\n# TODO: add a print statement to see selection\n# Does it match your expectations?\n\n\n\n\nCode\n# Write another comparison with matrix to ask which elements are equal to 4, assign to a variable called select_4 and print\n\n\n\n\nCode\n# Now we can use the selection to access only those elements!\n# The rows and columns do not need to be set.\n# Simply use the selection as the only index! Amazing!\n\nresult = matrix[selection]\nprint(result)\n\n# TODO: use select_4 as the only index, assign to variable and print\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Finally, I want to show you how to combine comparions\n# Think of this question: what elements in the matrix are greater than one AND less then three?\n# The AND is done with `&`\n\ngreaterthanone = matrix &gt; 1\nprint(\"greather than one: \\n\", greaterthanone)\nlessthanthree = matrix &lt; 3\nprint(\"less than three: \\n\", lessthanthree)\nboth = greaterthanone & lessthanthree\nprint(\"both: \\n\", both)\nresult = matrix[both]\nprint(\"result: \\n\", result)\n\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Here is the same thing, but all in one line of code...\n\nprint(matrix[(matrix &gt; 1) & (matrix &lt; 3)])\n\n\n\n\nCode\n# TODO: think of one or more questions you have and then post it in discord.\n# TODO: As you see your colleagues questions, reply to their message if you have the answer!"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#dataframe-control-with-.loc",
+    "href": "code/data_filtering_activity.html#dataframe-control-with-.loc",
+    "title": "Class Activity",
+    "section": "Dataframe Control with .loc",
+    "text": "Dataframe Control with .loc\n\n\nCode\n# Controlling a Dataframe is similar to controlling a matrix.\n# Slicing is possible and logical comparison are possible!\n# One of the main differences is that indexing is done with .loc\n\n# Below is a the hourly temperature normals dataset for Meadville in a pandas dataframe called `dfm`\n# This same dataset was used in the data_distortion lab\n# The columns are named\n# The column containing the normals is called `HLY-TEMP-NORMAL`\n# Each hour is a year is given in the column called `INDEX`\n# A readable label for each hour in a year is given in the column called `DATE`\n\n# lets apply your new skills of logical indexing to this dataset\n\n\n\n\nCode\n# TODO: run this cell\n\n# load pre-existing tools available for data exploration\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# create a pandas dataframe\ndfm = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter/refs/heads/main/data/data-distortion-noaa-2006-2020-USW00004843.csv',\n    sep=',',\n    names = ['INDEX', 'STATION', 'NAME', 'LATITUDE', 'LONGITUDE', 'ELEVATION',\n       'DATE', 'month', 'day', 'hour', 'HLY-TEMP-NORMAL'],\n    skiprows=1\n)\n\n# Display the first few rows of the DataFrame\nprint(dfm.head())\n\n\n\n\nCode\n# TODO: how many rows are in the dataframe?\n# TODO: how many columns are in the dataframe?\n\n\n\n\nCode\n# This cell creates logical filters, then applies them with .loc\n\n# Only rows from the midnight hour in the month of March are selected\nselected_hours = dfm['hour'] == 0\nselected_months = dfm['month'] == 3\nselected_rows = selected_hours & selected_months\n\n\n# new dataframes are made that contain ONLY THE SELECTED ROWS using .loc\n# here is the syntax for .loc: .loc[rows, columns]\ndfm_selected_normals = dfm.loc[selected_rows, 'HLY-TEMP-NORMAL']\ndfm_selected_indices = dfm.loc[selected_rows, 'INDEX']\ndfm_selected_dates = dfm.loc[selected_rows, 'DATE']\n\n\nprint(dfm_selected_normals)\nprint(dfm_selected_indices)\nprint(dfm_selected_dates)\n\n\n\n\nCode\n# Here is the same thing in one line\n\ndfm.loc[(dfm['hour'] == 0) & (dfm['month'] == 3), 'INDEX']\n\n\n\n\nCode\n# Assuming df is already created in the previous code cell\n\n# TODO: Run this code cell\n# TODO: What does the figure show?\n# TODO: Fill in appropriate title, xlabel and ylabel using you understanding of logical indexing\n\n# Control how many xtick labels are on the x axis\nxtick_hopsize = 3\n\n# Clear out memory (doesn't impact the visualization, but keeps the computer happy)\nplt.close('all')\n\n# make a blank canvas\nplt.figure(figsize=(12, 4))\n\n# set the overall title for all subfigures\nplt.suptitle('Figure 1')\n\n# subplot 1\nplt.subplot(1, 2, 1)\nplt.plot(dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 1\nplt.plot(dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 2\nplt.plot(dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 3\nplt.plot(dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 4\nplt.plot(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 5\nplt.plot(dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 6\nplt.plot(dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 7\nplt.plot(dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 8\nplt.legend(['7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM'])\n# the plt.xticks function labels the ticks so that dates appear instead of index\nplt.xticks(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'][::xtick_hopsize], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'DATE'][::xtick_hopsize], rotation=90)\nplt.xlabel('')\nplt.ylabel('')\nplt.title('')\nplt.grid(True)\n\nplt.show()"
+  },
+  {
+    "objectID": "code/data_filtering_activity.html#video",
+    "href": "code/data_filtering_activity.html#video",
+    "title": "Class Activity",
+    "section": "Video",
+    "text": "Video\n\n\nCode\n# TODO: watch the video (also linked on the course website) - https://youtu.be/v5pJfu-yn-0\n\n# TODO: What two terms are used instead of logical indexing?"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html",
+    "href": "code/data_interactivity_activity.html",
+    "title": "Interactive Data Display Activity",
     "section": "",
-    "text": "Open In Colab\n\n\n\nStatistics\n\n\nCode\n# import pd, np, and matplotlib libraries\n\n\n\n\nCode\n# read in temperature normals dataset\n# find raw url from course site repo (https://github.com/allegheny-college-cmpsc-105-spring-2025/site)\n\ndf = pd.read_csv(\n    '',\n    sep=',',\n    skiprows=0\n)\n\n\n\n\nCode\n# TODO: display column names\n\n# TODO: Check the number of rows and columns, i.e. shape\n\n# TODO: Get Rid of uneccessary information\n# df.drop(columns=['Bad_Col1','Bad_Col2', 'etc'])\n\n# TODO: rename individual columns for convenience\n# df = df.rename(columns={'A': 'X', 'B': 'Y', 'C': 'Z'})\n\n# TODO: Check the number of rows and columns, i.e. shape again\n\n\n\n\nCode\n# mean\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.mean.html\n# df.mean(axis=1)\n\n\n\n\nCode\n# standard deviation\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.std.html\n# df.std()\n\n\n\n\nCode\n# make a figure"
+    "text": "Open In Colab"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#basic-function",
+    "href": "code/data_interactivity_activity.html#basic-function",
+    "title": "Interactive Data Display Activity",
+    "section": "Basic Function",
+    "text": "Basic Function\n\n\nCode\nplt.figure(figsize=(8, 4))\nplt.plot([0.1,0.2,0.3,0.4,0.5], [-2,-1,0,1,2], '*-')\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.title('Y vs X')\nplt.xlim(0,2)\nplt.ylim(-5,5)\nplt.show()\n\n# TODO: What happens when you run this code cell?\n# TODO: What is the title?\n\n\n\n\nCode\n# Here is a function with the same code as above\n\n\ndef plot_line():\n    plt.figure(figsize=(8, 4))\n    plt.plot([0.1,0.2,0.3,0.4,0.5], [-2,-1,0,1,2], '*-')\n    plt.xlabel('X')\n    plt.ylabel('Y')\n    plt.title('Y vs X')\n    plt.xlim(0,2)\n    plt.ylim(-5,5)\n    plt.show()\n\n\n# TODO: What happens when you run this code cell?\n\n\n\n\nCode\nplot_line()\n\n# TODO: What happens when you run this code cell?\n# TODO: How did the computer know what to do?"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#more-interesting-function",
+    "href": "code/data_interactivity_activity.html#more-interesting-function",
+    "title": "Interactive Data Display Activity",
+    "section": "More interesting function",
+    "text": "More interesting function\n\n\nCode\n# Create a sine wave with frequency 2 Hz and amplitude 3. Use variable name y\n# Then plot it\n\nfreq = 2\namplitude = 3\n\npi = 3.14159\n\nt = np.arange(0, 2, 2/1000)\ny = amplitude * np.sin(2 * pi * freq * t)\n\n\nplt.figure(figsize=(8, 4))\nplt.plot(t, y, label=f'Sin(2 pi {freq} t) * {amplitude}')\nplt.xlabel('Time (seconds)')\nplt.ylabel('Amplitude')\nplt.legend()\nplt.xlim(0,2)\nplt.ylim(-5,5)\nplt.grid(True)\nplt.show()\n\n# TODO: What happens when you run this code cell?\n\n\n\n\nCode\ndef plot_sine(freq, amplitude):\n\n  pi = 3.14159\n\n  t = np.arange(0, 2, 2/1000)\n  y = amplitude * np.sin(2 * pi * freq * t)\n\n\n  plt.figure(figsize=(8, 4))\n  plt.plot(t, y, label=f'Sin(2 pi {freq} t) * {amplitude}')\n  plt.xlabel('Time (seconds)')\n  plt.ylabel('Amplitude')\n  plt.legend()\n  plt.xlim(0,2)\n  plt.ylim(-5,5)\n  plt.grid(True)\n  plt.show()\n\n# TODO: What happens when you run this code cell?\n# Decribe what you see above that is new\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=2, amplitude=3)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=2, amplitude=1)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=6, amplitude=1)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#interactive-function-call",
+    "href": "code/data_interactivity_activity.html#interactive-function-call",
+    "title": "Interactive Data Display Activity",
+    "section": "Interactive function call!",
+    "text": "Interactive function call!\n\n\nCode\nplt.close('all')\n\n# The interact function takes the plotting function, and parameters of the plotting function!\n# The parameters of the plotting function turn into sliders\n# the slider must be specified with some information: (start, end, hop)\n\ninteract(plot_sine, freq=(0.1, 10.0, 0.1), amplitude=(0.1, 5.0, 0.1))"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#now-with-data-in-a-df",
+    "href": "code/data_interactivity_activity.html#now-with-data-in-a-df",
+    "title": "Interactive Data Display Activity",
+    "section": "Now with Data in a DF",
+    "text": "Now with Data in a DF\n\n\nCode\n\n\ndf = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter/refs/heads/main/data/data-distortion-noaa-2006-2020-USW00004843.csv',\n    sep=',',\n    names = ['INDEX', 'STATION', 'NAME', 'LATITUDE', 'LONGITUDE', 'ELEVATION',\n       'DATE', 'month', 'day', 'hour', 'HLY-TEMP-NORMAL'],\n    skiprows=1\n)\n\nprint(df.head()) # Display the first few rows of the DataFrame\n\n\n\n\nCode\n# a plotting function\n# it has a parameter called month\n\ndef plot_df(month):\n\n    plt.figure(figsize=(8, 4))\n    plt.plot(df.loc[df['month']==month,'INDEX'], df.loc[df['month']==month,'HLY-TEMP-NORMAL'])\n    plt.xticks(df.loc[df['month']==month,'INDEX'][::72], df.loc[df['month']==month,'DATE'][::72], rotation=90)\n    plt.xlabel('Time (hours)')\n    plt.ylabel('Normals (F)')\n    plt.title(f'Month {month}')\n    plt.ylim(-20,100)\n    plt.show()\n\n# TODO: What happens when you run this cell?\n\n\n\n\nCode\nplt.close('all')\n\n\n# The interact function takes the plotting function, and parameters of the plotting function!\n# The parameters of the plotting function turn into sliders\n# the slider must be specified with some information: (start, end, hop)\n\n\ninteract(plot_df, month=(1,12,1))"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#you-try",
+    "href": "code/data_interactivity_activity.html#you-try",
+    "title": "Interactive Data Display Activity",
+    "section": "You Try",
+    "text": "You Try\n\n\nCode\n# TODOs\n# make a plotting function that has a parameter of month and hour\n# inside the function, set up filtering that considers both the month & hour\n# Make sure the filters select just rows from df that are equal to (==) the selected month and hour\n\n\n\n\nCode\n# TODOs\n# Call your function, but turn the parameters into sliders!\n# the month will only go from 1 to 12\n# the hour should only go from 0 to 24"
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#discord-post",
+    "href": "code/data_interactivity_activity.html#discord-post",
+    "title": "Interactive Data Display Activity",
+    "section": "Discord Post",
+    "text": "Discord Post\nTODO: Post about data that you would like to filter interactively or data that you have seen filtered interactively. These will be shared in class on Thursday."
+  },
+  {
+    "objectID": "code/data_interactivity_activity.html#submit-this-completed-activity-to-your-activities-repository",
+    "href": "code/data_interactivity_activity.html#submit-this-completed-activity-to-your-activities-repository",
+    "title": "Interactive Data Display Activity",
+    "section": "Submit this completed activity to your activities repository",
+    "text": "Submit this completed activity to your activities repository"
   },
   {
     "objectID": "syll/syllabus.html",
@@ -574,109 +735,25 @@
     "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
   },
   {
-    "objectID": "code/data_interactivity_activity.html",
-    "href": "code/data_interactivity_activity.html",
-    "title": "Interactive Data Display Activity",
+    "objectID": "code/stats_intro_activity.html",
+    "href": "code/stats_intro_activity.html",
+    "title": "Statistics",
     "section": "",
-    "text": "Open In Colab"
+    "text": "Open In Colab\n\n\n\nStatistics\n\n\nCode\n# import pd, np, and matplotlib libraries\n\n\n\n\nCode\n# read in temperature normals dataset\n# find raw url from course site repo (https://github.com/allegheny-college-cmpsc-105-spring-2025/site)\n\ndf = pd.read_csv(\n    '',\n    sep=',',\n    skiprows=0\n)\n\n\n\n\nCode\n# TODO: display column names\n\n# TODO: Check the number of rows and columns, i.e. shape\n\n# TODO: Get Rid of uneccessary information\n# df.drop(columns=['Bad_Col1','Bad_Col2', 'etc'])\n\n# TODO: rename individual columns for convenience\n# df = df.rename(columns={'A': 'X', 'B': 'Y', 'C': 'Z'})\n\n# TODO: Check the number of rows and columns, i.e. shape again\n\n\n\n\nCode\n# mean\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.mean.html\n# df.mean(axis=1)\n\n\n\n\nCode\n# standard deviation\n# https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.std.html\n# df.std()\n\n\n\n\nCode\n# make a figure\n# bar plot of mean\n# errorbars of the standard deviation\n# https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.errorbar.html\n\n\n\n\nCode\n# Calculate the z-scored temperature\n\n\n\n\nCode\n# Make a histogram of the non-z-scored data on one subplot\n# Make a historgram of the z-scored data in another subplot\n\n\n\n\nCode\n# TODO: Answer the following questions\n# - what is the mean and STD of the non-z-scored data\n# - what is the mean and STD of the z-scored data"
   },
   {
-    "objectID": "code/data_interactivity_activity.html#basic-function",
-    "href": "code/data_interactivity_activity.html#basic-function",
-    "title": "Interactive Data Display Activity",
-    "section": "Basic Function",
-    "text": "Basic Function\n\n\nCode\nplt.figure(figsize=(8, 4))\nplt.plot([0.1,0.2,0.3,0.4,0.5], [-2,-1,0,1,2], '*-')\nplt.xlabel('X')\nplt.ylabel('Y')\nplt.title('Y vs X')\nplt.xlim(0,2)\nplt.ylim(-5,5)\nplt.show()\n\n# TODO: What happens when you run this code cell?\n# TODO: What is the title?\n\n\n\n\nCode\n# Here is a function with the same code as above\n\n\ndef plot_line():\n    plt.figure(figsize=(8, 4))\n    plt.plot([0.1,0.2,0.3,0.4,0.5], [-2,-1,0,1,2], '*-')\n    plt.xlabel('X')\n    plt.ylabel('Y')\n    plt.title('Y vs X')\n    plt.xlim(0,2)\n    plt.ylim(-5,5)\n    plt.show()\n\n\n# TODO: What happens when you run this code cell?\n\n\n\n\nCode\nplot_line()\n\n# TODO: What happens when you run this code cell?\n# TODO: How did the computer know what to do?"
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#more-interesting-function",
-    "href": "code/data_interactivity_activity.html#more-interesting-function",
-    "title": "Interactive Data Display Activity",
-    "section": "More interesting function",
-    "text": "More interesting function\n\n\nCode\n# Create a sine wave with frequency 2 Hz and amplitude 3. Use variable name y\n# Then plot it\n\nfreq = 2\namplitude = 3\n\npi = 3.14159\n\nt = np.arange(0, 2, 2/1000)\ny = amplitude * np.sin(2 * pi * freq * t)\n\n\nplt.figure(figsize=(8, 4))\nplt.plot(t, y, label=f'Sin(2 pi {freq} t) * {amplitude}')\nplt.xlabel('Time (seconds)')\nplt.ylabel('Amplitude')\nplt.legend()\nplt.xlim(0,2)\nplt.ylim(-5,5)\nplt.grid(True)\nplt.show()\n\n# TODO: What happens when you run this code cell?\n\n\n\n\nCode\ndef plot_sine(freq, amplitude):\n\n  pi = 3.14159\n\n  t = np.arange(0, 2, 2/1000)\n  y = amplitude * np.sin(2 * pi * freq * t)\n\n\n  plt.figure(figsize=(8, 4))\n  plt.plot(t, y, label=f'Sin(2 pi {freq} t) * {amplitude}')\n  plt.xlabel('Time (seconds)')\n  plt.ylabel('Amplitude')\n  plt.legend()\n  plt.xlim(0,2)\n  plt.ylim(-5,5)\n  plt.grid(True)\n  plt.show()\n\n# TODO: What happens when you run this code cell?\n# Decribe what you see above that is new\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=2, amplitude=3)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=2, amplitude=1)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?\n\n\n\n\nCode\nplt.close('all')\n\nplot_sine(freq=6, amplitude=1)\n\n# TODO: What happens when you run this code cell?\n# TODO: How is it similar or different from above?"
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#interactive-function-call",
-    "href": "code/data_interactivity_activity.html#interactive-function-call",
-    "title": "Interactive Data Display Activity",
-    "section": "Interactive function call!",
-    "text": "Interactive function call!\n\n\nCode\nplt.close('all')\n\n# The interact function takes the plotting function, and parameters of the plotting function!\n# The parameters of the plotting function turn into sliders\n# the slider must be specified with some information: (start, end, hop)\n\ninteract(plot_sine, freq=(0.1, 10.0, 0.1), amplitude=(0.1, 5.0, 0.1))"
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#now-with-data-in-a-df",
-    "href": "code/data_interactivity_activity.html#now-with-data-in-a-df",
-    "title": "Interactive Data Display Activity",
-    "section": "Now with Data in a DF",
-    "text": "Now with Data in a DF\n\n\nCode\n\n\ndf = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter/refs/heads/main/data/data-distortion-noaa-2006-2020-USW00004843.csv',\n    sep=',',\n    names = ['INDEX', 'STATION', 'NAME', 'LATITUDE', 'LONGITUDE', 'ELEVATION',\n       'DATE', 'month', 'day', 'hour', 'HLY-TEMP-NORMAL'],\n    skiprows=1\n)\n\nprint(df.head()) # Display the first few rows of the DataFrame\n\n\n\n\nCode\n# a plotting function\n# it has a parameter called month\n\ndef plot_df(month):\n\n    plt.figure(figsize=(8, 4))\n    plt.plot(df.loc[df['month']==month,'INDEX'], df.loc[df['month']==month,'HLY-TEMP-NORMAL'])\n    plt.xticks(df.loc[df['month']==month,'INDEX'][::72], df.loc[df['month']==month,'DATE'][::72], rotation=90)\n    plt.xlabel('Time (hours)')\n    plt.ylabel('Normals (F)')\n    plt.title(f'Month {month}')\n    plt.ylim(-20,100)\n    plt.show()\n\n# TODO: What happens when you run this cell?\n\n\n\n\nCode\nplt.close('all')\n\n\n# The interact function takes the plotting function, and parameters of the plotting function!\n# The parameters of the plotting function turn into sliders\n# the slider must be specified with some information: (start, end, hop)\n\n\ninteract(plot_df, month=(1,12,1))"
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#you-try",
-    "href": "code/data_interactivity_activity.html#you-try",
-    "title": "Interactive Data Display Activity",
-    "section": "You Try",
-    "text": "You Try\n\n\nCode\n# TODOs\n# make a plotting function that has a parameter of month and hour\n# inside the function, set up filtering that considers both the month & hour\n# Make sure the filters select just rows from df that are equal to (==) the selected month and hour\n\n\n\n\nCode\n# TODOs\n# Call your function, but turn the parameters into sliders!\n# the month will only go from 1 to 12\n# the hour should only go from 0 to 24"
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#discord-post",
-    "href": "code/data_interactivity_activity.html#discord-post",
-    "title": "Interactive Data Display Activity",
-    "section": "Discord Post",
-    "text": "Discord Post\nTODO: Post about data that you would like to filter interactively or data that you have seen filtered interactively. These will be shared in class on Thursday."
-  },
-  {
-    "objectID": "code/data_interactivity_activity.html#submit-this-completed-activity-to-your-activities-repository",
-    "href": "code/data_interactivity_activity.html#submit-this-completed-activity-to-your-activities-repository",
-    "title": "Interactive Data Display Activity",
-    "section": "Submit this completed activity to your activities repository",
-    "text": "Submit this completed activity to your activities repository"
-  },
-  {
-    "objectID": "code/data_filtering_activity.html",
-    "href": "code/data_filtering_activity.html",
+    "objectID": "code/data_display_activity.html",
+    "href": "code/data_display_activity.html",
     "title": "Class Activity",
     "section": "",
     "text": "Open In Colab"
   },
   {
-    "objectID": "code/data_filtering_activity.html#goals",
-    "href": "code/data_filtering_activity.html#goals",
+    "objectID": "code/data_display_activity.html#goals",
+    "href": "code/data_display_activity.html#goals",
     "title": "Class Activity",
     "section": "Goals",
-    "text": "Goals\n\nWork with colleagues at your table\nReview variables and assignment\nWrite code to control a matrix\nWrite code for logical contorl\nWrite code for dataframe control"
-  },
-  {
-    "objectID": "code/data_filtering_activity.html#variables-and-assignment-ref",
-    "href": "code/data_filtering_activity.html#variables-and-assignment-ref",
-    "title": "Class Activity",
-    "section": "Variables and Assignment (REF)",
-    "text": "Variables and Assignment (REF)\n\n\nCode\n# Variables are names - a reusable label for a data value.\n\nname = 'Marc'\nprint(name)\npi = 3.14\nprint(pi)\ncustomer_id = \"1234\"\n# TODO: add a print statement to see customer_id\naccount_balance = 1000\n# TODO: add a print statement to see account_balance\n\n\n\n\nCode\n# if the same name is used to store new data, the old data is lost\n\npi = 3.14\nprint(pi)\npi = 'Marc'\n# TODO: add a print statement to see pi\n\n\n\n\nCode\n# assignment is a fancy term for associating or storing data\n\n# here 3.14 is assigned to the variable name pi using the `=`\npi = 3.14\n\n# TODO: assign the value 5 to pi\n# TODO: add a print statement to see pi\n# TODO: assign the value \"hello\" to message\n# TODO: add a print statement to see message\n# TODO: assign the value [1,2,3,4,5] to data\n# TODO: add a print statement to see data\n\n\n\nReserved Words\nThe following words have special meaning in Python. We call them keywords or reserved words and you may not use these names for your program variables.\n\nand, as, assert, async, await, break, class, continue, def, del, elif, else, except, False, finally, for, from, global, if, import, in, is, lambda, nonlocal, None, not, or, pass, raise, return, True, try, while, with, yield"
-  },
-  {
-    "objectID": "code/data_filtering_activity.html#matrix",
-    "href": "code/data_filtering_activity.html#matrix",
-    "title": "Class Activity",
-    "section": "Matrix",
-    "text": "Matrix\n\n\nCode\n# TODO: run this code to make a simple matrix in a pandas dataframe\n\nimport pandas as pd\n\nmatrix = pd.read_csv(\n    '/content/data-filtering-matrix.csv',\n    sep=',',\n    names = ['A', 'B', 'C'],\n    skiprows=1)\n\n\n\n\nCode\n# TODO: add a print statement to see the dataframe\nprint(matrix)\n\n\n\n\nCode\n# The matrix contains 15 values in five rows and three columns\n# TODO: verify this using the data explorer\n\n\n# Each item has a unique location in the matrix given by its row and column\n# Using python convention, the rows and columns are idenfied with integers starting at 0!\n\n# On the 0th row, column 0 has the value of 0.0\n# On the 4nd row, column 0 has the value of 4.0\n# TODO: What is the largest row index in the matrix?\n# TODO: What is the largest column index in the matrix?\n\n# Here's how you access the element on row 4, column 0\nelement = matrix.iloc[4,0]\nprint(element)\n\n# TODO: access the element on row 3 column 2 and assign it to the variable `another_element`\n# TODO: add a print statement to see `another_element`\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# Indexing to get one element is very simple, but what if you want multiple elements in a row, or in a column?\n\n# Slicing is the way to do it!\n# the sytax for slicing is like this: [start_index:end_index:hop_size]\n# Using python convention, note that the end_index will not be included in the slice\n\n# Here is a slice example on the columns\nslice_example = matrix.iloc[0,0:2:1]\nprint(slice_example)\n\n# TODO: use words to write out what the slice contains\n\n# TODO: Write a slice that gets the first through fourth rows (not including 4) from column two and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Write a slice that gets the 0th through fourth rows (not including 4) from column one, hopping by 2, and assign it to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: Come up with your own example\n\n# TODO: make sure you get what you expect!\n\n\n\n\nCode\n# The syntax of a slice is [start:end:hop_size], but if start or end is left out, then the endpoints are assumed!\n# warning - don't forget to include the `:`\n\n# Here is every columns in row 0, including the start and INCLUDING the end!\nfull_slice = matrix.iloc[0,::1]\nprint(full_slice)\n\n# TODO: Write a slice that gets every column in row 4, including the start and INCLUDING the end! Assign to a variable\n# TODO: add a print statement to see your slice\n\n# TODO: make sure you get what you expect! Is there anything unexpected?\n\n\n\n\nCode\n# Slices to endpoints have already been used in our labs\n\n# TODO: find any spot where the slices have been used in our labs and put a link for yourself below\n# TODO: how was the slice used in the lab?"
-  },
-  {
-    "objectID": "code/data_filtering_activity.html#logical-control",
-    "href": "code/data_filtering_activity.html#logical-control",
-    "title": "Class Activity",
-    "section": "Logical Control",
-    "text": "Logical Control\n\n\nCode\n# First lets review some comparison operators\n\n\nThe following table summarizes the most commonly used comparison operators in Python, along with their definition when applied to numbers.\n\n\n\noperator\noperation on numbers\n\n\n\n\n==\nequal to\n\n\n!=\nnot equal to\n\n\n&gt;\ngreater than\n\n\n&gt;=\ngreater than or equal to\n\n\n&lt;\nless than\n\n\n&lt;=\nless than or equal to\n\n\n\nAs their name suggests, comparison operators allow us to compare two values.\n\n\nCode\n# Here is a comparison of 4 vs 5. It asks the question: is four larger than five?\n# TODO: what answer should come out?\n# TODO: run this, what does come out?\n4 &gt; 5\n\n\n\n\nCode\n# As you can see, comparison operators allow us to compare values and result in a boolean type indicating whether the comparison is `True` or `False`.\n# TODO: make a comparison the checks if five is greater than four, assign to a variable and print it\n# TODO: make a comparison the checks if five is not equal to four, assign to a variable and print it\n# TODO: make a comparison the checks if five is equal to four, assign to a variable and print it\n\n\n\n\nCode\n# TODO: what is the difference between `=` and `==`?\n\n\n\n\nCode\n# It turns out that matrices can be compared too!\n# What elements in the matrix are greater than 1?\n\n# TODO: what do you think will happen\nselection = matrix &gt; 1\n# TODO: add a print statement to see selection\n# Does it match your expectations?\n\n\n\n\nCode\n# Write another comparison with matrix to ask which elements are equal to 4, assign to a variable called select_4 and print\n\n\n\n\nCode\n# Now we can use the selection to access only those elements!\n# The rows and columns do not need to be set.\n# Simply use the selection as the only index! Amazing!\n\nresult = matrix[selection]\nprint(result)\n\n# TODO: use select_4 as the only index, assign to variable and print\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Finally, I want to show you how to combine comparions\n# Think of this question: what elements in the matrix are greater than one AND less then three?\n# The AND is done with `&`\n\ngreaterthanone = matrix &gt; 1\nprint(\"greather than one: \\n\", greaterthanone)\nlessthanthree = matrix &lt; 3\nprint(\"less than three: \\n\", lessthanthree)\nboth = greaterthanone & lessthanthree\nprint(\"both: \\n\", both)\nresult = matrix[both]\nprint(\"result: \\n\", result)\n\n# TODO: Does it match your expectations?\n\n\n\n\nCode\n# Here is the same thing, but all in one line of code...\n\nprint(matrix[(matrix &gt; 1) & (matrix &lt; 3)])\n\n\n\n\nCode\n# TODO: think of one or more questions you have and then post it in discord.\n# TODO: As you see your colleagues questions, reply to their message if you have the answer!"
-  },
-  {
-    "objectID": "code/data_filtering_activity.html#dataframe-control-with-.loc",
-    "href": "code/data_filtering_activity.html#dataframe-control-with-.loc",
-    "title": "Class Activity",
-    "section": "Dataframe Control with .loc",
-    "text": "Dataframe Control with .loc\n\n\nCode\n# Controlling a Dataframe is similar to controlling a matrix.\n# Slicing is possible and logical comparison are possible!\n# One of the main differences is that indexing is done with .loc\n\n# Below is a the hourly temperature normals dataset for Meadville in a pandas dataframe called `dfm`\n# This same dataset was used in the data_distortion lab\n# The columns are named\n# The column containing the normals is called `HLY-TEMP-NORMAL`\n# Each hour is a year is given in the column called `INDEX`\n# A readable label for each hour in a year is given in the column called `DATE`\n\n# lets apply your new skills of logical indexing to this dataset\n\n\n\n\nCode\n# TODO: run this cell\n\n# load pre-existing tools available for data exploration\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# create a pandas dataframe\ndfm = pd.read_csv(\n    'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter/refs/heads/main/data/data-distortion-noaa-2006-2020-USW00004843.csv',\n    sep=',',\n    names = ['INDEX', 'STATION', 'NAME', 'LATITUDE', 'LONGITUDE', 'ELEVATION',\n       'DATE', 'month', 'day', 'hour', 'HLY-TEMP-NORMAL'],\n    skiprows=1\n)\n\n# Display the first few rows of the DataFrame\nprint(dfm.head())\n\n\n\n\nCode\n# TODO: how many rows are in the dataframe?\n# TODO: how many columns are in the dataframe?\n\n\n\n\nCode\n# This cell creates logical filters, then applies them with .loc\n\n# Only rows from the midnight hour in the month of March are selected\nselected_hours = dfm['hour'] == 0\nselected_months = dfm['month'] == 3\nselected_rows = selected_hours & selected_months\n\n\n# new dataframes are made that contain ONLY THE SELECTED ROWS using .loc\n# here is the syntax for .loc: .loc[rows, columns]\ndfm_selected_normals = dfm.loc[selected_rows, 'HLY-TEMP-NORMAL']\ndfm_selected_indices = dfm.loc[selected_rows, 'INDEX']\ndfm_selected_dates = dfm.loc[selected_rows, 'DATE']\n\n\nprint(dfm_selected_normals)\nprint(dfm_selected_indices)\nprint(dfm_selected_dates)\n\n\n\n\nCode\n# Here is the same thing in one line\n\ndfm.loc[(dfm['hour'] == 0) & (dfm['month'] == 3), 'INDEX']\n\n\n\n\nCode\n# Assuming df is already created in the previous code cell\n\n# TODO: Run this code cell\n# TODO: What does the figure show?\n# TODO: Fill in appropriate title, xlabel and ylabel using you understanding of logical indexing\n\n# Control how many xtick labels are on the x axis\nxtick_hopsize = 3\n\n# Clear out memory (doesn't impact the visualization, but keeps the computer happy)\nplt.close('all')\n\n# make a blank canvas\nplt.figure(figsize=(12, 4))\n\n# set the overall title for all subfigures\nplt.suptitle('Figure 1')\n\n# subplot 1\nplt.subplot(1, 2, 1)\nplt.plot(dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 7) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 1\nplt.plot(dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 8) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 2\nplt.plot(dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 9) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 3\nplt.plot(dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 10) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 4\nplt.plot(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 5\nplt.plot(dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 12) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 6\nplt.plot(dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 13) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 7\nplt.plot(dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'INDEX'], dfm.loc[(dfm['hour'] == 14) & (dfm['month'] == 2), 'HLY-TEMP-NORMAL'], '*-') # layer 8\nplt.legend(['7 AM', '8 AM', '9 AM', '10 AM', '11 AM', '12 PM', '1 PM', '2 PM'])\n# the plt.xticks function labels the ticks so that dates appear instead of index\nplt.xticks(dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'INDEX'][::xtick_hopsize], dfm.loc[(dfm['hour'] == 11) & (dfm['month'] == 2), 'DATE'][::xtick_hopsize], rotation=90)\nplt.xlabel('')\nplt.ylabel('')\nplt.title('')\nplt.grid(True)\n\nplt.show()"
-  },
-  {
-    "objectID": "code/data_filtering_activity.html#video",
-    "href": "code/data_filtering_activity.html#video",
-    "title": "Class Activity",
-    "section": "Video",
-    "text": "Video\n\n\nCode\n# TODO: watch the video (also linked on the course website) - https://youtu.be/v5pJfu-yn-0\n\n# TODO: What two terms are used instead of logical indexing?"
+    "text": "Goals\n\nLook at code that can generate common data displays\nModify code that can generate common data displays\nDescribe how common data displays are able to convey information that was not apparent in raw data\n\n\nTODO: Run the first code cell\nTODO: In the variable explorer ({x}), what Type does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), what Shape does the variable df have? Write your response here:\nTODO: In the variable explorer ({x}), hover over the variable df to see the values. What relationship do the values have to the Shape of df? Explain what the shape means. Write your response here:\nTODO: Looking at the rest of the code cells that can generate figures, what patterns do you see repeated in the code? Write your response here:\nTODO: Run the code cells, stopping once you reach the next section. Examine the figures.\nTODO: Explain what relationship exists between the reddish code in quotes and the figures that are generated. Write your response here:\nTODO: Find a piece of code where a marker was explicitly specified. Change the marker to an upward triangle, a square, and a star based on the matplotlib documentation and rerun the code.\nTODO: Overall, do these figures reveal anything about this data that was not so apparent when looking at df? Write your response here:\nNow, move on to the next section\n\nThe data table below shows how many millions of prescriptions are obtained from various sources in the United States annually.\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\nTraditional\n914\n\n\nIndependent\n666\n\n\nMassMerch\n238\n\n\nSuperMarket\n221\n\n\nMailOrder\n86\n\n\n\n\n\nCode\n# import pandas and make dataframe\n\nimport pandas as pd\n\ndata = {'Drug Source': ['Traditional', 'Independent', 'MassMerch', 'SuperMarket', 'MailOrder'],\n        'Num Prescriptions': [914, 666, 238, 221, 86]}\ndf = pd.DataFrame(data)\n\ndf\n\n\n\n\n\n\n\n\n\nDrug Source\nNum Prescriptions\n\n\n\n\n0\nTraditional\n914\n\n\n1\nIndependent\n666\n\n\n2\nMassMerch\n238\n\n\n3\nSuperMarket\n221\n\n\n4\nMailOrder\n86\n\n\n\n\n\n\n\n\n\nCode\nimport pandas as pd\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.scatter(df['Num Prescriptions'], df['Drug Source'])\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Drug Source')\nplt.title('Drug Source vs. Number of Prescriptions')\nplt.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.pie(df['Num Prescriptions'], labels=df['Drug Source'])\nplt.title('Drug Source')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\n\nplt.figure()\nplt.hist(df['Num Prescriptions'], bins=20)\nplt.xlabel('Number of Prescriptions')\nplt.ylabel('Frequency')\nplt.title('Histogram of Number of Prescriptions')\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()  # Adjust figure size for better visualization\nplt.plot(df['Drug Source'], df['Num Prescriptions'], marker='o', linestyle='-')\nplt.xlabel('Drug Source')\nplt.ylabel('Number of Prescriptions (Millions)')\nplt.title('Number of Prescriptions by Drug Source')\nplt.grid(True, linestyle='--', alpha=0.7)  # Add a grid for better readability\nplt.xticks(rotation=45) # Rotate x-axis labels for better visibility\nplt.show()\n\n\n\n\n\n\n\n\n\n\n\nCode\nimport matplotlib.pyplot as plt\n\n# Assuming df is already created in the previous code\nplt.figure()\nplt.boxplot(df['Num Prescriptions'])  # Create the boxplot\nplt.xlabel('Number of Prescriptions')\nplt.title('Box Plot of Number of Prescriptions')\nplt.show()"
   },
   {
     "objectID": "code/data_wrangling_activity.html",
@@ -1064,6 +1141,13 @@
     "text": "Z-scores\nA linear transformation that converts data points into measures of how many standard deviations away the data is from the mean.\n\ndata point is compared with mean\nthe difference is normalized with respect to the standard deviation (division)\nz-score of 0 means that the data point is identical to the mean\nnegative z-score means that the data point is smaller than the mean\npositive z-score means that the data point is larger than the mean\n\n\\[\nz_i = {x_i - \\bar x \\over \\sigma}\n\\]"
   },
   {
+    "objectID": "slides/10-data-descriptors.html#z-scored-normal-data",
+    "href": "slides/10-data-descriptors.html#z-scored-normal-data",
+    "title": "Week 10: Data Descriptors",
+    "section": "Z-scored Normal Data",
+    "text": "Z-scored Normal Data\nWhen normal (gaussian) data is z-scored, the distribution looks like this:\n\n\n\n\nx axis is the z-score of normal data\ny axis is the proportion of data with that z-score\narea totals 1, or 100%\nthe standard deviation of z-scored data is always 1\nthe mean of z-scored data is always 0"
+  },
+  {
     "objectID": "slides/10-data-descriptors.html#pandas-examples",
     "href": "slides/10-data-descriptors.html#pandas-examples",
     "title": "Week 10: Data Descriptors",
@@ -1166,6 +1250,6 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data II, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data II, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Data Analytics Due Thursday March 13, 2:30pm \n\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nReading: Making Sense of Data I, Chapter 3, Preparing Data Tables \nClass Activity: Data Wrangling Notebook\nLab: Data Wrangling Due Thursday, March 27, 2:30pm\n\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics Intro\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 17-37\nSlides: Data Descriptors\nClass Activity: Stats Intro Notebook\nLab: No new lab\n\nWeek Eleven: March 25, 27: Hypothesis Testing\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 37-42\nSlides: Hypothesis Testing\nClass Activity: [Hypothesis Testing]   \n\nWeek Twelve: April 1, 3: Modeling and Comparing\n\nReading: Making Sense of Data I, Chapter 4, Understanding Relationships  \n\nWeek Thirteen: April 8: Clustering\n\nReading: Making Sense of Data I, Chapter 5, Groups in Data \n\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Storytelling Challenge\nWeek Fifteen: April 22, 24: Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data II, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data II, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Data Analytics Due Thursday March 13, 2:30pm \n\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nReading: Making Sense of Data I, Chapter 3, Preparing Data Tables \nClass Activity: Data Wrangling Notebook\nLab: Data Wrangling Due Thursday, March 27, 2:30pm\n\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics Intro\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 17-37\nSlides: Data Descriptors\nClass Activity: Stats Intro Notebook\nLab: No new lab\n\nWeek Eleven: March 25, 27: Inferential Statistics\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 37-42\nSlides: Inferential Statistics\nClass Activity: [Hypothesis Testing]   \n\nWeek Twelve: April 1, 3: Modeling and Comparing\n\nReading: Making Sense of Data I, Chapter 4, Understanding Relationships  \n\nWeek Thirteen: April 8: Clustering\n\nReading: Making Sense of Data I, Chapter 5, Groups in Data \n\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Storytelling Challenge\nWeek Fifteen: April 22, 24: Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   }
 ]
