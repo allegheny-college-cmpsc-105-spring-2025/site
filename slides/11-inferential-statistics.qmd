@@ -171,6 +171,15 @@ $$
 - if $\sigma$ of a single sample is small, the SEM will be small
 :::
 
+## Z scores for one Sample in a Sampling Distribution
+
+::: incremental
+- assume the sampling distribution has mean $\mu$ and standard deviation $SEM = {\sigma \over \sqrt{N}}$
+- assume the single sample mean $\bar x$
+- recall that z-scored observations from single sample relate each sample to the sample mean $z_i = {x_i - \bar x \over \sigma}$
+- $z_{sample} = {\mu - \bar x \over SEM}$
+:::
+
 ## Question 2 {.smaller}
 
 The population distribution of SAT scores is normal with a mean of $\mu = 500$. For a random sample of 25 students (N = 25) and a standard deviation of $\sigma = 100$, what is the probability
@@ -182,15 +191,6 @@ that the sample mean $\bar x$ will be greater than 540? Greater than 700?
 
 for $\bar x = 540$, $p = 0.0228$, so it is quite unlikely for a sample of 25 students to get an average SAT score higher than 540.
 
-## Z scores for one Sample in a Sampling Distribution
-
-::: incremental
-- assume the sampling distribution has mean $\mu$ and standard deviation $SEM = {\sigma \over \sqrt{N}}$
-- assume the single sample mean $\bar x$
-- recall that z-scored observations from single sample relate each sample to the sample mean $z_i = {x_i - \bar x \over \sigma}$
-- $z_{sample} = {\mu - \bar x \over SEM}$
-:::
-
 ## Making Confident Statements {.smaller}
 
 - We can say with a set level of confidence that a single sample mean is within a certain interval, using the following formula:
@@ -201,27 +201,36 @@ SEM = {\sigma \over \sqrt{N}}
 $$
 
 - $z_{\alpha/2}$ is a fixed number read off of a standard normal distribution when $\alpha$ is chosen.
-- $\alpha$ represents the chance that we are wrong. It is a proportion of 1, usually, 0.05. 
+- $\alpha$ represents the chance that we are wrong, and is area under the curve. It is a proportion of 1, usually, 0.05. 
 
 ## Confidence Intervals
 
 - CIs are chosen by researchers, 95% confidence level is common choice.
-- 95% CI refers to area under a Standard Normal Distribution and corresponds with $\alpha$ of .05
+- 95% refers to area under a Standard Normal Distribution and corresponds with $\alpha$ of .05
+- The *Interval* that is reported is the z-score that sections off the area
   
-$$
-CI = 100 \times (1 - \alpha)
-$$
-
 ## Critical Z-value
 
 ![](https://www.w3schools.com/statistics/img_standard_normal.svg)
 
 ::: incremental
-- if $\alpha$ is .05, $\alpha/2$ is 0.025 and $z_{\alpha/2}$ is 1.96
+- if $\alpha$ is .05, $\alpha/2$ is 0.025 and $z_{\alpha/2}$ is $\pm$ 1.96
 - if $\alpha$ is .01, $\alpha/2$ is 0.005, what is $z_{\alpha/2}$? 
 :::
 
 [Full Unit Normal Table](https://www.westga.edu/academics/research/vrc/assets/docs/UnitNormalTable.pdf)
+
+## Hypothesis Testing {.smaller}
+
+::: incremental
+- A null hypothesis $H_0$ can be constructed that says, a sample does **not** have a sample mean $\bar x$ that is different
+from the population mean $\mu$.
+
+- If the sample mean turns out to be unusually far from the population mean, the probability, or p value can be reported.
+Typically, probabilities or p values that are less than 5% are considered significant.
+
+- The null hypothesis would be rejected and the z-score, p value, mean and standard deviation would be reported.
+:::
 
 
 ## Activity

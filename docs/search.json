@@ -77,162 +77,169 @@
     "text": "Reformatting Strings\ndf[‘YOUR COLUMN’].str.split(‘YOUR DELIMITER’, expand=True)"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#goals",
-    "href": "slides/11-hypothesis-testing.html#goals",
+    "objectID": "slides/11-inferential-statistics.html#goals",
+    "href": "slides/11-inferential-statistics.html#goals",
     "title": "Week 11: Inferential Statistics",
     "section": "Goals",
     "text": "Goals\n\nStandard Normal Distribution\nSingle-sample vs multi-sample statistics\nActivity"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#standard-normal-distribution-1",
-    "href": "slides/11-hypothesis-testing.html#standard-normal-distribution-1",
+    "objectID": "slides/11-inferential-statistics.html#standard-normal-distribution-1",
+    "href": "slides/11-inferential-statistics.html#standard-normal-distribution-1",
     "title": "Week 11: Inferential Statistics",
     "section": "Standard Normal Distribution",
     "text": "Standard Normal Distribution\n\ny axis is proportion\nx axis is z-scores, i.e. how many standard deviations away something is from the mean\nrecall \\(z_i = {x_i - \\bar x \\over \\sigma}\\)\narea under the curve is unity, 1 aka 100%"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#proportions-vs-z-scores",
-    "href": "slides/11-hypothesis-testing.html#proportions-vs-z-scores",
+    "objectID": "slides/11-inferential-statistics.html#proportions-vs-z-scores",
+    "href": "slides/11-inferential-statistics.html#proportions-vs-z-scores",
     "title": "Week 11: Inferential Statistics",
     "section": "Proportions vs Z scores",
     "text": "Proportions vs Z scores\n\n\n\nz-scores are on the x axis\nproportions above and below a certain z-score are the area under the curve\nwhat z-score boundary would separate 2.2% of the area in the right tail?\n2"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#proportions-vs-z-scores-1",
-    "href": "slides/11-hypothesis-testing.html#proportions-vs-z-scores-1",
+    "objectID": "slides/11-inferential-statistics.html#proportions-vs-z-scores-1",
+    "href": "slides/11-inferential-statistics.html#proportions-vs-z-scores-1",
     "title": "Week 11: Inferential Statistics",
     "section": "Proportions vs Z scores",
     "text": "Proportions vs Z scores\n\n\n\nz-scores are on the x axis\nproportions above and below a certain z-score are the area under the curve\nwhat z-score boundary would separate 15.8% of the area in the left tail?\n-1"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#proportions-vs-z-scores-2",
-    "href": "slides/11-hypothesis-testing.html#proportions-vs-z-scores-2",
+    "objectID": "slides/11-inferential-statistics.html#proportions-vs-z-scores-2",
+    "href": "slides/11-inferential-statistics.html#proportions-vs-z-scores-2",
     "title": "Week 11: Inferential Statistics",
     "section": "Proportions vs Z scores",
     "text": "Proportions vs Z scores\n\n\n\nwhat \\(\\pm\\) z-score boundary would separate 4.4% of the area split between the right and left tails?\n\\(\\pm\\) 2\nFancy way to ask the same thing: \\(\\alpha\\) is .044, \\(\\alpha/2\\) is 0.022, what is \\(z_{\\alpha/2}\\)?"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#what-is-alpha",
-    "href": "slides/11-hypothesis-testing.html#what-is-alpha",
+    "objectID": "slides/11-inferential-statistics.html#what-is-alpha",
+    "href": "slides/11-inferential-statistics.html#what-is-alpha",
     "title": "Week 11: Inferential Statistics",
     "section": "What is \\(\\alpha\\)?",
     "text": "What is \\(\\alpha\\)?\n\n\n\n\\(\\alpha\\) is the greek letter used to talk about proportions of the data out of a total of 1.\n\\(\\alpha/2\\) is simple division, splitting the area in half\n\\(z_{\\alpha/2}\\) is asking for a z-score off the x-axis that sections off the requested area.\nif \\(\\alpha\\) is .05, what is \\(z_{\\alpha/2}\\)?\nslightly less than 2"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#all-z-values---unit-normal-table",
-    "href": "slides/11-hypothesis-testing.html#all-z-values---unit-normal-table",
+    "objectID": "slides/11-inferential-statistics.html#all-z-values---unit-normal-table",
+    "href": "slides/11-inferential-statistics.html#all-z-values---unit-normal-table",
     "title": "Week 11: Inferential Statistics",
     "section": "All Z Values - Unit Normal Table",
     "text": "All Z Values - Unit Normal Table\n\nFull Unit Normal Table"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#question-1",
-    "href": "slides/11-hypothesis-testing.html#question-1",
+    "objectID": "slides/11-inferential-statistics.html#question-1",
+    "href": "slides/11-inferential-statistics.html#question-1",
     "title": "Week 11: Inferential Statistics",
     "section": "Question 1",
     "text": "Question 1\nFor a normal distribution, what is the probability of selecting a z-score that is larger than than \\(z = 1.96\\)?\n\nUnit Normal Table for standard normal distribution"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#z-scores-and-inferential-statistics",
-    "href": "slides/11-hypothesis-testing.html#z-scores-and-inferential-statistics",
+    "objectID": "slides/11-inferential-statistics.html#z-scores-and-inferential-statistics",
+    "href": "slides/11-inferential-statistics.html#z-scores-and-inferential-statistics",
     "title": "Week 11: Inferential Statistics",
     "section": "Z scores and Inferential Statistics",
     "text": "Z scores and Inferential Statistics\nZ scores and the standard normal distribution are essential for inferential statistics.\n\n\nz scores make all data comparable\nthe standard normal distribution has a fixed area of 1 and can be understood in terms of probability\nwe can now ask formalized questions\nwhat z-score must some data have for it to only occur 5% of the time or less?\nn.b. 5% is a nice threshold which is commonly accepted as being statistically meaningful"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#sample-vs-population",
-    "href": "slides/11-hypothesis-testing.html#sample-vs-population",
+    "objectID": "slides/11-inferential-statistics.html#sample-vs-population",
+    "href": "slides/11-inferential-statistics.html#sample-vs-population",
     "title": "Week 11: Inferential Statistics",
     "section": "Sample vs Population",
     "text": "Sample vs Population\n\nA sample of the human population might be everyone in this classroom, Alden 101. Another sample might be everyone in Alden 109. Another sample might be everyone in Brooks."
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#observations",
-    "href": "slides/11-hypothesis-testing.html#observations",
+    "objectID": "slides/11-inferential-statistics.html#observations",
+    "href": "slides/11-inferential-statistics.html#observations",
     "title": "Week 11: Inferential Statistics",
     "section": "Observations",
     "text": "Observations\n\nFor each sample, there are multiple observations.\nIf I ask everyone in Alden 101 their birth weight, how many observations will there be in the sample?"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#sample-statistics",
-    "href": "slides/11-hypothesis-testing.html#sample-statistics",
+    "objectID": "slides/11-inferential-statistics.html#sample-statistics",
+    "href": "slides/11-inferential-statistics.html#sample-statistics",
     "title": "Week 11: Inferential Statistics",
     "section": "Sample Statistics",
     "text": "Sample Statistics\n\n\nStatistics like mean, median, mode, std are descriptive summaries of a sample of a population.\nStatistics that come from a single sample are called a sample mean, sample std. But…\nThe sample mean of birth weight in Alden 101 is likely slightly different than the sample mean of birth weight in Alden 109 right now!\nThis means that there exists a distribution of sample means for birth weight!\nThe hypothetical distribution of sample means is called the sampling distribution."
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#sampling-distribution",
-    "href": "slides/11-hypothesis-testing.html#sampling-distribution",
+    "objectID": "slides/11-inferential-statistics.html#sampling-distribution",
+    "href": "slides/11-inferential-statistics.html#sampling-distribution",
     "title": "Week 11: Inferential Statistics",
     "section": "Sampling Distribution",
     "text": "Sampling Distribution"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#sampling-distribution-statistics",
-    "href": "slides/11-hypothesis-testing.html#sampling-distribution-statistics",
+    "objectID": "slides/11-inferential-statistics.html#sampling-distribution-statistics",
+    "href": "slides/11-inferential-statistics.html#sampling-distribution-statistics",
     "title": "Week 11: Inferential Statistics",
     "section": "Sampling Distribution Statistics",
     "text": "Sampling Distribution Statistics\n\n\nthe sampling distribution is conceptually from multiple samples, and has stats.\nthe mean of the sampling distribution is the expected value of the mean\nthe std of the sampling distribution is the standard error of the mean, \\(SEM\\)\nnote that we can’t actually measure multiple samples, we never see the sampling distribution\nmathematically and statistically, we can use it\nThe central limit theorem states:\n\nFor any population with mean \\(\\mu\\) and standard deviation \\(\\sigma\\), the distribution of sample means for sample size N will have a mean of \\(\\mu\\) and a standard deviation of \\(SEM = {\\sigma \\over \\sqrt{N}}\\) and will approach a normal distribution as n approaches infinity, but N = 30 is close enough."
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#sampling-distribution-shape",
-    "href": "slides/11-hypothesis-testing.html#sampling-distribution-shape",
+    "objectID": "slides/11-inferential-statistics.html#sampling-distribution-shape",
+    "href": "slides/11-inferential-statistics.html#sampling-distribution-shape",
     "title": "Week 11: Inferential Statistics",
     "section": "Sampling Distribution Shape",
     "text": "Sampling Distribution Shape\nNote how the sampling distribution narrows as more observations (N) are used to make the sampling distribution"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#class-coin-exercise",
-    "href": "slides/11-hypothesis-testing.html#class-coin-exercise",
+    "objectID": "slides/11-inferential-statistics.html#class-coin-exercise",
+    "href": "slides/11-inferential-statistics.html#class-coin-exercise",
     "title": "Week 11: Inferential Statistics",
     "section": "Class Coin Exercise",
     "text": "Class Coin Exercise\n\nmake a sample with three coin flips (heads = 0, tails = 1). Compute the sample mean with N=3\nmake a sample with ten coin flips (heads = 0, tails = 1). Compute the sample mean with N=10"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#standard-error-of-the-mean",
-    "href": "slides/11-hypothesis-testing.html#standard-error-of-the-mean",
+    "objectID": "slides/11-inferential-statistics.html#standard-error-of-the-mean",
+    "href": "slides/11-inferential-statistics.html#standard-error-of-the-mean",
     "title": "Week 11: Inferential Statistics",
     "section": "Standard Error of the Mean",
     "text": "Standard Error of the Mean\n\\[\nSEM = {\\sigma \\over \\sqrt{N}}\n\\]\n\n\nrecall, SEM is the standard deviation of the sampling distribution\nSEM can be calculated from ONE SAMPLE\nIt is desirable to have a small SEM because that would signify that the all the data are close to the true population mean!\nif N of the single sample is very large, the SEM will be small\nif \\(\\sigma\\) of a single sample is small, the SEM will be small"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#question-2",
-    "href": "slides/11-hypothesis-testing.html#question-2",
-    "title": "Week 11: Inferential Statistics",
-    "section": "Question 2",
-    "text": "Question 2\nThe population distribution of SAT scores is normal with a mean of \\(\\mu = 500\\). For a random sample of 25 students (N = 25) and a standard deviation of \\(\\sigma = 100\\), what is the probability that the sample mean \\(\\bar x\\) will be greater than 540? Greater than 700?\n\nUnit Normal Table for standard normal distribution\n\n\nfor \\(\\bar x = 540\\), \\(p = 0.0228\\), so it is quite unlikely for a sample of 25 students to get an average SAT score higher than 540."
-  },
-  {
-    "objectID": "slides/11-hypothesis-testing.html#z-scores-for-one-sample-in-a-sampling-distribution",
-    "href": "slides/11-hypothesis-testing.html#z-scores-for-one-sample-in-a-sampling-distribution",
+    "objectID": "slides/11-inferential-statistics.html#z-scores-for-one-sample-in-a-sampling-distribution",
+    "href": "slides/11-inferential-statistics.html#z-scores-for-one-sample-in-a-sampling-distribution",
     "title": "Week 11: Inferential Statistics",
     "section": "Z scores for one Sample in a Sampling Distribution",
     "text": "Z scores for one Sample in a Sampling Distribution\n\n\nassume the sampling distribution has mean \\(\\mu\\) and standard deviation \\(SEM = {\\sigma \\over \\sqrt{N}}\\)\nassume the single sample mean \\(\\bar x\\)\nrecall that z-scored observations from single sample relate each sample to the sample mean \\(z_i = {x_i - \\bar x \\over \\sigma}\\)\n\\(z_{sample} = {\\mu - \\bar x \\over SEM}\\)"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#making-confident-statements",
-    "href": "slides/11-hypothesis-testing.html#making-confident-statements",
+    "objectID": "slides/11-inferential-statistics.html#question-2",
+    "href": "slides/11-inferential-statistics.html#question-2",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Question 2",
+    "text": "Question 2\nThe population distribution of SAT scores is normal with a mean of \\(\\mu = 500\\). For a random sample of 25 students (N = 25) and a standard deviation of \\(\\sigma = 100\\), what is the probability that the sample mean \\(\\bar x\\) will be greater than 540? Greater than 700?\n\nUnit Normal Table for standard normal distribution\n\n\nfor \\(\\bar x = 540\\), \\(p = 0.0228\\), so it is quite unlikely for a sample of 25 students to get an average SAT score higher than 540."
+  },
+  {
+    "objectID": "slides/11-inferential-statistics.html#making-confident-statements",
+    "href": "slides/11-inferential-statistics.html#making-confident-statements",
     "title": "Week 11: Inferential Statistics",
     "section": "Making Confident Statements",
-    "text": "Making Confident Statements\n\nWe can say with a set level of confidence that a single sample mean is within a certain interval, using the following formula:\n\n\\[\n\\bar x \\pm z_{\\alpha/2} \\times SEM \\\\\nSEM = {\\sigma \\over \\sqrt{N}}\n\\]\n\n\\(z_{\\alpha/2}\\) is a fixed number read off of a standard normal distribution when \\(\\alpha\\) is chosen.\n\\(\\alpha\\) represents the chance that we are wrong. It is a proportion of 1, usually, 0.05."
+    "text": "Making Confident Statements\n\nWe can say with a set level of confidence that a single sample mean is within a certain interval, using the following formula:\n\n\\[\n\\bar x \\pm z_{\\alpha/2} \\times SEM \\\\\nSEM = {\\sigma \\over \\sqrt{N}}\n\\]\n\n\\(z_{\\alpha/2}\\) is a fixed number read off of a standard normal distribution when \\(\\alpha\\) is chosen.\n\\(\\alpha\\) represents the chance that we are wrong, and is area under the curve. It is a proportion of 1, usually, 0.05."
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#confidence-intervals",
-    "href": "slides/11-hypothesis-testing.html#confidence-intervals",
+    "objectID": "slides/11-inferential-statistics.html#confidence-intervals",
+    "href": "slides/11-inferential-statistics.html#confidence-intervals",
     "title": "Week 11: Inferential Statistics",
     "section": "Confidence Intervals",
-    "text": "Confidence Intervals\n\nCIs are chosen by researchers, 95% confidence level is common choice.\n95% CI refers to area under a Standard Normal Distribution and corresponds with \\(\\alpha\\) of .05\n\n\\[\nCI = 100 \\times (1 - \\alpha)\n\\]"
+    "text": "Confidence Intervals\n\nCIs are chosen by researchers, 95% confidence level is common choice.\n95% refers to area under a Standard Normal Distribution and corresponds with \\(\\alpha\\) of .05\nThe Interval that is reported is the z-score that sections off the area"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#critical-z-value",
-    "href": "slides/11-hypothesis-testing.html#critical-z-value",
+    "objectID": "slides/11-inferential-statistics.html#critical-z-value",
+    "href": "slides/11-inferential-statistics.html#critical-z-value",
     "title": "Week 11: Inferential Statistics",
     "section": "Critical Z-value",
-    "text": "Critical Z-value\n\n\n\nif \\(\\alpha\\) is .05, \\(\\alpha/2\\) is 0.025 and \\(z_{\\alpha/2}\\) is 1.96\nif \\(\\alpha\\) is .01, \\(\\alpha/2\\) is 0.005, what is \\(z_{\\alpha/2}\\)?\n\n\nFull Unit Normal Table"
+    "text": "Critical Z-value\n\n\n\nif \\(\\alpha\\) is .05, \\(\\alpha/2\\) is 0.025 and \\(z_{\\alpha/2}\\) is \\(\\pm\\) 1.96\nif \\(\\alpha\\) is .01, \\(\\alpha/2\\) is 0.005, what is \\(z_{\\alpha/2}\\)?\n\n\nFull Unit Normal Table"
   },
   {
-    "objectID": "slides/11-hypothesis-testing.html#activity",
-    "href": "slides/11-hypothesis-testing.html#activity",
+    "objectID": "slides/11-inferential-statistics.html#hypothesis-testing",
+    "href": "slides/11-inferential-statistics.html#hypothesis-testing",
+    "title": "Week 11: Inferential Statistics",
+    "section": "Hypothesis Testing",
+    "text": "Hypothesis Testing\n\n\nA null hypothesis \\(H_0\\) can be constructed that says, a sample does not have a sample mean \\(\\bar x\\) that is different from the population mean \\(\\mu\\).\nIf the sample mean turns out to be unusually far from the population mean, the probability, or p value can be reported. Typically, probabilities or p values that are less than 5% are considered significant.\nThe null hypothesis would be rejected and the z-score, p value, mean and standard deviation would be reported."
+  },
+  {
+    "objectID": "slides/11-inferential-statistics.html#activity",
+    "href": "slides/11-inferential-statistics.html#activity",
     "title": "Week 11: Inferential Statistics",
     "section": "Activity",
     "text": "Activity\nstats_inferential_activity.ipynb"
@@ -1250,6 +1257,6 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data II, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data II, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Data Analytics Due Thursday March 13, 2:30pm \n\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nReading: Making Sense of Data I, Chapter 3, Preparing Data Tables \nClass Activity: Data Wrangling Notebook\nLab: Data Wrangling Due Thursday, March 27, 2:30pm\n\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics Intro\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 17-37\nSlides: Data Descriptors\nClass Activity: Stats Intro Notebook\nLab: No new lab\n\nWeek Eleven: March 25, 27: Inferential Statistics\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 37-42\nSlides: Inferential Statistics\nClass Activity: Inferential Stats Activity   \n\nWeek Twelve: April 1, 3: Modeling and Comparing\n\nReading: Making Sense of Data I, Chapter 4, Understanding Relationships  \n\nWeek Thirteen: April 8: Clustering\n\nReading: Making Sense of Data I, Chapter 5, Groups in Data \n\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Storytelling Challenge\nWeek Fifteen: April 22, 24: Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data II, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data II, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Data Analytics Due Thursday March 13, 2:30pm \n\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nReading: Making Sense of Data I, Chapter 3, Preparing Data Tables \nClass Activity: Data Wrangling Notebook\nLab: Data Wrangling Due Thursday, March 27, 2:30pm\n\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics Intro\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 17-37\nSlides: Data Descriptors\nClass Activity: Stats Intro Notebook\nLab: No new lab\n\nWeek Eleven: March 25, 27: Inferential Statistics\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 37-42\nSlides: Inferential Statistics\nClass Activity: Inferential Stats Activity\nLab: Final Project Proposal Due Thursday, April 3, 2:30pm\n\nWeek Twelve: April 1, 3: Modeling and Comparing\n\nReading: Making Sense of Data I, Chapter 4, Understanding Relationships   \n\nWeek Thirteen: April 8: Clustering\n\nReading: Making Sense of Data I, Chapter 5, Groups in Data \n\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Storytelling Challenge\nWeek Fifteen: April 22, 24: Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   }
 ]

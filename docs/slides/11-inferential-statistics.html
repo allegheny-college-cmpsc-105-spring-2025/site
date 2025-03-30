@@ -322,16 +322,6 @@ SEM = {\sigma \over \sqrt{N}}
 </ul>
 </div>
 </section>
-<section id="question-2" class="slide level2 smaller">
-<h2>Question 2</h2>
-<p>The population distribution of SAT scores is normal with a mean of <span class="math inline">\(\mu = 500\)</span>. For a random sample of 25 students (N = 25) and a standard deviation of <span class="math inline">\(\sigma = 100\)</span>, what is the probability that the sample mean <span class="math inline">\(\bar x\)</span> will be greater than 540? Greater than 700?</p>
-<ul>
-<li><a href="https://www.westga.edu/academics/research/vrc/assets/docs/UnitNormalTable.pdf">Unit Normal Table for standard normal distribution</a></li>
-</ul>
-<div class="fragment">
-<p>for <span class="math inline">\(\bar x = 540\)</span>, <span class="math inline">\(p = 0.0228\)</span>, so it is quite unlikely for a sample of 25 students to get an average SAT score higher than 540.</p>
-</div>
-</section>
 <section id="z-scores-for-one-sample-in-a-sampling-distribution" class="slide level2">
 <h2>Z scores for one Sample in a Sampling Distribution</h2>
 <div>
@@ -341,6 +331,16 @@ SEM = {\sigma \over \sqrt{N}}
 <li class="fragment">recall that z-scored observations from single sample relate each sample to the sample mean <span class="math inline">\(z_i = {x_i - \bar x \over \sigma}\)</span></li>
 <li class="fragment"><span class="math inline">\(z_{sample} = {\mu - \bar x \over SEM}\)</span></li>
 </ul>
+</div>
+</section>
+<section id="question-2" class="slide level2 smaller">
+<h2>Question 2</h2>
+<p>The population distribution of SAT scores is normal with a mean of <span class="math inline">\(\mu = 500\)</span>. For a random sample of 25 students (N = 25) and a standard deviation of <span class="math inline">\(\sigma = 100\)</span>, what is the probability that the sample mean <span class="math inline">\(\bar x\)</span> will be greater than 540? Greater than 700?</p>
+<ul>
+<li><a href="https://www.westga.edu/academics/research/vrc/assets/docs/UnitNormalTable.pdf">Unit Normal Table for standard normal distribution</a></li>
+</ul>
+<div class="fragment">
+<p>for <span class="math inline">\(\bar x = 540\)</span>, <span class="math inline">\(p = 0.0228\)</span>, so it is quite unlikely for a sample of 25 students to get an average SAT score higher than 540.</p>
 </div>
 </section>
 <section id="making-confident-statements" class="slide level2 smaller">
@@ -354,29 +354,37 @@ SEM = {\sigma \over \sqrt{N}}
 \]</span></p>
 <ul>
 <li><span class="math inline">\(z_{\alpha/2}\)</span> is a fixed number read off of a standard normal distribution when <span class="math inline">\(\alpha\)</span> is chosen.</li>
-<li><span class="math inline">\(\alpha\)</span> represents the chance that we are wrong. It is a proportion of 1, usually, 0.05.</li>
+<li><span class="math inline">\(\alpha\)</span> represents the chance that we are wrong, and is area under the curve. It is a proportion of 1, usually, 0.05.</li>
 </ul>
 </section>
 <section id="confidence-intervals" class="slide level2">
 <h2>Confidence Intervals</h2>
 <ul>
 <li>CIs are chosen by researchers, 95% confidence level is common choice.</li>
-<li>95% CI refers to area under a Standard Normal Distribution and corresponds with <span class="math inline">\(\alpha\)</span> of .05</li>
+<li>95% refers to area under a Standard Normal Distribution and corresponds with <span class="math inline">\(\alpha\)</span> of .05</li>
+<li>The <em>Interval</em> that is reported is the z-score that sections off the area</li>
 </ul>
-<p><span class="math display">\[
-CI = 100 \times (1 - \alpha)
-\]</span></p>
 </section>
 <section id="critical-z-value" class="slide level2">
 <h2>Critical Z-value</h2>
 
 <img data-src="https://www.w3schools.com/statistics/img_standard_normal.svg" class="r-stretch"><div>
 <ul>
-<li class="fragment">if <span class="math inline">\(\alpha\)</span> is .05, <span class="math inline">\(\alpha/2\)</span> is 0.025 and <span class="math inline">\(z_{\alpha/2}\)</span> is 1.96</li>
+<li class="fragment">if <span class="math inline">\(\alpha\)</span> is .05, <span class="math inline">\(\alpha/2\)</span> is 0.025 and <span class="math inline">\(z_{\alpha/2}\)</span> is <span class="math inline">\(\pm\)</span> 1.96</li>
 <li class="fragment">if <span class="math inline">\(\alpha\)</span> is .01, <span class="math inline">\(\alpha/2\)</span> is 0.005, what is <span class="math inline">\(z_{\alpha/2}\)</span>?</li>
 </ul>
 </div>
 <p><a href="https://www.westga.edu/academics/research/vrc/assets/docs/UnitNormalTable.pdf">Full Unit Normal Table</a></p>
+</section>
+<section id="hypothesis-testing" class="slide level2 smaller">
+<h2>Hypothesis Testing</h2>
+<div>
+<ul>
+<li class="fragment"><p>A null hypothesis <span class="math inline">\(H_0\)</span> can be constructed that says, a sample does <strong>not</strong> have a sample mean <span class="math inline">\(\bar x\)</span> that is different from the population mean <span class="math inline">\(\mu\)</span>.</p></li>
+<li class="fragment"><p>If the sample mean turns out to be unusually far from the population mean, the probability, or p value can be reported. Typically, probabilities or p values that are less than 5% are considered significant.</p></li>
+<li class="fragment"><p>The null hypothesis would be rejected and the z-score, p value, mean and standard deviation would be reported.</p></li>
+</ul>
+</div>
 </section>
 <section id="activity" class="slide level2">
 <h2>Activity</h2>
