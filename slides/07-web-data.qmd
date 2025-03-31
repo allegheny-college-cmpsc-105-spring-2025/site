@@ -224,6 +224,6 @@ https://markitors.com/what-is-a-sitemap/
 
 ## Google Analytics
 
-see [Data Analytics Slides](/slides/07-cs301_24Jan2023_googleAnalytics.pdf)
+see [Data Analytics Slides](/slides/07.5-cs301_24Jan2023_googleAnalytics.pdf)
 
 ## End

@@ -64,8 +64,10 @@ title: "Materials"
   - Slides: [Inferential Statistics](slides/11-inferential-statistics.qmd)
   - Class Activity: [Inferential Stats Activity](/code/stats_inferential_activity.ipynb)
   - Lab: [Final Project Proposal](https://classroom.github.com/a/9gVboTSR) Due Thursday, April 3, 2:30pm
-- Week Twelve: April 1, 3: Modeling and Comparing
+- Week Twelve: April 1, 3: Comparing and Modeling
   - Reading: [Making Sense of Data I, Chapter 4, Understanding Relationships](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=73)
+  - Slides: [Data Analyses](slides/12-relationships.qmd)
+  - Class Activity: [Data Analysis Activity](/code/data_analysis_activity.ipynb)
   <!-- - correlation
   - linear model -->
   <!-- - overfitting -->

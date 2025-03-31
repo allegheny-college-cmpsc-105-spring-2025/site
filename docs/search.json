@@ -322,179 +322,256 @@
     "text": "Setting up\n\nbookmark the website\nbookmark access to your repos\nbookmark the 105 Discord Channel, or access from the course website\nbookmark notes that you take in Google Colab or elsewhere\nbookmark Canvas\netc."
   },
   {
-    "objectID": "slides/07-web-data.html#goals",
-    "href": "slides/07-web-data.html#goals",
-    "title": "Week 7: Web Data",
+    "objectID": "slides/06-data-gathering.html#goals",
+    "href": "slides/06-data-gathering.html#goals",
+    "title": "Week 6: Data Gathering",
     "section": "Goals",
-    "text": "Goals\n\nWebsite structure\nGathering content off the web\nGathering data about web usage\n\nGoogle Analytics"
+    "text": "Goals\n\n\nWhat types of data can you gather?\nWhat sources can data come from?\nHow is data stored (for CMPSC 105)?"
   },
   {
-    "objectID": "slides/07-web-data.html#raw-file-types",
-    "href": "slides/07-web-data.html#raw-file-types",
-    "title": "Week 7: Web Data",
-    "section": "Raw File Types",
-    "text": "Raw File Types\n\n\nHTML - Hypertext Markup Language\nCSS - Cascading Style Sheets\nXML - Extensible Markup Language\n(also javascript for coding interactions with buttons, and dynamically loading content)"
+    "objectID": "slides/06-data-gathering.html#data-types-1",
+    "href": "slides/06-data-gathering.html#data-types-1",
+    "title": "Week 6: Data Gathering",
+    "section": "Data Types",
+    "text": "Data Types\n\n\nand numerical discrete!"
   },
   {
-    "objectID": "slides/07-web-data.html#examples",
-    "href": "slides/07-web-data.html#examples",
-    "title": "Week 7: Web Data",
-    "section": "Examples",
-    "text": "Examples\n\n\nHTML\n\nnotice tags &lt;p&gt;&lt;/p&gt;, &lt;div&gt;&lt;/div&gt;\ncontent is inside of tags\nnot WYSIWYG like MS Word documents\n\nCSS\n\nnotice metadata marking things like font names and colors\n\n“font-family:”\n“color:”\n\nhttps://quarto.org/docs/output-formats/html-themes.html\n\nXML\n\nhierarchical (nested structure)\ntagged metadata\n\n(javascript)\n\n\n\nhttps://www.oreilly.com/library/view/xml-in-a/0596007647/ch01s05.html"
+    "objectID": "slides/06-data-gathering.html#categorical-nominal",
+    "href": "slides/06-data-gathering.html#categorical-nominal",
+    "title": "Week 6: Data Gathering",
+    "section": "Categorical Nominal",
+    "text": "Categorical Nominal\n\n\nName only, qualitative\n\ncar makes\nzip code\neye color\n\nDichotomous variable refers to a categorical nominal variables with only two values\n\nleft handed / right handed\ncurrent student / non student"
   },
   {
-    "objectID": "slides/07-web-data.html#metadata",
-    "href": "slides/07-web-data.html#metadata",
-    "title": "Week 7: Web Data",
-    "section": "Metadata",
-    "text": "Metadata\n\nApplications like your browser need to know metadata about content.\n\n\nwhat kind of content is it?\nif it is a paragraph, it should be rendered one way\nif it is an image, it should be rendered a different way\nif it is a url, it should be clickable"
+    "objectID": "slides/06-data-gathering.html#categorical-ordinal",
+    "href": "slides/06-data-gathering.html#categorical-ordinal",
+    "title": "Week 6: Data Gathering",
+    "section": "Categorical Ordinal",
+    "text": "Categorical Ordinal\n\n\nordered, quasi-quantitative\n\nagreement level\neducation level\n\nordinal data can seem almost quantitative, but there is no way to know the value of the levels\nordinal scales are usually used to measure non-numeric features like happiness, customer satisfaction\nLikert Items are often used to obtain categorical ordinal data"
   },
   {
-    "objectID": "slides/07-web-data.html#example",
-    "href": "slides/07-web-data.html#example",
-    "title": "Week 7: Web Data",
-    "section": "Example",
-    "text": "Example"
+    "objectID": "slides/06-data-gathering.html#likert-items",
+    "href": "slides/06-data-gathering.html#likert-items",
+    "title": "Week 6: Data Gathering",
+    "section": "Likert Items",
+    "text": "Likert Items"
   },
   {
-    "objectID": "slides/07-web-data.html#other-markup",
-    "href": "slides/07-web-data.html#other-markup",
-    "title": "Week 7: Web Data",
-    "section": "Other Markup",
-    "text": "Other Markup\n\n\nLaTeX - Compiled Markup, often used for rendering mathematical expressions\nmarkdown\n\n\n\n## Report for Data Exploration\n\n### Introduction\n\nData was explored using different chart types.\n\n### Methods\n\nMatplotlib functions for making line charts, boxplots, and historgrams were used."
+    "objectID": "slides/06-data-gathering.html#numerical-data",
+    "href": "slides/06-data-gathering.html#numerical-data",
+    "title": "Week 6: Data Gathering",
+    "section": "Numerical Data",
+    "text": "Numerical Data\n\n\nNumerical data are quantitative\nDiscrete means countable\n\nnumber of students\nnumber of views or likes"
   },
   {
-    "objectID": "slides/07-web-data.html#rendered-version",
-    "href": "slides/07-web-data.html#rendered-version",
-    "title": "Week 7: Web Data",
-    "section": "Rendered version",
-    "text": "Rendered version\n\nReport for Data Exploration\nIntroduction\nData was explored using different chart types.\nMethods\nMatplotlib functions for making line charts, boxplots, and historgrams were used."
+    "objectID": "slides/06-data-gathering.html#numerical-data-1",
+    "href": "slides/06-data-gathering.html#numerical-data-1",
+    "title": "Week 6: Data Gathering",
+    "section": "Numerical Data",
+    "text": "Numerical Data\n\n\nNumerical data are quantitative\nContinuous means measured\n\nheight must be measured\nInterval refers to continuous data with no reference point\n\ntemperature, we know 28 F vs 33 F is a difference of 5, but does a difference of 5 mean the same thing between 100 and 105?\nInterval data cannot be divided meaningfully. Don’t compute what is 1/5 of the temperature today\nStats use division, causing a problem for interval data\n\nRatio refers to continuous data with a reference point\n\nHeight, weight, distance, speed\ndivision or other ratios are meaningful. Professor Luman is twice my height!"
   },
   {
-    "objectID": "slides/07-web-data.html#summary-of-website-structure",
-    "href": "slides/07-web-data.html#summary-of-website-structure",
-    "title": "Week 7: Web Data",
-    "section": "Summary of Website Structure",
-    "text": "Summary of Website Structure\n\n\nwebsites use structured texts that can be rendered\nmetadata tags are everywhere\nmetadata tags describe the data and can be used to locate data"
+    "objectID": "slides/06-data-gathering.html#practice",
+    "href": "slides/06-data-gathering.html#practice",
+    "title": "Week 6: Data Gathering",
+    "section": "Practice",
+    "text": "Practice\nRecall an example for each data type\n\n\nand numerical discrete!\n\nhttps://forms.gle/rqqcmMtnEHc6g3276"
   },
   {
-    "objectID": "slides/07-web-data.html#how-things-end-up-in-search-engine-results",
-    "href": "slides/07-web-data.html#how-things-end-up-in-search-engine-results",
-    "title": "Week 7: Web Data",
-    "section": "How Things End Up in Search Engine Results",
-    "text": "How Things End Up in Search Engine Results\nsearch engine bots, aka crawlers or spiders, need to know about all the pages on a website and all the content on the pages in order to make it indexable, i.e. usable for web searching.\nA Google bot has to discover webpages, crawl them, index them, and query a giant database to return related content to search terms."
+    "objectID": "slides/06-data-gathering.html#data-acquisition",
+    "href": "slides/06-data-gathering.html#data-acquisition",
+    "title": "Week 6: Data Gathering",
+    "section": "Data Acquisition",
+    "text": "Data Acquisition\nGetting brand new data using surveys and sensors!"
   },
   {
-    "objectID": "slides/07-web-data.html#discovery",
-    "href": "slides/07-web-data.html#discovery",
-    "title": "Week 7: Web Data",
-    "section": "Discovery",
-    "text": "Discovery\n\n\ndone with robots.txt\nsitemaps"
+    "objectID": "slides/06-data-gathering.html#surveys-for-acquisition",
+    "href": "slides/06-data-gathering.html#surveys-for-acquisition",
+    "title": "Week 6: Data Gathering",
+    "section": "Surveys for Acquisition",
+    "text": "Surveys for Acquisition\n\n\nsurveys are directed toward people\nsurveys answer subjective perceptual and behavioral questions, primarily\ndifferent questions produce different data types\n\nmultiple choice questions\nfree response questions\nslider ratings\nLikert scales"
   },
   {
-    "objectID": "slides/07-web-data.html#robots.txt",
-    "href": "slides/07-web-data.html#robots.txt",
-    "title": "Week 7: Web Data",
-    "section": "robots.txt",
-    "text": "robots.txt"
+    "objectID": "slides/06-data-gathering.html#surveys-for-acquisition-1",
+    "href": "slides/06-data-gathering.html#surveys-for-acquisition-1",
+    "title": "Week 6: Data Gathering",
+    "section": "Surveys for Acquisition",
+    "text": "Surveys for Acquisition\n\n\nSurvey development should be guided by a hypothesis\nOnly questions that have appropriate data types for analysis should be used\nQuality controls should be in place (e.g. timestamps, inclusion criteria)\nData security protocols should be in place to protect private data\nHuman Subjects Research must be reviewed by the Institutional Review Board\n\n\n\nReading: Surveys"
   },
   {
-    "objectID": "slides/07-web-data.html#robots.txt-1",
-    "href": "slides/07-web-data.html#robots.txt-1",
-    "title": "Week 7: Web Data",
-    "section": "robots.txt",
-    "text": "robots.txt\n\n\ndirectives tell bots where to go / not go (“disallow”)\n\nhelps protect information (in theory) on admin pages or other private pages\nhelps keep search engine results relevant\ncould prevent duplication if duplicate information is on a website\n\nincludes links to sitemaps!"
+    "objectID": "slides/06-data-gathering.html#sensors-for-acquisition",
+    "href": "slides/06-data-gathering.html#sensors-for-acquisition",
+    "title": "Week 6: Data Gathering",
+    "section": "Sensors for Acquisition",
+    "text": "Sensors for Acquisition\n\n\nsensors can measure inanimate objects/materials or people/animals\nelectronic sensors for things\n\nmotion detection\nfreezer thermometer\ntire pressure sensor\n\nsensors for people\n\nmotion capture\nbody temperature\nelectro-physiological\n\nECG - electrocardiogram\nEEG - electroencephalogram\nelectrodermal"
   },
   {
-    "objectID": "slides/07-web-data.html#sitemaps",
-    "href": "slides/07-web-data.html#sitemaps",
-    "title": "Week 7: Web Data",
-    "section": "Sitemaps",
-    "text": "Sitemaps\n\n\nlists out all pages (unique urls) of a website that should be indexed\nthese can be used to scrape information off a website\nlarge websites may have multiple site maps"
+    "objectID": "slides/06-data-gathering.html#sensors-for-acquisition-1",
+    "href": "slides/06-data-gathering.html#sensors-for-acquisition-1",
+    "title": "Week 6: Data Gathering",
+    "section": "Sensors for Acquisition",
+    "text": "Sensors for Acquisition"
   },
   {
-    "objectID": "slides/07-web-data.html#sitemaps-1",
-    "href": "slides/07-web-data.html#sitemaps-1",
-    "title": "Week 7: Web Data",
-    "section": "Sitemaps",
-    "text": "Sitemaps\n\n\nhttps://markitors.com/what-is-a-sitemap/"
+    "objectID": "slides/06-data-gathering.html#acquisition-drawbacks",
+    "href": "slides/06-data-gathering.html#acquisition-drawbacks",
+    "title": "Week 6: Data Gathering",
+    "section": "Acquisition Drawbacks",
+    "text": "Acquisition Drawbacks\n\n\ntime consuming\ndata management is required (persistent storage, security)\nmaybe the data already exist somewhere\nmaybe surveys and sensors cannot answer the question you have"
   },
   {
-    "objectID": "slides/07-web-data.html#participation",
-    "href": "slides/07-web-data.html#participation",
-    "title": "Week 7: Web Data",
-    "section": "Participation",
-    "text": "Participation\n\nhow many sitemaps does Facebook have?\nhow many sitemaps does Allegheny have?\nWalmart?\nOn another sharable site, see what you find and post a sitemap in Discord!"
+    "objectID": "slides/06-data-gathering.html#extracting-data-from-documents",
+    "href": "slides/06-data-gathering.html#extracting-data-from-documents",
+    "title": "Week 6: Data Gathering",
+    "section": "Extracting Data from Documents",
+    "text": "Extracting Data from Documents\n\n\nDocuments often contain information but it is not in an analyzable format\n\nAuthor names on research papers\nForeground of an image\nBackground of an image\nVideo transcripts of speech\nVideo transcripts of sounds\nCells (biology) appearing in images\nLanguage structure\n\nnoun, verb, adj, conjunction,\nword length\nnum vowels\nnum syllables\netc"
   },
   {
-    "objectID": "slides/07-web-data.html#crawling",
-    "href": "slides/07-web-data.html#crawling",
-    "title": "Week 7: Web Data",
-    "section": "Crawling",
-    "text": "Crawling"
+    "objectID": "slides/06-data-gathering.html#extracting-data-by-web-scraping",
+    "href": "slides/06-data-gathering.html#extracting-data-by-web-scraping",
+    "title": "Week 6: Data Gathering",
+    "section": "Extracting Data by Web Scraping",
+    "text": "Extracting Data by Web Scraping\n\n\nScraping is gathering data form websites by reading into the html structure to get the content out of specific html tagged elements.\nScraping tools exist to assist with formatting\n\nRequests, BeautifulSoup, Selenium\nexample with https://en.wikipedia.org/wiki/Tadasu_no_Mori\n\n\n\n\nimport requests\n# Making a GET request\nr = requests.get('https://en.wikipedia.org/wiki/Tadasu_no_Mori')\n# print content of request\nprint(r.content)"
   },
   {
-    "objectID": "slides/07-web-data.html#indexing",
-    "href": "slides/07-web-data.html#indexing",
-    "title": "Week 7: Web Data",
-    "section": "Indexing",
-    "text": "Indexing"
+    "objectID": "slides/06-data-gathering.html#extracting-data-storage",
+    "href": "slides/06-data-gathering.html#extracting-data-storage",
+    "title": "Week 6: Data Gathering",
+    "section": "Extracting Data & Storage",
+    "text": "Extracting Data & Storage\n\n\nextracted data must be entered into usable structures\n\ndatabases\nspreadsheets\nplain text files"
   },
   {
-    "objectID": "slides/07-web-data.html#scraping",
-    "href": "slides/07-web-data.html#scraping",
-    "title": "Week 7: Web Data",
-    "section": "Scraping",
-    "text": "Scraping\n\nregular people (not Google) can also get content off the web by using strategies similar to discorvery, crawling, and indexing."
+    "objectID": "slides/06-data-gathering.html#drawbacks-of-extracting-data",
+    "href": "slides/06-data-gathering.html#drawbacks-of-extracting-data",
+    "title": "Week 6: Data Gathering",
+    "section": "Drawbacks of Extracting Data",
+    "text": "Drawbacks of Extracting Data\n\n\ndata entry is time consuming\ndata should be consistent, but real data is never perfect, so compromises must be made\nhuman errors can be difficult to detect\ndata entry done with automated entry tools is hard to validate\nvalidation takes human time, or accepted inaccuracy\narbitrary decisions may have to be made"
   },
   {
-    "objectID": "slides/07-web-data.html#scrapping-tools",
-    "href": "slides/07-web-data.html#scrapping-tools",
-    "title": "Week 7: Web Data",
-    "section": "Scrapping tools",
-    "text": "Scrapping tools\n\nCode: Requests, BeautifulSoup\nApplications:\n\n\n    \n\nCredit: Octoparse"
+    "objectID": "slides/06-data-gathering.html#sources-of-pre-existing-data",
+    "href": "slides/06-data-gathering.html#sources-of-pre-existing-data",
+    "title": "Week 6: Data Gathering",
+    "section": "Sources of Pre-existing Data",
+    "text": "Sources of Pre-existing Data\n\n\nTableau Data\nOthers"
   },
   {
-    "objectID": "slides/07-web-data.html#data-miner",
-    "href": "slides/07-web-data.html#data-miner",
-    "title": "Week 7: Web Data",
-    "section": "Data Miner",
-    "text": "Data Miner"
+    "objectID": "slides/06-data-gathering.html#drawbacks-of-pre-existing-data",
+    "href": "slides/06-data-gathering.html#drawbacks-of-pre-existing-data",
+    "title": "Week 6: Data Gathering",
+    "section": "Drawbacks of Pre-existing Data",
+    "text": "Drawbacks of Pre-existing Data\n\n\nEthical collection practices may or may not have been used\ndata have been used repeatedly in explorations leading to bias and overfitting on the data across explorations\nmaybe the pre-existing data cannot answer the question you have"
   },
   {
-    "objectID": "slides/07-web-data.html#optional-activity",
-    "href": "slides/07-web-data.html#optional-activity",
-    "title": "Week 7: Web Data",
-    "section": "Optional Activity",
-    "text": "Optional Activity\n\nTry to get a csv file from dataminer\n\nclick on make your own recipe\n\n\nname it data-scraping-activity.csv\nupload to your activities repo"
+    "objectID": "slides/06-data-gathering.html#csv",
+    "href": "slides/06-data-gathering.html#csv",
+    "title": "Week 6: Data Gathering",
+    "section": "CSV",
+    "text": "CSV\n\n\nComma-separated values format\nplain text file\n\nreadable and writable in many software programs\n\nGoogle Sheets\nMS excel\nNotepad\nSublime Text\nVS Code\n\n\n\n\n\nReading CSV Section 2.4 & 2.4.1"
   },
   {
-    "objectID": "slides/07-web-data.html#summary-of-gathering-content-off-the-web",
-    "href": "slides/07-web-data.html#summary-of-gathering-content-off-the-web",
-    "title": "Week 7: Web Data",
-    "section": "Summary of gathering content off the web",
-    "text": "Summary of gathering content off the web\n\nthanks to structured text on the web, scraping code or programs can gather information and turn it into useable data for exploration."
+    "objectID": "slides/06-data-gathering.html#csv-activity",
+    "href": "slides/06-data-gathering.html#csv-activity",
+    "title": "Week 6: Data Gathering",
+    "section": "CSV Activity",
+    "text": "CSV Activity\nMake a CSV file based on this one image to explore this open question: Are healthy foods too expensive?\n\nHow many different things can you imaging recording off of this one image?!"
   },
   {
-    "objectID": "slides/07-web-data.html#google-analytics",
-    "href": "slides/07-web-data.html#google-analytics",
-    "title": "Week 7: Web Data",
-    "section": "Google Analytics",
-    "text": "Google Analytics\nsee Data Analytics Slides"
+    "objectID": "slides/06-data-gathering.html#csv-activity-details",
+    "href": "slides/06-data-gathering.html#csv-activity-details",
+    "title": "Week 6: Data Gathering",
+    "section": "CSV Activity Details",
+    "text": "CSV Activity Details\nStart a Google Sheet. Include:\n\nStore Name\nDate\nTime\nLocation\nTotal number of items purchased\nTotal number of non-food items purchased\nTotal amount of “health” foods\nTotal cost in USD\nTotal cost of “health” foods\nTotal cost of non-food items"
   },
   {
-    "objectID": "slides/07-web-data.html#end",
-    "href": "slides/07-web-data.html#end",
-    "title": "Week 7: Web Data",
+    "objectID": "slides/06-data-gathering.html#submit-your-work-to-your-activities-repo",
+    "href": "slides/06-data-gathering.html#submit-your-work-to-your-activities-repo",
+    "title": "Week 6: Data Gathering",
+    "section": "Submit your work to your Activities Repo",
+    "text": "Submit your work to your Activities Repo\nUse the name “data-gathering-activity.csv”"
+  },
+  {
+    "objectID": "slides/06-data-gathering.html#end",
+    "href": "slides/06-data-gathering.html#end",
+    "title": "Week 6: Data Gathering",
     "section": "End",
     "text": "End"
   },
   {
-    "objectID": "grades.html",
-    "href": "grades.html",
-    "title": "Grades",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
     "section": "",
-    "text": "Please check Canvas for your grades here"
+    "text": "Class Sessions: TuTh 9:30 AM-10:45 AM, Alden 101\nLaboratory Session: Th, 2:30 PM-4 PM, Alden 101\nInstructor: Professor Emily Graber, egraber@allegheny.edu\nOffice Location: Alden Hall 106\nOffice Hours: Visit Google Calendar to reserve an appointment as needed."
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Course Description",
+    "text": "Course Description\nAn introduction to the methods of collecting, exploring, transforming and visualizing data for storytelling. Often participating in team-based and hands-on activities, students learn how to use web platforms and dashboards to acquire, explore and investigate data to generate summarized key data insights using visual techniques. Students also apply open-source programming language to discover patterns in the data, test hypotheses, and check assumptions using graphical representations. During a weekly laboratory session, students employ cutting-edge software tools to complete projects, reporting on their results through both written documents and oral presentations. Students are invited to use their own departmentally approved laptop in this course; a limited number of laptops are available for use during class and lab sessions.\nPrerequisite: None\nDistribution Requirements: QR, SP.\nDR tag rationale: This course will primarily focus on methods of data collection, foundational data analysis of numerical data, and visualizations of such data. Additionally, students will participate in the scientific process during the exploratory data analysis and apply scientific reasoning to analyze and synthesize data.\n\nLearning Outcomes\n\nDevelop hypotheses based on motivating problems and/or observations and identify appropriate data to address hypotheses.\nIdentify and describe key elements in different types of data visualizations.\nUse web-based platforms to accurately present data sets through multiple visualizations.\nUse an open-source programming language to compute summary statistics and visualize key patterns in the data.\nContribute to and present structured, web-based documentation that describes data exploration steps and visualization-based conclusions.\n\n\n\nScientific Process and Knowledge (SP)\n\nCourses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry.\n\n\n\nQuantitative Reasoning (QR)\n\nQuantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations."
+  },
+  {
+    "objectID": "index.html#schedule-at-a-glance",
+    "href": "index.html#schedule-at-a-glance",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Schedule at-a-glance",
+    "text": "Schedule at-a-glance\nWelcome\n\nWeek One: January 14, 16: Setup\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Filtering\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data \nWeek Seven: February 25, 27: Web Data Analytics and Scraping\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics Intro\nWeek Eleven: March 25, 27: Inferential Statistics\nWeek Twelve: April 1, 3: Comparing and Modeling\nWeek Thirteen: April 8: Clustering\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Storytelling Challenge\nWeek Fifteen: April 22, 24: Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks\n\nComplete Final Exam Schedule"
+  },
+  {
+    "objectID": "index.html#grading",
+    "href": "index.html#grading",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Grading",
+    "text": "Grading\n\n\n\nAssignment type\nPercentage\n\n\n\n\nLabs\n50%\n\n\nParticipation\n30%\n\n\nFinal Project\n20%\n\n\n\nGrading policy may change as needed during the term; any changes will be announced to the class at the time of the change. Grades will be communicated via Canvas. Please note that attendance policies may additionally affect grades as adjustments to grades will be applied on top of the base grade according to policy\n\nLabs\nThere are 8 labs during the semester. Due dates are hard deadlines. See below for policy on late work.\nThe deliverables for labs include documentation in a GitHub repo addressing specific questions or demonstrating requested calculations, analyses, visualizations, and code snippets.\nLabs will be graded for having clean work with few careless errors, correct Markdown, code, data, correct images given the context of the lab, and correct explanations of concepts in writing\n\n\nParticipation\nParticipation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate. Collegial conversations about course topics or activities are also allowed.\nYou will have access to a repository for submitting all of your class activities. Each activity that you do in class will contribute to your overall participation grade. There is no grading scheme for class activities. I will simply check that the activity was turned in at the end of the class period, and that you have made an effort to do the activity as intended, and figures are showing.\nIf the activity is not turned in at the end of the class period, then it will not be counted toward your participation grade.\n\n\nFinal Project\nThe final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact can be detailed blog post, following the format of the last lab, or a detailed data visualization with interactive visuals."
+  },
+  {
+    "objectID": "index.html#policies",
+    "href": "index.html#policies",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Policies",
+    "text": "Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nStudents can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\nAs a general guideline, students cannot miss more than two weeks of class in total throughout the academic semester without receiving a letter grade reduction.\nFor this course, excluding the first week and five excused absences, overall course grade will go down by 1/3 of a letter grade for each additional absence or absence equivalence regardless of base grade.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 105 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Resources",
+    "text": "Resources\n\nFundamentals of Data Visualization\n\nFull Text\n\nMaking Sense of Data by Glenn J. Myatt and Wayne P. Johnson\n\nI. Exploratory Data Analysis\nII. Data Visualization\nIII. Interactive Visualizations\n\nNaked statistics: stripping the dread from the data by Charles J. Wheelan\n\nGoogle Preview\n\nNatural Resources Biometrics by Diane Kiarnan\n\nFull Text\n\nPython Data Science Handbook by Jake VanderPlas\n\nFull Text\n\nPython for Data Analysis, 3E by Wes McKinney\n\nFull Text\n\nArticles\n\nVariable Types"
+  },
+  {
+    "objectID": "index.html#communications",
+    "href": "index.html#communications",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Communications",
+    "text": "Communications\n\nUsing GitHub and Discord\nThis course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place in the Data Exploration Channel in Discord.\nThe Allegheny College Computer and Information Science Discord Server will also have useful announcements about departmental activities including TL office hours.\n\n\nUsing Email\nAlthough we will primarily use Discord for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails."
+  },
+  {
+    "objectID": "index.html#honor-code",
+    "href": "index.html#honor-code",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Honor Code",
+    "text": "Honor Code\nThe Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny Academic Bulletin. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who has matriculated at the College has acknowledged the following Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\nEffective Collaboration\nComputer science is an inherently collaborative discipline. The Department of Computer and Information Science at Allegheny College encourages students to engage in collaboration. However, in the context of individual coursework, through which each student must demonstrate their own knowledge, there are certain forms of collaboration that are and are not acceptable.\n\nAcceptable forms of collaboration include:\n\nDiscussing high-level concepts.\nReferring someone to a course text book, course slides, example programs, or other resources that contain helpful information or instructions.\nOutlining the high-level steps to solving a problem, without mentioning specific\nlines of code that need to be written.\n\nUnacceptable forms of collaboration include:\n\nSharing details about specific lines of code, including showing your source code to someone or looking at someone else’s code.\nCopying someone else’s source code, technical writing, program commands, or program output, even with some slight modifications.\nTyping source code, technical writing, or commands on someone else’s computer.\n\n\n\n\nPlagiarism and Artificial Intelligence\nStudents may not pass off or represent the work of another student, or their own prior work, as their own current work in any case. Plagiarism and AI-generatated code, text, or images are not permitted in any assignment type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other coursework, students are expected to adhere to the given instructions for the particular exam or item of coursework. It is the responsibility of the student to review the authorization specifications on every item and act appropriately, upholding the honor code. Suspected plagiarized or unauthorized use of AI to generate the work that is turned in will be reported to the Honor Code Committee. This policy does not preclude the use of AI to learn."
+  },
+  {
+    "objectID": "index.html#educational-accommodations",
+    "href": "index.html#educational-accommodations",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Educational Accommodations",
+    "text": "Educational Accommodations\nThe Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Students with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898. Student Accessibility and Support Services is part of the Learning Commons and is located in Pelletier Library. Please do this as soon as possible to ensure that approved accommodations are implemented in a timely fashion."
+  },
+  {
+    "objectID": "index.html#syllabus-changes",
+    "href": "index.html#syllabus-changes",
+    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "section": "Syllabus Changes",
+    "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
+  },
+  {
+    "objectID": "code/20250317_testing_debugging.html",
+    "href": "code/20250317_testing_debugging.html",
+    "title": "Guttag Chapter 8",
+    "section": "",
+    "text": "Open In Colab\n\n\n\nGuttag Chapter 8\n\n# Example function within palindromechecker.palindrome\n\n# TODO: what is the module name?\n# TODO: what is the package name?\n# TODO: does the function def within the module rely on any imported objects?\n\ndef pal_rev(word: str) -&gt; bool:\n  \"\"\"Determine if a given word is a palindrome.\"\"\"\n  # TODO: reverse the word\n  # TODO: return whether or not the reversed word is the same as the word\n\n\n# Example function within palindromechecker.palindrome\n\n# TODO: what is the module name?\n# TODO: what is the package name?\n# TODO: does the function def within the module rely on any imported objects?\n\ndef pal_rev(word: str) -&gt; bool:\n  \"\"\"Determine if a given word is a palindrome.\"\"\"\n  return word == word[::-1]\n\n\n# Example function within tests.test_palindrome\n\n# TODO: what is the module name?\n# TODO: what is the package name?\n# TODO: does the function def within the module rely on any imported objects?\n\ndef test_short_not_palindrome_word_reverse():\n    \"\"\"Ensure that a short word of \"taylor\" does not work correctly with reverse.\"\"\"\n    # TODO: hard code the input\n    # TODO: hard code the expected answer\n    # TODO: call the function under test with the hard coded input\n    # TODO: make sure the return value is saved!\n    # TODO: use the assert syntax compare the hard coded expected answer with\n    # the returned answer\n\n\ndef test_short_not_palindrome_word_reverse():\n    \"\"\"Ensure that a short word of \"taylor\" does not work correctly with reverse.\"\"\"\n    test_word = 'taylor' # hard coded\n    expected_result = False # hard coded\n    result = pal_rev(test_word)\n    assert result == expected_result"
   },
   {
     "objectID": "code/data_distortion_activity.html",
@@ -690,7 +767,7 @@
     "href": "syll/syllabus.html#schedule-at-a-glance",
     "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
     "section": "Schedule at-a-glance",
-    "text": "Schedule at-a-glance\nWelcome\n\nWeek One: January 14, 16: Setup\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Filtering\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data \nWeek Seven: February 25, 27: Web Data Analytics and Scraping\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics\nWeek Eleven: March 25, 27: Data Transformations\nWeek Twelve: April 1, 3: Modeling and Overfitting\nWeek Thirteen: April 8: Clustering\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Hypothesis Driven Analysis\nWeek Fifteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks\n\nComplete Final Exam Schedule"
+    "text": "Schedule at-a-glance\nWelcome\n\nWeek One: January 14, 16: Setup\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Filtering\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data \nWeek Seven: February 25, 27: Web Data Analytics and Scraping\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics Intro\nWeek Eleven: March 25, 27: Inferential Statistics\nWeek Twelve: April 1, 3: Comparing and Modeling\nWeek Thirteen: April 8: Clustering\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Storytelling Challenge\nWeek Fifteen: April 22, 24: Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks\n\nComplete Final Exam Schedule"
   },
   {
     "objectID": "syll/syllabus.html#grading",
@@ -784,256 +861,333 @@
     "text": "Submit this completed activity to your activities repository"
   },
   {
-    "objectID": "code/20250317_testing_debugging.html",
-    "href": "code/20250317_testing_debugging.html",
-    "title": "Guttag Chapter 8",
+    "objectID": "code/data_analysis_activity.html",
+    "href": "code/data_analysis_activity.html",
+    "title": "Data Exploration",
     "section": "",
-    "text": "Open In Colab\n\n\n\nGuttag Chapter 8\n\n# Example function within palindromechecker.palindrome\n\n# TODO: what is the module name?\n# TODO: what is the package name?\n# TODO: does the function def within the module rely on any imported objects?\n\ndef pal_rev(word: str) -&gt; bool:\n  \"\"\"Determine if a given word is a palindrome.\"\"\"\n  # TODO: reverse the word\n  # TODO: return whether or not the reversed word is the same as the word\n\n\n# Example function within palindromechecker.palindrome\n\n# TODO: what is the module name?\n# TODO: what is the package name?\n# TODO: does the function def within the module rely on any imported objects?\n\ndef pal_rev(word: str) -&gt; bool:\n  \"\"\"Determine if a given word is a palindrome.\"\"\"\n  return word == word[::-1]\n\n\n# Example function within tests.test_palindrome\n\n# TODO: what is the module name?\n# TODO: what is the package name?\n# TODO: does the function def within the module rely on any imported objects?\n\ndef test_short_not_palindrome_word_reverse():\n    \"\"\"Ensure that a short word of \"taylor\" does not work correctly with reverse.\"\"\"\n    # TODO: hard code the input\n    # TODO: hard code the expected answer\n    # TODO: call the function under test with the hard coded input\n    # TODO: make sure the return value is saved!\n    # TODO: use the assert syntax compare the hard coded expected answer with\n    # the returned answer\n\n\ndef test_short_not_palindrome_word_reverse():\n    \"\"\"Ensure that a short word of \"taylor\" does not work correctly with reverse.\"\"\"\n    test_word = 'taylor' # hard coded\n    expected_result = False # hard coded\n    result = pal_rev(test_word)\n    assert result == expected_result"
+    "text": "Open In Colab"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
+    "objectID": "code/data_analysis_activity.html#analyses-of-one-continuous-variable",
+    "href": "code/data_analysis_activity.html#analyses-of-one-continuous-variable",
+    "title": "Data Exploration",
+    "section": "Analyses of one continuous variable",
+    "text": "Analyses of one continuous variable\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport scipy\nimport pandas as pd\n\n\n\n\nCode\ndata = {\n    'y': [1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10],\n    'category' : ['control', 'control', 'control', 'control', 'control', 'test', 'test', 'test', 'test', 'test'],\n}\n\ndf = pd.DataFrame(data)\n\n\n\n\nCode\ndf\n\n\n\n\nCode\ny_bar = df['y'].mean() # sample mean\nSEM = df['y'].std() / (len(df) ** 0.5) # standard error of the mean\nscore = ( y_bar - 0 ) / SEM\nz_crit  = 1.96 # for 95% boundary with two tails, recall z = 1.96\n\nprint(score)\nprint('probablity of this score is...?')\n\n\n\n\nCode\nscore, probability = scipy.stats.ttest_1samp(df['y'], 0)\n\nprint(score)\nprint(probability)\n\n\n\n\nCode\n# Examine the Data\n\nplt.figure()\nplt.plot(df['y'])\nplt.ylabel('y')\nplt.xlabel('observation number (arbitrary)')\nplt.show()\n\n\n\n\nCode\n# split the data, i.e. filter\n\nplt.figure()\nplt.plot(df['y'][df['category'] =='control'])\nplt.plot(df['y'][df['category'] =='test'])\nplt.legend({'test', 'control'})\nplt.ylabel('y')\nplt.xlabel('observation number (arbitrary)')\nplt.show()\n\n\n\n\nCode\n# Find the average value per category\n\nplt.figure()\nplt.bar([1,2], [df['y'][df['category'] =='control'].mean(), df['y'][df['category'] =='test'].mean()])\nplt.ylabel('y')\nplt.xticks([1,2], ['control', 'mean'])\nplt.title('Average y per Category')\nplt.show()\n\n\n\n\nCode\n# Test the means\n\nscore, probability = scipy.stats.ttest_ind(\n    df['y'][df['category'] =='control'],\n    df['y'][df['category'] =='test'])\n\nprint(score)\nprint(probability)"
+  },
+  {
+    "objectID": "code/data_analysis_activity.html#analyses-of-two-continuous-variables",
+    "href": "code/data_analysis_activity.html#analyses-of-two-continuous-variables",
+    "title": "Data Exploration",
+    "section": "Analyses of two continuous variables",
+    "text": "Analyses of two continuous variables\n\n\nCode\ndf['x'] = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\ndf\n\n\n\n\nCode\nplt.figure()\nplt.scatter(df['x'],df['y'])\nplt.xlabel('x')\nplt.ylabel('y')\nplt.show()\n\n\n\n\nCode\n# Compute pearson correlation\n\nnumerator = np.sum((df.x - df.x.mean()) * (df.y - df.y.mean()))\ndenominator = (sum( (df.x - df.x.mean())**2 ) * sum( (df.y - df.y.mean())**2 )) ** 0.5\n\nr = numerator / denominator\nprint(r)\n\n\n\n\nCode\nscore, probability = scipy.stats.pearsonr(df.x, df.y)\n\nprint(score)\nprint(probability)"
+  },
+  {
+    "objectID": "code/data_analysis_activity.html#questions",
+    "href": "code/data_analysis_activity.html#questions",
+    "title": "Data Exploration",
+    "section": "Questions",
+    "text": "Questions\n\n\nCode\n# TODO: what library contains pre-coded tests?\n# TODO: why is filtering important for analysis?\n# TODO: explore the code to confirm"
+  },
+  {
+    "objectID": "grades.html",
+    "href": "grades.html",
+    "title": "Grades",
     "section": "",
-    "text": "Class Sessions: TuTh 9:30 AM-10:45 AM, Alden 101\nLaboratory Session: Th, 2:30 PM-4 PM, Alden 101\nInstructor: Professor Emily Graber, egraber@allegheny.edu\nOffice Location: Alden Hall 106\nOffice Hours: Visit Google Calendar to reserve an appointment as needed."
+    "text": "Please check Canvas for your grades here"
   },
   {
-    "objectID": "index.html#course-description",
-    "href": "index.html#course-description",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Course Description",
-    "text": "Course Description\nAn introduction to the methods of collecting, exploring, transforming and visualizing data for storytelling. Often participating in team-based and hands-on activities, students learn how to use web platforms and dashboards to acquire, explore and investigate data to generate summarized key data insights using visual techniques. Students also apply open-source programming language to discover patterns in the data, test hypotheses, and check assumptions using graphical representations. During a weekly laboratory session, students employ cutting-edge software tools to complete projects, reporting on their results through both written documents and oral presentations. Students are invited to use their own departmentally approved laptop in this course; a limited number of laptops are available for use during class and lab sessions.\nPrerequisite: None\nDistribution Requirements: QR, SP.\nDR tag rationale: This course will primarily focus on methods of data collection, foundational data analysis of numerical data, and visualizations of such data. Additionally, students will participate in the scientific process during the exploratory data analysis and apply scientific reasoning to analyze and synthesize data.\n\nLearning Outcomes\n\nDevelop hypotheses based on motivating problems and/or observations and identify appropriate data to address hypotheses.\nIdentify and describe key elements in different types of data visualizations.\nUse web-based platforms to accurately present data sets through multiple visualizations.\nUse an open-source programming language to compute summary statistics and visualize key patterns in the data.\nContribute to and present structured, web-based documentation that describes data exploration steps and visualization-based conclusions.\n\n\n\nScientific Process and Knowledge (SP)\n\nCourses involving Scientific Process and Knowledge aim to convey an understanding of what is known or can be known about the natural world; apply scientific reasoning towards the analysis and synthesis of scientific information; and create scientifically literate citizens who can engage productively in problem solving.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of the nature, approaches, and domain of scientific inquiry.\n\n\n\nQuantitative Reasoning (QR)\n\nQuantitative Reasoning is the ability to understand, investigate, communicate, and contextualize numerical, symbolic, and graphical information towards the exploration of natural, physical, behavioral, or social phenomena.\nLearning Outcome: Students who successfully complete this requirement will demonstrate an understanding of how to interpret numeric data and/or their graphical or symbolic representations."
-  },
-  {
-    "objectID": "index.html#schedule-at-a-glance",
-    "href": "index.html#schedule-at-a-glance",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Schedule at-a-glance",
-    "text": "Schedule at-a-glance\nWelcome\n\nWeek One: January 14, 16: Setup\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\nWeek Three: January 28, 30: Data Distortion\nWeek Four: February 4, 7: Data Filtering\nWeek Five: February 11, 13: Interactive Display\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data \nWeek Seven: February 25, 27: Web Data Analytics and Scraping\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics\nWeek Eleven: March 25, 27: Data Transformations\nWeek Twelve: April 1, 3: Modeling and Overfitting\nWeek Thirteen: April 8: Clustering\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Hypothesis Driven Analysis\nWeek Fifteen: April 22, 24: Storytelling Challenge & Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks\n\nComplete Final Exam Schedule"
-  },
-  {
-    "objectID": "index.html#grading",
-    "href": "index.html#grading",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Grading",
-    "text": "Grading\n\n\n\nAssignment type\nPercentage\n\n\n\n\nLabs\n50%\n\n\nParticipation\n30%\n\n\nFinal Project\n20%\n\n\n\nGrading policy may change as needed during the term; any changes will be announced to the class at the time of the change. Grades will be communicated via Canvas. Please note that attendance policies may additionally affect grades as adjustments to grades will be applied on top of the base grade according to policy\n\nLabs\nThere are 8 labs during the semester. Due dates are hard deadlines. See below for policy on late work.\nThe deliverables for labs include documentation in a GitHub repo addressing specific questions or demonstrating requested calculations, analyses, visualizations, and code snippets.\nLabs will be graded for having clean work with few careless errors, correct Markdown, code, data, correct images given the context of the lab, and correct explanations of concepts in writing\n\n\nParticipation\nParticipation in class work, group activities, and Discord are required. Documentation of in-class participation must be submitted by each student and cannot be made up. Participation on the Discord server can occur throughout each week. Each student is required to post at least once per week by asking either asking a real question or answering a question asked by your classmate. Collegial conversations about course topics or activities are also allowed.\nYou will have access to a repository for submitting all of your class activities. Each activity that you do in class will contribute to your overall participation grade. There is no grading scheme for class activities. I will simply check that the activity was turned in at the end of the class period, and that you have made an effort to do the activity as intended, and figures are showing.\nIf the activity is not turned in at the end of the class period, then it will not be counted toward your participation grade.\n\n\nFinal Project\nThe final project will be open ended. Techniques and skills learned throughout the course should be demonstrated in the project in a final presentation (included in the final project grade). The project must be approved by the teaching team in an initial stage. The artifact can be detailed blog post, following the format of the last lab, or a detailed data visualization with interactive visuals."
-  },
-  {
-    "objectID": "index.html#policies",
-    "href": "index.html#policies",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Policies",
-    "text": "Policies\n\nAttendance\nStudents are expected to come to class prepared, on time, and to stay engaged for the duration of the class period. This includes both class and lab sessions. This behavior is core to our shared departmental values and is in addition to the college’s attendance policy.\n\nPreparedness\nComing to class prepared means coming with everything you need to engage in a class session. To satisfy basic expectations of CIS courses, this means, at minimum, that students must:\n\narrive at class with a fully charged laptop\nbring their laptop charger or a battery pack so as to ensure that their laptop works throughout the entire class session\ncomplete any pre-session work such as readings and preparatory assignments\n\n\n\nAttendance and Lateness\nOne missed class or lab session counts as one absence. Coming to class/lab late, leaving early, or missing a large portion of a class/lab session will result in your being marked as “late” to class. Coming to class/lab unprepared may also result in being marked “late”. Being marked “late” to class three times during the course of a semester is equal to one absence.\nStudents can have five absences without any impact to their grade. These accommodations are meant to cover illness and emergency, so you should always come to class if you are able to do so.\nAs a general guideline, students cannot miss more than two weeks of class in total throughout the academic semester without receiving a letter grade reduction.\nFor this course, excluding the first week and five excused absences, overall course grade will go down by 1/3 of a letter grade for each additional absence or absence equivalence regardless of base grade.\n\n\nEngagement\nThe term “engagement” or our expectation that students remain “engaged” can mean many things, often varying by course. Baseline behaviors that indicate engagement include:\n\nparticipation in class activities and discussions\ndefined contribution to class sessions in full-class or group discussions\nnote-taking (physical or digital)\nparticipating in course session attendance requirements\nnot participating in non-course related activities\nnot completing non-course related projects\n\n\n\n\nLate Work Policy\nThe deadlines for assignments are hard deadlines. This policy is intended to ensure that students keep up with course topics, are able to actively participate in class, and are accountable for managing time effectively.\nAll students in the CIS department are expected to turn in assignments on time. “On time” means on or before the assignment’s due date. This means that an assignment cannot be turned in for credit after a due date, unless the student applies a token.\n\nTokens\nStudents in 105 are allotted four tokens to receive extensions on any assignment except the final with no questions asked by the course instructor except either in the rare cases of documented severe and/or extenuating circumstances or in cases that violate the CIS policy document or any College-approved policy.\nA token may be applied via a Google Form up to the assignment deadline, with exceptions granted only for severe and/or extenuating circumstances.\nTokens grant an automatic extension of one week to anything except the final exam.\nToken Form for Automatic Extension\n\n\n\nExtenuating Circumstances\nExtenuating circumstances are exceptional, unforeseen, outside of your control, and short-term, like illness and emergency. Regular circumstances associated with taking courses at Allegheny College are not considered extenuating.\nThe accommodations provided by tokens and permitted absences are meant to cover extenuating circumstances like illness, emergency, and work. However, if you have a contagious illness like COVID-19, the flu, or a cold, you should not come to class. If you have expended all your absences and tokens and are still sick with a contagious illness, you may contact your professor about options. If your symptoms are mild or you are recovering from a respiratory illness, we recommend that you wear a mask to class.\nProfessor must be informed of all athletic obligations at the beginning of the semester, or with as much notice as possible. If you are feeling healthy and well, you should make every effort to come to class on time and to complete assignments, rather than using absences and tokens you may need later.\nThese no-questions-asked accommodations are meant to protect student privacy, and to remove the additional effort of acquiring documentation under duress of illness or emergency. In addition, they allow the professor to remain focused on teaching rather than adjudicating excuses.\nIf extenuating circumstances are severe enough to require more absences and tokens, you may contact your professor to discuss options. In most cases, however, a situation of this gravity warrants a request for a “Late Drop” or “Incomplete” in the course, as the student will not have had adequate opportunity to learn the material."
-  },
-  {
-    "objectID": "index.html#resources",
-    "href": "index.html#resources",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Resources",
-    "text": "Resources\n\nFundamentals of Data Visualization\n\nFull Text\n\nMaking Sense of Data by Glenn J. Myatt and Wayne P. Johnson\n\nI. Exploratory Data Analysis\nII. Data Visualization\nIII. Interactive Visualizations\n\nNaked statistics: stripping the dread from the data by Charles J. Wheelan\n\nGoogle Preview\n\nNatural Resources Biometrics by Diane Kiarnan\n\nFull Text\n\nPython Data Science Handbook by Jake VanderPlas\n\nFull Text\n\nPython for Data Analysis, 3E by Wes McKinney\n\nFull Text\n\nArticles\n\nVariable Types"
-  },
-  {
-    "objectID": "index.html#communications",
-    "href": "index.html#communications",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Communications",
-    "text": "Communications\n\nUsing GitHub and Discord\nThis course will primarily use GitHub and Discord for collaborative course communication. Communications that are not private matters must take place in the Data Exploration Channel in Discord.\nThe Allegheny College Computer and Information Science Discord Server will also have useful announcements about departmental activities including TL office hours.\n\n\nUsing Email\nAlthough we will primarily use Discord for class communication, the course instructor will sometimes use email to send announcements about important matters such as changes in the schedule. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails."
-  },
-  {
-    "objectID": "index.html#honor-code",
-    "href": "index.html#honor-code",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Honor Code",
-    "text": "Honor Code\nThe Academic Honor Program that governs the entire academic program at Allegheny College is described in the Allegheny Academic Bulletin. The Honor Program applies to all work that is submitted for academic credit or to meet non-credit requirements for graduation at Allegheny College. This includes all work assigned for this class (e.g., examinations and course assignments). All students who have enrolled in the College will work under the Honor Program. Each student who has matriculated at the College has acknowledged the following Honor Code pledge:\n\nI hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the integrity of both myself and the College community as a whole.\n\n\nEffective Collaboration\nComputer science is an inherently collaborative discipline. The Department of Computer and Information Science at Allegheny College encourages students to engage in collaboration. However, in the context of individual coursework, through which each student must demonstrate their own knowledge, there are certain forms of collaboration that are and are not acceptable.\n\nAcceptable forms of collaboration include:\n\nDiscussing high-level concepts.\nReferring someone to a course text book, course slides, example programs, or other resources that contain helpful information or instructions.\nOutlining the high-level steps to solving a problem, without mentioning specific\nlines of code that need to be written.\n\nUnacceptable forms of collaboration include:\n\nSharing details about specific lines of code, including showing your source code to someone or looking at someone else’s code.\nCopying someone else’s source code, technical writing, program commands, or program output, even with some slight modifications.\nTyping source code, technical writing, or commands on someone else’s computer.\n\n\n\n\nPlagiarism and Artificial Intelligence\nStudents may not pass off or represent the work of another student, or their own prior work, as their own current work in any case. Plagiarism and AI-generatated code, text, or images are not permitted in any assignment type unless the instructions supplied for the assignment explicitly state otherwise.For exams and all other coursework, students are expected to adhere to the given instructions for the particular exam or item of coursework. It is the responsibility of the student to review the authorization specifications on every item and act appropriately, upholding the honor code. Suspected plagiarized or unauthorized use of AI to generate the work that is turned in will be reported to the Honor Code Committee. This policy does not preclude the use of AI to learn."
-  },
-  {
-    "objectID": "index.html#educational-accommodations",
-    "href": "index.html#educational-accommodations",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Educational Accommodations",
-    "text": "Educational Accommodations\nThe Americans with Disabilities Act (ADA) is a federal anti-discrimination statute that provides comprehensive civil rights protection for persons with disabilities. Among other things, this legislation requires all students with disabilities be guaranteed a learning environment that provides for reasonable accommodation of their disabilities. Students with disabilities who believe they may need accommodations in this class are encouraged to contact Student Accessibility and Support Services (SASS) at 814-332-2898. Student Accessibility and Support Services is part of the Learning Commons and is located in Pelletier Library. Please do this as soon as possible to ensure that approved accommodations are implemented in a timely fashion."
-  },
-  {
-    "objectID": "index.html#syllabus-changes",
-    "href": "index.html#syllabus-changes",
-    "title": "Syllabus: CMPSC 105.00 Data Exploration, Spring 2025",
-    "section": "Syllabus Changes",
-    "text": "Syllabus Changes\nThe instructor may make updates or changes to this document at any time as needed until term grades are due. Changes will be announced to the class."
-  },
-  {
-    "objectID": "slides/06-data-gathering.html#goals",
-    "href": "slides/06-data-gathering.html#goals",
-    "title": "Week 6: Data Gathering",
+    "objectID": "slides/07-web-data.html#goals",
+    "href": "slides/07-web-data.html#goals",
+    "title": "Week 7: Web Data",
     "section": "Goals",
-    "text": "Goals\n\n\nWhat types of data can you gather?\nWhat sources can data come from?\nHow is data stored (for CMPSC 105)?"
+    "text": "Goals\n\nWebsite structure\nGathering content off the web\nGathering data about web usage\n\nGoogle Analytics"
   },
   {
-    "objectID": "slides/06-data-gathering.html#data-types-1",
-    "href": "slides/06-data-gathering.html#data-types-1",
-    "title": "Week 6: Data Gathering",
-    "section": "Data Types",
-    "text": "Data Types\n\n\nand numerical discrete!"
+    "objectID": "slides/07-web-data.html#raw-file-types",
+    "href": "slides/07-web-data.html#raw-file-types",
+    "title": "Week 7: Web Data",
+    "section": "Raw File Types",
+    "text": "Raw File Types\n\n\nHTML - Hypertext Markup Language\nCSS - Cascading Style Sheets\nXML - Extensible Markup Language\n(also javascript for coding interactions with buttons, and dynamically loading content)"
   },
   {
-    "objectID": "slides/06-data-gathering.html#categorical-nominal",
-    "href": "slides/06-data-gathering.html#categorical-nominal",
-    "title": "Week 6: Data Gathering",
-    "section": "Categorical Nominal",
-    "text": "Categorical Nominal\n\n\nName only, qualitative\n\ncar makes\nzip code\neye color\n\nDichotomous variable refers to a categorical nominal variables with only two values\n\nleft handed / right handed\ncurrent student / non student"
+    "objectID": "slides/07-web-data.html#examples",
+    "href": "slides/07-web-data.html#examples",
+    "title": "Week 7: Web Data",
+    "section": "Examples",
+    "text": "Examples\n\n\nHTML\n\nnotice tags &lt;p&gt;&lt;/p&gt;, &lt;div&gt;&lt;/div&gt;\ncontent is inside of tags\nnot WYSIWYG like MS Word documents\n\nCSS\n\nnotice metadata marking things like font names and colors\n\n“font-family:”\n“color:”\n\nhttps://quarto.org/docs/output-formats/html-themes.html\n\nXML\n\nhierarchical (nested structure)\ntagged metadata\n\n(javascript)\n\n\n\nhttps://www.oreilly.com/library/view/xml-in-a/0596007647/ch01s05.html"
   },
   {
-    "objectID": "slides/06-data-gathering.html#categorical-ordinal",
-    "href": "slides/06-data-gathering.html#categorical-ordinal",
-    "title": "Week 6: Data Gathering",
-    "section": "Categorical Ordinal",
-    "text": "Categorical Ordinal\n\n\nordered, quasi-quantitative\n\nagreement level\neducation level\n\nordinal data can seem almost quantitative, but there is no way to know the value of the levels\nordinal scales are usually used to measure non-numeric features like happiness, customer satisfaction\nLikert Items are often used to obtain categorical ordinal data"
+    "objectID": "slides/07-web-data.html#metadata",
+    "href": "slides/07-web-data.html#metadata",
+    "title": "Week 7: Web Data",
+    "section": "Metadata",
+    "text": "Metadata\n\nApplications like your browser need to know metadata about content.\n\n\nwhat kind of content is it?\nif it is a paragraph, it should be rendered one way\nif it is an image, it should be rendered a different way\nif it is a url, it should be clickable"
   },
   {
-    "objectID": "slides/06-data-gathering.html#likert-items",
-    "href": "slides/06-data-gathering.html#likert-items",
-    "title": "Week 6: Data Gathering",
-    "section": "Likert Items",
-    "text": "Likert Items"
+    "objectID": "slides/07-web-data.html#example",
+    "href": "slides/07-web-data.html#example",
+    "title": "Week 7: Web Data",
+    "section": "Example",
+    "text": "Example"
   },
   {
-    "objectID": "slides/06-data-gathering.html#numerical-data",
-    "href": "slides/06-data-gathering.html#numerical-data",
-    "title": "Week 6: Data Gathering",
-    "section": "Numerical Data",
-    "text": "Numerical Data\n\n\nNumerical data are quantitative\nDiscrete means countable\n\nnumber of students\nnumber of views or likes"
+    "objectID": "slides/07-web-data.html#other-markup",
+    "href": "slides/07-web-data.html#other-markup",
+    "title": "Week 7: Web Data",
+    "section": "Other Markup",
+    "text": "Other Markup\n\n\nLaTeX - Compiled Markup, often used for rendering mathematical expressions\nmarkdown\n\n\n\n## Report for Data Exploration\n\n### Introduction\n\nData was explored using different chart types.\n\n### Methods\n\nMatplotlib functions for making line charts, boxplots, and historgrams were used."
   },
   {
-    "objectID": "slides/06-data-gathering.html#numerical-data-1",
-    "href": "slides/06-data-gathering.html#numerical-data-1",
-    "title": "Week 6: Data Gathering",
-    "section": "Numerical Data",
-    "text": "Numerical Data\n\n\nNumerical data are quantitative\nContinuous means measured\n\nheight must be measured\nInterval refers to continuous data with no reference point\n\ntemperature, we know 28 F vs 33 F is a difference of 5, but does a difference of 5 mean the same thing between 100 and 105?\nInterval data cannot be divided meaningfully. Don’t compute what is 1/5 of the temperature today\nStats use division, causing a problem for interval data\n\nRatio refers to continuous data with a reference point\n\nHeight, weight, distance, speed\ndivision or other ratios are meaningful. Professor Luman is twice my height!"
+    "objectID": "slides/07-web-data.html#rendered-version",
+    "href": "slides/07-web-data.html#rendered-version",
+    "title": "Week 7: Web Data",
+    "section": "Rendered version",
+    "text": "Rendered version\n\nReport for Data Exploration\nIntroduction\nData was explored using different chart types.\nMethods\nMatplotlib functions for making line charts, boxplots, and historgrams were used."
   },
   {
-    "objectID": "slides/06-data-gathering.html#practice",
-    "href": "slides/06-data-gathering.html#practice",
-    "title": "Week 6: Data Gathering",
-    "section": "Practice",
-    "text": "Practice\nRecall an example for each data type\n\n\nand numerical discrete!\n\nhttps://forms.gle/rqqcmMtnEHc6g3276"
+    "objectID": "slides/07-web-data.html#summary-of-website-structure",
+    "href": "slides/07-web-data.html#summary-of-website-structure",
+    "title": "Week 7: Web Data",
+    "section": "Summary of Website Structure",
+    "text": "Summary of Website Structure\n\n\nwebsites use structured texts that can be rendered\nmetadata tags are everywhere\nmetadata tags describe the data and can be used to locate data"
   },
   {
-    "objectID": "slides/06-data-gathering.html#data-acquisition",
-    "href": "slides/06-data-gathering.html#data-acquisition",
-    "title": "Week 6: Data Gathering",
-    "section": "Data Acquisition",
-    "text": "Data Acquisition\nGetting brand new data using surveys and sensors!"
+    "objectID": "slides/07-web-data.html#how-things-end-up-in-search-engine-results",
+    "href": "slides/07-web-data.html#how-things-end-up-in-search-engine-results",
+    "title": "Week 7: Web Data",
+    "section": "How Things End Up in Search Engine Results",
+    "text": "How Things End Up in Search Engine Results\nsearch engine bots, aka crawlers or spiders, need to know about all the pages on a website and all the content on the pages in order to make it indexable, i.e. usable for web searching.\nA Google bot has to discover webpages, crawl them, index them, and query a giant database to return related content to search terms."
   },
   {
-    "objectID": "slides/06-data-gathering.html#surveys-for-acquisition",
-    "href": "slides/06-data-gathering.html#surveys-for-acquisition",
-    "title": "Week 6: Data Gathering",
-    "section": "Surveys for Acquisition",
-    "text": "Surveys for Acquisition\n\n\nsurveys are directed toward people\nsurveys answer subjective perceptual and behavioral questions, primarily\ndifferent questions produce different data types\n\nmultiple choice questions\nfree response questions\nslider ratings\nLikert scales"
+    "objectID": "slides/07-web-data.html#discovery",
+    "href": "slides/07-web-data.html#discovery",
+    "title": "Week 7: Web Data",
+    "section": "Discovery",
+    "text": "Discovery\n\n\ndone with robots.txt\nsitemaps"
   },
   {
-    "objectID": "slides/06-data-gathering.html#surveys-for-acquisition-1",
-    "href": "slides/06-data-gathering.html#surveys-for-acquisition-1",
-    "title": "Week 6: Data Gathering",
-    "section": "Surveys for Acquisition",
-    "text": "Surveys for Acquisition\n\n\nSurvey development should be guided by a hypothesis\nOnly questions that have appropriate data types for analysis should be used\nQuality controls should be in place (e.g. timestamps, inclusion criteria)\nData security protocols should be in place to protect private data\nHuman Subjects Research must be reviewed by the Institutional Review Board\n\n\n\nReading: Surveys"
+    "objectID": "slides/07-web-data.html#robots.txt",
+    "href": "slides/07-web-data.html#robots.txt",
+    "title": "Week 7: Web Data",
+    "section": "robots.txt",
+    "text": "robots.txt"
   },
   {
-    "objectID": "slides/06-data-gathering.html#sensors-for-acquisition",
-    "href": "slides/06-data-gathering.html#sensors-for-acquisition",
-    "title": "Week 6: Data Gathering",
-    "section": "Sensors for Acquisition",
-    "text": "Sensors for Acquisition\n\n\nsensors can measure inanimate objects/materials or people/animals\nelectronic sensors for things\n\nmotion detection\nfreezer thermometer\ntire pressure sensor\n\nsensors for people\n\nmotion capture\nbody temperature\nelectro-physiological\n\nECG - electrocardiogram\nEEG - electroencephalogram\nelectrodermal"
+    "objectID": "slides/07-web-data.html#robots.txt-1",
+    "href": "slides/07-web-data.html#robots.txt-1",
+    "title": "Week 7: Web Data",
+    "section": "robots.txt",
+    "text": "robots.txt\n\n\ndirectives tell bots where to go / not go (“disallow”)\n\nhelps protect information (in theory) on admin pages or other private pages\nhelps keep search engine results relevant\ncould prevent duplication if duplicate information is on a website\n\nincludes links to sitemaps!"
   },
   {
-    "objectID": "slides/06-data-gathering.html#sensors-for-acquisition-1",
-    "href": "slides/06-data-gathering.html#sensors-for-acquisition-1",
-    "title": "Week 6: Data Gathering",
-    "section": "Sensors for Acquisition",
-    "text": "Sensors for Acquisition"
+    "objectID": "slides/07-web-data.html#sitemaps",
+    "href": "slides/07-web-data.html#sitemaps",
+    "title": "Week 7: Web Data",
+    "section": "Sitemaps",
+    "text": "Sitemaps\n\n\nlists out all pages (unique urls) of a website that should be indexed\nthese can be used to scrape information off a website\nlarge websites may have multiple site maps"
   },
   {
-    "objectID": "slides/06-data-gathering.html#acquisition-drawbacks",
-    "href": "slides/06-data-gathering.html#acquisition-drawbacks",
-    "title": "Week 6: Data Gathering",
-    "section": "Acquisition Drawbacks",
-    "text": "Acquisition Drawbacks\n\n\ntime consuming\ndata management is required (persistent storage, security)\nmaybe the data already exist somewhere\nmaybe surveys and sensors cannot answer the question you have"
+    "objectID": "slides/07-web-data.html#sitemaps-1",
+    "href": "slides/07-web-data.html#sitemaps-1",
+    "title": "Week 7: Web Data",
+    "section": "Sitemaps",
+    "text": "Sitemaps\n\n\nhttps://markitors.com/what-is-a-sitemap/"
   },
   {
-    "objectID": "slides/06-data-gathering.html#extracting-data-from-documents",
-    "href": "slides/06-data-gathering.html#extracting-data-from-documents",
-    "title": "Week 6: Data Gathering",
-    "section": "Extracting Data from Documents",
-    "text": "Extracting Data from Documents\n\n\nDocuments often contain information but it is not in an analyzable format\n\nAuthor names on research papers\nForeground of an image\nBackground of an image\nVideo transcripts of speech\nVideo transcripts of sounds\nCells (biology) appearing in images\nLanguage structure\n\nnoun, verb, adj, conjunction,\nword length\nnum vowels\nnum syllables\netc"
+    "objectID": "slides/07-web-data.html#participation",
+    "href": "slides/07-web-data.html#participation",
+    "title": "Week 7: Web Data",
+    "section": "Participation",
+    "text": "Participation\n\nhow many sitemaps does Facebook have?\nhow many sitemaps does Allegheny have?\nWalmart?\nOn another sharable site, see what you find and post a sitemap in Discord!"
   },
   {
-    "objectID": "slides/06-data-gathering.html#extracting-data-by-web-scraping",
-    "href": "slides/06-data-gathering.html#extracting-data-by-web-scraping",
-    "title": "Week 6: Data Gathering",
-    "section": "Extracting Data by Web Scraping",
-    "text": "Extracting Data by Web Scraping\n\n\nScraping is gathering data form websites by reading into the html structure to get the content out of specific html tagged elements.\nScraping tools exist to assist with formatting\n\nRequests, BeautifulSoup, Selenium\nexample with https://en.wikipedia.org/wiki/Tadasu_no_Mori\n\n\n\n\nimport requests\n# Making a GET request\nr = requests.get('https://en.wikipedia.org/wiki/Tadasu_no_Mori')\n# print content of request\nprint(r.content)"
+    "objectID": "slides/07-web-data.html#crawling",
+    "href": "slides/07-web-data.html#crawling",
+    "title": "Week 7: Web Data",
+    "section": "Crawling",
+    "text": "Crawling"
   },
   {
-    "objectID": "slides/06-data-gathering.html#extracting-data-storage",
-    "href": "slides/06-data-gathering.html#extracting-data-storage",
-    "title": "Week 6: Data Gathering",
-    "section": "Extracting Data & Storage",
-    "text": "Extracting Data & Storage\n\n\nextracted data must be entered into usable structures\n\ndatabases\nspreadsheets\nplain text files"
+    "objectID": "slides/07-web-data.html#indexing",
+    "href": "slides/07-web-data.html#indexing",
+    "title": "Week 7: Web Data",
+    "section": "Indexing",
+    "text": "Indexing"
   },
   {
-    "objectID": "slides/06-data-gathering.html#drawbacks-of-extracting-data",
-    "href": "slides/06-data-gathering.html#drawbacks-of-extracting-data",
-    "title": "Week 6: Data Gathering",
-    "section": "Drawbacks of Extracting Data",
-    "text": "Drawbacks of Extracting Data\n\n\ndata entry is time consuming\ndata should be consistent, but real data is never perfect, so compromises must be made\nhuman errors can be difficult to detect\ndata entry done with automated entry tools is hard to validate\nvalidation takes human time, or accepted inaccuracy\narbitrary decisions may have to be made"
+    "objectID": "slides/07-web-data.html#scraping",
+    "href": "slides/07-web-data.html#scraping",
+    "title": "Week 7: Web Data",
+    "section": "Scraping",
+    "text": "Scraping\n\nregular people (not Google) can also get content off the web by using strategies similar to discorvery, crawling, and indexing."
   },
   {
-    "objectID": "slides/06-data-gathering.html#sources-of-pre-existing-data",
-    "href": "slides/06-data-gathering.html#sources-of-pre-existing-data",
-    "title": "Week 6: Data Gathering",
-    "section": "Sources of Pre-existing Data",
-    "text": "Sources of Pre-existing Data\n\n\nTableau Data\nOthers"
+    "objectID": "slides/07-web-data.html#scrapping-tools",
+    "href": "slides/07-web-data.html#scrapping-tools",
+    "title": "Week 7: Web Data",
+    "section": "Scrapping tools",
+    "text": "Scrapping tools\n\nCode: Requests, BeautifulSoup\nApplications:\n\n\n    \n\nCredit: Octoparse"
   },
   {
-    "objectID": "slides/06-data-gathering.html#drawbacks-of-pre-existing-data",
-    "href": "slides/06-data-gathering.html#drawbacks-of-pre-existing-data",
-    "title": "Week 6: Data Gathering",
-    "section": "Drawbacks of Pre-existing Data",
-    "text": "Drawbacks of Pre-existing Data\n\n\nEthical collection practices may or may not have been used\ndata have been used repeatedly in explorations leading to bias and overfitting on the data across explorations\nmaybe the pre-existing data cannot answer the question you have"
+    "objectID": "slides/07-web-data.html#data-miner",
+    "href": "slides/07-web-data.html#data-miner",
+    "title": "Week 7: Web Data",
+    "section": "Data Miner",
+    "text": "Data Miner"
   },
   {
-    "objectID": "slides/06-data-gathering.html#csv",
-    "href": "slides/06-data-gathering.html#csv",
-    "title": "Week 6: Data Gathering",
-    "section": "CSV",
-    "text": "CSV\n\n\nComma-separated values format\nplain text file\n\nreadable and writable in many software programs\n\nGoogle Sheets\nMS excel\nNotepad\nSublime Text\nVS Code\n\n\n\n\n\nReading CSV Section 2.4 & 2.4.1"
+    "objectID": "slides/07-web-data.html#optional-activity",
+    "href": "slides/07-web-data.html#optional-activity",
+    "title": "Week 7: Web Data",
+    "section": "Optional Activity",
+    "text": "Optional Activity\n\nTry to get a csv file from dataminer\n\nclick on make your own recipe\n\n\nname it data-scraping-activity.csv\nupload to your activities repo"
   },
   {
-    "objectID": "slides/06-data-gathering.html#csv-activity",
-    "href": "slides/06-data-gathering.html#csv-activity",
-    "title": "Week 6: Data Gathering",
-    "section": "CSV Activity",
-    "text": "CSV Activity\nMake a CSV file based on this one image to explore this open question: Are healthy foods too expensive?\n\nHow many different things can you imaging recording off of this one image?!"
+    "objectID": "slides/07-web-data.html#summary-of-gathering-content-off-the-web",
+    "href": "slides/07-web-data.html#summary-of-gathering-content-off-the-web",
+    "title": "Week 7: Web Data",
+    "section": "Summary of gathering content off the web",
+    "text": "Summary of gathering content off the web\n\nthanks to structured text on the web, scraping code or programs can gather information and turn it into useable data for exploration."
   },
   {
-    "objectID": "slides/06-data-gathering.html#csv-activity-details",
-    "href": "slides/06-data-gathering.html#csv-activity-details",
-    "title": "Week 6: Data Gathering",
-    "section": "CSV Activity Details",
-    "text": "CSV Activity Details\nStart a Google Sheet. Include:\n\nStore Name\nDate\nTime\nLocation\nTotal number of items purchased\nTotal number of non-food items purchased\nTotal amount of “health” foods\nTotal cost in USD\nTotal cost of “health” foods\nTotal cost of non-food items"
+    "objectID": "slides/07-web-data.html#google-analytics",
+    "href": "slides/07-web-data.html#google-analytics",
+    "title": "Week 7: Web Data",
+    "section": "Google Analytics",
+    "text": "Google Analytics\nsee Data Analytics Slides"
   },
   {
-    "objectID": "slides/06-data-gathering.html#submit-your-work-to-your-activities-repo",
-    "href": "slides/06-data-gathering.html#submit-your-work-to-your-activities-repo",
-    "title": "Week 6: Data Gathering",
-    "section": "Submit your work to your Activities Repo",
-    "text": "Submit your work to your Activities Repo\nUse the name “data-gathering-activity.csv”"
-  },
-  {
-    "objectID": "slides/06-data-gathering.html#end",
-    "href": "slides/06-data-gathering.html#end",
-    "title": "Week 6: Data Gathering",
+    "objectID": "slides/07-web-data.html#end",
+    "href": "slides/07-web-data.html#end",
+    "title": "Week 7: Web Data",
     "section": "End",
     "text": "End"
+  },
+  {
+    "objectID": "slides/12-relationships.html#goals",
+    "href": "slides/12-relationships.html#goals",
+    "title": "Week 12: Data Analyses",
+    "section": "Goals",
+    "text": "Goals\n\nAnalyses for one continuous variable\nAnalyses for two continuous variables\nActivity on Data Analysis"
+  },
+  {
+    "objectID": "slides/12-relationships.html#find-sample-mean",
+    "href": "slides/12-relationships.html#find-sample-mean",
+    "title": "Week 12: Data Analyses",
+    "section": "Find sample mean",
+    "text": "Find sample mean\n\nconsider a continuous variable\nfinding the mean and std are the most basic forms of analysis"
+  },
+  {
+    "objectID": "slides/12-relationships.html#hypothesis-test-if-the-sample-mean-is-not-likely-0",
+    "href": "slides/12-relationships.html#hypothesis-test-if-the-sample-mean-is-not-likely-0",
+    "title": "Week 12: Data Analyses",
+    "section": "Hypothesis test if the sample mean is not likely 0",
+    "text": "Hypothesis test if the sample mean is not likely 0\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ny = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])\n\ny_bar = np.mean(y) # sample mean\nSEM = np.std(y, ddof=1) / (len(y) ** 0.5) # standard error of the mean\nscore = ( y_bar - 0 ) / SEM\nz_crit  = 1.96 # for 95% boundary with two tails, recall z = 1.96\n\nprint(score)\nprint('probablity of this score is...?')\n\n5.957419483045198\nprobablity of this score is...?"
+  },
+  {
+    "objectID": "slides/12-relationships.html#alternative-using-code",
+    "href": "slides/12-relationships.html#alternative-using-code",
+    "title": "Week 12: Data Analyses",
+    "section": "Alternative using code",
+    "text": "Alternative using code\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport scipy\n\ny = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])\n\nscore, probability = scipy.stats.ttest_1samp(y, 0)\n\nprint(score)\nprint(probability)"
+  },
+  {
+    "objectID": "slides/12-relationships.html#examine-the-data",
+    "href": "slides/12-relationships.html#examine-the-data",
+    "title": "Week 12: Data Analyses",
+    "section": "Examine the data",
+    "text": "Examine the data\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\ncategory = np.array(['control', 'control', 'control', 'control', 'control', 'test', 'test', 'test', 'test', 'test'])\ny = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])\n\n\n\nplt.figure()\nplt.plot(y)\nplt.ylabel('y')\nplt.xlabel('observation number (arbitrary)')\nplt.show()"
+  },
+  {
+    "objectID": "slides/12-relationships.html#breaking-up-a-variable-into-categories",
+    "href": "slides/12-relationships.html#breaking-up-a-variable-into-categories",
+    "title": "Week 12: Data Analyses",
+    "section": "Breaking up a variable into categories",
+    "text": "Breaking up a variable into categories\n\nwhat if I split y into control and test\nthen the mean in each category could be compared\n\n\n\nplt.figure()\nplt.plot(y[category=='control'])\nplt.plot(y[category=='test'])\nplt.legend({'test', 'control'})\nplt.ylabel('y')\nplt.xlabel('observation number (arbitrary)')\nplt.show()"
+  },
+  {
+    "objectID": "slides/12-relationships.html#breaking-up-a-variable-into-categories-1",
+    "href": "slides/12-relationships.html#breaking-up-a-variable-into-categories-1",
+    "title": "Week 12: Data Analyses",
+    "section": "Breaking up a variable into categories",
+    "text": "Breaking up a variable into categories\n\nwhat if I split y into control and test\nthen the sample mean in each category could be compared\n\n\nplt.figure()\nplt.bar([1,2], [np.mean(y[category=='control']), np.mean(y[category=='test'])])\nplt.ylabel('y')\nplt.xticks([1,2], ['control', 'mean'])\nplt.show()"
+  },
+  {
+    "objectID": "slides/12-relationships.html#are-these-means-actually-different",
+    "href": "slides/12-relationships.html#are-these-means-actually-different",
+    "title": "Week 12: Data Analyses",
+    "section": "Are these means actually different?",
+    "text": "Are these means actually different?\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport scipy\n\ncategory = np.array(['control', 'control', 'control', 'control', 'control', 'test', 'test', 'test', 'test', 'test'])\ny = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])\n\nscore, probability = scipy.stats.ttest_ind(y[category=='control'], y[category=='test'])\n\nprint(score)\nprint(probability)"
+  },
+  {
+    "objectID": "slides/12-relationships.html#scatterplots",
+    "href": "slides/12-relationships.html#scatterplots",
+    "title": "Week 12: Data Analyses",
+    "section": "Scatterplots",
+    "text": "Scatterplots\n\nshow relationships between two variables\nthe x axis is for first variable\nthe y axis is for second variable\neach dot is one observation"
+  },
+  {
+    "objectID": "slides/12-relationships.html#scatterplot-example",
+    "href": "slides/12-relationships.html#scatterplot-example",
+    "title": "Week 12: Data Analyses",
+    "section": "Scatterplot Example",
+    "text": "Scatterplot Example\n\n\nOnce every two weeks for a year, we have recorded the number of air conditions sold and the number of ice cream cones sold on that day.\nHow many observations would that be?\nWhat do you think the relationship would look like?"
+  },
+  {
+    "objectID": "slides/12-relationships.html#scatterplot-example-1",
+    "href": "slides/12-relationships.html#scatterplot-example-1",
+    "title": "Week 12: Data Analyses",
+    "section": "Scatterplot Example",
+    "text": "Scatterplot Example\n\n\n\nwhat is on x?\nwhat is on y?\nif you see a clear upward or downward slope, that means that the variables are related\nn.b. a relationship does not imply causation!"
+  },
+  {
+    "objectID": "slides/12-relationships.html#scatterplot-example-2",
+    "href": "slides/12-relationships.html#scatterplot-example-2",
+    "title": "Week 12: Data Analyses",
+    "section": "Scatterplot Example",
+    "text": "Scatterplot Example\nFind a positive relationship, negative relationship, no relationship, a non-linear relationship"
+  },
+  {
+    "objectID": "slides/12-relationships.html#correlation",
+    "href": "slides/12-relationships.html#correlation",
+    "title": "Week 12: Data Analyses",
+    "section": "Correlation",
+    "text": "Correlation\n\nPearson Correction, \\(r\\) is defined:\n\n\\[\nr = {\\Sigma_{i = 1}^N (x_i - \\bar x)(y_i - \\bar y) \\over \\sqrt {\\Sigma_{i = 1}^N (x_i - \\bar x)^2 \\times \\Sigma_{i = 1}^N(y_i - \\bar y)^2}}\n\\]\n\ncorrelation of 1 is perfect positive slope\ncorrelation of -1 is perfect negative slope\ncorrelation of 0 is 0 or no slope"
+  },
+  {
+    "objectID": "slides/12-relationships.html#correlation-example",
+    "href": "slides/12-relationships.html#correlation-example",
+    "title": "Week 12: Data Analyses",
+    "section": "Correlation Example",
+    "text": "Correlation Example\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\ny = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])\n\nplt.figure()\nplt.scatter(x,y)\nplt.xlabel('x')\nplt.ylabel('y')\nplt.show()"
+  },
+  {
+    "objectID": "slides/12-relationships.html#correlation-example-1",
+    "href": "slides/12-relationships.html#correlation-example-1",
+    "title": "Week 12: Data Analyses",
+    "section": "Correlation Example",
+    "text": "Correlation Example\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nx = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\ny = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])\n\nnumerator = np.sum((x - np.mean(x)) * (y - np.mean(y)))\ndenominator = (sum( (x - np.mean(x))**2 ) * sum( (y - np.mean(y))**2 )) ** 0.5\n\nr = numerator / denominator\nprint(r)\n\n0.979131432462635"
+  },
+  {
+    "objectID": "slides/12-relationships.html#correlation-example-in-practice",
+    "href": "slides/12-relationships.html#correlation-example-in-practice",
+    "title": "Week 12: Data Analyses",
+    "section": "Correlation Example in practice",
+    "text": "Correlation Example in practice\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport scipy\n\nx = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])\ny = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])\n\nscore, probability = scipy.stats.pearsonr(x, y)\n\nprint(score)\nprint(probability)"
+  },
+  {
+    "objectID": "slides/12-relationships.html#linear-models",
+    "href": "slides/12-relationships.html#linear-models",
+    "title": "Week 12: Data Analyses",
+    "section": "Linear Models",
+    "text": "Linear Models\n\nThursday"
+  },
+  {
+    "objectID": "slides/12-relationships.html#activity",
+    "href": "slides/12-relationships.html#activity",
+    "title": "Week 12: Data Analyses",
+    "section": "Activity",
+    "text": "Activity\ndata_analysis_activity.ipynb"
   },
   {
     "objectID": "slides/10-data-descriptors.html#goals",
@@ -1257,6 +1411,6 @@
     "href": "materials.html",
     "title": "Materials",
     "section": "",
-    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data II, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data II, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Data Analytics Due Thursday March 13, 2:30pm \n\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nReading: Making Sense of Data I, Chapter 3, Preparing Data Tables \nClass Activity: Data Wrangling Notebook\nLab: Data Wrangling Due Thursday, March 27, 2:30pm\n\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics Intro\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 17-37\nSlides: Data Descriptors\nClass Activity: Stats Intro Notebook\nLab: No new lab\n\nWeek Eleven: March 25, 27: Inferential Statistics\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 37-42\nSlides: Inferential Statistics\nClass Activity: Inferential Stats Activity\nLab: Final Project Proposal Due Thursday, April 3, 2:30pm\n\nWeek Twelve: April 1, 3: Modeling and Comparing\n\nReading: Making Sense of Data I, Chapter 4, Understanding Relationships   \n\nWeek Thirteen: April 8: Clustering\n\nReading: Making Sense of Data I, Chapter 5, Groups in Data \n\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Storytelling Challenge\nWeek Fifteen: April 22, 24: Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
+    "text": "Welcome\n\nWeek One: January 14, 16: Setup\n\nReading: Making Sense of Data II, Chapter 2, p. 19-32\nSlides: Welcome Reveal, Welcome PDF\nLab: Practice Lab Due: Thursday Jan 23, 2:30pm\n\n\nData Display\n\nWeek Two: January 21, 23: Display Types and Anatomy of a Chart\n\nReading: Making Sense of Data II, Chapter 2, p. 32-50\nSlides: Display Types and Anatomy of a Chart Reveal, PDF\nClass Activity: Data Display\nLab: Data Display Due: Thursday Jan 30, 2:30pm\n\nWeek Three: January 28, 30: Data Distortion\n\nReading: Misleading Graphs\nClass Activity: Data Distortion\nLab: Data Distortion Due: Thursday Feb 6, 2:30pm\n\nWeek Four: February 4, 7: Data Filtering\n\nVideo: Logical Indexing\nClass Activity: Data Filtering\nLab: Data Filtering Due: Thursday Feb 13, 2:30pm\nActivities Repo\n\nWeek Five: February 11, 13: Interactive Display\n\nExplore: Interactive Viz Gallery\nClass Activity: Data Interactivity\nLab: Data Interactivity Due: Thursday Feb 20, 2:30pm\n\n\nData Gathering\n\nWeek Six: February 18, 20: Turning Anything Into Data\n\nReading: Variable Types\nSlides: Data Gathering\nClass Activity: Google Form Data\nClass Activity: Make data-gathering-activity.csv\nLab: Data Entry Due: Thursday Feb 27, 2:30pm\n\nWeek Seven: February 25, 27: Web Data Analytics and Scraping\n\nReading: Site Maps\nSlides: Gathering Web Data\nClass Activity Optional: Make data-scraping-activity.csv\nLab: Data Analytics Due Thursday March 13, 2:30pm \n\nSpring Break: March 1-9\nWeek Nine: March 11, 13: Data Wrangling\n\nReading: Making Sense of Data I, Chapter 3, Preparing Data Tables \nClass Activity: Data Wrangling Notebook\nLab: Data Wrangling Due Thursday, March 27, 2:30pm\n\n\nData Processing\n\nWeek Ten: March 18, 20: Statistics Intro\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 17-37\nSlides: Data Descriptors\nClass Activity: Stats Intro Notebook\nLab: No new lab\n\nWeek Eleven: March 25, 27: Inferential Statistics\n\nReading: Making Sense of Data I, Chapter 2, Describing Data, p. 37-42\nSlides: Inferential Statistics\nClass Activity: Inferential Stats Activity\nLab: Final Project Proposal Due Thursday, April 3, 2:30pm\n\nWeek Twelve: April 1, 3: Comparing and Modeling\n\nReading: Making Sense of Data I, Chapter 4, Understanding Relationships\nSlides: Data Analyses\nClass Activity: Data Analysis Activity   \n\nWeek Thirteen: April 8: Clustering\n\nReading: Making Sense of Data I, Chapter 5, Groups in Data \n\n\nData Storytelling\n\nWeek Fourteen: April 15, 17: Storytelling Challenge\nWeek Fifteen: April 22, 24: Project Preparation\nWeek Sixteen: April 29: No Class Meeting\n\nFinal Presentations Code C\n\nThursday, May 1st, 2025 at 7:00 PM: Final Project Lightning Talks"
   }
 ]

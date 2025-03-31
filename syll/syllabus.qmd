@@ -69,15 +69,15 @@ DR tag rationale: This course will primarily focus on methods of data collection
 
 **Data Processing**
 
-- Week Ten: March 18, 20: Statistics
-- Week Eleven: March 25, 27: Data Transformations
-- Week Twelve: April 1, 3: Modeling and Overfitting
+- Week Ten: March 18, 20: Statistics Intro
+- Week Eleven: March 25, 27: Inferential Statistics
+- Week Twelve: April 1, 3: Comparing and Modeling
 - Week Thirteen: April 8: Clustering
 
 **Data Storytelling**
 
-- Week Fourteen: April 15, 17: Hypothesis Driven Analysis
-- Week Fifteen: April 22, 24: Storytelling Challenge & Project Preparation
+- Week Fourteen: April 15, 17: Storytelling Challenge
+- Week Fifteen: April 22, 24: Project Preparation
 - Week Sixteen: April 29: No Class Meeting
 
 **Final Presentations Code C**

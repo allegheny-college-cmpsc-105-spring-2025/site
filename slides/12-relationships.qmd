@@ -1,0 +1,232 @@
+---
+title: "Week 12: Data Analyses"
+author: "Emily Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+echo: true
+---
+
+## Goals
+
+- Analyses for one continuous variable
+- Analyses for two continuous variables
+- Activity on Data Analysis
+
+# Analyses for one continuous variable
+
+## Find sample mean
+
+- consider a continuous variable
+- finding the mean and std are the most basic forms of analysis
+
+## Hypothesis test if the sample mean is not likely 0
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+y = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])
+
+y_bar = np.mean(y) # sample mean
+SEM = np.std(y, ddof=1) / (len(y) ** 0.5) # standard error of the mean
+score = ( y_bar - 0 ) / SEM
+z_crit  = 1.96 # for 95% boundary with two tails, recall z = 1.96
+
+print(score)
+print('probablity of this score is...?')
+```
+
+
+## Alternative using code
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy
+
+y = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])
+
+score, probability = scipy.stats.ttest_1samp(y, 0)
+
+print(score)
+print(probability)
+```
+
+## Examine the data {.smaller}
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+category = np.array(['control', 'control', 'control', 'control', 'control', 'test', 'test', 'test', 'test', 'test'])
+y = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])
+```
+
+. . .
+
+```{python}
+plt.figure()
+plt.plot(y)
+plt.ylabel('y')
+plt.xlabel('observation number (arbitrary)')
+plt.show()
+```
+
+## Breaking up a variable into categories {.smaller}
+
+- what if I split y into control and test
+- then the mean in each category could be compared
+
+. . .
+
+```{python}
+plt.figure()
+plt.plot(y[category=='control'])
+plt.plot(y[category=='test'])
+plt.legend({'test', 'control'})
+plt.ylabel('y')
+plt.xlabel('observation number (arbitrary)')
+plt.show()
+```
+
+## Breaking up a variable into categories {.smaller}
+
+- what if I split y into control and test
+- then the sample mean in each category could be compared
+
+```{python}
+plt.figure()
+plt.bar([1,2], [np.mean(y[category=='control']), np.mean(y[category=='test'])])
+plt.ylabel('y')
+plt.xticks([1,2], ['control', 'mean'])
+plt.show()
+```
+
+## Are these means actually different? 
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy
+
+category = np.array(['control', 'control', 'control', 'control', 'control', 'test', 'test', 'test', 'test', 'test'])
+y = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])
+
+score, probability = scipy.stats.ttest_ind(y[category=='control'], y[category=='test'])
+
+print(score)
+print(probability)
+```
+
+# Analyses for two continuous variables
+
+## Scatterplots
+
+- show relationships between two variables
+- the x axis is for first variable
+- the y axis is for second variable
+- each dot is one observation
+
+## Scatterplot Example
+
+::: incremental
+- Once every two weeks for a year, we have recorded the number of air conditions sold and the
+  number of ice cream cones sold on that day.
+- How many observations would that be?
+- What do you think the relationship would look like?
+:::
+
+. . .
+
+![](https://us-static.z-dn.net/files/d03/96609d97985a438fd9099826d2a8fc57.jpeg)
+
+## Scatterplot Example {.smaller}
+
+![](https://us-static.z-dn.net/files/d03/96609d97985a438fd9099826d2a8fc57.jpeg)
+
+::: incremental
+- what is on x?
+- what is on y?
+- if you see a clear upward or downward slope, that means that the variables are related
+- n.b. a relationship does not imply causation!
+:::
+
+## Scatterplot Example
+
+Find a positive relationship, negative relationship, no relationship, a non-linear relationship
+
+![](https://texasgateway.org/sites/default/files/h5p/content/5886/images/image-5776bf20b6844.png)
+
+## Correlation {.smaller}
+
+- Pearson Correction, $r$ is defined:
+
+$$
+r = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \sqrt {\Sigma_{i = 1}^N (x_i - \bar x)^2 \times \Sigma_{i = 1}^N(y_i - \bar y)^2}}
+$$
+
+- correlation of 1 is perfect positive slope
+- correlation of -1 is perfect negative slope
+- correlation of 0 is 0 or no slope
+
+## Correlation Example {.smaller}
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+y = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])
+
+plt.figure()
+plt.scatter(x,y)
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()
+```
+
+## Correlation Example
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+
+x = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+y = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])
+
+numerator = np.sum((x - np.mean(x)) * (y - np.mean(y)))
+denominator = (sum( (x - np.mean(x))**2 ) * sum( (y - np.mean(y))**2 )) ** 0.5
+
+r = numerator / denominator
+print(r)
+```
+
+## Correlation Example in practice
+
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy
+
+x = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+y = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 6, 7.1, 9.9, 10])
+
+score, probability = scipy.stats.pearsonr(x, y)
+
+print(score)
+print(probability)
+```
+
+## Linear Models
+
+- Thursday 
+
+## Activity
+
+[data_analysis_activity.ipynb](/code/data_analysis_activity.ipynb)
+
+
+# End
