@@ -113,7 +113,7 @@ Name, where you are from, first favorite band, and some of your current favorite
 - bookmark the [website](https://allegheny-college-cmpsc-105-spring-2025.github.io/site/)
 - bookmark access to [your repos](https://github.com/allegheny-college-cmpsc-105-spring-2025)
 - bookmark the [105 Discord Channel](https://discord.com/channels/877320365825749002/1326293822002561154),
-  or [access from the course website](discord.qmd)
+  or [access from the course website](/discord.qmd)
 - bookmark notes that you take in Google Colab or elsewhere
 - bookmark [Canvas](https://allegheny.instructure.com/courses/12163)
 - etc.

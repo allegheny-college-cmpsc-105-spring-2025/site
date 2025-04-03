@@ -1,0 +1,275 @@
+---
+title: "Week 12: Linear Regression"
+author: "Emily Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+echo: true
+---
+
+## Goals
+
+- Lines
+- Connection to Correlation
+- Examples
+- Evaluating Lines
+
+# Lines
+
+## Formula for a Line
+
+$$
+y = mx + b
+$$
+
+- x and y are variables in a sample
+- m is the slope relating the two
+- b is the y-intercept
+
+## Another Formula for a Line {.smaller}
+
+$$
+y = \beta_0 + \beta_1 x
+$$
+
+- x and y are variables in a sample with N observations
+- x is the `independent variable`
+- y is the `dependent variable`, it depends on x
+- $\beta_1$ is the slope
+- $\beta_0$ is the y-intercept
+
+## Slope Indicates Steepness
+
+![](https://s3-us-west-2.amazonaws.com/courses-images/wp-content/uploads/sites/896/2016/10/11185922/CNX_CAT_Figure_02_02_002.jpg)
+
+## Slope is Describes The Relationship Between x and y {.smaller}
+
+![](https://www.turito.com/_next/image?url=https%3A%2F%2Fwww.turito.com%2Flearn-internal%2Fwp-content%2Fuploads%2F2022%2F05%2Fwrite-the-equation-of-the-line.jpg&w=1920&q=50)
+
+::: incremental
+- if x and y were identical, the relationship would be 1:1
+- if y never changes for any x, the relationship is 0
+- sounds like a correlation!
+:::
+
+# Connection to Correlation
+
+## Correlation
+
+Pearson Correction, $r$ is defined:
+
+$$
+r = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \sqrt {\Sigma_{i = 1}^N (x_i - \bar x)^2 \times \Sigma_{i = 1}^N(y_i - \bar y)^2}}
+$$
+
+## Slope
+
+Slope, $\beta_1$ is defined:
+
+$$
+\beta_1 = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \Sigma_{i = 1}^N (x_i - \bar x)^2}
+$$
+
+## Together
+
+$$
+r = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \sqrt {\Sigma_{i = 1}^N (x_i - \bar x)^2 \times \Sigma_{i = 1}^N(y_i - \bar y)^2}}
+$$
+
+\----------
+
+$$
+\beta_1 = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \Sigma_{i = 1}^N (x_i - \bar x)^2}
+$$
+
+## Calculating the intercept
+
+If the slope of a line is found, then the intercept can be found
+
+::: incremental
+-
+$$
+\beta_1 = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \Sigma_{i = 1}^N (x_i - \bar x)^2}
+$$
+
+-
+$$
+\bar y = \beta_0 + \beta_1 \bar x
+$$
+
+-
+$$
+\beta_0 = \bar y - \beta_1 \bar x
+$$
+
+:::
+
+# Example
+
+## Song Popularity Dataset {.smaller}
+
+```{python}
+import pandas as pd
+
+df = pd.read_csv('https://raw.githubusercontent.com/allegheny-college-cmpsc-105-generic/09-songdata-starter/refs/heads/main/assets/data/song_data.csv?token=GHSAT0AAAAAAC44A6IRLAZFWQU5RJPE772CZ7N43CA')
+df
+```
+
+## Visualize {.smaller}
+
+```{python}
+import matplotlib.pyplot as plt
+
+pop = df.song_popularity
+dur = df.song_duration_ms/(60 * 1000) # duration in minutes
+
+plt.figure()
+plt.scatter(pop, dur)
+plt.xlabel('Popularity')
+plt.ylabel('Duration (minutes)')
+```
+
+## Correlation {.smaller}
+
+For all songs, what is the correlation between song popularity and song duration?
+
+```{python}
+pop = df.song_popularity
+dur = df.song_duration_ms/(60 * 1000) # duration in minutes
+
+numerator = sum((pop - pop.mean()) * (dur - dur.mean()))
+denominator = (sum( (pop - pop.mean())**2 ) * sum( (dur - dur.mean())**2 )) ** 0.5
+
+r = numerator / denominator
+print(r)
+```
+
+## Slope {.smaller}
+
+What is the slope that fits an optimal line?
+
+```{python}
+pop = df.song_popularity
+dur = df.song_duration_ms/(60 * 1000) # duration in minutes
+
+numerator = sum((pop - pop.mean()) * (dur - dur.mean()))
+denominator = (sum( (pop - pop.mean())**2 ))
+
+slope = numerator / denominator
+print(slope)
+```
+
+## Intercept {.smaller}
+
+```{python}
+# y = m * x + b
+# dur  = slope * pop + intercept
+# intercept = dur - slope * pop
+
+intercept = dur.mean() - (slope * pop.mean())
+print(intercept)
+```
+
+## Add Line to Figure {.smaller}
+
+```{python}
+plt.figure()
+plt.scatter(pop, dur)
+plt.xlabel('Popularity')
+plt.ylabel('Duration (minutes)')
+
+plt.plot([0, 100], [slope * 0 + intercept, slope * 100 + intercept], 'r')
+plt.show()
+```
+
+## Add Line to Figure
+
+```python
+plt.plot([0, 100], [slope * 0 + intercept, slope * 100 + intercept], 'r')
+```
+
+::: incremental
+- note how in the previous slide, I had to pick two x positions [low popularity, high popularity], then calculate
+  the y using the formula of the line!
+- for x = 0, y = slope * 0 + intercept
+- for x = 100, y = slope * 100 + intercept
+:::
+
+# Evaluating Lines
+
+## Evaluating Lines
+
+::: incremental
+- if you have an x-value and a formula for a line, the y-value can be calculated!
+- in the current example, I have a lot of x-values, `pop`
+- using `pop`, I can compute PREDICTED y-values, $\hat dur$
+- then I can compare $dur$ with $\hat dur$
+:::
+
+## Comparing Predicted and Actual y-values
+
+```{python}
+pred_dur = slope * pop + intercept
+error = pred_dur - dur # compare using subtraction
+MSE = (error ** 2).mean() # mean squared error
+SSE = sum(error ** 2) # sum of squared error
+print(MSE)
+print(SSE)
+```
+
+::: incremental
+- squaring errors makes everything positive, and the exaggerates large errors
+- MSE is commonly used to compare models
+- if this topic interests you, study `machine learning` to learn more about training & overfitting
+:::
+
+## More Evaluation {.smaller}
+
+::: incremental
+- standard deviation for y-values would be $\sqrt{ \Sigma_i^N(y_i - \bar y)^2  \over N}$
+- In linear regression the numerator is the Total Sum of Squares, $SST = \Sigma_i^N(y_i - \bar y)^2$
+- We saw above, the Sum of Squared Error is $SSE = \Sigma_i^N(\hat y_i - y_i)^2$
+- SST is made of SSE + SSR (Sum of Regression Errors), so SSR = SST - SSE
+- Or, $SSR = \Sigma_i^N(\hat y_i - \bar y)^2$
+- Finally, the percentage of variability in y that is explained by the model is $R^2 = {SSR \over SST}$
+- AND it is literally the pearson correlation squared
+:::
+
+## More Evaluation in Code {.smaller}
+
+```{python}
+pred_dur = slope * pop + intercept
+error = pred_dur - dur # compare using subtraction
+
+SSE = sum(error ** 2) # sum of squared error
+SST = sum((dur - dur.mean())**2) # total sum of squares
+SSR = SST - SSE
+
+print("this is a sanity check for SSR: ", sum((pred_dur - dur.mean())**2), SSR) 
+
+R_squared = SSR/SST
+print("Raw R_squared: ", R_squared)
+print("Percentage of variance explained by model: ", 100 * R_squared)
+
+print("Pearson correlation coefficient from earlier code cell: ", r)
+print("Pearson correlation squared: ", r ** 2)
+```
+
+## Using Scipy to get Probability
+
+```python
+import scipy
+
+slope, intercept, r, p, se = scipy.stats.linregress(pop, dur)
+```
+
+Compare with
+
+```python
+import scipy
+
+r, p = scipy.stats.pearsonr(pop, dur)
+```
+
+## End
