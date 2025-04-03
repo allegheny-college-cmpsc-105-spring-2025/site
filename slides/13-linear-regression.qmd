@@ -112,7 +112,7 @@ $$
 ```{python}
 import pandas as pd
 
-df = pd.read_csv('https://raw.githubusercontent.com/allegheny-college-cmpsc-105-generic/09-songdata-starter/refs/heads/main/assets/data/song_data.csv?token=GHSAT0AAAAAAC44A6IRLAZFWQU5RJPE772CZ7N43CA')
+df = pd.read_csv('https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-relationships-starter/refs/heads/main/data/data-analysis-kaggle-song-popularity-data.csv')
 df
 ```
 

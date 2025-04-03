@@ -71,10 +71,10 @@ title: "Materials"
   - Reading: [Making Sense of Data I, Chapter 6, Linear Regression, p. 149-158](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=163)
   - Slides: [Linear Regression](slides/13-linear-regression.qmd)
   - Examples in Code: [Linear Regression](/code/linear_regression.ipynb)
-  - Lab: [Song Data Analysis]
+  - Lab: [Song Data Analysis](https://classroom.github.com/a/ZshwGtt8) Due Thursday, April 17th, 2:30pm
 - Week Thirteen: April 8: Clustering
   - Reading: [Making Sense of Data I, Chapter 5, Groups in Data](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=97)
-  <!-- https://youtu.be/9Mmj8NMCqEQ  -->
+  - Video: [K-means clustering](https://youtu.be/9Mmj8NMCqEQ)
 
 **Data Storytelling**
 
