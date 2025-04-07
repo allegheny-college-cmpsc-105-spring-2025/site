@@ -74,7 +74,8 @@ title: "Materials"
   - Lab: [Song Data Analysis](https://classroom.github.com/a/ZshwGtt8) Due Thursday, April 17th, 2:30pm
 - Week Thirteen: April 8: Clustering
   - Reading: [Making Sense of Data I, Chapter 5, Groups in Data](https://ebookcentral.proquest.com/lib/allegheny-ebooks/reader.action?docID=1729064&ppg=97)
-  - Video: [K-means clustering](https://youtu.be/9Mmj8NMCqEQ)
+  - Video: [K-Means Clustering 4:15-19:45](https://youtu.be/9Mmj8NMCqEQ) [Ad-Free Version](https://docs.google.com/presentation/d/1wB96HNyc1ysM4Qng4XaT24vDpxgEDCINXhdeSSsK374/edit?usp=sharing)
+  - Class Activity: [K-Means Clustering Activity](/code/data_clustering_activity.ipynb)
 
 **Data Storytelling**
 
