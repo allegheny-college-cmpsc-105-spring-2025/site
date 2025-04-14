@@ -1,0 +1,272 @@
+---
+title: "Week 14: Storytelling"
+author: "Emily Graber"
+format: revealjs
+slide-number: true
+touch: true
+controls: true
+echo: true
+---
+
+## Goals
+
+- Telling Your Story
+- Supporting Your Story
+  - Finding Scholarly Research
+  - Tracing References
+  - Using References vs Explaining References
+
+# Telling Your Story
+
+![](https://bestdissertationwriter.com/wp-content/uploads/2024/12/Typical-Sections-of-a-Research-Paper-Outline.png)
+
+## Main Steps {.smaller}
+
+::: {.column}
+::: incremental
+- Abstract
+  - Motivation
+  - Problem or Gap in Knowledge
+  - Hypothesis or Question
+  - Data
+  - Actionable Steps
+  - Evaluations
+  - Interpretation
+:::
+:::
+::: {.column}
+![](https://bestdissertationwriter.com/wp-content/uploads/2024/12/Typical-Sections-of-a-Research-Paper-Outline.png)
+:::
+
+## Main Steps Continued {.smaller}
+
+::: {.column}
+::: incremental
+- Background
+  - Motivation (more detail with ref)
+  - Problem or Gap in Knowledge (more detail with ref)
+  - Hypothesis or Question (more detail)
+
+- Methods
+  - Data
+  - Actionable Steps
+  - How evaluations will be done
+
+- Results
+  - Evaluations (with visualizations)
+
+- Discussion
+  - Interpretation of results (more detail)
+:::  
+:::
+::: {.column}
+![](https://bestdissertationwriter.com/wp-content/uploads/2024/12/Typical-Sections-of-a-Research-Paper-Outline.png)
+:::
+
+## Today's Focus: Abstract {.smaller}
+
+::: {.column}
+- Motivation
+- Problem or Gap in Knowledge
+- Hypothesis or Question
+- Data
+- Actionable Steps
+- Evaluations
+- Interpretation
+:::
+::: {.column}
+![](https://bestdissertationwriter.com/wp-content/uploads/2024/12/Typical-Sections-of-a-Research-Paper-Outline.png)
+:::
+
+## Motivation Example
+
+::: incremental
+- Identify your research motivation
+- **Do not** use personal goals
+  - X Personal goal: "I wanted to learn how to do clustering because I think employers desire that skill"
+- **Do** use personal or academic knowledge
+  - Personal knowledge: "Individual golfers often have clubs made of different materials."
+:::
+
+## Problem or Gap in Knowledge Example
+
+. . .
+
+"It is unclear why having different materials matters."
+
+## Hypothesis or Question Example
+
+. . .
+
+"I want to know if the materials actually make a difference in how well the players play." 
+
+## Data Example
+
+. . .
+
+"I will use information from public sources about which players use which materials and how highly ranked each player is."
+
+## Actionable Steps Example
+
+. . .
+
+"I will examine if players who use the same materials have similar rankings"
+
+## Evaluations Example
+
+. . .
+
+"For each material, I will evaluate the "similarity" of rankings by computing the mean and
+standard deviation and comparing those to the mean and standard deviation for every other
+material"
+
+
+## Interpretation Examples
+
+. . .
+
+- Connect back to the hypothesis.
+
+"If the rankings are found to not be the same from material to material, that indicates that
+materials may be related to player rankings. Players could therefore consider trying materials
+that highly ranked players use."
+
+"If the rankings are found to be the same from material to material, that indicates that
+materials may **not** be related to player rankings. Players could therefore try various materials."
+
+## Full chain of logic {.smaller}
+
+- Motivation, Problem or Gap in Knowledge, Hypothesis or Question, Data, Actionable Steps, Evaluations, Interpretation
+
+>Individual golfers often have clubs made of different materials. It is unclear why having different materials matters.
+This research is about understanding if the materials actually make a difference in how well the players play. Information
+from public sources about which players use which materials and how highly ranked each player is will be explored to answer
+the question. Specifically, players who use the same materials will be grouped together, and their rankings will evaluated.
+For each material, the mean and standard deviation of the players rankings will be compared. If the rankings are found to
+not be the same from material to material, that indicates that materials may be related to player rankings. Players could
+therefore consider using the same materials that highly ranked players use.
+
+# Finding Scholarly Research
+
+## Finding Scholarly Research
+
+::: incremental
+- *Where* are you searching?
+- *What* are searching for?
+- *Choosing* useful papers out of the masses
+:::
+
+## Where?
+
+Databases!
+
+::: incremental
+- https://allegheny.libguides.com/az.php
+- ACM (Association for Computing Machinery)
+- ScienceDirect
+- Taylor & Francis
+- Scopus
+:::
+
+## What?
+
+Keywords!
+
+::: incremental
+- use keyword searches
+- combine analysis method, field, topic, outcome measure
+- example: classification, sports, golf, materials, player ranking
+:::
+
+## What? (classification, sports, golf, materials, player ranking) {.smaller}
+
+Check all assumptions in your literature review
+
+::: incremental
+- LR 1: GENERAL: does gear impact athletes?
+  - search: sports relationship of player ranking with jersey material
+  - search: sports relationship of player success with court preparations
+  - search: sports relationship of player success with shoe weight
+- note: these searches probably will be about different sports, but that is good! It shows the relevance of your question broadly.
+:::
+
+## What? (classification, sports, golf, materials, player ranking) {.smaller}
+
+::: incremental
+- LR 2: NARROW SLIGHTLY: does golf club material impact golfers?
+  - search: golf relationship of club material with hit accuracy
+  - search: golf relationship of club material with hit strength
+- LR 3: MOST NARROW: are the best golfers all using the same materials or is it something else?
+  - search: classifying golfers by club materials
+  - search: classifying golfers by physical attributes
+:::
+
+## What? (classification, sports, golf, materials, player ranking) {.smaller}
+
+Check definitions even if you have an idea of what they mean.
+
+::: incremental
+- LR 4: DEFINE STANDARDS
+  - search: golf player analysis (how are golfers usually evaluated?)
+  - search: golf club materials analysis (what else has been examined and how?)
+  - search: textbook chapter on classification (is the method applicable and how does it work?)
+  - search: determinants of player ranking sports (where does ranking even come from?)
+:::
+
+## Choosing Papers
+
+::: incremental
+- Each search will probably bring up dozens of results
+- Look for papers that have familiar authors
+- Look for papers that are from reputable institutions
+- Look for papers that have many citations
+- For each search, try to find a **foundational** paper, and one on **new** developments 
+:::
+
+# Tracing References
+
+## Find the foundation
+
+- look at **references** list
+- find oldest date with on-topic content
+- repeat this from a few starting points
+
+## Find popular theories, stable
+
+- look at **references** list
+- what names appear in multiple articles?
+- read intros
+- what key ideas come up in multiple papers?
+
+## Find the latest, in development
+
+- look at **cited by** list
+- these are references that are **more** recent
+- follow the links to newer papers
+
+## Why are you reading?
+
+- You may read and reread the same set of papers for different reasons
+- what analysis method did they use?
+- What data did they use?
+- What assumptions did they make?
+- What was their take home message?
+
+# Using References vs Explaining References
+
+## Using References {.smaller}
+
+In a research narrative, use references to back up your points. Answer, "how do you know" for everything!
+
+>Individual golfers often have clubs made of different materials [References about variety of clubs player have].
+It is unclear why having different materials matters [Ref questioning difference and similarities, perhaps competing views].
+This research is about understanding if the materials actually make a difference in how well the players play. Information
+from public sources about which players use which materials and how highly ranked each player is will be explored to answer
+the question. Specifically, players who use the same materials will be grouped together, and their rankings will evaluated.
+For each material, the mean and standard deviation of the players rankings will be compared. If the rankings are found to
+not be the same from material to material, that indicates that materials may be related to player rankings. Players could
+therefore consider using the same materials that highly ranked players use.
+
+Notice that the references did not have to be explained.
+
+## End

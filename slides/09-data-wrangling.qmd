@@ -42,13 +42,21 @@ If a column has a mix of strings and other data types (e.g., numbers or None val
 
 ## Accessing specific rows and columns
 
-loc 
-iloc
+loc --> df.loc[rows, cols]
+iloc --> df.iloc[rows, cols by index]
+
+## Creating a new column in an existing df
+
+df['new'] = # expression
+
+- note that a new column can only be added if it is the same length as the other existing columns
 
 ## Concatenation
 
-Along Rows
-Along Cols
+Along Rows --> axis=0
+Along Cols --> axis=1
+
+pd.concat(df1, df2, axis=1)
 
 
 ## Reformatting Strings 
@@ -63,3 +71,11 @@ Regular Expressions inside of pd.DataFrame.str.replace()
 ## Reformatting Strings
 
 df['YOUR COLUMN'].str.split('YOUR DELIMITER', expand=True)
+
+# Activity
+
+## Data Wrangling Activity
+
+[data_wrangling_activity.ipynb](/code/data_wrangling_activity.ipynb)
+
+# End
