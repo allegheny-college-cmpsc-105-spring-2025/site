@@ -81,10 +81,10 @@ title: "Materials"
 
 - Week Fourteen: April 15, 17: Storytelling
   - Reading: [Scientific Writing](https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/bes2.1258)
-  - Slides: [Creating a Research Narrative](slides/14-storytelling.qmd)
-  - Class Activity:
-  - Lab: [https://classroom.github.com/a/QG5D-IId] Due Thursday, April 24th, 2:30pm
-  <!-- - write up this exploration -->
+  - Slides: [Writing a Research Narrative](slides/14-storytelling.qmd)
+  - Poster: [Visualizing a Research Narrative](https://ccrma.stanford.edu/~emgraber/Graber_ARO2020_poster_final3.pdf)
+  - Class Activity: [Visual Storytelling Activity](/code/voice_storytelling_activity)
+  - Lab: [Storytelling][https://classroom.github.com/a/QG5D-IId] Due Thursday, April 24th, 2:30pm
 - Week Fifteen: April 22, 24: Project Preparation
 
 **Final Presentations Code C**
