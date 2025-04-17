@@ -83,7 +83,7 @@ title: "Materials"
   - Reading: [Scientific Writing](https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/bes2.1258)
   - Slides: [Writing a Research Narrative](slides/14-storytelling.qmd)
   - Class Activity: [Visual Storytelling Activity](/code/voice_storytelling_activity.ipynb)
-  - Lab: [Storytelling](https://classroom.github.com/a/QG5D-IId) Due Thursday, April 24th, 2:30pm
+  - Lab: [Storytelling](https://classroom.github.com/a/RjlIIOCv) Due Thursday, April 24th, 2:30pm
 - Week Fifteen: April 22, 24: Project Preparation
 
 **Final Presentations Code C**
