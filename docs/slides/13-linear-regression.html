@@ -322,7 +322,7 @@ r = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \sqrt {\Sigma_{i = 1}^N
 </section>
 <section id="song-popularity-dataset" class="slide level2 smaller">
 <h2>Song Popularity Dataset</h2>
-<div id="30dde3c3" class="cell" data-execution_count="1">
+<div id="b6e3c462" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a></a></span>
 <span id="cb1-3"><a></a>df <span class="op">=</span> pd.read_csv(<span class="st">'https://raw.githubusercontent.com/allegheny-college-cmpsc-105-spring-2025/data-relationships-starter/refs/heads/main/data/data-analysis-kaggle-song-popularity-data.csv'</span>)</span>
@@ -573,7 +573,7 @@ r = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \sqrt {\Sigma_{i = 1}^N
 </section>
 <section id="visualize" class="slide level2 smaller">
 <h2>Visualize</h2>
-<div id="b93ed965" class="cell" data-execution_count="2">
+<div id="402af711" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb2-2"><a></a></span>
 <span id="cb2-3"><a></a>pop <span class="op">=</span> df.song_popularity</span>
@@ -598,7 +598,7 @@ r = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \sqrt {\Sigma_{i = 1}^N
 <section id="correlation-1" class="slide level2 smaller">
 <h2>Correlation</h2>
 <p>For all songs, what is the correlation between song popularity and song duration?</p>
-<div id="3e9437ac" class="cell" data-execution_count="3">
+<div id="1d0e7338" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a></a>pop <span class="op">=</span> df.song_popularity</span>
 <span id="cb4-2"><a></a>dur <span class="op">=</span> df.song_duration_ms<span class="op">/</span>(<span class="dv">60</span> <span class="op">*</span> <span class="dv">1000</span>) <span class="co"># duration in minutes</span></span>
 <span id="cb4-3"><a></a></span>
@@ -615,7 +615,7 @@ r = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \sqrt {\Sigma_{i = 1}^N
 <section id="slope-1" class="slide level2 smaller">
 <h2>Slope</h2>
 <p>What is the slope that fits an optimal line?</p>
-<div id="8d66611f" class="cell" data-execution_count="4">
+<div id="1297da41" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a></a>pop <span class="op">=</span> df.song_popularity</span>
 <span id="cb6-2"><a></a>dur <span class="op">=</span> df.song_duration_ms<span class="op">/</span>(<span class="dv">60</span> <span class="op">*</span> <span class="dv">1000</span>) <span class="co"># duration in minutes</span></span>
 <span id="cb6-3"><a></a></span>
@@ -631,7 +631,7 @@ r = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \sqrt {\Sigma_{i = 1}^N
 </section>
 <section id="intercept" class="slide level2 smaller">
 <h2>Intercept</h2>
-<div id="42f84fe2" class="cell" data-execution_count="5">
+<div id="33f9267f" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a></a><span class="co"># y = m * x + b</span></span>
 <span id="cb8-2"><a></a><span class="co"># dur  = slope * pop + intercept</span></span>
 <span id="cb8-3"><a></a><span class="co"># intercept = dur - slope * pop</span></span>
@@ -645,7 +645,7 @@ r = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \sqrt {\Sigma_{i = 1}^N
 </section>
 <section id="add-line-to-figure" class="slide level2 smaller">
 <h2>Add Line to Figure</h2>
-<div id="c33a1d13" class="cell" data-execution_count="6">
+<div id="c2016c15" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a></a>plt.figure()</span>
 <span id="cb10-2"><a></a>plt.scatter(pop, dur)</span>
 <span id="cb10-3"><a></a>plt.xlabel(<span class="st">'Popularity'</span>)</span>
@@ -691,7 +691,7 @@ r = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \sqrt {\Sigma_{i = 1}^N
 </section>
 <section id="comparing-predicted-and-actual-y-values" class="slide level2">
 <h2>Comparing Predicted and Actual y-values</h2>
-<div id="3c7a4a29" class="cell" data-execution_count="7">
+<div id="da20b1d4" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a></a>pred_dur <span class="op">=</span> slope <span class="op">*</span> pop <span class="op">+</span> intercept</span>
 <span id="cb12-2"><a></a>error <span class="op">=</span> pred_dur <span class="op">-</span> dur <span class="co"># compare using subtraction</span></span>
 <span id="cb12-3"><a></a>MSE <span class="op">=</span> (error <span class="op">**</span> <span class="dv">2</span>).mean() <span class="co"># mean squared error</span></span>
@@ -727,7 +727,7 @@ r = {\Sigma_{i = 1}^N (x_i - \bar x)(y_i - \bar y) \over \sqrt {\Sigma_{i = 1}^N
 </section>
 <section id="more-evaluation-in-code" class="slide level2 smaller">
 <h2>More Evaluation in Code</h2>
-<div id="234e731e" class="cell" data-execution_count="8">
+<div id="fb260fca" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a></a>pred_dur <span class="op">=</span> slope <span class="op">*</span> pop <span class="op">+</span> intercept</span>
 <span id="cb14-2"><a></a>error <span class="op">=</span> pred_dur <span class="op">-</span> dur <span class="co"># compare using subtraction</span></span>
 <span id="cb14-3"><a></a></span>
