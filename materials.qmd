@@ -83,7 +83,7 @@ title: "Materials"
   - Reading: [Scientific Writing](https://esajournals.onlinelibrary.wiley.com/doi/epdf/10.1002/bes2.1258)
   - Slides: [Creating a Research Narrative](slides/14-storytelling.qmd)
   - Class Activity:
-  - Lab:
+  - Lab: [https://classroom.github.com/a/QG5D-IId] Due Thursday, April 24th, 2:30pm
   <!-- - write up this exploration -->
 - Week Fifteen: April 22, 24: Project Preparation
 
