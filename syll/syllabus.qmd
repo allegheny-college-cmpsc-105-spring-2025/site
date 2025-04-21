@@ -76,7 +76,7 @@ DR tag rationale: This course will primarily focus on methods of data collection
 
 **Data Storytelling**
 
-- Week Fourteen: April 15, 17: Storytelling Challenge
+- Week Fourteen: April 15, 17: Storytelling
 - Week Fifteen: April 22, 24: Project Preparation
 - Week Sixteen: April 29: No Class Meeting
 
