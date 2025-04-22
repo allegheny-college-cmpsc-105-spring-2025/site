@@ -85,6 +85,7 @@ title: "Materials"
   - Class Activity: [Visual Storytelling Activity](/code/voice_storytelling_activity.ipynb)
   - Lab: [Storytelling](https://classroom.github.com/a/RjlIIOCv) Due Thursday, April 24th, 2:30pm
 - Week Fifteen: April 22, 24: Project Preparation
+  - Repo: [Final Project](https://classroom.github.com/a/AulZ_vNu) Due Thursday, May 1, 7:00pm
 
 **Final Presentations Code C**
 
