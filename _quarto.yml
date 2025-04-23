@@ -11,6 +11,7 @@ website:
       - href: index.qmd
         text: Syllabus
       - materials.qmd
+      - labs.qmd
       - discord.qmd
       - grades.qmd
 

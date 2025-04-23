@@ -1,0 +1,32 @@
+---
+title: "Labs"
+---
+
+**Starter code** for CMPSC 105 labs can be explored below. For GitHub classroom links, see [Materials](materials.qmd).
+
+**Welcome**
+
+- Lab: [Practice Lab](https://github.com/allegheny-college-cmpsc-105-spring-2025/practice-lab-starter)
+
+**Data Display**
+
+- Lab: [Data Display](https://github.com/allegheny-college-cmpsc-105-spring-2025/data-display-starter)
+- Lab: [Data Distortion](https://github.com/allegheny-college-cmpsc-105-spring-2025/data-distortion-starter)
+- Lab: [Data Filtering](https://github.com/allegheny-college-cmpsc-105-spring-2025/data-filtering-starter)
+- Lab: [Data Interactivity](https://github.com/allegheny-college-cmpsc-105-spring-2025/data-interactivity-starter)
+  
+**Data Gathering**
+
+- Lab: [Data Entry](https://github.com/allegheny-college-cmpsc-105-spring-2025/data-entry-starter)
+- Lab: [Data Analytics](https://github.com/allegheny-college-cmpsc-105-spring-2025/data-analytics-starter)<!-- - Students disliked this lab... -->
+- Lab: [Data Wrangling](https://github.com/allegheny-college-cmpsc-105-spring-2025/data-wrangling-starter)
+
+**Data Processing**
+
+- Lab: [Final Project Proposal](https://github.com/allegheny-college-cmpsc-105-spring-2025/final-project-proposal-starter)
+- Lab: [Data Relationships](https://github.com/allegheny-college-cmpsc-105-spring-2025/data-relationships-starter)
+
+**Data Storytelling**
+
+- Lab: [Storytelling](https://github.com/allegheny-college-cmpsc-105-spring-2025/storytelling-starter)
+- Repo: [Final Project](https://github.com/allegheny-college-cmpsc-105-spring-2025/final-project-starter)
